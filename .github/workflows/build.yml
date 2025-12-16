@@ -1,0 +1,99 @@
+name: Build Action
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.cpp'
+      - '**.hpp'
+      - '.github/workflows/build.yml'
+      - 'CMakeLists.txt'
+  pull_request:
+    branches: [ main, dev ]
+    paths:
+      - '**.cpp'
+      - '**.hpp'
+      - '.github/workflows/build.yml'
+      - 'CMakeLists.txt'
+  workflow_dispatch:
+
+jobs:
+  build-linux:
+    name: Build on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S .
+
+      - name: Build Debug
+        shell: bash
+        run: cmake --build ./build --config Debug -j`nproc`
+
+      - name: Build Release
+        shell: bash
+        run: cmake --build ./build --config Release -j`nproc`
+
+  build-windows:
+    name: Build on Windows
+    needs: [build-linux]
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S .
+
+      - name: Build Debug
+        shell: pwsh
+        run: cmake --build ./build --config Debug -j"$env:NUMBER_OF_PROCESSORS"
+
+      - name: Build Release
+        shell: pwsh
+        run: cmake --build ./build --config Release -j"$env:NUMBER_OF_PROCESSORS"
+
+  build-macos:
+    name: Build on MacOS
+    needs: [build-linux]
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S .
+
+      - name: Build Debug
+        shell: bash
+        run: cmake --build ./build --config Debug
+
+      - name: Build Release
+        shell: bash
+        run: cmake --build ./build --config Release

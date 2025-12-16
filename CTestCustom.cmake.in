@@ -1,0 +1,6 @@
+set(CTEST_CUSTOM_COVERAGE_EXCLUDE
+        "/usr/"                  # System headers
+        "_deps/"                 # Dependencies (like gtest)
+        ".*/tests/.*"            # Tests
+        ".*main.cpp"             # Main executable
+)

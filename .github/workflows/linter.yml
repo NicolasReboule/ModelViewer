@@ -1,0 +1,100 @@
+name: Linter Action
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.cpp'
+      - '**.hpp'
+      - '.github/workflows/linter.yml'
+      - 'CMakeLists.txt'
+  pull_request:
+    branches: [ main, dev ]
+    paths:
+      - '**.cpp'
+      - '**.hpp'
+      - '.github/workflows/linter.yml'
+      - 'CMakeLists.txt'
+  issue_comment:
+    types: [ created ]
+  workflow_dispatch:
+
+jobs:
+  pr_asked_to_format:
+    name: Format the code when "fix format" is written in a comment of a PR
+    if: github.event.issue.pull_request && contains(github.event.comment.body, 'fix format') && github.event_name != 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Apply clang-tidy
+        run: |
+          cmake -B ./build -S . -DUSE_CLANG_TIDY=ON -DUSE_CLANG_TIDY_WITH_FIX=ON
+          cmake --build ./build --config Release -j`nproc`
+
+      - name: Apply clang-format
+        run: |
+          echo "y" | ./lint.sh
+
+      - name: Add safedirectory
+        if: (steps.apply-clang-tidy.conclusion == 'success' || steps.apply-clang-format.conclusion == 'success')
+        # Don't care if the owner of the directory is not the same as the user
+        run: |
+          ls -la
+          git config --global --add safe.directory $PWD
+
+      - name: Commit changes
+        if: steps.apply-clang-tidy.conclusion == 'success' || steps.apply-clang-format.conclusion == 'success'
+        uses: EndBug/add-and-commit@v9
+        with:
+          committer_name: Linter
+          committer_email: 41998282+github-actions[bot]@users.noreply.github.com
+          message: 'style: Apply Linter (clang-tidy/format)'
+          add: '.'
+          push: true
+
+  linter:
+    name: Check clang-tidy & clang-format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Install clang-format and clang-tidy
+        run: |
+          wget https://apt.llvm.org/llvm.sh && chmod +x llvm.sh && sudo ./llvm.sh 19
+          sudo apt install clang-format-19 clang-tidy-19
+
+      - name: Try to run clang-tidy as error
+        id: clang-tidy
+        run: |
+          cmake -B ./build -S . -DUSE_CLANG_TIDY=ON -DUSE_CLANG_TIDY_WITH_ERRORS=ON
+          cmake --build ./build --config Release -j`nproc`
+
+      - name: Install fd-find
+        run: |
+          sudo apt update
+          sudo apt install fd-find
+
+      - name: Try to run clang-format as error
+        id: clang-format
+        if: always()
+        run: |
+          echo "n" | ./lint.sh

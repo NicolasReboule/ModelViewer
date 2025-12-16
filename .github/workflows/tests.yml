@@ -1,0 +1,97 @@
+name: Tests Action
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.cpp'
+      - '**.hpp'
+      - '.github/workflows/tests.yml'
+      - 'CMakeLists.txt'
+      - '*.cmake*'
+  pull_request:
+    branches: [ main, dev ]
+    paths:
+      - '**.cpp'
+      - '**.hpp'
+      - '.github/workflows/tests.yml'
+      - 'CMakeLists.txt'
+      - '*.cmake*'
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S . -DBUILD_TESTS=ON
+
+      - name: Build Unit Test
+        shell: bash
+        run: cmake --build ./build --target example_tests -j`nproc`
+
+      - name: Run Unit Test
+        shell: bash
+        run: ./build/tests/example_tests
+  coverage:
+    name: Coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S . -DBUILD_TESTS=ON -DBUILD_COVERAGE=ON -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Build Unit Test
+        shell: bash
+        run: cmake --build ./build --target example_tests -j`nproc`
+
+      - name: Run Unit Test
+        shell: bash
+        run: ctest --test-dir build -T Test
+
+      - name: Generate Coverage for CDash
+        shell: bash
+        run: |
+          ctest --test-dir build -T Coverage
+          ctest --test-dir build -T Submit
+
+      - name: Install lcov
+        shell: bash
+        run: |
+          sudo apt update
+          sudo apt install lcov
+
+      - name: Generate Coverage for Codecov
+        shell: bash
+        run: |
+          lcov --directory ./build --capture --output-file ./build/coverage.info --ignore-errors mismatch
+          lcov --remove ./build/coverage.info '/usr/*' --output-file ./build/coverage.info
+          lcov --remove ./build/coverage.info '**/_deps/**' --output-file ./build/coverage.info
+          lcov --remove ./build/coverage.info '**/tests/**' --output-file ./build/coverage.info
+          lcov --list ./build/coverage.info
+
+      - name: Upload coverage to Codecov
+        shell: bash
+        run: bash <(curl -s https://codecov.io/bash) -f ./build/coverage.info -t ${{ secrets.CODECOV_TOKEN }}
