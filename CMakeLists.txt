@@ -1,14 +1,21 @@
 cmake_minimum_required(VERSION 3.29)
 project(
-        CPPTemplate
+        ModelViewer
         VERSION 0.0.1
         DESCRIPTION "A simple C++ project template"
-        HOMEPAGE_URL "https://github.com/NicolasReboule/CPPTemplate"
+        HOMEPAGE_URL "https://github.com/NicolasReboule/ModelViewer"
         LANGUAGES CXX
 )
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_PARALLEL_LEVEL 8)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
+# QT Path
+set(CMAKE_PREFIX_PATH "C:\\Qt\\6.10.1\\mingw_64")
 
 option(BUILD_COVERAGE "Build the coverage" OFF)
 option(BUILD_TESTS "Build the tests" OFF)
@@ -29,15 +36,30 @@ if(BUILD_COVERAGE)
     target_link_options(${PROJECT_NAME}_Headers INTERFACE --coverage)
 endif()
 
+# QT
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui Qml Quick Network)
+qt_standard_project_setup(REQUIRES 6.5)
+
 # Sources
 add_library(${PROJECT_NAME}_Sources STATIC
         src/example.cpp
 )
 target_link_libraries(${PROJECT_NAME}_Sources PUBLIC ${PROJECT_NAME}_Headers)
 
-# Main executable
-add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_Sources)
+# Main executable with QT
+qt_add_executable(${PROJECT_NAME}
+        main.cpp
+        application.qrc
+)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+        ${PROJECT_NAME}_Sources
+        Qt6::Core
+        Qt6::Gui
+        Qt6::Qml
+        Qt6::Quick
+        Qt6::Network
+)
 
 # Compiler Warnings
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
@@ -70,3 +92,20 @@ if (USE_CLANG_TIDY OR USE_CLANG_TIDY_WITH_ERRORS OR USE_CLANG_TIDY_WITH_FIX)
         set_target_properties(${BINARY_NAME} PROPERTIES CXX_CLANG_TIDY "${CLANG_TIDY_COMMAND}")
     endif ()
 endif ()
+
+# Deploy Qt (Add DLLs, ...)
+if (WIN32)
+    # Find windeployqt
+    get_target_property(_qmake_executable Qt6::qmake IMPORTED_LOCATION)
+    get_filename_component(_qt_bin_dir "${_qmake_executable}" DIRECTORY)
+
+    set(WINDEPLOYQT_EXECUTABLE "${_qt_bin_dir}/windeployqt.exe")
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+            COMMAND "${WINDEPLOYQT_EXECUTABLE}"
+            --no-translations
+            --no-opengl-sw
+            --qmldir "${CMAKE_SOURCE_DIR}"
+            "$<TARGET_FILE:${PROJECT_NAME}>"
+            COMMENT "Running windeployqt..."
+    )
+endif()
