@@ -70,7 +70,6 @@ jobs:
         with:
           version: 6.6.3
           arch: win64_mingw
-          tools: mingw1120
           cache: true
 
       - name: Configure Debug
