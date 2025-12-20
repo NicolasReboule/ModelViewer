@@ -14,9 +14,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-# QT Path
-set(CMAKE_PREFIX_PATH "C:\\Qt\\6.10.1\\mingw_64")
-
 option(BUILD_COVERAGE "Build the coverage" OFF)
 option(BUILD_TESTS "Build the tests" OFF)
 option(USE_CLANG_TIDY "Use clang-tidy" OFF) # Used by the CI
@@ -51,6 +48,12 @@ qt_add_executable(${PROJECT_NAME}
         main.cpp
         application.qrc
 )
+
+#qt_add_qml_module(${PROJECT_NAME}
+#        URI main
+#        VERSION 1.0
+#        QML_FILES main.qml
+#)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         ${PROJECT_NAME}_Sources

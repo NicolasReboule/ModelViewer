@@ -32,6 +32,12 @@ jobs:
           path: ./build/_deps
           key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
 
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: 6.6.3
+          cache: true
+
       - name: Configure CMake
         shell: bash
         run: cmake -B ./build -S .
@@ -59,17 +65,35 @@ jobs:
           path: ./build/_deps
           key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
 
-      - name: Configure CMake
-        shell: bash
-        run: cmake -B ./build -S .
+      - name: Install Qt (MinGW)
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: 6.6.3
+          arch: win64_mingw
+          tools: mingw1120
+          cache: true
+
+      - name: Configure Debug
+        shell: pwsh
+        run: |
+          cmake -S . -B build-debug `
+            -G "Ninja" `
+            -DCMAKE_BUILD_TYPE=Debug
 
       - name: Build Debug
         shell: pwsh
-        run: cmake --build ./build --config Debug -j"$env:NUMBER_OF_PROCESSORS"
+        run: cmake --build build-debug -j"$env:NUMBER_OF_PROCESSORS"
+
+      - name: Configure Release
+        shell: pwsh
+        run: |
+          cmake -S . -B build-release `
+            -G "Ninja" `
+            -DCMAKE_BUILD_TYPE=Release
 
       - name: Build Release
         shell: pwsh
-        run: cmake --build ./build --config Release -j"$env:NUMBER_OF_PROCESSORS"
+        run: cmake --build build-release -j"$env:NUMBER_OF_PROCESSORS"
 
   build-macos:
     name: Build on MacOS
@@ -85,6 +109,12 @@ jobs:
         with:
           path: ./build/_deps
           key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: 6.6.3
+          cache: true
 
       - name: Configure CMake
         shell: bash
