@@ -1,7 +1,7 @@
+#include <QFileInfo>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QString>
-#include <QFileInfo>
 
 using namespace Qt::StringLiterals;
 
@@ -10,12 +10,12 @@ int main(int argc, char *argv[]) {
     QQmlApplicationEngine engine;
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
-    QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-                     &app,
-                     [url](const QObject *obj, const QUrl &objUrl) {
-        if (!obj && url == objUrl)
-            QCoreApplication::exit(-1);
-    }, Qt::QueuedConnection);
+    QObject::connect(
+        &engine, &QQmlApplicationEngine::objectCreated, &app,
+        [url](const QObject *obj, const QUrl &objUrl) {
+            if (!obj && url == objUrl) QCoreApplication::exit(-1);
+        },
+        Qt::QueuedConnection);
 
     engine.load(url);
     return app.exec();
