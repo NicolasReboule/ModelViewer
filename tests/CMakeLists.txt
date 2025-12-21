@@ -11,17 +11,29 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 # Test Executable
-add_executable(example_tests
-        example_test.cpp
+add_executable(src_example_tests
+        src/example_test.cpp
 )
 # Link headers
-target_include_directories(example_tests PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(src_example_tests PRIVATE ${PROJECT_SOURCE_DIR}/include)
 # Link gtest
-target_link_libraries(example_tests PRIVATE GTest::gtest_main ${PROJECT_NAME}_Sources)
+target_link_libraries(src_example_tests PRIVATE GTest::gtest_main ${PROJECT_NAME}_Sources)
 
 # Create tests
 include(GoogleTest)
-gtest_discover_tests(example_tests)
+gtest_discover_tests(src_example_tests)
+
+find_package(Qt6 6.5 REQUIRED COMPONENTS Test)
+
+qt_add_executable(qt_example_tests
+        qt/qt_example_test.cpp
+)
+
+target_link_libraries(qt_example_tests PRIVATE
+        Qt::Test
+)
+add_test(NAME qt_example_tests COMMAND qt_example_tests)
+
 
 # Add custom cmake test to build
 configure_file(
