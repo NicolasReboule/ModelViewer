@@ -5,7 +5,7 @@
 ** qt_example_test.cpp
 */
 
-#include <qt6/QtTest/QtTest>
+#include <QtTest/QtTest>
 
 class MyFirstTest : public QObject {
     Q_OBJECT
