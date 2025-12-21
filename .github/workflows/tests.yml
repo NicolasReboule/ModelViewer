@@ -114,7 +114,7 @@ jobs:
           lcov --remove ./build/coverage.info '/usr/*' --output-file ./build/coverage.info
           lcov --remove ./build/coverage.info '**/_deps/**' --output-file ./build/coverage.info
           lcov --remove ./build/coverage.info '**/tests/**' --output-file ./build/coverage.info
-          lcov --remove ./build/coverage.info '**/ModelViewer_autogen/**' --output-file ./build/coverage.info
+          lcov --remove ./build/coverage.info '**/ModelViewer_autogen/**' --output-file ./build/coverage.info --ignore-errors unused
           lcov --list ./build/coverage.info
 
       - name: Upload coverage to Codecov
