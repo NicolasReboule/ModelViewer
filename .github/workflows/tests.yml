@@ -44,13 +44,21 @@ jobs:
         shell: bash
         run: cmake -B ./build -S . -DBUILD_TESTS=ON
 
-      - name: Build Unit Test
+      - name: Build Sources Unit Test
         shell: bash
-        run: cmake --build ./build --target example_tests -j`nproc`
+        run: cmake --build ./build --target src_example_tests -j`nproc`
 
-      - name: Run Unit Test
+      - name: Build Qt Unit Test
         shell: bash
-        run: ./build/tests/example_tests
+        run: cmake --build ./build --target qt_example_tests -j`nproc`
+
+      - name: Run Sources Unit Test
+        shell: bash
+        run: ./build/tests/src_example_tests
+
+      - name: Run Qt Unit Test
+        shell: bash
+        run: ./build/tests/qt_example_tests
   coverage:
     name: Coverage
     runs-on: ubuntu-latest
