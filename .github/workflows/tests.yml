@@ -75,9 +75,13 @@ jobs:
         shell: bash
         run: cmake -B ./build -S . -DBUILD_TESTS=ON -DBUILD_COVERAGE=ON -DCMAKE_BUILD_TYPE=Debug
 
-      - name: Build Unit Test
+      - name: Build Sources Unit Test
         shell: bash
-        run: cmake --build ./build --target example_tests -j`nproc`
+        run: cmake --build ./build --target src_example_tests -j`nproc`
+
+      - name: Build Qt Unit Test
+        shell: bash
+        run: cmake --build ./build --target qt_example_tests -j`nproc`
 
       - name: Run Unit Test
         shell: bash
