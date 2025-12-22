@@ -36,7 +36,7 @@ jobs:
         uses: jurplel/install-qt-action@v4
         with:
           version: 6.6.3
-          modules: qtbase, qtdeclarative, qtquick3d
+          modules: 'qtbase qtdeclarative qtquick3d'
           cache: true
 
       - name: Configure CMake
