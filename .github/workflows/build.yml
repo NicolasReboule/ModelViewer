@@ -71,6 +71,7 @@ jobs:
         with:
           version: 6.6.3
           arch: win64_msvc2019_64
+          modules: 'qtquick3d qtshadertools'
           cache: true
 
       - name: Configure CMake
@@ -107,6 +108,7 @@ jobs:
         uses: jurplel/install-qt-action@v4
         with:
           version: 6.6.3
+          modules: 'qtquick3d qtshadertools'
           cache: true
 
       - name: Configure CMake

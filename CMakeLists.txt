@@ -77,10 +77,6 @@ if (BUILD_TESTS)
     add_subdirectory(tests)
 endif()
 
-# Assets
-file(COPY ${CMAKE_CURRENT_LIST_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-
-
 # CLang-tidy
 if (USE_CLANG_TIDY OR USE_CLANG_TIDY_WITH_ERRORS OR USE_CLANG_TIDY_WITH_FIX)
     find_program(CLANG_TIDY_EXE NAMES "clang-tidy-19")

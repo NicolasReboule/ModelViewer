@@ -86,6 +86,7 @@ jobs:
         uses: jurplel/install-qt-action@v4
         with:
           version: 6.6.3
+          modules: 'qtquick3d qtshadertools'
           cache: true
 
       - name: Try to run clang-tidy as error
