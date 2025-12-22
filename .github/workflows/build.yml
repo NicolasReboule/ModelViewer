@@ -36,7 +36,7 @@ jobs:
         uses: jurplel/install-qt-action@v4
         with:
           version: 6.6.3
-          modules: 'qtquick3d qtquick3druntimerender'
+          modules: 'qtquick3d qtshadertools'
           cache: true
 
       - name: Configure CMake
