@@ -30,6 +30,7 @@ Window {
 
         //! [camera]
         PerspectiveCamera {
+            id: pCamera
             position: Qt.vector3d(0, 200, 300)
             eulerRotation.x: -30
         }
@@ -44,8 +45,10 @@ Window {
 
         //! [objects]
         Model {
+            id: model
+            visible: ModelManager ? !ModelManager.loading : false
             position: Qt.vector3d(0, -200, 0)
-            source: "assets/meshes/teapot.mesh"
+            geometry: ModelManager ? ModelManager.geometry : null
             scale: Qt.vector3d(20, 20, 20)
             materials: [
                 PrincipledMaterial {
@@ -54,6 +57,22 @@ Window {
             ]
         }
         //! [objects]
+
+        BusyIndicator {
+            running: ModelManager ? ModelManager.loading : false
+            height: parent.height / 10
+            width: parent.width / 10
+            anchors.centerIn: parent
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            acceptedButtons: Qt.LeftButton
+            onPressAndHold: (mouse) => {
+                var axis = Qt.vector3d(mouseX, mouseY, 0)
+                pCamera.pan(10, axis)
+            }
+        }
     }
 
     Rectangle {
@@ -69,14 +88,14 @@ Window {
 
         FileDialog {
             id: fileDialog
+            title: "Open Obj"
             selectedNameFilter.index: 1
             nameFilters: ["OBJ files (*.obj)"]
             currentFolder: StandardPaths.standardLocations(StandardPaths.DownloadLocation)[0]
             fileMode: FileDialog.OpenFile
             onAccepted: {
-                console.log("Selected file:", selectedFile)
+                ModelManager.loadModel(selectedFile)
             }
-            onRejected: console.log("Dialog cancelled")
         }
     }
 }

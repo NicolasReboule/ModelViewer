@@ -39,9 +39,20 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 # Sources
 add_library(${PROJECT_NAME}_Sources STATIC
-        src/example.cpp
+        src/ObjLoader.cpp
+        include/ObjLoader.hpp # So moc file is generated using AUTOMOC
+        src/ObjGeometry.cpp
+        include/ObjGeometry.hpp
+        src/ModelManager.cpp
+        include/ModelManager.hpp
 )
-target_link_libraries(${PROJECT_NAME}_Sources PUBLIC ${PROJECT_NAME}_Headers)
+target_link_libraries(${PROJECT_NAME}_Sources PUBLIC
+        ${PROJECT_NAME}_Headers
+        Qt6::Core
+        Qt6::Qml
+        Qt6::Quick
+        Qt6::Quick3D
+)
 
 # Main executable with QT
 qt_add_executable(${PROJECT_NAME}
@@ -57,10 +68,6 @@ qt_add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         ${PROJECT_NAME}_Sources
-        Qt6::Core
-        Qt6::Qml
-        Qt6::Quick
-        Qt6::Quick3D
 )
 
 # Compiler Warnings
@@ -76,6 +83,8 @@ if (BUILD_TESTS)
     enable_testing()
     add_subdirectory(tests)
 endif()
+
+file(COPY ${CMAKE_CURRENT_LIST_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 # CLang-tidy
 if (USE_CLANG_TIDY OR USE_CLANG_TIDY_WITH_ERRORS OR USE_CLANG_TIDY_WITH_FIX)
