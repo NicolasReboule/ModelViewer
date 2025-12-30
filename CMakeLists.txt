@@ -39,6 +39,7 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 # Sources
 add_library(${PROJECT_NAME}_Sources STATIC
+        src/example.cpp
         src/ObjLoader.cpp
         include/ObjLoader.hpp # So moc file is generated using AUTOMOC
         src/ObjGeometry.cpp
