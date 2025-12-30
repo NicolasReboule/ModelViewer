@@ -1,0 +1,16 @@
+<map id="/github/workspace/include/ObjGeometry.hpp" name="/github/workspace/include/ObjGeometry.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="227,5,399,46"/>
+<area shape="rect" id="Node000002" href="$ObjLoader_8hpp.html" title=" " alt="" coords="135,94,307,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,59,244,96,240,92,279,55"/>
+<area shape="rect" id="Node000007" href="$ObjGeometry_8cpp.html" title=" " alt="" coords="332,94,481,135"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="347,55,387,92,383,96,343,59"/>
+<area shape="rect" id="Node000003" href="$ModelManager_8hpp.html" title=" " alt="" coords="135,183,307,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,150,224,182,218,182,218,150"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="5,279,189,304"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="167,145,144,163,125,184,112,208,105,234,100,279,94,278,100,233,107,206,120,181,140,159,164,141"/>
+<area shape="rect" id="Node000006" href="$ObjLoader_8cpp.html" title=" " alt="" coords="332,183,481,223"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="278,139,366,180,363,185,276,144"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,235,116,281,113,276,179,230"/>
+<area shape="rect" id="Node000005" href="$ModelManager_8cpp.html" title=" " alt="" coords="213,271,362,312"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="248,234,275,269,270,273,243,238"/>
+</map>
