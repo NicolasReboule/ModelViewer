@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['v_0',['v',['../structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f',1,'FaceIndex']]],
-  ['vector3_1',['Vector3',['../structVector3.html',1,'']]],
-  ['vn_2',['vn',['../structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409',1,'FaceIndex']]],
-  ['vt_3',['vt',['../structFaceIndex.html#ae8b380dda7d418c82111d04735c3a468',1,'FaceIndex']]]
+  ['setloading_0',['setLoading',['../classModelManager.html#a442cba87e683dbabbf7c809159958a93',1,'ModelManager']]],
+  ['setmesh_1',['setMesh',['../classObjGeometry.html#a887180f53cc82369ba6b1491b053d608',1,'ObjGeometry']]],
+  ['setready_2',['setReady',['../classModelManager.html#a613bcb979e1b7c1a720880ffa6e1fed7',1,'ModelManager']]]
 ];
