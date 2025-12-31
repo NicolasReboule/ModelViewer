@@ -18,15 +18,21 @@ void ModelManager::loadModel(const QString &filepath) {
     const std::string ext = str_path.substr(pos);
 
     auto result = QtConcurrent::run([&, str_path, ext] {
-        setLoading(true);
+        setReady(false);
         _loaders[ext]->loadModel(str_path);
         emit geometryChanged();
         _lastLoaded = _loaders[ext];
-        setLoading(false);
+        setReady(true);
     });
 }
 
 void ModelManager::setLoading(bool isLoading) {
     _loading = isLoading;
     emit loadingChanged();
+}
+
+void ModelManager::setReady(bool isReady) {
+    _ready = isReady;
+    emit readyChanged();
+    setLoading(!isReady);
 }

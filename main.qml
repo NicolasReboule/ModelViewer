@@ -6,6 +6,7 @@ import QtQuick
 import QtQuick3D
 import QtQuick.Controls
 import QtQuick.Dialogs
+import QtQuick3D.Helpers
 //! [import]
 
 Window {
@@ -29,10 +30,20 @@ Window {
         //! [environment]
 
         //! [camera]
-        PerspectiveCamera {
-            id: pCamera
-            position: Qt.vector3d(0, 200, 300)
-            eulerRotation.x: -30
+        camera: pCamera
+        Node {
+            id: cameraOrigin
+            PerspectiveCamera {
+                id: pCamera
+                position: Qt.vector3d(0, 200, 300)
+                eulerRotation.x: -30
+            }
+        }
+        OrbitCameraController {
+            enabled: ModelManager ? ModelManager.ready : false
+            anchors.fill: parent
+            origin: cameraOrigin
+            camera: pCamera
         }
         //! [camera]
 
@@ -46,8 +57,7 @@ Window {
         //! [objects]
         Model {
             id: model
-            visible: ModelManager ? !ModelManager.loading : false
-            position: Qt.vector3d(0, -200, 0)
+            visible: ModelManager ? ModelManager.ready : false
             geometry: ModelManager ? ModelManager.geometry : null
             scale: Qt.vector3d(20, 20, 20)
             materials: [
@@ -58,19 +68,42 @@ Window {
         }
         //! [objects]
 
+
+        //! [loader]
         BusyIndicator {
             running: ModelManager ? ModelManager.loading : false
             height: parent.height / 10
             width: parent.width / 10
             anchors.centerIn: parent
         }
+        //! [loader]
 
         MouseArea {
+            enabled: ModelManager ? ModelManager.ready : false
             anchors.fill: parent
-            acceptedButtons: Qt.LeftButton
-            onPressAndHold: (mouse) => {
-                var axis = Qt.vector3d(mouseX, mouseY, 0)
-                pCamera.pan(10, axis)
+            acceptedButtons: Qt.RightButton
+
+            property real sensitivity: 0.5
+            property real lastX: 0
+            property real lastY: 0
+
+            onPressed: (mouse) => {
+                lastX = mouse.x
+                lastY = mouse.y
+            }
+
+            onPositionChanged: (mouse) => {
+                const dx = (mouse.x - lastX) * sensitivity
+                const dy = (mouse.y - lastY) * sensitivity
+
+                lastX = mouse.x
+                lastY = mouse.y
+
+                pCamera.position = Qt.vector3d(
+                    pCamera.position.x - dx,
+                    pCamera.position.y + dy,
+                    pCamera.position.z
+                )
             }
         }
     }
