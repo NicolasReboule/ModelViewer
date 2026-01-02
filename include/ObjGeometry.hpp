@@ -19,7 +19,9 @@ class ObjGeometry final : public QQuick3DGeometry {
    public:
     explicit ObjGeometry(QQuick3DObject *parent = nullptr);
 
-    void setMesh(const std::vector<Vector3> &vertices);
+    void setMesh(const std::vector<Vector3> &vertices,
+                 const std::vector<Vector3> &normals,
+                 const std::vector<TextureCoordinate> &textureCoords);
 };
 
 #endif  // MODELVIEWER_OBJGEOMETRY_HPP

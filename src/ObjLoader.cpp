@@ -7,47 +7,54 @@
 
 #include "ObjLoader.hpp"
 
-ObjLoader::ObjLoader() : _geometry(new ObjGeometry()) {
+#include <QFileInfo>
+
+ObjLoader::ObjLoader()
+    : _geometry(new ObjGeometry()), _material(new MTLMaterial()) {
     _parseFunctions = {
-        {"v ", [this](const std::string &l) { parseVertice(l); }},
+        {"v", [this](const std::string &l) { parseVertice(l); }},
         {"vn", [this](const std::string &l) { parseNormal(l); }},
         {"vt", [this](const std::string &l) { parseTextureCoordinate(l); }},
-        {"f ", [this](const std::string &l) { parseFace(l); }},
+        {"f", [this](const std::string &l) { parseFace(l); }},
+        {"mtllib", [this](const std::string &l) { retrieveMaterial(l); }},
     };
 }
 
 // TODO: Optimize
+// TODO: Add groups and multiple materials
 void ObjLoader::loadModel(const std::string &filepath) {
-    _faces.clear();
-    _vertices.clear();
-    _normals.clear();
-    _textureCoords.clear();
+    resetObj();
+    _material->resetMaterial();
+
+    _modelPath = filepath;
 
     std::ifstream in(filepath);
     if (!in.is_open()) {
-        std::cerr << "Could not open file " << filepath << std::endl;
+        std::cerr << "Could not open file " << filepath << ": "
+                  << std::strerror(errno) << std::endl;
         return;
     }
     std::string line;
     while (std::getline(in, line)) {
-        std::string lineStart = line.substr(0, 2);
+        const auto pos = line.find(' ');
+        const std::string lineStart = trim_copy(line.substr(0, pos));
         if (_parseFunctions.contains(lineStart))
             _parseFunctions.at(lineStart)(line);
     }
 
     std::vector<Vector3> v;
-    std::vector<float> vt;
+    std::vector<TextureCoordinate> vt;
     std::vector<Vector3> vn;
     for (auto f : _faces) {
-        if (!_vertices.empty()) {
+        if (!_vertices.empty() && f.v != 0) {
             const int vIdx = f.v > 0 ? f.v - 1 : v.size() + f.v;
             v.push_back(_vertices[vIdx]);
         }
-        if (!_textureCoords.empty()) {
+        if (!_textureCoords.empty() && f.vt != 0) {
             const int vtIdx = f.vt > 0 ? f.vt - 1 : v.size() + f.vt;
             vt.push_back(_textureCoords[vtIdx]);
         }
-        if (!_normals.empty()) {
+        if (!_normals.empty() && f.vn != 0) {
             const int vnIdx = f.vn > 0 ? f.vn - 1 : v.size() + f.vn;
             vn.push_back(_normals[vnIdx]);
         }
@@ -55,7 +62,14 @@ void ObjLoader::loadModel(const std::string &filepath) {
     _vertices = v;
     _textureCoords = vt;
     _normals = vn;
-    _geometry->setMesh(_vertices);
+    _geometry->setMesh(_vertices, _normals, _textureCoords);
+}
+
+void ObjLoader::resetObj() {
+    _faces.clear();
+    _vertices.clear();
+    _normals.clear();
+    _textureCoords.clear();
 }
 
 void ObjLoader::parseVertice(const std::string &line) {
@@ -75,11 +89,11 @@ void ObjLoader::parseNormal(const std::string &line) {
 }
 
 void ObjLoader::parseTextureCoordinate(const std::string &line) {
-    float u;  // Missing optional v and w
-    if (std::sscanf(line.c_str() + 2, "%f", &u) < 1)
+    float u, v;  // Missing w
+    if (std::sscanf(line.c_str() + 2, "%f %f", &u, &v) < 2)
         std::cerr << "Invalid normal at line " << line << std::endl;
     else
-        this->_textureCoords.push_back(u);
+        this->_textureCoords.push_back({u, v});
 }
 
 void ObjLoader::parseFace(const std::string &line) {
@@ -109,4 +123,11 @@ FaceIndex ObjLoader::parseFaceIndex(const std::string &token) {
         std::sscanf(token.c_str(), "%d", &idx.v);
     }
     return idx;
+}
+
+void ObjLoader::retrieveMaterial(const std::string &line) {
+    const std::string name = trim_copy(line.substr(sizeof("mtllib")));
+    const std::filesystem::path path =
+        std::filesystem::path(_modelPath).parent_path() / name;
+    _material->parseMTL(path.string());
 }

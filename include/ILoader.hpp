@@ -10,6 +10,8 @@
 
 #include <QQuick3DGeometry>
 
+#include "Material.hpp"
+
 class ILoader {
    public:
     virtual ~ILoader() = default;
@@ -17,6 +19,8 @@ class ILoader {
     virtual void loadModel(const std::string &filepath) = 0;
 
     virtual QQuick3DGeometry *geometry() const = 0;
+
+    virtual MTLMaterial *material() const = 0;
 };
 
 #endif  // MODELVIEWER_ILOADER_HPP

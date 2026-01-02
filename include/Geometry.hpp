@@ -20,4 +20,9 @@ struct FaceIndex {
     int vn = 0;
 };
 
+struct TextureCoordinate {
+    float u;
+    float v;
+};
+
 #endif  // MODELVIEWER_GEOMETRY_HPP

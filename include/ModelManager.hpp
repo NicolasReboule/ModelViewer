@@ -15,6 +15,7 @@
 class ModelManager final : public QObject {
     Q_OBJECT
     Q_PROPERTY(QQuick3DGeometry *geometry READ geometry NOTIFY geometryChanged)
+    Q_PROPERTY(MTLMaterial *material READ material NOTIFY materialChanged)
     Q_PROPERTY(bool loading READ isLoading NOTIFY loadingChanged)
     Q_PROPERTY(bool ready READ isReady NOTIFY readyChanged)
    public:
@@ -24,6 +25,7 @@ class ModelManager final : public QObject {
     std::unordered_map<std::string, ILoader *> _loaders = {
         {".obj", &_objLoader},
     };
+
     ILoader *_lastLoaded = &_objLoader;
 
     std::unique_ptr<ObjGeometry> _geometry;
@@ -35,6 +37,8 @@ class ModelManager final : public QObject {
    signals:
     void geometryChanged();
 
+    void materialChanged();
+
     void loadingChanged();
 
     void readyChanged();
@@ -45,6 +49,8 @@ class ModelManager final : public QObject {
     ~ModelManager() override = default;
 
     QQuick3DGeometry *geometry() const { return _lastLoaded->geometry(); };
+
+    MTLMaterial *material() const { return _lastLoaded->material(); };
 
     Q_INVOKABLE void loadModel(const QString &filepath);
 

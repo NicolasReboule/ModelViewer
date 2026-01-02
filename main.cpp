@@ -1,9 +1,12 @@
+#include <qqml.h>
+
 #include <QFileInfo>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QString>
 
+#include "Material.hpp"
 #include "ModelManager.hpp"
 #include "ObjLoader.hpp"
 

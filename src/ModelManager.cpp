@@ -21,6 +21,7 @@ void ModelManager::loadModel(const QString &filepath) {
         setReady(false);
         _loaders[ext]->loadModel(str_path);
         emit geometryChanged();
+        emit materialChanged();
         _lastLoaded = _loaders[ext];
         setReady(true);
     });

@@ -46,6 +46,8 @@ add_library(${PROJECT_NAME}_Sources STATIC
         include/ObjGeometry.hpp
         src/ModelManager.cpp
         include/ModelManager.hpp
+        src/Material.cpp
+        include/Material.hpp
 )
 target_link_libraries(${PROJECT_NAME}_Sources PUBLIC
         ${PROJECT_NAME}_Headers
