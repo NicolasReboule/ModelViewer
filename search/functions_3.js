@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['modelmanager_1',['ModelManager',['../classModelManager.html#a305d460b4e8e09b4c3cf1b397e3a42a7',1,'ModelManager']]]
+  ['emissivemapchanged_0',['emissiveMapChanged',['../classMTLMaterial.html#a0db587e31d0da3abc07c5aa3e1f51e5e',1,'MTLMaterial']]]
 ];

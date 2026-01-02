@@ -118,8 +118,8 @@ Collaboration diagram for ObjGeometry:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a070fd0f2cea8b61ccf2cc3230a76b0" id="r_a0a070fd0f2cea8b61ccf2cc3230a76b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a070fd0f2cea8b61ccf2cc3230a76b0">ObjGeometry</a> (QQuick3DObject *parent=nullptr)</td></tr>
 <tr class="separator:a0a070fd0f2cea8b61ccf2cc3230a76b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a887180f53cc82369ba6b1491b053d608" id="r_a887180f53cc82369ba6b1491b053d608"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a887180f53cc82369ba6b1491b053d608">setMesh</a> (const std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt; &amp;vertices)</td></tr>
-<tr class="separator:a887180f53cc82369ba6b1491b053d608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc60391a0a32419c4e3d7ecde6714a2e" id="r_acc60391a0a32419c4e3d7ecde6714a2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc60391a0a32419c4e3d7ecde6714a2e">setMesh</a> (const std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt; &amp;vertices, const std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt; &amp;normals, const std::vector&lt; <a class="el" href="structTextureCoordinate.html">TextureCoordinate</a> &gt; &amp;textureCoords)</td></tr>
+<tr class="separator:acc60391a0a32419c4e3d7ecde6714a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a070fd0f2cea8b61ccf2cc3230a76b0" name="a0a070fd0f2cea8b61ccf2cc3230a76b0"></a>
@@ -149,8 +149,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a887180f53cc82369ba6b1491b053d608" name="a887180f53cc82369ba6b1491b053d608"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a887180f53cc82369ba6b1491b053d608">&#9670;&#160;</a></span>setMesh()</h2>
+<a id="acc60391a0a32419c4e3d7ecde6714a2e" name="acc60391a0a32419c4e3d7ecde6714a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc60391a0a32419c4e3d7ecde6714a2e">&#9670;&#160;</a></span>setMesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,23 +158,81 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void ObjGeometry::setMesh </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertices</em></span></td><td>)</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>normals</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structTextureCoordinate.html">TextureCoordinate</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>textureCoords</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   12</span>                                                            {</div>
-<div class="line"><span class="lineno">   13</span>    <span class="keyword">const</span> QByteArray vertexData(</div>
-<div class="line"><span class="lineno">   14</span>        <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(vertices.data()),</div>
-<div class="line"><span class="lineno">   15</span>        <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(vertices.size() * <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structVector3.html">Vector3</a>)));</div>
-<div class="line"><span class="lineno">   16</span>    setVertexData(vertexData);</div>
-<div class="line"><span class="lineno">   17</span>    setStride(3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">   18</span>    addAttribute(Attribute::PositionSemantic, 0, Attribute::F32Type);</div>
-<div class="line"><span class="lineno">   19</span>    setPrimitiveType(PrimitiveType::Triangles);</div>
-<div class="line"><span class="lineno">   20</span>    update();</div>
-<div class="line"><span class="lineno">   21</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                                                                             {</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> hasNormals = !normals.empty();</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> hasTextureCoords = !textureCoords.empty() <span class="comment">/*&amp;&amp; materialFound*/</span>;</div>
+<div class="line"><span class="lineno">   17</span>    QByteArray vertexData;</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    <span class="keyword">const</span> qsizetype vertexSize = <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(vertices.size()) *</div>
+<div class="line"><span class="lineno">   20</span>                                 <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structVector3.html">Vector3</a>));</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keyword">const</span> qsizetype normalSize = <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(normals.size()) *</div>
+<div class="line"><span class="lineno">   22</span>                                 <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structVector3.html">Vector3</a>));</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keyword">const</span> qsizetype textureSize =</div>
+<div class="line"><span class="lineno">   24</span>        <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(textureCoords.size()) *</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structTextureCoordinate.html">TextureCoordinate</a>));</div>
+<div class="line"><span class="lineno">   26</span>    vertexData.resize(vertexSize + normalSize + textureSize);</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordtype">float</span> *vertexDataPointer = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">float</span> *<span class="keyword">&gt;</span>(vertexData.data());</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vertices.size(); ++i) {</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structVector3.html">Vector3</a> &amp;vertex = vertices[i];</div>
+<div class="line"><span class="lineno">   31</span>        *vertexDataPointer++ = vertex.<a class="code hl_variable" href="structVector3.html#a7e2d3237b29a2f29d7b3d8b2934e35f2">x</a>;</div>
+<div class="line"><span class="lineno">   32</span>        *vertexDataPointer++ = vertex.<a class="code hl_variable" href="structVector3.html#a86eb35a9fa2d5a49e7fad66a35fa9c13">y</a>;</div>
+<div class="line"><span class="lineno">   33</span>        *vertexDataPointer++ = vertex.<a class="code hl_variable" href="structVector3.html#aa8c9461eb24bd2c364258078811a3e9d">z</a>;</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (hasNormals) {</div>
+<div class="line"><span class="lineno">   35</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structVector3.html">Vector3</a> &amp;normal = normals[i];</div>
+<div class="line"><span class="lineno">   36</span>            *vertexDataPointer++ = normal.<a class="code hl_variable" href="structVector3.html#a7e2d3237b29a2f29d7b3d8b2934e35f2">x</a>;</div>
+<div class="line"><span class="lineno">   37</span>            *vertexDataPointer++ = normal.<a class="code hl_variable" href="structVector3.html#a86eb35a9fa2d5a49e7fad66a35fa9c13">y</a>;</div>
+<div class="line"><span class="lineno">   38</span>            *vertexDataPointer++ = normal.<a class="code hl_variable" href="structVector3.html#aa8c9461eb24bd2c364258078811a3e9d">z</a>;</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (hasTextureCoords) {</div>
+<div class="line"><span class="lineno">   41</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structTextureCoordinate.html">TextureCoordinate</a> &amp;textureCoord = textureCoords[i];</div>
+<div class="line"><span class="lineno">   42</span>            *vertexDataPointer++ = textureCoord.<a class="code hl_variable" href="structTextureCoordinate.html#a28f409230c3c66008f220ccb869c01d9">u</a>;</div>
+<div class="line"><span class="lineno">   43</span>            *vertexDataPointer++ = textureCoord.<a class="code hl_variable" href="structTextureCoordinate.html#a1b4b04f6c354e8cf85cc05cdfed8eafb">v</a>;</div>
+<div class="line"><span class="lineno">   44</span>        }</div>
+<div class="line"><span class="lineno">   45</span>    }</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">int</span> stride = 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">int</span> offset = 0;</div>
+<div class="line"><span class="lineno">   48</span>    addAttribute(Attribute::PositionSemantic, offset, Attribute::F32Type);</div>
+<div class="line"><span class="lineno">   49</span>    offset += 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (hasNormals) {</div>
+<div class="line"><span class="lineno">   51</span>        stride += 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   52</span>        addAttribute(Attribute::NormalSemantic, offset, Attribute::F32Type);</div>
+<div class="line"><span class="lineno">   53</span>        offset += 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   54</span>    }</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (hasTextureCoords) {</div>
+<div class="line"><span class="lineno">   56</span>        stride += 2 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   57</span>        addAttribute(Attribute::TexCoord0Semantic, offset, Attribute::F32Type);</div>
+<div class="line"><span class="lineno">   58</span>        offset += 2 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="line"><span class="lineno">   60</span>    setStride(stride);</div>
+<div class="line"><span class="lineno">   61</span>    setVertexData(vertexData);</div>
+<div class="line"><span class="lineno">   62</span>    setPrimitiveType(PrimitiveType::Triangles);</div>
+<div class="line"><span class="lineno">   63</span>    update();</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+<div class="ttc" id="astructTextureCoordinate_html"><div class="ttname"><a href="structTextureCoordinate.html">TextureCoordinate</a></div><div class="ttdef"><b>Definition</b> Geometry.hpp:23</div></div>
+<div class="ttc" id="astructTextureCoordinate_html_a1b4b04f6c354e8cf85cc05cdfed8eafb"><div class="ttname"><a href="structTextureCoordinate.html#a1b4b04f6c354e8cf85cc05cdfed8eafb">TextureCoordinate::v</a></div><div class="ttdeci">float v</div><div class="ttdef"><b>Definition</b> Geometry.hpp:25</div></div>
+<div class="ttc" id="astructTextureCoordinate_html_a28f409230c3c66008f220ccb869c01d9"><div class="ttname"><a href="structTextureCoordinate.html#a28f409230c3c66008f220ccb869c01d9">TextureCoordinate::u</a></div><div class="ttdeci">float u</div><div class="ttdef"><b>Definition</b> Geometry.hpp:24</div></div>
 <div class="ttc" id="astructVector3_html"><div class="ttname"><a href="structVector3.html">Vector3</a></div><div class="ttdef"><b>Definition</b> Geometry.hpp:11</div></div>
+<div class="ttc" id="astructVector3_html_a7e2d3237b29a2f29d7b3d8b2934e35f2"><div class="ttname"><a href="structVector3.html#a7e2d3237b29a2f29d7b3d8b2934e35f2">Vector3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> Geometry.hpp:12</div></div>
+<div class="ttc" id="astructVector3_html_a86eb35a9fa2d5a49e7fad66a35fa9c13"><div class="ttname"><a href="structVector3.html#a86eb35a9fa2d5a49e7fad66a35fa9c13">Vector3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> Geometry.hpp:13</div></div>
+<div class="ttc" id="astructVector3_html_aa8c9461eb24bd2c364258078811a3e9d"><div class="ttname"><a href="structVector3.html#aa8c9461eb24bd2c364258078811a3e9d">Vector3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition</b> Geometry.hpp:14</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="structTextureCoordinate.html#a28f409230c3c66008f220ccb869c01d9">TextureCoordinate::u</a>, <a class="el" href="structTextureCoordinate.html#a1b4b04f6c354e8cf85cc05cdfed8eafb">TextureCoordinate::v</a>, <a class="el" href="structVector3.html#a7e2d3237b29a2f29d7b3d8b2934e35f2">Vector3::x</a>, <a class="el" href="structVector3.html#a86eb35a9fa2d5a49e7fad66a35fa9c13">Vector3::y</a>, and <a class="el" href="structVector3.html#aa8c9461eb24bd2c364258078811a3e9d">Vector3::z</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

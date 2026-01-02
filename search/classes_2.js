@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iloader_0',['ILoader',['../classILoader.html',1,'']]]
+  ['faceindex_0',['FaceIndex',['../structFaceIndex.html',1,'']]]
 ];

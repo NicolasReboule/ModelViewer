@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modelmanager_0',['ModelManager',['../classModelManager.html',1,'']]]
+  ['iloader_0',['ILoader',['../classILoader.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['geometry_0',['geometry',['../classModelManager.html#ac975e751d6eda973405745c48656bebe',1,'ModelManager']]]
+  ['bumpmap_0',['bumpMap',['../classMTLMaterial.html#a12bb0fb9584762aabbca7efd6b70ec11',1,'MTLMaterial']]],
+  ['bumpstrength_1',['bumpStrength',['../classMTLMaterial.html#a642e24d32bc0eabba576dbc1ac155440',1,'MTLMaterial']]]
 ];

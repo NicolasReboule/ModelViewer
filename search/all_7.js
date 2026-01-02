@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['objgeometry_0',['ObjGeometry',['../classObjGeometry.html',1,'ObjGeometry'],['../classObjGeometry.html#a0a070fd0f2cea8b61ccf2cc3230a76b0',1,'ObjGeometry::ObjGeometry()']]],
-  ['objgeometry_2ecpp_1',['ObjGeometry.cpp',['../ObjGeometry_8cpp.html',1,'']]],
-  ['objgeometry_2ehpp_2',['ObjGeometry.hpp',['../ObjGeometry_8hpp.html',1,'']]],
-  ['objloader_3',['ObjLoader',['../classObjLoader.html',1,'ObjLoader'],['../classObjLoader.html#afb5e3f9b49676580b03673c92255ac2b',1,'ObjLoader::ObjLoader()']]],
-  ['objloader_2ecpp_4',['ObjLoader.cpp',['../ObjLoader_8cpp.html',1,'']]],
-  ['objloader_2ehpp_5',['ObjLoader.hpp',['../ObjLoader_8hpp.html',1,'']]]
+  ['illumination_0',['illumination',['../classMTLMaterial.html#aaa7528c459723e4ac81f926009559ae5',1,'MTLMaterial']]],
+  ['illuminationchanged_1',['illuminationChanged',['../classMTLMaterial.html#a79e3b9490137887966e992262342a027',1,'MTLMaterial']]],
+  ['iloader_2',['ILoader',['../classILoader.html',1,'']]],
+  ['iloader_2ehpp_3',['ILoader.hpp',['../ILoader_8hpp.html',1,'']]],
+  ['indexofrefraction_4',['indexOfRefraction',['../classMTLMaterial.html#aab3dd91c985975c5061990d90ee969eb',1,'MTLMaterial']]],
+  ['isloading_5',['isLoading',['../classModelManager.html#a01f3689d67d1327d16f451d008ef7ffe',1,'ModelManager']]],
+  ['isready_6',['isReady',['../classModelManager.html#a9a471307249ddb33491c5c8d679973e0',1,'ModelManager']]]
 ];

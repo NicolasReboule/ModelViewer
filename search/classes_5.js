@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vector3_0',['Vector3',['../structVector3.html',1,'']]]
+  ['objgeometry_0',['ObjGeometry',['../classObjGeometry.html',1,'']]],
+  ['objloader_1',['ObjLoader',['../classObjLoader.html',1,'']]]
 ];

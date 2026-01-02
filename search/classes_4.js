@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['objgeometry_0',['ObjGeometry',['../classObjGeometry.html',1,'']]],
-  ['objloader_1',['ObjLoader',['../classObjLoader.html',1,'']]]
+  ['modelmanager_0',['ModelManager',['../classModelManager.html',1,'']]],
+  ['mtlmaterial_1',['MTLMaterial',['../classMTLMaterial.html',1,'']]]
 ];

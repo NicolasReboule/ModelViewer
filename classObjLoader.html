@@ -126,12 +126,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac367e19a0f4271d2d4fa20f37793d51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8455a86fd692ca066fd3cf41d7f5a6" id="r_a6e8455a86fd692ca066fd3cf41d7f5a6"><td class="memItemLeft" align="right" valign="top">QQuick3DGeometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e8455a86fd692ca066fd3cf41d7f5a6">geometry</a> () const override</td></tr>
 <tr class="separator:a6e8455a86fd692ca066fd3cf41d7f5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625f609f7b2031d785d33b65492887f6" id="r_a625f609f7b2031d785d33b65492887f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMTLMaterial.html">MTLMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a625f609f7b2031d785d33b65492887f6">material</a> () const override</td></tr>
+<tr class="separator:a625f609f7b2031d785d33b65492887f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classILoader"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classILoader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classILoader.html">ILoader</a></td></tr>
 <tr class="memitem:aaa9f69dc4cc786787c9dcbbf140be364 inherit pub_methods_classILoader" id="r_aaa9f69dc4cc786787c9dcbbf140be364"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classILoader.html#aaa9f69dc4cc786787c9dcbbf140be364">~ILoader</a> ()=default</td></tr>
 <tr class="separator:aaa9f69dc4cc786787c9dcbbf140be364 inherit pub_methods_classILoader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a9e6284d5c05ebe26f98ac4ef3a9e4a75" id="r_a9e6284d5c05ebe26f98ac4ef3a9e4a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">resetObj</a> ()</td></tr>
+<tr class="separator:a9e6284d5c05ebe26f98ac4ef3a9e4a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada9f850709ddf93a85d7608bc925ab35" id="r_ada9f850709ddf93a85d7608bc925ab35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada9f850709ddf93a85d7608bc925ab35">parseVertice</a> (const std::string &amp;line)</td></tr>
 <tr class="separator:ada9f850709ddf93a85d7608bc925ab35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a785dd5d2492a70fd94f29defbbda64e1" id="r_a785dd5d2492a70fd94f29defbbda64e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a785dd5d2492a70fd94f29defbbda64e1">parseNormal</a> (const std::string &amp;line)</td></tr>
@@ -142,21 +146,27 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a94045ff6d97910ec0fd7078e93ef56a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abecf354784f4474a6507303928adba5d" id="r_abecf354784f4474a6507303928adba5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFaceIndex.html">FaceIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abecf354784f4474a6507303928adba5d">parseFaceIndex</a> (const std::string &amp;token)</td></tr>
 <tr class="separator:abecf354784f4474a6507303928adba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05cc10d086f6768eb28b873086154c2" id="r_ab05cc10d086f6768eb28b873086154c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab05cc10d086f6768eb28b873086154c2">retrieveMaterial</a> (const std::string &amp;line)</td></tr>
+<tr class="separator:ab05cc10d086f6768eb28b873086154c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae8430ba649bb343c152dbd279fe936af" id="r_ae8430ba649bb343c152dbd279fe936af"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a></td></tr>
 <tr class="separator:ae8430ba649bb343c152dbd279fe936af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa06aebc6480dd1afbaded605e44c4574" id="r_aa06aebc6480dd1afbaded605e44c4574"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a></td></tr>
-<tr class="separator:aa06aebc6480dd1afbaded605e44c4574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689920c31eb94f2e437b4b2271cf0bb6" id="r_a689920c31eb94f2e437b4b2271cf0bb6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structTextureCoordinate.html">TextureCoordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a></td></tr>
+<tr class="separator:a689920c31eb94f2e437b4b2271cf0bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8b2d6e4c6b1c2c94493d6f7c5e9c182" id="r_ad8b2d6e4c6b1c2c94493d6f7c5e9c182"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structVector3.html">Vector3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a></td></tr>
 <tr class="separator:ad8b2d6e4c6b1c2c94493d6f7c5e9c182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19397c1c7f6ad4a87d0ff5903be3fd8e" id="r_a19397c1c7f6ad4a87d0ff5903be3fd8e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structFaceIndex.html">FaceIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a></td></tr>
 <tr class="separator:a19397c1c7f6ad4a87d0ff5903be3fd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0996ac4473a205e6140b3c8d813051be" id="r_a0996ac4473a205e6140b3c8d813051be"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0996ac4473a205e6140b3c8d813051be">_modelPath</a></td></tr>
+<tr class="separator:a0996ac4473a205e6140b3c8d813051be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de408ae12178d79fb6b9a9488c7a0d3" id="r_a1de408ae12178d79fb6b9a9488c7a0d3"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a></td></tr>
 <tr class="separator:a1de408ae12178d79fb6b9a9488c7a0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd02132024f908078d1245eed9aafba" id="r_aacd02132024f908078d1245eed9aafba"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classObjGeometry.html">ObjGeometry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacd02132024f908078d1245eed9aafba">_geometry</a></td></tr>
 <tr class="separator:aacd02132024f908078d1245eed9aafba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a5e63424c5ce7f6835e7f7340f7db9" id="r_a86a5e63424c5ce7f6835e7f7340f7db9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classMTLMaterial.html">MTLMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a></td></tr>
+<tr class="separator:a86a5e63424c5ce7f6835e7f7340f7db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afb5e3f9b49676580b03673c92255ac2b" name="afb5e3f9b49676580b03673c92255ac2b"></a>
@@ -173,39 +183,53 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                     : <a class="code hl_variable" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>(<span class="keyword">new</span> <a class="code hl_class" href="classObjGeometry.html">ObjGeometry</a>()) {</div>
-<div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a> = {</div>
-<div class="line"><span class="lineno">   12</span>        {<span class="stringliteral">&quot;v &quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#ada9f850709ddf93a85d7608bc925ab35">parseVertice</a>(l); }},</div>
-<div class="line"><span class="lineno">   13</span>        {<span class="stringliteral">&quot;vn&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#a785dd5d2492a70fd94f29defbbda64e1">parseNormal</a>(l); }},</div>
-<div class="line"><span class="lineno">   14</span>        {<span class="stringliteral">&quot;vt&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#aaf05f96220b6f94467f660fe5aba297d">parseTextureCoordinate</a>(l); }},</div>
-<div class="line"><span class="lineno">   15</span>        {<span class="stringliteral">&quot;f &quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#a94045ff6d97910ec0fd7078e93ef56a7">parseFace</a>(l); }},</div>
-<div class="line"><span class="lineno">   16</span>    };</div>
-<div class="line"><span class="lineno">   17</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>    : <a class="code hl_variable" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>(<span class="keyword">new</span> <a class="code hl_class" href="classObjGeometry.html">ObjGeometry</a>()), <a class="code hl_variable" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a>(<span class="keyword">new</span> <a class="code hl_class" href="classMTLMaterial.html">MTLMaterial</a>()) {</div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a> = {</div>
+<div class="line"><span class="lineno">   15</span>        {<span class="stringliteral">&quot;v&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#ada9f850709ddf93a85d7608bc925ab35">parseVertice</a>(l); }},</div>
+<div class="line"><span class="lineno">   16</span>        {<span class="stringliteral">&quot;vn&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#a785dd5d2492a70fd94f29defbbda64e1">parseNormal</a>(l); }},</div>
+<div class="line"><span class="lineno">   17</span>        {<span class="stringliteral">&quot;vt&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#aaf05f96220b6f94467f660fe5aba297d">parseTextureCoordinate</a>(l); }},</div>
+<div class="line"><span class="lineno">   18</span>        {<span class="stringliteral">&quot;f&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#a94045ff6d97910ec0fd7078e93ef56a7">parseFace</a>(l); }},</div>
+<div class="line"><span class="lineno">   19</span>        {<span class="stringliteral">&quot;mtllib&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#ab05cc10d086f6768eb28b873086154c2">retrieveMaterial</a>(l); }},</div>
+<div class="line"><span class="lineno">   20</span>    };</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+<div class="ttc" id="aclassMTLMaterial_html"><div class="ttname"><a href="classMTLMaterial.html">MTLMaterial</a></div><div class="ttdef"><b>Definition</b> Material.hpp:42</div></div>
 <div class="ttc" id="aclassObjGeometry_html"><div class="ttname"><a href="classObjGeometry.html">ObjGeometry</a></div><div class="ttdef"><b>Definition</b> ObjGeometry.hpp:17</div></div>
-<div class="ttc" id="aclassObjLoader_html_a1de408ae12178d79fb6b9a9488c7a0d3"><div class="ttname"><a href="#a1de408ae12178d79fb6b9a9488c7a0d3">ObjLoader::_parseFunctions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;)&gt; &gt; _parseFunctions</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:25</div></div>
-<div class="ttc" id="aclassObjLoader_html_a785dd5d2492a70fd94f29defbbda64e1"><div class="ttname"><a href="#a785dd5d2492a70fd94f29defbbda64e1">ObjLoader::parseNormal</a></div><div class="ttdeci">void parseNormal(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:69</div></div>
-<div class="ttc" id="aclassObjLoader_html_a94045ff6d97910ec0fd7078e93ef56a7"><div class="ttname"><a href="#a94045ff6d97910ec0fd7078e93ef56a7">ObjLoader::parseFace</a></div><div class="ttdeci">void parseFace(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:85</div></div>
-<div class="ttc" id="aclassObjLoader_html_aacd02132024f908078d1245eed9aafba"><div class="ttname"><a href="#aacd02132024f908078d1245eed9aafba">ObjLoader::_geometry</a></div><div class="ttdeci">std::unique_ptr&lt; ObjGeometry &gt; _geometry</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:26</div></div>
-<div class="ttc" id="aclassObjLoader_html_aaf05f96220b6f94467f660fe5aba297d"><div class="ttname"><a href="#aaf05f96220b6f94467f660fe5aba297d">ObjLoader::parseTextureCoordinate</a></div><div class="ttdeci">void parseTextureCoordinate(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:77</div></div>
-<div class="ttc" id="aclassObjLoader_html_ada9f850709ddf93a85d7608bc925ab35"><div class="ttname"><a href="#ada9f850709ddf93a85d7608bc925ab35">ObjLoader::parseVertice</a></div><div class="ttdeci">void parseVertice(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:61</div></div>
+<div class="ttc" id="aclassObjLoader_html_a1de408ae12178d79fb6b9a9488c7a0d3"><div class="ttname"><a href="#a1de408ae12178d79fb6b9a9488c7a0d3">ObjLoader::_parseFunctions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;)&gt; &gt; _parseFunctions</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:34</div></div>
+<div class="ttc" id="aclassObjLoader_html_a785dd5d2492a70fd94f29defbbda64e1"><div class="ttname"><a href="#a785dd5d2492a70fd94f29defbbda64e1">ObjLoader::parseNormal</a></div><div class="ttdeci">void parseNormal(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:83</div></div>
+<div class="ttc" id="aclassObjLoader_html_a86a5e63424c5ce7f6835e7f7340f7db9"><div class="ttname"><a href="#a86a5e63424c5ce7f6835e7f7340f7db9">ObjLoader::_material</a></div><div class="ttdeci">std::unique_ptr&lt; MTLMaterial &gt; _material</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:38</div></div>
+<div class="ttc" id="aclassObjLoader_html_a94045ff6d97910ec0fd7078e93ef56a7"><div class="ttname"><a href="#a94045ff6d97910ec0fd7078e93ef56a7">ObjLoader::parseFace</a></div><div class="ttdeci">void parseFace(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:99</div></div>
+<div class="ttc" id="aclassObjLoader_html_aacd02132024f908078d1245eed9aafba"><div class="ttname"><a href="#aacd02132024f908078d1245eed9aafba">ObjLoader::_geometry</a></div><div class="ttdeci">std::unique_ptr&lt; ObjGeometry &gt; _geometry</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:36</div></div>
+<div class="ttc" id="aclassObjLoader_html_aaf05f96220b6f94467f660fe5aba297d"><div class="ttname"><a href="#aaf05f96220b6f94467f660fe5aba297d">ObjLoader::parseTextureCoordinate</a></div><div class="ttdeci">void parseTextureCoordinate(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:91</div></div>
+<div class="ttc" id="aclassObjLoader_html_ab05cc10d086f6768eb28b873086154c2"><div class="ttname"><a href="#ab05cc10d086f6768eb28b873086154c2">ObjLoader::retrieveMaterial</a></div><div class="ttdeci">void retrieveMaterial(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:128</div></div>
+<div class="ttc" id="aclassObjLoader_html_ada9f850709ddf93a85d7608bc925ab35"><div class="ttname"><a href="#ada9f850709ddf93a85d7608bc925ab35">ObjLoader::parseVertice</a></div><div class="ttdeci">void parseVertice(const std::string &amp;line)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:75</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>, <a class="el" href="#a94045ff6d97910ec0fd7078e93ef56a7">parseFace()</a>, <a class="el" href="#a785dd5d2492a70fd94f29defbbda64e1">parseNormal()</a>, <a class="el" href="#aaf05f96220b6f94467f660fe5aba297d">parseTextureCoordinate()</a>, and <a class="el" href="#ada9f850709ddf93a85d7608bc925ab35">parseVertice()</a>.</p>
+<p class="reference">References <a class="el" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>, <a class="el" href="#a94045ff6d97910ec0fd7078e93ef56a7">parseFace()</a>, <a class="el" href="#a785dd5d2492a70fd94f29defbbda64e1">parseNormal()</a>, <a class="el" href="#aaf05f96220b6f94467f660fe5aba297d">parseTextureCoordinate()</a>, <a class="el" href="#ada9f850709ddf93a85d7608bc925ab35">parseVertice()</a>, and <a class="el" href="#ab05cc10d086f6768eb28b873086154c2">retrieveMaterial()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classObjLoader_afb5e3f9b49676580b03673c92255ac2b_cgraph.png" border="0" usemap="#aclassObjLoader_afb5e3f9b49676580b03673c92255ac2b_cgraph" alt=""/></div>
 <map name="aclassObjLoader_afb5e3f9b49676580b03673c92255ac2b_cgraph" id="aclassObjLoader_afb5e3f9b49676580b03673c92255ac2b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,80,153,106"/>
+<area shape="rect" title=" " alt="" coords="5,104,153,130"/>
 <area shape="rect" href="classObjLoader.html#a94045ff6d97910ec0fd7078e93ef56a7" title=" " alt="" coords="239,5,387,31"/>
-<area shape="poly" title=" " alt="" coords="107,77,200,40,225,33,226,38,202,45,109,82"/>
+<area shape="poly" title=" " alt="" coords="96,101,141,70,200,40,223,32,225,37,202,45,144,75,99,106"/>
 <area shape="rect" href="classObjLoader.html#a785dd5d2492a70fd94f29defbbda64e1" title=" " alt="" coords="232,55,394,80"/>
-<area shape="poly" title=" " alt="" coords="153,82,216,75,217,81,153,88"/>
+<area shape="poly" title=" " alt="" coords="143,101,233,82,234,87,144,106"/>
 <area shape="rect" href="classObjLoader.html#aaf05f96220b6f94467f660fe5aba297d" title=" " alt="" coords="201,104,425,130"/>
-<area shape="poly" title=" " alt="" coords="153,98,185,101,185,106,153,103"/>
+<area shape="poly" title=" " alt="" coords="153,114,185,114,185,120,153,120"/>
 <area shape="rect" href="classObjLoader.html#ada9f850709ddf93a85d7608bc925ab35" title=" " alt="" coords="233,153,393,179"/>
-<area shape="poly" title=" " alt="" coords="110,104,202,140,227,147,225,152,200,145,108,109"/>
+<area shape="poly" title=" " alt="" coords="144,128,234,147,233,152,143,133"/>
+<area shape="rect" href="classObjLoader.html#ab05cc10d086f6768eb28b873086154c2" title=" " alt="" coords="225,203,401,228"/>
+<area shape="poly" title=" " alt="" coords="99,128,144,159,202,189,219,195,218,200,200,194,141,163,96,132"/>
 <area shape="rect" href="classObjLoader.html#abecf354784f4474a6507303928adba5d" title=" " alt="" coords="473,5,652,31"/>
 <area shape="poly" title=" " alt="" coords="388,16,457,16,457,21,388,21"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc" title=" " alt="" coords="524,203,601,228"/>
+<area shape="poly" title=" " alt="" coords="402,213,509,213,509,218,402,218"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ac81e8ace8f8b6d4c09572038c5d48cf4" title=" " alt="" coords="700,203,744,228"/>
+<area shape="poly" title=" " alt="" coords="602,213,685,213,685,218,602,218"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ad43a4a97af0218124c6f1343dd27a295" title=" " alt="" coords="792,177,838,203"/>
+<area shape="poly" title=" " alt="" coords="743,207,776,198,778,203,745,212"/>
+<area shape="rect" href="StringHelpers_8hpp.html#aa09e1d628a7971037572fa4ed3f3e43b" title=" " alt="" coords="792,227,839,252"/>
+<area shape="poly" title=" " alt="" coords="745,218,778,227,776,232,743,224"/>
 </map>
 </div>
 
@@ -261,7 +285,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classILoader.html#ab502a70cb5379d5f0b50472b58c0771a">ILoader</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>.get(); }</div>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>.get(); };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>.</p>
 
@@ -291,52 +315,105 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classILoader.html#a30edf06c85580463848741ed0508ffb4">ILoader</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>                                                   {</div>
-<div class="line"><span class="lineno">   21</span>    <a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.clear();</div>
-<div class="line"><span class="lineno">   22</span>    <a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.clear();</div>
-<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>.clear();</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_variable" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a>.clear();</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>    std::ifstream in(filepath);</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (!in.is_open()) {</div>
-<div class="line"><span class="lineno">   28</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Could not open file &quot;</span> &lt;&lt; filepath &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
-<div class="line"><span class="lineno">   31</span>    std::string line;</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">while</span> (std::getline(in, line)) {</div>
-<div class="line"><span class="lineno">   33</span>        std::string lineStart = line.substr(0, 2);</div>
-<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>.contains(lineStart))</div>
-<div class="line"><span class="lineno">   35</span>            <a class="code hl_variable" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>.at(lineStart)(line);</div>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                                   {</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_function" href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">resetObj</a>();</div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_variable" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a>-&gt;resetMaterial();</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_variable" href="#a0996ac4473a205e6140b3c8d813051be">_modelPath</a> = filepath;</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    std::ifstream in(filepath);</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (!in.is_open()) {</div>
+<div class="line"><span class="lineno">   33</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Could not open file &quot;</span> &lt;&lt; filepath &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><span class="lineno">   34</span>                  &lt;&lt; std::strerror(errno) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   36</span>    }</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    std::vector&lt;Vector3&gt; v;</div>
-<div class="line"><span class="lineno">   39</span>    std::vector&lt;float&gt; vt;</div>
-<div class="line"><span class="lineno">   40</span>    std::vector&lt;Vector3&gt; vn;</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>) {</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.empty()) {</div>
-<div class="line"><span class="lineno">   43</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vIdx = f.v &gt; 0 ? f.v - 1 : v.size() + f.v;</div>
-<div class="line"><span class="lineno">   44</span>            v.push_back(<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>[vIdx]);</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a>.empty()) {</div>
-<div class="line"><span class="lineno">   47</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vtIdx = f.vt &gt; 0 ? f.vt - 1 : v.size() + f.vt;</div>
-<div class="line"><span class="lineno">   48</span>            vt.push_back(<a class="code hl_variable" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a>[vtIdx]);</div>
-<div class="line"><span class="lineno">   49</span>        }</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>.empty()) {</div>
-<div class="line"><span class="lineno">   51</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vnIdx = f.vn &gt; 0 ? f.vn - 1 : v.size() + f.vn;</div>
-<div class="line"><span class="lineno">   52</span>            vn.push_back(<a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>[vnIdx]);</div>
-<div class="line"><span class="lineno">   53</span>        }</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a> = v;</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_variable" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a> = vt;</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a> = vn;</div>
-<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>-&gt;setMesh(<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>);</div>
-<div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="aclassObjLoader_html_a19397c1c7f6ad4a87d0ff5903be3fd8e"><div class="ttname"><a href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">ObjLoader::_faces</a></div><div class="ttdeci">std::vector&lt; FaceIndex &gt; _faces</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:23</div></div>
-<div class="ttc" id="aclassObjLoader_html_aa06aebc6480dd1afbaded605e44c4574"><div class="ttname"><a href="#aa06aebc6480dd1afbaded605e44c4574">ObjLoader::_textureCoords</a></div><div class="ttdeci">std::vector&lt; float &gt; _textureCoords</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:21</div></div>
-<div class="ttc" id="aclassObjLoader_html_ad8b2d6e4c6b1c2c94493d6f7c5e9c182"><div class="ttname"><a href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">ObjLoader::_normals</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; _normals</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:22</div></div>
-<div class="ttc" id="aclassObjLoader_html_ae8430ba649bb343c152dbd279fe936af"><div class="ttname"><a href="#ae8430ba649bb343c152dbd279fe936af">ObjLoader::_vertices</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; _vertices</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:20</div></div>
+<div class="line"><span class="lineno">   37</span>    std::string line;</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">while</span> (std::getline(in, line)) {</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keyword">const</span> <span class="keyword">auto</span> pos = line.find(<span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keyword">const</span> std::string lineStart = <a class="code hl_function" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc">trim_copy</a>(line.substr(0, pos));</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>.contains(lineStart))</div>
+<div class="line"><span class="lineno">   42</span>            <a class="code hl_variable" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>.at(lineStart)(line);</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    std::vector&lt;Vector3&gt; v;</div>
+<div class="line"><span class="lineno">   46</span>    std::vector&lt;TextureCoordinate&gt; vt;</div>
+<div class="line"><span class="lineno">   47</span>    std::vector&lt;Vector3&gt; vn;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>) {</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.empty() &amp;&amp; f.v != 0) {</div>
+<div class="line"><span class="lineno">   50</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vIdx = f.v &gt; 0 ? f.v - 1 : v.size() + f.v;</div>
+<div class="line"><span class="lineno">   51</span>            v.push_back(<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>[vIdx]);</div>
+<div class="line"><span class="lineno">   52</span>        }</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>.empty() &amp;&amp; f.vt != 0) {</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vtIdx = f.vt &gt; 0 ? f.vt - 1 : v.size() + f.vt;</div>
+<div class="line"><span class="lineno">   55</span>            vt.push_back(<a class="code hl_variable" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>[vtIdx]);</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>.empty() &amp;&amp; f.vn != 0) {</div>
+<div class="line"><span class="lineno">   58</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vnIdx = f.vn &gt; 0 ? f.vn - 1 : v.size() + f.vn;</div>
+<div class="line"><span class="lineno">   59</span>            vn.push_back(<a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>[vnIdx]);</div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a> = v;</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a> = vt;</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a> = vn;</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_variable" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>-&gt;setMesh(<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>, <a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>, <a class="code hl_variable" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>);</div>
+<div class="line"><span class="lineno">   66</span>}</div>
+<div class="ttc" id="aStringHelpers_8hpp_html_ac72f5466b377314d32ad4e5da7963fdc"><div class="ttname"><a href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc">trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:53</div></div>
+<div class="ttc" id="aclassObjLoader_html_a0996ac4473a205e6140b3c8d813051be"><div class="ttname"><a href="#a0996ac4473a205e6140b3c8d813051be">ObjLoader::_modelPath</a></div><div class="ttdeci">std::string _modelPath</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:31</div></div>
+<div class="ttc" id="aclassObjLoader_html_a19397c1c7f6ad4a87d0ff5903be3fd8e"><div class="ttname"><a href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">ObjLoader::_faces</a></div><div class="ttdeci">std::vector&lt; FaceIndex &gt; _faces</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:29</div></div>
+<div class="ttc" id="aclassObjLoader_html_a689920c31eb94f2e437b4b2271cf0bb6"><div class="ttname"><a href="#a689920c31eb94f2e437b4b2271cf0bb6">ObjLoader::_textureCoords</a></div><div class="ttdeci">std::vector&lt; TextureCoordinate &gt; _textureCoords</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:25</div></div>
+<div class="ttc" id="aclassObjLoader_html_a9e6284d5c05ebe26f98ac4ef3a9e4a75"><div class="ttname"><a href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">ObjLoader::resetObj</a></div><div class="ttdeci">void resetObj()</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:68</div></div>
+<div class="ttc" id="aclassObjLoader_html_ad8b2d6e4c6b1c2c94493d6f7c5e9c182"><div class="ttname"><a href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">ObjLoader::_normals</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; _normals</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:27</div></div>
+<div class="ttc" id="aclassObjLoader_html_ae8430ba649bb343c152dbd279fe936af"><div class="ttname"><a href="#ae8430ba649bb343c152dbd279fe936af">ObjLoader::_vertices</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; _vertices</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:23</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>, <a class="el" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>, <a class="el" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>, <a class="el" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>, <a class="el" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a>, and <a class="el" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.</p>
+<p class="reference">References <a class="el" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>, <a class="el" href="#aacd02132024f908078d1245eed9aafba">_geometry</a>, <a class="el" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a>, <a class="el" href="#a0996ac4473a205e6140b3c8d813051be">_modelPath</a>, <a class="el" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>, <a class="el" href="#a1de408ae12178d79fb6b9a9488c7a0d3">_parseFunctions</a>, <a class="el" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>, <a class="el" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>, <a class="el" href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">resetObj()</a>, and <a class="el" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc">trim_copy()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjLoader_ac367e19a0f4271d2d4fa20f37793d51e_cgraph.png" border="0" usemap="#aclassObjLoader_ac367e19a0f4271d2d4fa20f37793d51e_cgraph" alt=""/></div>
+<map name="aclassObjLoader_ac367e19a0f4271d2d4fa20f37793d51e_cgraph" id="aclassObjLoader_ac367e19a0f4271d2d4fa20f37793d51e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,152,56"/>
+<area shape="rect" href="classObjLoader.html#a9e6284d5c05ebe26f98ac4ef3a9e4a75" title=" " alt="" coords="200,5,336,31"/>
+<area shape="poly" title=" " alt="" coords="152,31,184,27,185,32,152,36"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc" title=" " alt="" coords="229,55,306,80"/>
+<area shape="poly" title=" " alt="" coords="152,50,215,58,214,63,152,55"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ac81e8ace8f8b6d4c09572038c5d48cf4" title=" " alt="" coords="384,55,427,80"/>
+<area shape="poly" title=" " alt="" coords="307,65,369,65,369,70,307,70"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ad43a4a97af0218124c6f1343dd27a295" title=" " alt="" coords="476,29,522,55"/>
+<area shape="poly" title=" " alt="" coords="427,59,460,50,461,55,428,64"/>
+<area shape="rect" href="StringHelpers_8hpp.html#aa09e1d628a7971037572fa4ed3f3e43b" title=" " alt="" coords="475,79,523,104"/>
+<area shape="poly" title=" " alt="" coords="428,70,461,79,460,84,427,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a625f609f7b2031d785d33b65492887f6" name="a625f609f7b2031d785d33b65492887f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625f609f7b2031d785d33b65492887f6">&#9670;&#160;</a></span>material()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMTLMaterial.html">MTLMaterial</a> * ObjLoader::material </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classILoader.html#adf47064cafa9cdac056fba7850f74ab8">ILoader</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a>.get(); };</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a>.</p>
 
 </div>
 </div>
@@ -362,18 +439,18 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   85</span>                                               {</div>
-<div class="line"><span class="lineno">   86</span>    std::istringstream f(line.substr(2));</div>
-<div class="line"><span class="lineno">   87</span>    std::string token;</div>
-<div class="line"><span class="lineno">   88</span>    std::vector&lt;FaceIndex&gt; face;</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">while</span> (f &gt;&gt; token) face.push_back(<a class="code hl_function" href="#abecf354784f4474a6507303928adba5d">parseFaceIndex</a>(token));</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i + 1 &lt; face.size(); ++i) {</div>
-<div class="line"><span class="lineno">   91</span>        this-&gt;<a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.push_back(face[0]);</div>
-<div class="line"><span class="lineno">   92</span>        this-&gt;<a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.push_back(face[i]);</div>
-<div class="line"><span class="lineno">   93</span>        this-&gt;<a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.push_back(face[i + 1]);</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-<div class="line"><span class="lineno">   95</span>}</div>
-<div class="ttc" id="aclassObjLoader_html_abecf354784f4474a6507303928adba5d"><div class="ttname"><a href="#abecf354784f4474a6507303928adba5d">ObjLoader::parseFaceIndex</a></div><div class="ttdeci">FaceIndex parseFaceIndex(const std::string &amp;token)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:97</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>                                               {</div>
+<div class="line"><span class="lineno">  100</span>    std::istringstream f(line.substr(2));</div>
+<div class="line"><span class="lineno">  101</span>    std::string token;</div>
+<div class="line"><span class="lineno">  102</span>    std::vector&lt;FaceIndex&gt; face;</div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">while</span> (f &gt;&gt; token) face.push_back(<a class="code hl_function" href="#abecf354784f4474a6507303928adba5d">parseFaceIndex</a>(token));</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i + 1 &lt; face.size(); ++i) {</div>
+<div class="line"><span class="lineno">  105</span>        this-&gt;<a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.push_back(face[0]);</div>
+<div class="line"><span class="lineno">  106</span>        this-&gt;<a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.push_back(face[i]);</div>
+<div class="line"><span class="lineno">  107</span>        this-&gt;<a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.push_back(face[i + 1]);</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+<div class="ttc" id="aclassObjLoader_html_abecf354784f4474a6507303928adba5d"><div class="ttname"><a href="#abecf354784f4474a6507303928adba5d">ObjLoader::parseFaceIndex</a></div><div class="ttdeci">FaceIndex parseFaceIndex(const std::string &amp;token)</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:111</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>, and <a class="el" href="#abecf354784f4474a6507303928adba5d">parseFaceIndex()</a>.</p>
 
@@ -423,22 +500,22 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   97</span>                                                          {</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_struct" href="structFaceIndex.html">FaceIndex</a> idx;</div>
-<div class="line"><span class="lineno">   99</span>    std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d/%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#ae8b380dda7d418c82111d04735c3a468">vt</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409">vn</a>);</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (token.find(<span class="stringliteral">&quot;//&quot;</span>) != std::string::npos) {</div>
-<div class="line"><span class="lineno">  102</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d//%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409">vn</a>);</div>
-<div class="line"><span class="lineno">  103</span>        idx.<a class="code hl_variable" href="structFaceIndex.html#ae8b380dda7d418c82111d04735c3a468">vt</a> = 0;</div>
-<div class="line"><span class="lineno">  104</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) != std::string::npos &amp;&amp;</div>
-<div class="line"><span class="lineno">  105</span>               std::ranges::count(token, <span class="charliteral">&#39;/&#39;</span>) == 1) {</div>
-<div class="line"><span class="lineno">  106</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#ae8b380dda7d418c82111d04735c3a468">vt</a>);</div>
-<div class="line"><span class="lineno">  107</span>        idx.<a class="code hl_variable" href="structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409">vn</a> = 0;</div>
-<div class="line"><span class="lineno">  108</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) == std::string::npos) {</div>
-<div class="line"><span class="lineno">  109</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>);</div>
-<div class="line"><span class="lineno">  110</span>    }</div>
-<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">return</span> idx;</div>
-<div class="line"><span class="lineno">  112</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>                                                          {</div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_struct" href="structFaceIndex.html">FaceIndex</a> idx;</div>
+<div class="line"><span class="lineno">  113</span>    std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d/%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#ae8b380dda7d418c82111d04735c3a468">vt</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409">vn</a>);</div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (token.find(<span class="stringliteral">&quot;//&quot;</span>) != std::string::npos) {</div>
+<div class="line"><span class="lineno">  116</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d//%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409">vn</a>);</div>
+<div class="line"><span class="lineno">  117</span>        idx.<a class="code hl_variable" href="structFaceIndex.html#ae8b380dda7d418c82111d04735c3a468">vt</a> = 0;</div>
+<div class="line"><span class="lineno">  118</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) != std::string::npos &amp;&amp;</div>
+<div class="line"><span class="lineno">  119</span>               std::ranges::count(token, <span class="charliteral">&#39;/&#39;</span>) == 1) {</div>
+<div class="line"><span class="lineno">  120</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#ae8b380dda7d418c82111d04735c3a468">vt</a>);</div>
+<div class="line"><span class="lineno">  121</span>        idx.<a class="code hl_variable" href="structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409">vn</a> = 0;</div>
+<div class="line"><span class="lineno">  122</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) == std::string::npos) {</div>
+<div class="line"><span class="lineno">  123</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d&quot;</span>, &amp;idx.<a class="code hl_variable" href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">v</a>);</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">return</span> idx;</div>
+<div class="line"><span class="lineno">  126</span>}</div>
 <div class="ttc" id="astructFaceIndex_html"><div class="ttname"><a href="structFaceIndex.html">FaceIndex</a></div><div class="ttdef"><b>Definition</b> Geometry.hpp:17</div></div>
 <div class="ttc" id="astructFaceIndex_html_a2abcbc54f0a541749497572bd64c7409"><div class="ttname"><a href="structFaceIndex.html#a2abcbc54f0a541749497572bd64c7409">FaceIndex::vn</a></div><div class="ttdeci">int vn</div><div class="ttdef"><b>Definition</b> Geometry.hpp:20</div></div>
 <div class="ttc" id="astructFaceIndex_html_a2e7cbf245e29495d77a82b0212633f5f"><div class="ttname"><a href="structFaceIndex.html#a2e7cbf245e29495d77a82b0212633f5f">FaceIndex::v</a></div><div class="ttdeci">int v</div><div class="ttdef"><b>Definition</b> Geometry.hpp:18</div></div>
@@ -484,13 +561,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   69</span>                                                 {</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordtype">float</span> x, y, z;</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
-<div class="line"><span class="lineno">   72</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   74</span>        this-&gt;<a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>.push_back({x, y, z});</div>
-<div class="line"><span class="lineno">   75</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                 {</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
+<div class="line"><span class="lineno">   86</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   88</span>        this-&gt;<a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>.push_back({x, y, z});</div>
+<div class="line"><span class="lineno">   89</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>.</p>
 
@@ -530,15 +607,15 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                            {</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordtype">float</span> u;  <span class="comment">// Missing optional v and w</span></div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f&quot;</span>, &amp;u) &lt; 1)</div>
-<div class="line"><span class="lineno">   80</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   82</span>        this-&gt;<a class="code hl_variable" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a>.push_back(u);</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>                                                            {</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordtype">float</span> u, v;  <span class="comment">// Missing w</span></div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f&quot;</span>, &amp;u, &amp;v) &lt; 2)</div>
+<div class="line"><span class="lineno">   94</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   96</span>        this-&gt;<a class="code hl_variable" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>.push_back({u, v});</div>
+<div class="line"><span class="lineno">   97</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="#aa06aebc6480dd1afbaded605e44c4574">_textureCoords</a>.</p>
+<p class="reference">References <a class="el" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="#afb5e3f9b49676580b03673c92255ac2b">ObjLoader()</a>.</p>
 <div class="dynheader">
@@ -576,13 +653,13 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   61</span>                                                  {</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordtype">float</span> x, y, z;  <span class="comment">// Missing optional w</span></div>
-<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
-<div class="line"><span class="lineno">   64</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid vertice at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   66</span>        this-&gt;<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.push_back({x, y, z});</div>
-<div class="line"><span class="lineno">   67</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                                                  {</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordtype">float</span> x, y, z;  <span class="comment">// Missing optional w</span></div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
+<div class="line"><span class="lineno">   78</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid vertice at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   80</span>        this-&gt;<a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.push_back({x, y, z});</div>
+<div class="line"><span class="lineno">   81</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.</p>
 
@@ -593,6 +670,112 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classObjLoader_ada9f850709ddf93a85d7608bc925ab35_icgraph.png" border="0" usemap="#aclassObjLoader_ada9f850709ddf93a85d7608bc925ab35_icgraph" alt=""/></div>
 <map name="aclassObjLoader_ada9f850709ddf93a85d7608bc925ab35_icgraph" id="aclassObjLoader_ada9f850709ddf93a85d7608bc925ab35_icgraph">
 <area shape="rect" title=" " alt="" coords="201,5,361,31"/>
+<area shape="rect" href="classObjLoader.html#afb5e3f9b49676580b03673c92255ac2b" title=" " alt="" coords="5,5,153,31"/>
+<area shape="poly" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e6284d5c05ebe26f98ac4ef3a9e4a75" name="a9e6284d5c05ebe26f98ac4ef3a9e4a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">&#9670;&#160;</a></span>resetObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjLoader::resetObj </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                         {</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>.clear();</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.clear();</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>.clear();</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_variable" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>.clear();</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a19397c1c7f6ad4a87d0ff5903be3fd8e">_faces</a>, <a class="el" href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">_normals</a>, <a class="el" href="#a689920c31eb94f2e437b4b2271cf0bb6">_textureCoords</a>, and <a class="el" href="#ae8430ba649bb343c152dbd279fe936af">_vertices</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjLoader_a9e6284d5c05ebe26f98ac4ef3a9e4a75_icgraph.png" border="0" usemap="#aclassObjLoader_a9e6284d5c05ebe26f98ac4ef3a9e4a75_icgraph" alt=""/></div>
+<map name="aclassObjLoader_a9e6284d5c05ebe26f98ac4ef3a9e4a75_icgraph" id="aclassObjLoader_a9e6284d5c05ebe26f98ac4ef3a9e4a75_icgraph">
+<area shape="rect" title=" " alt="" coords="200,5,336,31"/>
+<area shape="rect" href="classObjLoader.html#ac367e19a0f4271d2d4fa20f37793d51e" title=" " alt="" coords="5,5,152,31"/>
+<area shape="poly" title=" " alt="" coords="184,21,152,21,152,16,184,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab05cc10d086f6768eb28b873086154c2" name="ab05cc10d086f6768eb28b873086154c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05cc10d086f6768eb28b873086154c2">&#9670;&#160;</a></span>retrieveMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjLoader::retrieveMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  128</span>                                                      {</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keyword">const</span> std::string name = <a class="code hl_function" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc">trim_copy</a>(line.substr(<span class="keyword">sizeof</span>(<span class="stringliteral">&quot;mtllib&quot;</span>)));</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keyword">const</span> std::filesystem::path path =</div>
+<div class="line"><span class="lineno">  131</span>        std::filesystem::path(<a class="code hl_variable" href="#a0996ac4473a205e6140b3c8d813051be">_modelPath</a>).parent_path() / name;</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_variable" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a>-&gt;parseMTL(path.string());</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a86a5e63424c5ce7f6835e7f7340f7db9">_material</a>, <a class="el" href="#a0996ac4473a205e6140b3c8d813051be">_modelPath</a>, and <a class="el" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc">trim_copy()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#afb5e3f9b49676580b03673c92255ac2b">ObjLoader()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjLoader_ab05cc10d086f6768eb28b873086154c2_cgraph.png" border="0" usemap="#aclassObjLoader_ab05cc10d086f6768eb28b873086154c2_cgraph" alt=""/></div>
+<map name="aclassObjLoader_ab05cc10d086f6768eb28b873086154c2_cgraph" id="aclassObjLoader_ab05cc10d086f6768eb28b873086154c2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,182,56"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc" title=" " alt="" coords="230,31,307,56"/>
+<area shape="poly" title=" " alt="" coords="182,41,214,41,214,46,182,46"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ac81e8ace8f8b6d4c09572038c5d48cf4" title=" " alt="" coords="355,31,398,56"/>
+<area shape="poly" title=" " alt="" coords="307,41,339,41,339,46,307,46"/>
+<area shape="rect" href="StringHelpers_8hpp.html#ad43a4a97af0218124c6f1343dd27a295" title=" " alt="" coords="447,5,493,31"/>
+<area shape="poly" title=" " alt="" coords="398,35,431,26,432,31,399,40"/>
+<area shape="rect" href="StringHelpers_8hpp.html#aa09e1d628a7971037572fa4ed3f3e43b" title=" " alt="" coords="446,55,494,80"/>
+<area shape="poly" title=" " alt="" coords="399,46,432,55,431,60,398,52"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classObjLoader_ab05cc10d086f6768eb28b873086154c2_icgraph.png" border="0" usemap="#aclassObjLoader_ab05cc10d086f6768eb28b873086154c2_icgraph" alt=""/></div>
+<map name="aclassObjLoader_ab05cc10d086f6768eb28b873086154c2_icgraph" id="aclassObjLoader_ab05cc10d086f6768eb28b873086154c2_icgraph">
+<area shape="rect" title=" " alt="" coords="201,5,377,31"/>
 <area shape="rect" href="classObjLoader.html#afb5e3f9b49676580b03673c92255ac2b" title=" " alt="" coords="5,5,153,31"/>
 <area shape="poly" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
 </map>
@@ -621,7 +804,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, and <a class="el" href="#a94045ff6d97910ec0fd7078e93ef56a7">parseFace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, <a class="el" href="#a94045ff6d97910ec0fd7078e93ef56a7">parseFace()</a>, and <a class="el" href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">resetObj()</a>.</p>
 
 </div>
 </div>
@@ -649,6 +832,54 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a86a5e63424c5ce7f6835e7f7340f7db9" name="a86a5e63424c5ce7f6835e7f7340f7db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a5e63424c5ce7f6835e7f7340f7db9">&#9670;&#160;</a></span>_material</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classMTLMaterial.html">MTLMaterial</a>&gt; ObjLoader::_material</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, <a class="el" href="#a625f609f7b2031d785d33b65492887f6">material()</a>, and <a class="el" href="#ab05cc10d086f6768eb28b873086154c2">retrieveMaterial()</a>.</p>
+
+</div>
+</div>
+<a id="a0996ac4473a205e6140b3c8d813051be" name="a0996ac4473a205e6140b3c8d813051be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0996ac4473a205e6140b3c8d813051be">&#9670;&#160;</a></span>_modelPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ObjLoader::_modelPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, and <a class="el" href="#ab05cc10d086f6768eb28b873086154c2">retrieveMaterial()</a>.</p>
+
+</div>
+</div>
 <a id="ad8b2d6e4c6b1c2c94493d6f7c5e9c182" name="ad8b2d6e4c6b1c2c94493d6f7c5e9c182"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8b2d6e4c6b1c2c94493d6f7c5e9c182">&#9670;&#160;</a></span>_normals</h2>
 
@@ -669,7 +900,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, and <a class="el" href="#a785dd5d2492a70fd94f29defbbda64e1">parseNormal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, <a class="el" href="#a785dd5d2492a70fd94f29defbbda64e1">parseNormal()</a>, and <a class="el" href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">resetObj()</a>.</p>
 
 </div>
 </div>
@@ -697,8 +928,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aa06aebc6480dd1afbaded605e44c4574" name="aa06aebc6480dd1afbaded605e44c4574"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa06aebc6480dd1afbaded605e44c4574">&#9670;&#160;</a></span>_textureCoords</h2>
+<a id="a689920c31eb94f2e437b4b2271cf0bb6" name="a689920c31eb94f2e437b4b2271cf0bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689920c31eb94f2e437b4b2271cf0bb6">&#9670;&#160;</a></span>_textureCoords</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,7 +938,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;float&gt; ObjLoader::_textureCoords</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structTextureCoordinate.html">TextureCoordinate</a>&gt; ObjLoader::_textureCoords</td>
         </tr>
       </table>
   </td>
@@ -717,7 +948,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, and <a class="el" href="#aaf05f96220b6f94467f660fe5aba297d">parseTextureCoordinate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, <a class="el" href="#aaf05f96220b6f94467f660fe5aba297d">parseTextureCoordinate()</a>, and <a class="el" href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">resetObj()</a>.</p>
 
 </div>
 </div>
@@ -741,7 +972,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, and <a class="el" href="#ada9f850709ddf93a85d7608bc925ab35">parseVertice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#ac367e19a0f4271d2d4fa20f37793d51e">loadModel()</a>, <a class="el" href="#ada9f850709ddf93a85d7608bc925ab35">parseVertice()</a>, and <a class="el" href="#a9e6284d5c05ebe26f98ac4ef3a9e4a75">resetObj()</a>.</p>
 
 </div>
 </div>
