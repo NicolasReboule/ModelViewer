@@ -26,11 +26,10 @@ void ObjLoader::loadModel(const std::string &filepath) {
     resetObj();
     _material->resetMaterial();
 
-    _modelPath = filepath;
-
-    std::ifstream in(filepath);
+    _modelPath = normalizePath(filepath);
+    std::ifstream in(_modelPath, std::ios::in);
     if (!in.is_open()) {
-        std::cerr << "Could not open file " << filepath << ": "
+        std::cerr << "ObjLoader: Could not open file " << _modelPath << ": "
                   << std::strerror(errno) << std::endl;
         return;
     }

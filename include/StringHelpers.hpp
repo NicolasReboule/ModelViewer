@@ -55,4 +55,17 @@ inline std::string trim_copy(std::string s) {
     return s;
 }
 
+inline std::string normalizePath(std::string p)
+{
+    const std::string fileScheme = "file://";
+    if (p.rfind(fileScheme, 0) == 0) {
+        p.erase(0, fileScheme.size());
+    }
+    if (p.size() >= 3 && p[0] == '/' &&
+        std::isalpha(static_cast<unsigned char>(p[1])) && p[2] == ':') {
+        p.erase(0, 1);
+    }
+    return p;
+}
+
 #endif  // MODELVIEWER_STRINGHELPERS_HPP

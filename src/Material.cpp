@@ -127,6 +127,6 @@ void MTLMaterial::parseColor(const std::string &line, const std::string &key) {
 void MTLMaterial::parseMap(const std::string &line, const std::string &key) {
     const std::string map = trim_copy(line.substr(key.size() + 1));
     if (map.empty()) std::cerr << "Empty map at line " << line << std::endl;
-    const std::string mapPath = _parentPath / map;
+    const std::string mapPath = (_parentPath / map).string();
     _maps[key] = QUrl::fromLocalFile(mapPath.c_str());
 }
