@@ -5,7 +5,9 @@
 ** Material.cpp
 */
 
-#include "Material.hpp"
+#include "Material/Material.hpp"
+
+namespace model_viewer::material {
 
 MTLMaterial::MTLMaterial(QObject *parent) : QObject(parent) {
     _parseFunctions = {
@@ -49,7 +51,7 @@ MTLMaterial::MTLMaterial(QObject *parent) : QObject(parent) {
 void MTLMaterial::parseMTL(const std::string &filepath) {
     std::ifstream in(filepath);
     if (!in.is_open()) {
-        std::cerr << "Could not open file " << filepath << ": "
+        std::cerr << "MTLMaterial: Could not open file " << filepath << ": "
                   << std::strerror(errno) << std::endl;
         return;
     }
@@ -59,7 +61,8 @@ void MTLMaterial::parseMTL(const std::string &filepath) {
     std::string line;
     while (std::getline(in, line)) {
         const auto pos = line.find(' ');
-        const std::string lineStart = trim_copy(line.substr(0, pos));
+        const std::string lineStart =
+            string_helpers::trim_copy(line.substr(0, pos));
         if (_parseFunctions.contains(lineStart))
             _parseFunctions.at(lineStart)(line, lineStart);
     }
@@ -107,7 +110,8 @@ void MTLMaterial::setMaterialValues() {
 
 void MTLMaterial::parseScalar(const std::string &line, const std::string &key) {
     float scalar;
-    const std::string lineTrimmed = trim_copy(line.substr(key.size() + 1));
+    const std::string lineTrimmed =
+        string_helpers::trim_copy(line.substr(key.size() + 1));
     if (std::sscanf(lineTrimmed.c_str(), "%f", &scalar) < 1)
         std::cerr << "Invalid scalar at line " << line << std::endl;
     else
@@ -116,7 +120,8 @@ void MTLMaterial::parseScalar(const std::string &line, const std::string &key) {
 
 void MTLMaterial::parseColor(const std::string &line, const std::string &key) {
     float r, g, b;
-    const std::string lineTrimmed = trim_copy(line.substr(key.size() + 1));
+    const std::string lineTrimmed =
+        string_helpers::trim_copy(line.substr(key.size() + 1));
     if (std::sscanf(lineTrimmed.c_str(), "%f %f %f", &r, &g, &b) < 3)
         std::cerr << "Invalid color at line " << line << std::endl;
     else
@@ -125,8 +130,11 @@ void MTLMaterial::parseColor(const std::string &line, const std::string &key) {
 }
 
 void MTLMaterial::parseMap(const std::string &line, const std::string &key) {
-    const std::string map = trim_copy(line.substr(key.size() + 1));
+    const std::string map =
+        string_helpers::trim_copy(line.substr(key.size() + 1));
     if (map.empty()) std::cerr << "Empty map at line " << line << std::endl;
     const std::string mapPath = (_parentPath / map).string();
     _maps[key] = QUrl::fromLocalFile(mapPath.c_str());
 }
+
+}  // namespace model_viewer::material

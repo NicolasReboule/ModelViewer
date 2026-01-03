@@ -10,7 +10,9 @@
 
 #include <QQuick3DGeometry>
 
-#include "Material.hpp"
+#include "Material/Material.hpp"
+
+namespace model_viewer::loaders {
 
 class ILoader {
    public:
@@ -20,7 +22,9 @@ class ILoader {
 
     virtual QQuick3DGeometry *geometry() const = 0;
 
-    virtual MTLMaterial *material() const = 0;
+    virtual material::MTLMaterial *material() const = 0;
 };
+
+}  // namespace model_viewer::loaders
 
 #endif  // MODELVIEWER_ILOADER_HPP

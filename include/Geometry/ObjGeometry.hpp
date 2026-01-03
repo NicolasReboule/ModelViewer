@@ -12,7 +12,9 @@
 #include <QQuick3DGeometry>
 #include <sstream>
 
-#include "Geometry.hpp"
+#include "GeometryStructs.hpp"
+
+namespace model_viewer::geometry {
 
 class ObjGeometry final : public QQuick3DGeometry {
     Q_OBJECT
@@ -23,5 +25,7 @@ class ObjGeometry final : public QQuick3DGeometry {
                  const std::vector<Vector3> &normals,
                  const std::vector<TextureCoordinate> &textureCoords);
 };
+
+}  // namespace model_viewer::geometry
 
 #endif  // MODELVIEWER_OBJGEOMETRY_HPP

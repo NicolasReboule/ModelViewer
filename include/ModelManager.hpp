@@ -10,25 +10,28 @@
 
 #include <QtConcurrent/QtConcurrentRun>
 
-#include "ObjLoader.hpp"
+#include "Loaders/Obj/ObjLoader.hpp"
+
+namespace model_viewer {
 
 class ModelManager final : public QObject {
     Q_OBJECT
     Q_PROPERTY(QQuick3DGeometry *geometry READ geometry NOTIFY geometryChanged)
-    Q_PROPERTY(MTLMaterial *material READ material NOTIFY materialChanged)
+    Q_PROPERTY(model_viewer::material::MTLMaterial *material READ material
+                   NOTIFY materialChanged)
     Q_PROPERTY(bool loading READ isLoading NOTIFY loadingChanged)
     Q_PROPERTY(bool ready READ isReady NOTIFY readyChanged)
    public:
    private:
-    ObjLoader _objLoader;
+    loaders::ObjLoader _objLoader;
 
-    std::unordered_map<std::string, ILoader *> _loaders = {
+    std::unordered_map<std::string, loaders::ILoader *> _loaders = {
         {".obj", &_objLoader},
     };
 
-    ILoader *_lastLoaded = &_objLoader;
+    loaders::ILoader *_lastLoaded = &_objLoader;
 
-    std::unique_ptr<ObjGeometry> _geometry;
+    std::unique_ptr<geometry::ObjGeometry> _geometry;
 
     bool _loading = false;
 
@@ -50,7 +53,7 @@ class ModelManager final : public QObject {
 
     QQuick3DGeometry *geometry() const { return _lastLoaded->geometry(); };
 
-    MTLMaterial *material() const { return _lastLoaded->material(); };
+    material::MTLMaterial *material() const { return _lastLoaded->material(); };
 
     Q_INVOKABLE void loadModel(const QString &filepath);
 
@@ -62,5 +65,7 @@ class ModelManager final : public QObject {
 
     void setReady(bool isReady);
 };
+
+}  // namespace model_viewer
 
 #endif  // MODELVIEWER_MODELMANAGER_HPP

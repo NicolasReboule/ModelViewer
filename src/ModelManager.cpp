@@ -9,17 +9,19 @@
 
 #include <iostream>
 
+namespace model_viewer {
+
 ModelManager::ModelManager(QObject *parent) : QObject(parent) {}
 
 void ModelManager::loadModel(const QString &filepath) {
-    const std::string str_path =
+    const std::string strPath =
         filepath.toStdString().substr(sizeof("file://") - 1);
-    const auto pos = str_path.find_last_of('.');
-    const std::string ext = str_path.substr(pos);
+    const auto pos = strPath.find_last_of('.');
+    const std::string ext = strPath.substr(pos);
 
-    auto result = QtConcurrent::run([&, str_path, ext] {
+    auto result = QtConcurrent::run([&, strPath, ext] {
         setReady(false);
-        _loaders[ext]->loadModel(str_path);
+        _loaders[ext]->loadModel(strPath);
         emit geometryChanged();
         emit materialChanged();
         _lastLoaded = _loaders[ext];
@@ -27,13 +29,15 @@ void ModelManager::loadModel(const QString &filepath) {
     });
 }
 
-void ModelManager::setLoading(bool isLoading) {
+void ModelManager::setLoading(const bool isLoading) {
     _loading = isLoading;
     emit loadingChanged();
 }
 
-void ModelManager::setReady(bool isReady) {
+void ModelManager::setReady(const bool isReady) {
     _ready = isReady;
     emit readyChanged();
     setLoading(!isReady);
 }
+
+}  // namespace model_viewer

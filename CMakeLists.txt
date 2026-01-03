@@ -40,14 +40,14 @@ qt_standard_project_setup(REQUIRES 6.5)
 # Sources
 add_library(${PROJECT_NAME}_Sources STATIC
         src/example.cpp
-        src/ObjLoader.cpp
-        include/ObjLoader.hpp # So moc file is generated using AUTOMOC
-        src/ObjGeometry.cpp
-        include/ObjGeometry.hpp
+        src/Loaders/Obj/ObjLoader.cpp
+        include/Loaders/Obj/ObjLoader.hpp # So moc file is generated using AUTOMOC
+        src/Geometry/ObjGeometry.cpp
+        include/Geometry/ObjGeometry.hpp
         src/ModelManager.cpp
         include/ModelManager.hpp
-        src/Material.cpp
-        include/Material.hpp
+        src/Material/Material.cpp
+        include/Material/Material.hpp
 )
 target_link_libraries(${PROJECT_NAME}_Sources PUBLIC
         ${PROJECT_NAME}_Headers
@@ -60,14 +60,18 @@ target_link_libraries(${PROJECT_NAME}_Sources PUBLIC
 # Main executable with QT
 qt_add_executable(${PROJECT_NAME}
         main.cpp
-        application.qrc
 )
 
-#qt_add_qml_module(${PROJECT_NAME}
-#        URI main
-#        VERSION 1.0
-#        QML_FILES main.qml
-#)
+qt_add_qml_module(${PROJECT_NAME}
+        URI ${PROJECT_NAME}Module
+        QML_FILES
+            Main.qml
+            qml_src/ModelEditor.qml
+            qml_src/ModelView.qml
+            qml_src/ModelViewingCamera.qml
+            qml_src/CustomModel.qml
+            qml_src/CameraControls.qml
+)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
         ${PROJECT_NAME}_Sources

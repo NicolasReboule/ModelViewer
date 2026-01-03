@@ -17,26 +17,10 @@
 #include <iostream>
 #include <string>
 
-#include "Geometry.hpp"
-#include "StringHelpers.hpp"
+#include "Geometry/GeometryStructs.hpp"
+#include "Helpers/StringHelpers.hpp"
 
-struct Color {
-    float r;
-    float g;
-    float b;
-
-    Color() {
-        r = 0;
-        g = 0;
-        b = 0;
-    }
-
-    Color(const float red, const float green, const float blue) {
-        r = red;
-        g = green;
-        b = blue;
-    }
-};
+namespace model_viewer::material {
 
 // TODO: Seek ways to improve this class' architecture
 class MTLMaterial final : public QObject {
@@ -185,5 +169,7 @@ class MTLMaterial final : public QObject {
 
     void parseMap(const std::string &line, const std::string &key);
 };
+
+}  // namespace model_viewer::material
 
 #endif  // MODELVIEWER_MATERIAL_HPP

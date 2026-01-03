@@ -13,29 +13,31 @@
 #include <iostream>
 #include <memory>
 
-#include "ILoader.hpp"
-#include "Material.hpp"
-#include "ObjGeometry.hpp"
-#include "StringHelpers.hpp"
+#include "Geometry/ObjGeometry.hpp"
+#include "Helpers/StringHelpers.hpp"
+#include "Loaders/ILoader.hpp"
+#include "Material/Material.hpp"
+
+namespace model_viewer::loaders {
 
 class ObjLoader final : public ILoader {
    private:
-    std::vector<Vector3> _vertices;
+    std::vector<geometry::Vector3> _vertices;
 
-    std::vector<TextureCoordinate> _textureCoords;
+    std::vector<geometry::TextureCoordinate> _textureCoords;
 
-    std::vector<Vector3> _normals;
+    std::vector<geometry::Vector3> _normals;
 
-    std::vector<FaceIndex> _faces;
+    std::vector<geometry::FaceIndex> _faces;
 
     std::string _modelPath;
 
     std::unordered_map<std::string, std::function<void(const std::string &)>>
         _parseFunctions;
 
-    std::unique_ptr<ObjGeometry> _geometry;
+    std::unique_ptr<geometry::ObjGeometry> _geometry;
 
-    std::unique_ptr<MTLMaterial> _material;
+    std::unique_ptr<material::MTLMaterial> _material;
 
    public:
     ObjLoader();
@@ -46,7 +48,9 @@ class ObjLoader final : public ILoader {
 
     QQuick3DGeometry *geometry() const override { return _geometry.get(); };
 
-    MTLMaterial *material() const override { return _material.get(); };
+    material::MTLMaterial *material() const override {
+        return _material.get();
+    };
 
    private:
     void resetObj();
@@ -59,9 +63,11 @@ class ObjLoader final : public ILoader {
 
     void parseFace(const std::string &line);
 
-    FaceIndex parseFaceIndex(const std::string &token);
+    geometry::FaceIndex parseFaceIndex(const std::string &token);
 
     void retrieveMaterial(const std::string &line);
 };
+
+}  // namespace model_viewer::loaders
 
 #endif  // MODELVIEWER_OBJ_LOADER_HPP

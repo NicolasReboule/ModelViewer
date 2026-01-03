@@ -8,6 +8,8 @@
 #ifndef MODELVIEWER_GEOMETRY_HPP
 #define MODELVIEWER_GEOMETRY_HPP
 
+namespace model_viewer::geometry {
+
 struct Vector3 {
     float x;
     float y;
@@ -24,5 +26,7 @@ struct TextureCoordinate {
     float u;
     float v;
 };
+
+}  // namespace model_viewer::geometry
 
 #endif  // MODELVIEWER_GEOMETRY_HPP

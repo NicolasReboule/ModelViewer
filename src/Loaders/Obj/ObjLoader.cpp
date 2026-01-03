@@ -5,12 +5,15 @@
 ** Obj.cpp
 */
 
-#include "ObjLoader.hpp"
+#include "Loaders/Obj/ObjLoader.hpp"
 
 #include <QFileInfo>
 
+namespace model_viewer::loaders {
+
 ObjLoader::ObjLoader()
-    : _geometry(new ObjGeometry()), _material(new MTLMaterial()) {
+    : _geometry(new geometry::ObjGeometry()),
+      _material(new material::MTLMaterial()) {
     _parseFunctions = {
         {"v", [this](const std::string &l) { parseVertice(l); }},
         {"vn", [this](const std::string &l) { parseNormal(l); }},
@@ -26,7 +29,7 @@ void ObjLoader::loadModel(const std::string &filepath) {
     resetObj();
     _material->resetMaterial();
 
-    _modelPath = normalizePath(filepath);
+    _modelPath = string_helpers::normalizePath(filepath);
     std::ifstream in(_modelPath, std::ios::in);
     if (!in.is_open()) {
         std::cerr << "ObjLoader: Could not open file " << _modelPath << ": "
@@ -36,14 +39,15 @@ void ObjLoader::loadModel(const std::string &filepath) {
     std::string line;
     while (std::getline(in, line)) {
         const auto pos = line.find(' ');
-        const std::string lineStart = trim_copy(line.substr(0, pos));
+        const std::string lineStart =
+            string_helpers::trim_copy(line.substr(0, pos));
         if (_parseFunctions.contains(lineStart))
             _parseFunctions.at(lineStart)(line);
     }
 
-    std::vector<Vector3> v;
-    std::vector<TextureCoordinate> vt;
-    std::vector<Vector3> vn;
+    std::vector<geometry::Vector3> v;
+    std::vector<geometry::TextureCoordinate> vt;
+    std::vector<geometry::Vector3> vn;
     for (auto f : _faces) {
         if (!_vertices.empty() && f.v != 0) {
             const int vIdx = f.v > 0 ? f.v - 1 : v.size() + f.v;
@@ -98,7 +102,7 @@ void ObjLoader::parseTextureCoordinate(const std::string &line) {
 void ObjLoader::parseFace(const std::string &line) {
     std::istringstream f(line.substr(2));
     std::string token;
-    std::vector<FaceIndex> face;
+    std::vector<geometry::FaceIndex> face;
     while (f >> token) face.push_back(parseFaceIndex(token));
     for (size_t i = 1; i + 1 < face.size(); ++i) {
         this->_faces.push_back(face[0]);
@@ -107,8 +111,8 @@ void ObjLoader::parseFace(const std::string &line) {
     }
 }
 
-FaceIndex ObjLoader::parseFaceIndex(const std::string &token) {
-    FaceIndex idx;
+geometry::FaceIndex ObjLoader::parseFaceIndex(const std::string &token) {
+    geometry::FaceIndex idx;
     std::sscanf(token.c_str(), "%d/%d/%d", &idx.v, &idx.vt, &idx.vn);
 
     if (token.find("//") != std::string::npos) {
@@ -125,8 +129,11 @@ FaceIndex ObjLoader::parseFaceIndex(const std::string &token) {
 }
 
 void ObjLoader::retrieveMaterial(const std::string &line) {
-    const std::string name = trim_copy(line.substr(sizeof("mtllib")));
+    const std::string name =
+        string_helpers::trim_copy(line.substr(sizeof("mtllib")));
     const std::filesystem::path path =
         std::filesystem::path(_modelPath).parent_path() / name;
     _material->parseMTL(path.string());
 }
+
+}  // namespace model_viewer::loaders

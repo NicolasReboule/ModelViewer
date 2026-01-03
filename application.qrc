@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
-        <file>assets/meshes/teapot.mesh</file>
-    </qresource>
-    <qresource prefix="/assets">
-        <file alias="teapot">assets/teapot.obj</file>
-    </qresource>
-</RCC>

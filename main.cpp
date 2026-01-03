@@ -6,26 +6,17 @@
 #include <QQmlContext>
 #include <QString>
 
-#include "Material.hpp"
 #include "ModelManager.hpp"
-#include "ObjLoader.hpp"
+#include "Loaders/Obj/ObjLoader.hpp"
+#include "Material/Material.hpp"
 
 using namespace Qt::StringLiterals;
 
 int main(int argc, char *argv[]) {
-    QGuiApplication app(argc, argv);
+    const QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
-
-    ModelManager modelManager;
+    model_viewer::ModelManager modelManager;
     engine.rootContext()->setContextProperty("ModelManager", &modelManager);
-    const QUrl url(QStringLiteral("qrc:/main.qml"));
-    QObject::connect(
-        &engine, &QQmlApplicationEngine::objectCreated, &app,
-        [url](const QObject *obj, const QUrl &objUrl) {
-            if (!obj && url == objUrl) QCoreApplication::exit(-1);
-        },
-        Qt::QueuedConnection);
-
-    engine.load(url);
+    engine.loadFromModule("ModelViewerModule", "Main");
     return app.exec();
 }

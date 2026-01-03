@@ -5,7 +5,9 @@
 ** ObjGeometry.cpp
 */
 
-#include "ObjGeometry.hpp"
+#include "Geometry/ObjGeometry.hpp"
+
+namespace model_viewer::geometry {
 
 ObjGeometry::ObjGeometry(QQuick3DObject *parent) : QQuick3DGeometry(parent) {}
 
@@ -62,3 +64,5 @@ void ObjGeometry::setMesh(const std::vector<Vector3> &vertices,
     setPrimitiveType(PrimitiveType::Triangles);
     update();
 }
+
+}  // namespace model_viewer::geometry
