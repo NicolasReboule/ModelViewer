@@ -1034,7 +1034,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">  127</span>                                                                      {</div>
 <div class="line"><span class="lineno">  128</span>    <span class="keyword">const</span> std::string map = <a class="code hl_function" href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc">trim_copy</a>(line.substr(key.size() + 1));</div>
 <div class="line"><span class="lineno">  129</span>    <span class="keywordflow">if</span> (map.empty()) std::cerr &lt;&lt; <span class="stringliteral">&quot;Empty map at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keyword">const</span> std::string mapPath = <a class="code hl_variable" href="#af8a3371e72f952f559625df922ad19f9">_parentPath</a> / map;</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keyword">const</span> std::string mapPath = (<a class="code hl_variable" href="#af8a3371e72f952f559625df922ad19f9">_parentPath</a> / map).<span class="keywordtype">string</span>();</div>
 <div class="line"><span class="lineno">  131</span>    <a class="code hl_variable" href="#a02660aef71fe92b1d7021b931e7a0c53">_maps</a>[key] = QUrl::fromLocalFile(mapPath.c_str());</div>
 <div class="line"><span class="lineno">  132</span>}</div>
 <div class="ttc" id="aclassMTLMaterial_html_a02660aef71fe92b1d7021b931e7a0c53"><div class="ttname"><a href="#a02660aef71fe92b1d7021b931e7a0c53">MTLMaterial::_maps</a></div><div class="ttdeci">std::unordered_map&lt; std::string, QUrl &gt; _maps</div><div class="ttdef"><b>Definition</b> Material.hpp:114</div></div>

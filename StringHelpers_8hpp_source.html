@@ -161,8 +161,24 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif  </span><span class="comment">// MODELVIEWER_STRINGHELPERS_HPP</span></div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="StringHelpers_8hpp.html#a91e1e30e9a14940fe132f0b2c7bd72ec">   58</a></span><span class="keyword">inline</span> std::string <a class="code hl_function" href="StringHelpers_8hpp.html#a91e1e30e9a14940fe132f0b2c7bd72ec">normalizePath</a>(std::string p)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">const</span> std::string fileScheme = <span class="stringliteral">&quot;file://&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">if</span> (p.rfind(fileScheme, 0) == 0) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        p.erase(0, fileScheme.size());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (p.size() &gt;= 3 &amp;&amp; p[0] == <span class="charliteral">&#39;/&#39;</span> &amp;&amp;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::isalpha(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(p[1])) &amp;&amp; p[2] == <span class="charliteral">&#39;:&#39;</span>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        p.erase(0, 1);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> p;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif  </span><span class="comment">// MODELVIEWER_STRINGHELPERS_HPP</span></div>
 <div class="ttc" id="aStringHelpers_8hpp_html_a7c4812e8fc5a928a705af34b6a791644"><div class="ttname"><a href="StringHelpers_8hpp.html#a7c4812e8fc5a928a705af34b6a791644">rtrim_copy</a></div><div class="ttdeci">std::string rtrim_copy(std::string s)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:47</div></div>
+<div class="ttc" id="aStringHelpers_8hpp_html_a91e1e30e9a14940fe132f0b2c7bd72ec"><div class="ttname"><a href="StringHelpers_8hpp.html#a91e1e30e9a14940fe132f0b2c7bd72ec">normalizePath</a></div><div class="ttdeci">std::string normalizePath(std::string p)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:58</div></div>
 <div class="ttc" id="aStringHelpers_8hpp_html_aa09e1d628a7971037572fa4ed3f3e43b"><div class="ttname"><a href="StringHelpers_8hpp.html#aa09e1d628a7971037572fa4ed3f3e43b">rtrim</a></div><div class="ttdeci">void rtrim(std::string &amp;s)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:27</div></div>
 <div class="ttc" id="aStringHelpers_8hpp_html_ab321278de24e06eb0bf11005258f47a3"><div class="ttname"><a href="StringHelpers_8hpp.html#ab321278de24e06eb0bf11005258f47a3">ltrim_copy</a></div><div class="ttdeci">std::string ltrim_copy(std::string s)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:41</div></div>
 <div class="ttc" id="aStringHelpers_8hpp_html_ac72f5466b377314d32ad4e5da7963fdc"><div class="ttname"><a href="StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc">trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:53</div></div>
