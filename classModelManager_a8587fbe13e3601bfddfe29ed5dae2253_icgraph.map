@@ -1,9 +1,0 @@
-<map id="ModelManager::loadingChanged" name="ModelManager::loadingChanged">
-<area shape="rect" id="Node000001" title=" " alt="" coords="663,5,868,31"/>
-<area shape="rect" id="Node000002" href="$classModelManager.html#a442cba87e683dbabbf7c809159958a93" title=" " alt="" coords="439,5,615,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="648,21,616,21,616,16,648,16"/>
-<area shape="rect" id="Node000003" href="$classModelManager.html#a613bcb979e1b7c1a720880ffa6e1fed7" title=" " alt="" coords="225,5,391,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,21,391,21,391,16,424,16"/>
-<area shape="rect" id="Node000004" href="$classModelManager.html#a5533f0a2d492022846a029e119ba8d9a" title=" " alt="" coords="5,5,177,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="209,21,177,21,177,16,209,16"/>
-</map>

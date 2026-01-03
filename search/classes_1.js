@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exampleclass_0',['ExampleClass',['../classexample_1_1ExampleClass.html',1,'example']]]
+  ['faceindex_0',['FaceIndex',['../structmodel__viewer_1_1geometry_1_1FaceIndex.html',1,'model_viewer::geometry']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['objgeometry_0',['ObjGeometry',['../classObjGeometry.html',1,'']]],
-  ['objloader_1',['ObjLoader',['../classObjLoader.html',1,'']]]
+  ['texturecoordinate_0',['TextureCoordinate',['../structmodel__viewer_1_1geometry_1_1TextureCoordinate.html',1,'model_viewer::geometry']]]
 ];

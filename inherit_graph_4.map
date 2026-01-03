@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,75,56"/>
-<area shape="rect" id="Node000001" href="$classMTLMaterial.html" title=" " alt="" coords="129,5,223,31"/>
-<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="90,32,128,24,129,30,91,37"/>
-<area shape="rect" id="Node000002" href="$classModelManager.html" title=" " alt="" coords="123,55,229,80"/>
-<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="91,50,123,56,122,61,90,55"/>
+<area shape="rect" id="Node000000" href="$classmodel__viewer_1_1loaders_1_1ILoader.html" title=" " alt="" coords="5,5,155,46"/>
+<area shape="rect" id="Node000001" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html" title=" " alt="" coords="203,5,352,46"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="170,23,202,23,202,28,170,28"/>
 </map>

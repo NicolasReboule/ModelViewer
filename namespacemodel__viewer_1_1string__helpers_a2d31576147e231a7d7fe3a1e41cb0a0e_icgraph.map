@@ -1,0 +1,23 @@
+<map id="model_viewer::string_helpers::trim" name="model_viewer::string_helpers::trim">
+<area shape="rect" id="Node000001" title=" " alt="" coords="650,169,790,210"/>
+<area shape="rect" id="Node000002" href="$namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title=" " alt="" coords="463,169,602,210"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="635,192,603,192,603,187,635,187"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title=" " alt="" coords="248,5,400,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="507,158,466,108,441,83,414,61,391,49,394,44,416,57,445,79,470,105,511,155"/>
+<area shape="rect" id="Node000004" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#ab96c8f0edf9a593cfbe5043d9683b31d" title=" " alt="" coords="240,71,408,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="483,163,414,127,385,114,387,109,416,122,486,159"/>
+<area shape="rect" id="Node000006" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#a7c15809900c2d355faeecc502cbc9221" title=" " alt="" coords="242,136,406,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="447,179,406,172,406,167,448,174"/>
+<area shape="rect" id="Node000007" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title=" " alt="" coords="241,201,406,242"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="448,205,408,212,407,206,447,200"/>
+<area shape="rect" id="Node000008" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#abb64fee003e3ae2a23e85a9e9edcd730" title=" " alt="" coords="236,267,412,307"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="485,220,416,256,386,269,384,264,414,251,482,216"/>
+<area shape="rect" id="Node000009" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#abd3f7e911f40f0e383bfb8d8380288bc" title=" " alt="" coords="233,332,415,373"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="511,224,470,274,445,299,416,321,394,334,391,329,414,317,441,295,466,270,507,221"/>
+<area shape="rect" id="Node000005" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title=" " alt="" coords="5,136,185,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="237,119,170,138,168,133,235,113"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="227,159,185,159,185,154,227,154"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="245,263,231,256,170,217,120,179,123,175,173,213,234,251,247,258"/>
+<area shape="rect" id="Node000010" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title=" " alt="" coords="18,332,172,373"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="217,355,172,355,172,350,217,350"/>
+</map>

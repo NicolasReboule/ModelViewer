@@ -1,0 +1,19 @@
+<map id="model_viewer::ModelManager::loadModel" name="model_viewer::ModelManager::loadModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,198,111"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1ModelManager.html#a0b0e28a624adc66bd430e226a17daf67" title=" " alt="" coords="246,5,438,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,68,249,48,250,53,179,73"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1ModelManager.html#a20c9d2718f2756022856e4921c5479cb" title=" " alt="" coords="246,71,438,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,88,230,88,230,94,198,94"/>
+<area shape="rect" id="Node000004" href="$classmodel__viewer_1_1ModelManager.html#abc8ecabfb8ba7034705107565f07652b" title=" " alt="" coords="246,136,438,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,109,250,129,249,134,178,114"/>
+<area shape="rect" id="Node000005" href="$classmodel__viewer_1_1ModelManager.html#ad11f2b7b4e3e178a4c0eed0db7a15a6e" title=" " alt="" coords="486,71,678,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="418,133,489,113,491,119,420,138"/>
+<area shape="rect" id="Node000006" href="$classmodel__viewer_1_1ModelManager.html#ab5eabf8fa08e2e322bb2e1c960def0df" title=" " alt="" coords="486,136,678,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="438,154,470,154,470,159,438,159"/>
+<area shape="rect" id="Node000007" href="$classmodel__viewer_1_1ModelManager.html#a4e9b651eddc7b525fca95ad65dec38f2" title=" " alt="" coords="486,201,678,242"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="420,175,491,194,489,199,418,180"/>
+<area shape="rect" id="Node000008" href="$classmodel__viewer_1_1ModelManager.html#a6501cbd11dcf41e088d193cc0531376a" title=" " alt="" coords="726,168,919,209"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="678,206,710,201,711,206,679,211"/>
+<area shape="rect" id="Node000009" href="$classmodel__viewer_1_1ModelManager.html#a7e7031719cb32d59aa8ece56e7e96293" title=" " alt="" coords="726,233,919,274"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="679,232,711,236,710,241,678,237"/>
+</map>

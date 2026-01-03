@@ -1,9 +1,0 @@
-<map id="trim_copy" name="trim_copy">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,83,56"/>
-<area shape="rect" id="Node000002" href="$StringHelpers_8hpp.html#ac81e8ace8f8b6d4c09572038c5d48cf4" title=" " alt="" coords="131,31,174,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,41,115,41,115,46,83,46"/>
-<area shape="rect" id="Node000003" href="$StringHelpers_8hpp.html#ad43a4a97af0218124c6f1343dd27a295" title=" " alt="" coords="222,5,269,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="174,35,207,26,208,31,175,40"/>
-<area shape="rect" id="Node000004" href="$StringHelpers_8hpp.html#aa09e1d628a7971037572fa4ed3f3e43b" title=" " alt="" coords="222,55,269,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="175,46,208,55,207,60,174,52"/>
-</map>

@@ -1,23 +1,23 @@
-<map id="/github/workspace/include/StringHelpers.hpp" name="/github/workspace/include/StringHelpers.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="204,5,376,46"/>
-<area shape="rect" id="Node000002" href="$Material_8hpp.html" title=" " alt="" coords="49,94,221,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,56,171,96,169,91,240,51"/>
-<area shape="rect" id="Node000004" href="$ObjLoader_8hpp.html" title=" " alt="" coords="202,271,375,312"/>
-<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="334,53,374,87,411,129,424,152,431,176,431,201,421,225,394,254,360,273,358,268,391,249,417,222,426,200,426,177,419,154,406,132,370,91,330,57"/>
-<area shape="rect" id="Node000003" href="$ILoader_8hpp.html" title=" " alt="" coords="234,183,407,223"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,139,280,180,277,185,190,144"/>
-<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="90,146,68,163,51,183,44,203,45,212,50,222,73,238,110,253,202,275,201,280,109,258,71,243,46,225,40,214,39,202,47,180,64,159,86,142"/>
-<area shape="rect" id="Node000006" href="$main_8cpp.html" title=" " alt="" coords="133,456,316,482"/>
-<area shape="poly" id="edge10_Node000002_Node000006" title=" " alt="" coords="77,145,55,162,39,184,19,224,12,245,8,269,10,296,18,326,35,360,61,399,80,418,103,433,153,453,151,458,100,438,77,422,57,402,30,363,13,328,5,297,3,269,7,244,14,221,34,181,51,159,74,141"/>
-<area shape="rect" id="Node000009" href="$Material_8cpp.html" title=" " alt="" coords="60,183,210,223"/>
-<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="138,150,138,182,132,182,132,150"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="310,239,298,272,293,270,305,237"/>
-<area shape="rect" id="Node000005" href="$ModelManager_8hpp.html" title=" " alt="" coords="296,360,468,401"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="323,321,363,358,359,362,319,325"/>
-<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="279,328,231,456,226,455,274,326"/>
-<area shape="rect" id="Node000008" href="$ObjLoader_8cpp.html" title=" " alt="" coords="71,360,220,401"/>
-<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="245,322,179,362,177,357,242,318"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="334,411,248,458,245,453,332,406"/>
-<area shape="rect" id="Node000007" href="$ModelManager_8cpp.html" title=" " alt="" coords="340,449,490,489"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="397,414,410,447,405,449,392,416"/>
+<map id="/github/workspace/include/Helpers/StringHelpers.hpp" name="/github/workspace/include/Helpers/StringHelpers.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="79,5,256,46"/>
+<area shape="rect" id="Node000002" href="$ObjLoader_8hpp.html" title=" " alt="" coords="101,271,285,312"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,61,149,96,143,137,141,180,149,223,161,248,177,269,172,273,156,251,144,224,136,180,137,136,144,95,153,60"/>
+<area shape="rect" id="Node000007" href="$Material_8hpp.html" title=" " alt="" coords="169,94,342,135"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="200,55,237,92,234,95,196,59"/>
+<area shape="rect" id="Node000003" href="$ModelManager_8hpp.html" title=" " alt="" coords="5,360,178,401"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="160,324,116,362,113,358,157,320"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="332,456,515,482"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="301,304,354,324,379,339,400,358,415,382,423,409,427,455,422,456,418,410,410,384,396,362,376,343,352,329,299,309"/>
+<area shape="rect" id="Node000006" href="$ObjLoader_8cpp.html" title=" " alt="" coords="202,360,386,401"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="229,320,273,358,270,362,226,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="183,403,377,453,376,458,181,408"/>
+<area shape="rect" id="Node000005" href="$ModelManager_8cpp.html" title=" " alt="" coords="17,449,166,489"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="94,416,94,448,89,448,89,416"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="197,145,176,162,159,184,154,206,158,229,168,251,179,269,175,272,163,253,153,230,149,206,154,182,172,159,194,141"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="357,125,460,146,503,162,529,181,541,199,548,218,551,257,542,298,525,338,503,376,479,409,437,457,433,454,474,406,498,373,520,336,537,296,546,257,543,219,536,201,526,184,500,166,459,151,356,130"/>
+<area shape="rect" id="Node000008" href="$ILoader_8hpp.html" title=" " alt="" coords="169,183,342,223"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="258,150,258,182,253,182,253,150"/>
+<area shape="rect" id="Node000009" href="$Material_8cpp.html" title=" " alt="" coords="366,183,516,223"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="312,139,400,180,398,185,310,144"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="235,237,209,272,205,269,230,234"/>
 </map>

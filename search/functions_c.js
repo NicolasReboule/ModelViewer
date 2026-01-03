@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['readychanged_0',['readyChanged',['../classModelManager.html#a5c697b383d3ca8622ad52ff5f719f10f',1,'ModelManager']]],
-  ['resetmaterial_1',['resetMaterial',['../classMTLMaterial.html#a0545ca9dd41473e2077d2c0dcc53f224',1,'MTLMaterial']]],
-  ['resetobj_2',['resetObj',['../classObjLoader.html#a9e6284d5c05ebe26f98ac4ef3a9e4a75',1,'ObjLoader']]],
-  ['retrievematerial_3',['retrieveMaterial',['../classObjLoader.html#ab05cc10d086f6768eb28b873086154c2',1,'ObjLoader']]],
-  ['roughnesschanged_4',['roughnessChanged',['../classMTLMaterial.html#a3353d299f3947dcbccf5dc3b1efcab6e',1,'MTLMaterial']]],
-  ['rtrim_5',['rtrim',['../StringHelpers_8hpp.html#aa09e1d628a7971037572fa4ed3f3e43b',1,'StringHelpers.hpp']]],
-  ['rtrim_5fcopy_6',['rtrim_copy',['../StringHelpers_8hpp.html#a7c4812e8fc5a928a705af34b6a791644',1,'StringHelpers.hpp']]]
+  ['setloading_0',['setLoading',['../classmodel__viewer_1_1ModelManager.html#a4e9b651eddc7b525fca95ad65dec38f2',1,'model_viewer::ModelManager']]],
+  ['setmaterialvalues_1',['setMaterialValues',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a',1,'model_viewer::material::MTLMaterial']]],
+  ['setmesh_2',['setMesh',['../classmodel__viewer_1_1geometry_1_1ObjGeometry.html#a2661ba85b6995867a8c1c1524ff20e56',1,'model_viewer::geometry::ObjGeometry']]],
+  ['setready_3',['setReady',['../classmodel__viewer_1_1ModelManager.html#abc8ecabfb8ba7034705107565f07652b',1,'model_viewer::ModelManager']]],
+  ['sharpnesschanged_4',['sharpnessChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#af22ce7769d73cda479073462dd03a69a',1,'model_viewer::material::MTLMaterial']]],
+  ['specularmapchanged_5',['specularMapChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aaeffcf1e8af7dbf0846d6027a7a7fc67',1,'model_viewer::material::MTLMaterial']]],
+  ['specularreflectionmapchanged_6',['specularReflectionMapChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aac55ad563a6ed5645b1394a64c2f24f8',1,'model_viewer::material::MTLMaterial']]]
 ];

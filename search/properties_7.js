@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opacity_0',['opacity',['../classMTLMaterial.html#acac9983c95debd82767df046b6c635e6',1,'MTLMaterial']]]
+  ['opacity_0',['opacity',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a4f3aff871bee2b1a0f3454bd419a54f3',1,'model_viewer::material::MTLMaterial']]]
 ];

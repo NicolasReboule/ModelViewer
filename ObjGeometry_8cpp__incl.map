@@ -1,6 +1,6 @@
-<map id="/github/workspace/src/ObjGeometry.cpp" name="/github/workspace/src/ObjGeometry.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="156,5,305,46"/>
-<area shape="rect" id="Node000002" href="$ObjGeometry_8hpp.html" title=" " alt="" coords="170,94,291,120"/>
+<map id="/github/workspace/src/Geometry/ObjGeometry.cpp" name="/github/workspace/src/Geometry/ObjGeometry.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="138,5,323,46"/>
+<area shape="rect" id="Node000002" href="$ObjGeometry_8hpp.html" title=" " alt="" coords="140,94,321,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,46,233,78,228,78,228,46"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,168,75,193"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,123,87,164,86,159,197,118"/>
@@ -8,6 +8,6 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="222,122,191,157,187,154,218,118"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="260,168,329,193"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="243,118,276,154,272,158,239,122"/>
-<area shape="rect" id="Node000006" href="$Geometry_8hpp.html" title=" " alt="" coords="353,168,455,193"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="261,118,361,159,359,164,259,123"/>
+<area shape="rect" id="Node000006" href="$GeometryStructs_8hpp.html" title=" " alt="" coords="352,168,496,193"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="264,118,378,159,376,164,263,123"/>
 </map>

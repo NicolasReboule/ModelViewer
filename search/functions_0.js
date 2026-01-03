@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bumpmapchanged_0',['bumpMapChanged',['../classMTLMaterial.html#a59700aef738f4572d1a5fc8eae6c34dc',1,'MTLMaterial']]],
-  ['bumpstrengthchanged_1',['bumpStrengthChanged',['../classMTLMaterial.html#a8e23fa4f26942817b989bbaae5eaf041',1,'MTLMaterial']]]
+  ['bumpmapchanged_0',['bumpMapChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#abe0873fa685bb8bf263f4c4a8b70a02b',1,'model_viewer::material::MTLMaterial']]],
+  ['bumpstrengthchanged_1',['bumpStrengthChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a53b90cab6f99f616774b22de223da715',1,'model_viewer::material::MTLMaterial']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['specularmap_0',['specularMap',['../classMTLMaterial.html#a23abe39dbd8fb4dffd860c3270052c04',1,'MTLMaterial']]],
-  ['specularreflectionmap_1',['specularReflectionMap',['../classMTLMaterial.html#ac39465e3d9f6e63f7f08de30b8f234e2',1,'MTLMaterial']]]
+  ['specularmap_0',['specularMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#af89d0b9c3b3dd6a8ff099aaa35c7d542',1,'model_viewer::material::MTLMaterial']]],
+  ['specularreflectionmap_1',['specularReflectionMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a4d4eed3d63bd649305aa7f71e8260f25',1,'model_viewer::material::MTLMaterial']]]
 ];

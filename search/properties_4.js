@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['illumination_0',['illumination',['../classMTLMaterial.html#aaa7528c459723e4ac81f926009559ae5',1,'MTLMaterial']]],
-  ['indexofrefraction_1',['indexOfRefraction',['../classMTLMaterial.html#aab3dd91c985975c5061990d90ee969eb',1,'MTLMaterial']]]
+  ['illumination_0',['illumination',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a264119e721e06231b7c68fcbcfeef783',1,'model_viewer::material::MTLMaterial']]],
+  ['indexofrefraction_1',['indexOfRefraction',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a46684555dbfbf7e79aef8bcddc7ec50b',1,'model_viewer::material::MTLMaterial']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['texturecoordinate_0',['TextureCoordinate',['../structTextureCoordinate.html',1,'']]],
-  ['trim_1',['trim',['../StringHelpers_8hpp.html#ac81e8ace8f8b6d4c09572038c5d48cf4',1,'StringHelpers.hpp']]],
-  ['trim_5fcopy_2',['trim_copy',['../StringHelpers_8hpp.html#ac72f5466b377314d32ad4e5da7963fdc',1,'StringHelpers.hpp']]]
+  ['u_0',['u',['../structmodel__viewer_1_1geometry_1_1TextureCoordinate.html#a70de08b0e7c5fa76ac75eec48bb52b9a',1,'model_viewer::geometry::TextureCoordinate']]]
 ];

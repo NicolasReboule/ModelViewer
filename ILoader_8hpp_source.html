@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ModelViewer: /github/workspace/include/ILoader.hpp Source File</title>
+<title>ModelViewer: /github/workspace/include/Loaders/ILoader.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_881e7c32d8f98b638e44f48f6fedbf62.html">Loaders</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -104,29 +104,34 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QQuick3DGeometry&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="Material_8hpp.html">Material.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="Material_8hpp.html">Material/Material.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classILoader.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classILoader.html">ILoader</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>   <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classILoader.html#aaa9f69dc4cc786787c9dcbbf140be364">   17</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classILoader.html#aaa9f69dc4cc786787c9dcbbf140be364">~ILoader</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classILoader.html#a30edf06c85580463848741ed0508ffb4">   19</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classILoader.html#a30edf06c85580463848741ed0508ffb4">loadModel</a>(<span class="keyword">const</span> std::string &amp;filepath) = 0;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemodel__viewer_1_1loaders.html">model_viewer::loaders</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classmodel__viewer_1_1loaders_1_1ILoader.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodel__viewer_1_1loaders_1_1ILoader.html">ILoader</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a6acd92962f218277677ad74b151256ab">   19</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a6acd92962f218277677ad74b151256ab">~ILoader</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classILoader.html#ab502a70cb5379d5f0b50472b58c0771a">   21</a></span>    <span class="keyword">virtual</span> QQuick3DGeometry *<a class="code hl_function" href="classILoader.html#ab502a70cb5379d5f0b50472b58c0771a">geometry</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classmodel__viewer_1_1loaders_1_1ILoader.html#abb1d69935db9f86f70fe468a920f8752">   21</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#abb1d69935db9f86f70fe468a920f8752">loadModel</a>(<span class="keyword">const</span> std::string &amp;filepath) = 0;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classILoader.html#adf47064cafa9cdac056fba7850f74ab8">   23</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classMTLMaterial.html">MTLMaterial</a> *<a class="code hl_function" href="classILoader.html#adf47064cafa9cdac056fba7850f74ab8">material</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">   23</a></span>    <span class="keyword">virtual</span> QQuick3DGeometry *<a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">geometry</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">   25</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classmodel__viewer_1_1material_1_1MTLMaterial.html">material::MTLMaterial</a> *<a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">material</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif  </span><span class="comment">// MODELVIEWER_ILOADER_HPP</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}  <span class="comment">// namespace model_viewer::loaders</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif  </span><span class="comment">// MODELVIEWER_ILOADER_HPP</span></div>
 <div class="ttc" id="aMaterial_8hpp_html"><div class="ttname"><a href="Material_8hpp.html">Material.hpp</a></div></div>
-<div class="ttc" id="aclassILoader_html"><div class="ttname"><a href="classILoader.html">ILoader</a></div><div class="ttdef"><b>Definition</b> ILoader.hpp:15</div></div>
-<div class="ttc" id="aclassILoader_html_a30edf06c85580463848741ed0508ffb4"><div class="ttname"><a href="classILoader.html#a30edf06c85580463848741ed0508ffb4">ILoader::loadModel</a></div><div class="ttdeci">virtual void loadModel(const std::string &amp;filepath)=0</div></div>
-<div class="ttc" id="aclassILoader_html_aaa9f69dc4cc786787c9dcbbf140be364"><div class="ttname"><a href="classILoader.html#aaa9f69dc4cc786787c9dcbbf140be364">ILoader::~ILoader</a></div><div class="ttdeci">virtual ~ILoader()=default</div></div>
-<div class="ttc" id="aclassILoader_html_ab502a70cb5379d5f0b50472b58c0771a"><div class="ttname"><a href="classILoader.html#ab502a70cb5379d5f0b50472b58c0771a">ILoader::geometry</a></div><div class="ttdeci">virtual QQuick3DGeometry * geometry() const =0</div></div>
-<div class="ttc" id="aclassILoader_html_adf47064cafa9cdac056fba7850f74ab8"><div class="ttname"><a href="classILoader.html#adf47064cafa9cdac056fba7850f74ab8">ILoader::material</a></div><div class="ttdeci">virtual MTLMaterial * material() const =0</div></div>
-<div class="ttc" id="aclassMTLMaterial_html"><div class="ttname"><a href="classMTLMaterial.html">MTLMaterial</a></div><div class="ttdef"><b>Definition</b> Material.hpp:42</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ILoader_html"><div class="ttname"><a href="classmodel__viewer_1_1loaders_1_1ILoader.html">model_viewer::loaders::ILoader</a></div><div class="ttdef"><b>Definition</b> ILoader.hpp:17</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ILoader_html_a03b8eb74b100fbd8a4f9d27d950f0b82"><div class="ttname"><a href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">model_viewer::loaders::ILoader::material</a></div><div class="ttdeci">virtual material::MTLMaterial * material() const =0</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ILoader_html_a6acd92962f218277677ad74b151256ab"><div class="ttname"><a href="classmodel__viewer_1_1loaders_1_1ILoader.html#a6acd92962f218277677ad74b151256ab">model_viewer::loaders::ILoader::~ILoader</a></div><div class="ttdeci">virtual ~ILoader()=default</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ILoader_html_abb1d69935db9f86f70fe468a920f8752"><div class="ttname"><a href="classmodel__viewer_1_1loaders_1_1ILoader.html#abb1d69935db9f86f70fe468a920f8752">model_viewer::loaders::ILoader::loadModel</a></div><div class="ttdeci">virtual void loadModel(const std::string &amp;filepath)=0</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ILoader_html_acc8859d3dc6beaab4c029a8e5b5a6196"><div class="ttname"><a href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">model_viewer::loaders::ILoader::geometry</a></div><div class="ttdeci">virtual QQuick3DGeometry * geometry() const =0</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html"><div class="ttname"><a href="classmodel__viewer_1_1material_1_1MTLMaterial.html">model_viewer::material::MTLMaterial</a></div><div class="ttdef"><b>Definition</b> Material.hpp:26</div></div>
+<div class="ttc" id="anamespacemodel__viewer_1_1loaders_html"><div class="ttname"><a href="namespacemodel__viewer_1_1loaders.html">model_viewer::loaders</a></div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
