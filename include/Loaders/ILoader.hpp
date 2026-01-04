@@ -14,14 +14,30 @@
 
 namespace model_viewer::loaders {
 
+/**
+ * @brief Interface for model loaders
+ */
 class ILoader {
    public:
+    //! Virtual destructor
     virtual ~ILoader() = default;
 
+    /**
+     * @brief Load a model from a file
+     * @param filepath Path to the model file
+     */
     virtual void loadModel(const std::string &filepath) = 0;
 
+    /**
+     * @brief Get the geometry of the loaded model
+     * @return Geometry of the loaded model
+     */
     virtual QQuick3DGeometry *geometry() const = 0;
 
+    /**
+     * @brief Get the material of the loaded model
+     * @return Material of the loaded model
+     */
     virtual material::MTLMaterial *material() const = 0;
 };
 

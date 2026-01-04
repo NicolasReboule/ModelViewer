@@ -18,14 +18,20 @@
 
 namespace model_viewer::string_helpers {
 
-// Trim from the start (in place)
+/**
+ * @brief Trim from the start (in place)
+ * @param s String to trim
+ */
 inline void ltrim(std::string &s) {
     s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](unsigned char ch) {
                 return !std::isspace(ch);
             }));
 }
 
-// Trim from the end (in place)
+/**
+ * @brief Trim from the end (in place)
+ * @param s String to trim
+ */
 inline void rtrim(std::string &s) {
     s.erase(std::find_if(s.rbegin(), s.rend(),
                          [](unsigned char ch) { return !std::isspace(ch); })
@@ -33,30 +39,51 @@ inline void rtrim(std::string &s) {
             s.end());
 }
 
-// Trim from both ends (in place)
+/**
+ * @brief Trim from both ends (in place)
+ * @param s String to trim
+ */
 inline void trim(std::string &s) {
     rtrim(s);
     ltrim(s);
 }
 
-// Trim from the start (copying)
+/**
+ * @brief Trim from the start (copying)
+ * @param s String to trim
+ * @return Trimmed string
+ */
 inline std::string ltrim_copy(std::string s) {
     ltrim(s);
     return s;
 }
 
-// Trim from the end (copying)
+/**
+ * @brief Trim from the end (copying)
+ * @param s String to trim
+ * @return Trimmed string
+ */
 inline std::string rtrim_copy(std::string s) {
     rtrim(s);
     return s;
 }
 
-// Trim from both ends (copying)
+/**
+ * @brief Trim from both ends (copying)
+ * @param s String to trim
+ * @return Trimmed string
+ */
 inline std::string trim_copy(std::string s) {
     trim(s);
     return s;
 }
 
+/**
+ * @brief Normalize a file path by removing "file://" scheme and leading slash
+ *        on Windows paths
+ * @param p Path to normalize
+ * @return Normalized path
+ */
 inline std::string normalizePath(std::string p) {
     const std::string fileScheme = "file://";
     if (p.rfind(fileScheme, 0) == 0) {

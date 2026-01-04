@@ -22,11 +22,14 @@
 
 namespace model_viewer::material {
 
-// TODO: Seek ways to improve this class' architecture
+/**
+ * @brief Class representing a material parsed from an MTL file
+ * @todo Seek ways to improve this class' architecture
+ */
 class MTLMaterial final : public QObject {
     Q_OBJECT
-    Q_PROPERTY(QColor diffuseColor MEMBER _Kd NOTIFY KdChanged)
 
+    Q_PROPERTY(QColor diffuseColor MEMBER _Kd NOTIFY KdChanged)
     Q_PROPERTY(
         qreal illumination MEMBER _illumination NOTIFY illuminationChanged)
     Q_PROPERTY(qreal metalness MEMBER _metalness NOTIFY metalnessChanged)
@@ -45,128 +48,232 @@ class MTLMaterial final : public QObject {
     Q_PROPERTY(QUrl bumpMap READ getBumpMap NOTIFY bumpMapChanged)
    public:
    private:
+    //! Parent path of the MTL file
     std::filesystem::path _parentPath;
 
-    QColor _Ka;  // Ambient Color
+    //! Ambient Color
+    QColor _Ka;
 
-    QColor _Kd;  // Diffuse Color -> diffuseColor
+    //! Diffuse Color
+    QColor _Kd;
 
-    QColor _Ks;  // Specular Color -> specularTint
+    //! Specular Color
+    QColor _Ks;
 
-    QColor _Ke;  // Emissive Factor -> emissiveFactor
+    //! Emissive Color
+    QColor _Ke;
 
-    QColor _Tf;  // Transmission Filter
+    //! Transmission Filter
+    QColor _Tf;
 
-    qreal _illumination;  // lighting
+    //! Illumination Model
+    qreal _illumination;
 
-    qreal _d;  // opacity
+    //! Opacity
+    qreal _d;
 
-    qreal _Ns;  // specularRoughness
+    //! Specular Roughness
+    qreal _Ns;
 
+    //! Sharpness
     qreal _sharpness;
 
-    qreal _Ni;  // indexOfRefraction
+    //! Index of Refraction
+    qreal _Ni;
 
+    //! Metalness
     qreal _metalness = 0.0;
 
+    //! Roughness
     qreal _roughness = 0.0;
 
+    //! Bump/Normal Strength
     qreal _bumpStrength = 0.0;
 
-    QUrl _ambientMap;  // map_Ka
+    //! Path to the Ambient Map
+    QUrl _ambientMap;
 
-    QUrl _diffuseMap;  // map_Kd -> diffuseMap
+    //! Path to the Diffuse Map
+    QUrl _diffuseMap;
 
-    QUrl _specularReflectionMap;  // map_Ks -> specularReflectionMap
+    //! Path to the Specular Reflection Map
+    QUrl _specularReflectionMap;
 
-    QUrl _specularMap;  // map_Ns -> specularMap
+    //! Path to the Specular Map
+    QUrl _specularMap;
 
-    QUrl _emissiveMap;  // map_Ke -> emissiveMap
+    //! Path to the Emissive Map
+    QUrl _emissiveMap;
 
-    QUrl _dissolveMap;  // map_d -> opacityMap
+    //! Path to the Dissolve Map
+    QUrl _dissolveMap;
 
-    QUrl _bumpMap;  // bump -> bumpMap
+    //! Path to the Bump/Normal Map
+    QUrl _bumpMap;
 
-    QUrl _decalMap;  // decal
+    //! Path to the Decal Map
+    QUrl _decalMap;
 
-    QUrl _dispersionMap;  // disp
+    //! Path to the Dispersion Map
+    QUrl _dispersionMap;
 
+    //! Maps to store parsed values before applying them
     std::unordered_map<std::string, qreal> _scalars;
 
+    //! Maps to store parsed colors before applying them
     std::unordered_map<std::string, QColor> _colors;
 
+    //! Maps to store parsed texture maps before applying them
     std::unordered_map<std::string, QUrl> _maps;
 
+    //! Map of parsing functions for different MTL line prefixes
     std::unordered_map<std::string, std::function<void(const std::string &,
                                                        const std::string &)>>
         _parseFunctions;
 
    public:
+    /**
+     * @brief Constructor
+     * @param parent Parent QObject, nullptr by default
+     */
     explicit MTLMaterial(QObject *parent = nullptr);
 
+    //! Destructor
     ~MTLMaterial() override = default;
 
+    /**
+     * @brief Parse an MTL file and set the material properties
+     * @param filepath Path to the MTL file
+     */
     void parseMTL(const std::string &filepath);
 
+    //! Reset the material to default values
     void resetMaterial();
 
+    /**
+     * @brief Get the Ambient Map URL
+     * @return Ambient Map URL
+     */
     const QUrl &getAmbientMap() const { return _ambientMap; };
 
+    /**
+     * @brief Get the Diffuse Map URL
+     * @return Diffuse Map URL
+     */
     const QUrl &getDiffuseMap() const { return _diffuseMap; };
 
+    /**
+     * @brief Get the Specular Reflection Map URL
+     * @return Specular Reflection Map URL
+     */
     const QUrl &getSpecularReflectionMap() const {
         return _specularReflectionMap;
     };
 
+    /**
+     * @brief Get the Specular Map URL
+     * @return Specular Map URL
+     */
     const QUrl &getSpecularMap() const { return _specularMap; };
 
+    /**
+     * @brief Get the Emissive Map URL
+     * @return Emissive Map URL
+     */
     const QUrl &getEmissiveMap() const { return _emissiveMap; };
 
+    /**
+     * @brief Get the Dissolve Map URL
+     * @return Dissolve Map URL
+     */
     const QUrl &getDissolveMap() const { return _dissolveMap; };
 
+    /**
+     * @brief Get the Bump/Normal Map URL
+     * @return Bump/Normal Map URL
+     */
     const QUrl &getBumpMap() const { return _bumpMap; };
 
+    /**
+     * @brief Get the Decal Map URL
+     * @return Decal Map URL
+     */
     const QUrl &getDecalMap() const { return _decalMap; };
 
+    /**
+     * @brief Get the Dispersion Map URL
+     * @return Dispersion Map URL
+     */
     const QUrl &getDispersionMap() const { return _dispersionMap; };
    signals:
+    //! Signal emitted when the diffuse color changes
     void KdChanged();
 
+    //! Signal emitted when the illumination model changes
     void illuminationChanged();
 
+    //! Signal emitted when the opacity changes
     void dChanged();
 
+    //! Signal emitted when the specular roughness changes
     void NsChanged();
 
+    //! Signal emitted when the sharpness changes
     void sharpnessChanged();
 
+    //! Signal emitted when the index of refraction changes
     void NiChanged();
 
+    //! Signal emitted when the metalness changes
     void metalnessChanged();
 
+    //! Signal emitted when the roughness changes
     void roughnessChanged();
 
+    //! Signal emitted when the bump strength changes
     void bumpStrengthChanged();
 
+    //! Signal emitted when the diffuse map changes
     void diffuseMapChanged();
 
+    //! Signal emitted when the specular reflection map changes
     void specularReflectionMapChanged();
 
+    //! Signal emitted when the specular map changes
     void specularMapChanged();
 
+    //! Signal emitted when the emissive map changes
     void emissiveMapChanged();
 
+    //! Signal emitted when the dissolve map changes
     void dissolveMapChanged();
 
+    //! Signal emitted when the bump map changes
     void bumpMapChanged();
 
    private:
+    //! Apply parsed values to the material properties
     void setMaterialValues();
 
+    /**
+     * @brief Parse a scalar value from an MTL line
+     * @param line Line to parse
+     * @param key Key of the scalar value
+     */
     void parseScalar(const std::string &line, const std::string &key);
 
+    /**
+     * @brief Parse a color value from an MTL line
+     * @param line Line to parse
+     * @param key Key of the color value
+     */
     void parseColor(const std::string &line, const std::string &key);
 
+    /**
+     * @brief Parse a texture map from an MTL line
+     * @param line Line to parse
+     * @param key Key of the texture map
+     */
     void parseMap(const std::string &line, const std::string &key);
 };
 

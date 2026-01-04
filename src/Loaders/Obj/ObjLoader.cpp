@@ -23,8 +23,6 @@ ObjLoader::ObjLoader()
     };
 }
 
-// TODO: Optimize
-// TODO: Add groups and multiple materials
 void ObjLoader::loadModel(const std::string &filepath) {
     resetObj();
     _material->resetMaterial();
