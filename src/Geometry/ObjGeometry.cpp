@@ -14,8 +14,9 @@ ObjGeometry::ObjGeometry(QQuick3DObject *parent) : QQuick3DGeometry(parent) {}
 void ObjGeometry::setMesh(const std::vector<Vector3> &vertices,
                           const std::vector<Vector3> &normals,
                           const std::vector<TextureCoordinate> &textureCoords) {
+    clear();
     const bool hasNormals = !normals.empty();
-    const bool hasTextureCoords = !textureCoords.empty() /*&& materialFound*/;
+    const bool hasTextureCoords = !textureCoords.empty();
     QByteArray vertexData;
 
     const qsizetype vertexSize = static_cast<qsizetype>(vertices.size()) *
@@ -47,6 +48,7 @@ void ObjGeometry::setMesh(const std::vector<Vector3> &vertices,
     }
     int stride = 3 * sizeof(float);
     int offset = 0;
+    static int i = 0;
     addAttribute(Attribute::PositionSemantic, offset, Attribute::F32Type);
     offset += 3 * sizeof(float);
     if (hasNormals) {
@@ -64,5 +66,6 @@ void ObjGeometry::setMesh(const std::vector<Vector3> &vertices,
     setPrimitiveType(PrimitiveType::Triangles);
     update();
 }
+
 
 }  // namespace model_viewer::geometry
