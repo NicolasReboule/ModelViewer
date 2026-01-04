@@ -49,7 +49,7 @@
 <h3 align="center">ModelViewer</h3>
 
   <p align="center">
-    ModelViewer is a C++ Template for my future projects <br />
+    ModelViewer is application to visualize 3D models, developed with Qt <br />
     <br />
     <a href="https://NicolasReboule.github.io/ModelViewer"><strong>Explore the source code docs »</strong></a>
     <br />
@@ -88,9 +88,10 @@
 
 ### Built With
 
-* [![CPP][CPP]][CPP-url]
-* [![CMake][CMake]][CMake-url]
-* [![CLion][CLion]][CLion-url]
+* [![CPP]][CPP-url]
+* [![CMake]][CMake-url]
+* [![CLion]][CLion-url]
+* [![Qt]][Qt-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +104,69 @@
 
 ### Installation
 
+#### Before you begin
 
+Ensure you have Qt6 installed on your system. You can download it from the official Qt website: [https://www.qt.io/download](https://www.qt.io/download).
+
+Ensure you have CMake installed on your system. You can download it from the official CMake website: [https://cmake.org/download/](https://cmake.org/download/).
+
+#### Clone the repository and navigate into the project directory:
+
+```sh
+git clone https://github.com/NicolasReboule/ModelViewer
+cd ModelViewer
+```
+
+#### Create a build directory and navigate into it:
+
+```sh
+mkdir build
+cd build
+```
+
+#### Run CMake to configure the project:
+
+```sh
+cmake ..
+```
+
+If Qt is not found automatically, you may need to specify the path to your Qt installation using the `CMAKE_PREFIX_PATH` variable:
+
+```sh
+cmake -DCMAKE_PREFIX_PATH=/path/to/Qt ..
+```
+
+Or add to your `CMakeLists.txt` file:
+
+```cmake
+set(CMAKE_PREFIX_PATH "PATH_TO_QT")
+```
+
+Or set the `QT6_ROOT` environment variable to point to your Qt installation
+
+#### Build the project using CMake:
+
+```sh
+cmake --build .
+```
+
+### Run the application:
+
+#### On Windows:
+
+Execute the ModelViewer.exe file located in the build directory.
+
+```sh
+ModelViewer.exe
+```
+
+#### On macOS and Linux:
+
+Execute the ModelViewer binary located in the build directory:
+
+```sh
+./ModelViewer
+```
 
 ## Documentation
 
@@ -112,7 +175,15 @@ The documentation of this project can be found at:
 
 ## Usage
 
-See the examples in the [source code documentation][github.io-url].
+Use the button to choose the 3D model file to open. Supported formats are: OBJ Wavefront.
+
+Rotate camera using left click + move mouse.
+
+Zoom in/out using mouse wheel.
+
+Move camera using right click + move mouse.
+
+[//]: # (See the examples in the [source code documentation][github.io-url].)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,3 +247,5 @@ Distributed under the MIT License. See [LICENSE][license-url] for more informati
 [CMake-url]: https://cmake.org
 [CLion]: https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white
 [CLion-url]: https://www.jetbrains.com/clion/
+[Qt]: https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white
+[Qt-url]: https://www.qt.io/
