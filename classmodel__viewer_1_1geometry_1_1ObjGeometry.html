@@ -177,56 +177,58 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><span class="lineno">   16</span>                                                                             {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> hasNormals = !normals.empty();</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> hasTextureCoords = !textureCoords.empty() <span class="comment">/*&amp;&amp; materialFound*/</span>;</div>
-<div class="line"><span class="lineno">   19</span>    QByteArray vertexData;</div>
-<div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>    <span class="keyword">const</span> qsizetype vertexSize = <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(vertices.size()) *</div>
-<div class="line"><span class="lineno">   22</span>                                 <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(Vector3));</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keyword">const</span> qsizetype normalSize = <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(normals.size()) *</div>
-<div class="line"><span class="lineno">   24</span>                                 <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(Vector3));</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keyword">const</span> qsizetype textureSize =</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(textureCoords.size()) *</div>
-<div class="line"><span class="lineno">   27</span>        <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(TextureCoordinate));</div>
-<div class="line"><span class="lineno">   28</span>    vertexData.resize(vertexSize + normalSize + textureSize);</div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordtype">float</span> *vertexDataPointer = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">float</span> *<span class="keyword">&gt;</span>(vertexData.data());</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vertices.size(); ++i) {</div>
-<div class="line"><span class="lineno">   32</span>        <span class="keyword">const</span> Vector3 &amp;vertex = vertices[i];</div>
-<div class="line"><span class="lineno">   33</span>        *vertexDataPointer++ = vertex.x;</div>
-<div class="line"><span class="lineno">   34</span>        *vertexDataPointer++ = vertex.y;</div>
-<div class="line"><span class="lineno">   35</span>        *vertexDataPointer++ = vertex.z;</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">if</span> (hasNormals) {</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keyword">const</span> Vector3 &amp;normal = normals[i];</div>
-<div class="line"><span class="lineno">   38</span>            *vertexDataPointer++ = normal.x;</div>
-<div class="line"><span class="lineno">   39</span>            *vertexDataPointer++ = normal.y;</div>
-<div class="line"><span class="lineno">   40</span>            *vertexDataPointer++ = normal.z;</div>
-<div class="line"><span class="lineno">   41</span>        }</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (hasTextureCoords) {</div>
-<div class="line"><span class="lineno">   43</span>            <span class="keyword">const</span> TextureCoordinate &amp;textureCoord = textureCoords[i];</div>
-<div class="line"><span class="lineno">   44</span>            *vertexDataPointer++ = textureCoord.u;</div>
-<div class="line"><span class="lineno">   45</span>            *vertexDataPointer++ = textureCoord.v;</div>
-<div class="line"><span class="lineno">   46</span>        }</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">int</span> stride = 3 * <span class="keyword">sizeof</span>(float);</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordtype">int</span> offset = 0;</div>
-<div class="line"><span class="lineno">   50</span>    addAttribute(Attribute::PositionSemantic, offset, Attribute::F32Type);</div>
-<div class="line"><span class="lineno">   51</span>    offset += 3 * <span class="keyword">sizeof</span>(float);</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (hasNormals) {</div>
-<div class="line"><span class="lineno">   53</span>        stride += 3 * <span class="keyword">sizeof</span>(float);</div>
-<div class="line"><span class="lineno">   54</span>        addAttribute(Attribute::NormalSemantic, offset, Attribute::F32Type);</div>
-<div class="line"><span class="lineno">   55</span>        offset += 3 * <span class="keyword">sizeof</span>(float);</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (hasTextureCoords) {</div>
-<div class="line"><span class="lineno">   58</span>        stride += 2 * <span class="keyword">sizeof</span>(float);</div>
-<div class="line"><span class="lineno">   59</span>        addAttribute(Attribute::TexCoord0Semantic, offset, Attribute::F32Type);</div>
-<div class="line"><span class="lineno">   60</span>        offset += 2 * <span class="keyword">sizeof</span>(float);</div>
-<div class="line"><span class="lineno">   61</span>    }</div>
-<div class="line"><span class="lineno">   62</span>    setStride(stride);</div>
-<div class="line"><span class="lineno">   63</span>    setVertexData(vertexData);</div>
-<div class="line"><span class="lineno">   64</span>    setPrimitiveType(PrimitiveType::Triangles);</div>
-<div class="line"><span class="lineno">   65</span>    update();</div>
-<div class="line"><span class="lineno">   66</span>}</div>
+<div class="line"><span class="lineno">   17</span>    clear();</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> hasNormals = !normals.empty();</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> hasTextureCoords = !textureCoords.empty();</div>
+<div class="line"><span class="lineno">   20</span>    QByteArray vertexData;</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="keyword">const</span> qsizetype vertexSize = <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(vertices.size()) *</div>
+<div class="line"><span class="lineno">   23</span>                                 <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(Vector3));</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keyword">const</span> qsizetype normalSize = <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(normals.size()) *</div>
+<div class="line"><span class="lineno">   25</span>                                 <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(Vector3));</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keyword">const</span> qsizetype textureSize =</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(textureCoords.size()) *</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keyword">static_cast&lt;</span>qsizetype<span class="keyword">&gt;</span>(<span class="keyword">sizeof</span>(TextureCoordinate));</div>
+<div class="line"><span class="lineno">   29</span>    vertexData.resize(vertexSize + normalSize + textureSize);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">float</span> *vertexDataPointer = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">float</span> *<span class="keyword">&gt;</span>(vertexData.data());</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vertices.size(); ++i) {</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keyword">const</span> Vector3 &amp;vertex = vertices[i];</div>
+<div class="line"><span class="lineno">   34</span>        *vertexDataPointer++ = vertex.x;</div>
+<div class="line"><span class="lineno">   35</span>        *vertexDataPointer++ = vertex.y;</div>
+<div class="line"><span class="lineno">   36</span>        *vertexDataPointer++ = vertex.z;</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (hasNormals) {</div>
+<div class="line"><span class="lineno">   38</span>            <span class="keyword">const</span> Vector3 &amp;normal = normals[i];</div>
+<div class="line"><span class="lineno">   39</span>            *vertexDataPointer++ = normal.x;</div>
+<div class="line"><span class="lineno">   40</span>            *vertexDataPointer++ = normal.y;</div>
+<div class="line"><span class="lineno">   41</span>            *vertexDataPointer++ = normal.z;</div>
+<div class="line"><span class="lineno">   42</span>        }</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">if</span> (hasTextureCoords) {</div>
+<div class="line"><span class="lineno">   44</span>            <span class="keyword">const</span> TextureCoordinate &amp;textureCoord = textureCoords[i];</div>
+<div class="line"><span class="lineno">   45</span>            *vertexDataPointer++ = textureCoord.u;</div>
+<div class="line"><span class="lineno">   46</span>            *vertexDataPointer++ = textureCoord.v;</div>
+<div class="line"><span class="lineno">   47</span>        }</div>
+<div class="line"><span class="lineno">   48</span>    }</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordtype">int</span> stride = 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">int</span> offset = 0;</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><span class="lineno">   52</span>    addAttribute(Attribute::PositionSemantic, offset, Attribute::F32Type);</div>
+<div class="line"><span class="lineno">   53</span>    offset += 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (hasNormals) {</div>
+<div class="line"><span class="lineno">   55</span>        stride += 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   56</span>        addAttribute(Attribute::NormalSemantic, offset, Attribute::F32Type);</div>
+<div class="line"><span class="lineno">   57</span>        offset += 3 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (hasTextureCoords) {</div>
+<div class="line"><span class="lineno">   60</span>        stride += 2 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   61</span>        addAttribute(Attribute::TexCoord0Semantic, offset, Attribute::F32Type);</div>
+<div class="line"><span class="lineno">   62</span>        offset += 2 * <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   63</span>    }</div>
+<div class="line"><span class="lineno">   64</span>    setStride(stride);</div>
+<div class="line"><span class="lineno">   65</span>    setVertexData(vertexData);</div>
+<div class="line"><span class="lineno">   66</span>    setPrimitiveType(PrimitiveType::Triangles);</div>
+<div class="line"><span class="lineno">   67</span>    update();</div>
+<div class="line"><span class="lineno">   68</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="structmodel__viewer_1_1geometry_1_1TextureCoordinate.html#a70de08b0e7c5fa76ac75eec48bb52b9a">model_viewer::geometry::TextureCoordinate::u</a>, <a class="el" href="structmodel__viewer_1_1geometry_1_1TextureCoordinate.html#ac4875dc9477c234d8d38fe33a2dd7b12">model_viewer::geometry::TextureCoordinate::v</a>, <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html#a6bf5a44604d3a16589f513e42ca2f885">model_viewer::geometry::Vector3::x</a>, <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html#a81ceb7fccb3650de6d61f5c16398b39e">model_viewer::geometry::Vector3::y</a>, and <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html#afc9e81e76ca2f5cf302bfe2a65275810">model_viewer::geometry::Vector3::z</a>.</p>
 
