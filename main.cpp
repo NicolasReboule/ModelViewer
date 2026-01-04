@@ -6,9 +6,9 @@
 #include <QQmlContext>
 #include <QString>
 
-#include "ModelManager.hpp"
 #include "Loaders/Obj/ObjLoader.hpp"
 #include "Material/Material.hpp"
+#include "ModelManager.hpp"
 
 using namespace Qt::StringLiterals;
 

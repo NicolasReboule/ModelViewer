@@ -50,15 +50,15 @@ void ObjLoader::loadModel(const std::string &filepath) {
     std::vector<geometry::Vector3> vn;
     for (auto f : _faces) {
         if (!_vertices.empty() && f.v != 0) {
-            const int vIdx = f.v > 0 ? f.v - 1 : v.size() + f.v;
+            const int vIdx = f.v > 0 ? f.v - 1 : _vertices.size() + f.v;
             v.push_back(_vertices[vIdx]);
         }
         if (!_textureCoords.empty() && f.vt != 0) {
-            const int vtIdx = f.vt > 0 ? f.vt - 1 : v.size() + f.vt;
+            const int vtIdx = f.vt > 0 ? f.vt - 1 : _vertices.size() + f.vt;
             vt.push_back(_textureCoords[vtIdx]);
         }
         if (!_normals.empty() && f.vn != 0) {
-            const int vnIdx = f.vn > 0 ? f.vn - 1 : v.size() + f.vn;
+            const int vnIdx = f.vn > 0 ? f.vn - 1 : _vertices.size() + f.vn;
             vn.push_back(_normals[vnIdx]);
         }
     }

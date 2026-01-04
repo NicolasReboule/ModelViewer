@@ -6,6 +6,7 @@ import QtQuick3D.Helpers
 Item {
     property Node cameraOrigin: null
     property PerspectiveCamera pCamera: null
+
     OrbitCameraController {
         enabled: ModelManager ? ModelManager.ready : false
         anchors.fill: parent
