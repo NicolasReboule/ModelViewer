@@ -343,15 +343,15 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   50</span>    std::vector&lt;geometry::Vector3&gt; vn;</div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>) {</div>
 <div class="line"><span class="lineno">   52</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.empty() &amp;&amp; f.v != 0) {</div>
-<div class="line"><span class="lineno">   53</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vIdx = f.v &gt; 0 ? f.v - 1 : v.size() + f.v;</div>
+<div class="line"><span class="lineno">   53</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vIdx = f.v &gt; 0 ? f.v - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + f.v;</div>
 <div class="line"><span class="lineno">   54</span>            v.push_back(<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>[vIdx]);</div>
 <div class="line"><span class="lineno">   55</span>        }</div>
 <div class="line"><span class="lineno">   56</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.empty() &amp;&amp; f.vt != 0) {</div>
-<div class="line"><span class="lineno">   57</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vtIdx = f.vt &gt; 0 ? f.vt - 1 : v.size() + f.vt;</div>
+<div class="line"><span class="lineno">   57</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vtIdx = f.vt &gt; 0 ? f.vt - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + f.vt;</div>
 <div class="line"><span class="lineno">   58</span>            vt.push_back(<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>[vtIdx]);</div>
 <div class="line"><span class="lineno">   59</span>        }</div>
 <div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.empty() &amp;&amp; f.vn != 0) {</div>
-<div class="line"><span class="lineno">   61</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vnIdx = f.vn &gt; 0 ? f.vn - 1 : v.size() + f.vn;</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vnIdx = f.vn &gt; 0 ? f.vn - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + f.vn;</div>
 <div class="line"><span class="lineno">   62</span>            vn.push_back(<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>[vnIdx]);</div>
 <div class="line"><span class="lineno">   63</span>        }</div>
 <div class="line"><span class="lineno">   64</span>    }</div>
