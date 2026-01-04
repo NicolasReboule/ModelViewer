@@ -78,6 +78,12 @@ qt_add_qml_module(${PROJECT_NAME}
             qml_src/CameraControls.qml
 )
 
+qt_add_resources(${PROJECT_NAME} "resources"
+        PREFIX "/"
+        FILES
+        qtquickcontrols2.conf
+)
+
 target_link_libraries(${PROJECT_NAME} PRIVATE
         ${PROJECT_NAME}_Sources
 )

@@ -12,7 +12,12 @@ Rectangle {
     color: "black"
 
     Button {
+        icon.name: "folder-open"
         text: "Choose OBJ file"
+        anchors.centerIn: parent
+        width: parent.width * 0.8
+        height: 60
+        font.pixelSize: 20
         onClicked: fileDialog.open()
     }
 
