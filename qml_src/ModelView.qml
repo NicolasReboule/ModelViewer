@@ -56,7 +56,7 @@ View3D {
 
     //! [loader]
     BusyIndicator {
-        running: ModelManager ? ModelManager.loading : false
+        running: ModelManager.loading
         height: parent.height / 10
         width: parent.width / 10
         anchors.centerIn: parent

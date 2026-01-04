@@ -3,8 +3,8 @@ import QtQuick3D
 
 Model {
     id: model
-    visible: ModelManager ? ModelManager.ready : false
-    geometry: ModelManager ? ModelManager.geometry : null
+    visible: ModelManager.ready
+    geometry: ModelManager.geometry
     scale: Qt.vector3d(10, 10, 10)
     materials: [
         PrincipledMaterial {

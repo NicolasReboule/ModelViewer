@@ -14,9 +14,11 @@ using namespace Qt::StringLiterals;
 
 int main(int argc, char *argv[]) {
     const QGuiApplication app(argc, argv);
-    QQmlApplicationEngine engine;
+    QQmlApplicationEngine *engine = new QQmlApplicationEngine();
     model_viewer::ModelManager modelManager;
-    engine.rootContext()->setContextProperty("ModelManager", &modelManager);
-    engine.loadFromModule("ModelViewerModule", "Main");
+    engine->rootContext()->setContextProperty("ModelManager", &modelManager);
+    QObject::connect(&app, &QGuiApplication::aboutToQuit, engine,
+                     &QQmlApplicationEngine::deleteLater);
+    engine->loadFromModule("ModelViewerModule", "Main");
     return app.exec();
 }

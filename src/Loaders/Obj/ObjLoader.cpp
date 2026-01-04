@@ -12,8 +12,8 @@
 namespace model_viewer::loaders {
 
 ObjLoader::ObjLoader()
-    : _geometry(new geometry::ObjGeometry()),
-      _material(new material::MTLMaterial()) {
+    : _geometry(std::make_unique<geometry::ObjGeometry>()),
+      _material(std::make_unique<material::MTLMaterial>()) {
     _parseFunctions = {
         {"v", [this](const std::string &l) { parseVertice(l); }},
         {"vn", [this](const std::string &l) { parseNormal(l); }},

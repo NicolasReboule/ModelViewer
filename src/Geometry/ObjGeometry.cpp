@@ -67,5 +67,4 @@ void ObjGeometry::setMesh(const std::vector<Vector3> &vertices,
     update();
 }
 
-
 }  // namespace model_viewer::geometry
