@@ -187,8 +187,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   15</span>    : <a class="code hl_variable" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>(<span class="keyword">new</span> geometry::ObjGeometry()),</div>
-<div class="line"><span class="lineno">   16</span>      <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>(<span class="keyword">new</span> material::MTLMaterial()) {</div>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>    : <a class="code hl_variable" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>(std::make_unique&lt;geometry::ObjGeometry&gt;()),</div>
+<div class="line"><span class="lineno">   16</span>      <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>(std::make_unique&lt;material::MTLMaterial&gt;()) {</div>
 <div class="line"><span class="lineno">   17</span>    <a class="code hl_variable" href="#aba6c54c3e17eba27a0fa6884b92aa37f">_parseFunctions</a> = {</div>
 <div class="line"><span class="lineno">   18</span>        {<span class="stringliteral">&quot;v&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#a2a06892dd8f73dbeab8deebad3ea7af6">parseVertice</a>(l); }},</div>
 <div class="line"><span class="lineno">   19</span>        {<span class="stringliteral">&quot;vn&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l) { <a class="code hl_function" href="#ab7c433f5467daeb81d0a458091a1840d">parseNormal</a>(l); }},</div>
