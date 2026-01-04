@@ -20,6 +20,11 @@ option(USE_CLANG_TIDY "Use clang-tidy" OFF) # Used by the CI
 option(USE_CLANG_TIDY_WITH_ERRORS "Use clang tidy but all warnings are errors" OFF) # Used by the CI
 option(USE_CLANG_TIDY_WITH_FIX "Use clang-tidy with fix" OFF) # Used by the CI
 
+# Compile Options
+if (MSVC)
+    add_compile_options(/Zc:__cplusplus)
+endif ()
+
 # Headers
 add_library(${PROJECT_NAME}_Headers INTERFACE)
 target_include_directories(${PROJECT_NAME}_Headers INTERFACE
@@ -80,7 +85,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 # Compiler Warnings
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 if (MSVC)
-    target_compile_options(${PROJECT_NAME} PRIVATE /W4 /WX)
+    target_compile_options(${PROJECT_NAME} PRIVATE /W4 /WX /wd4702)
 else ()
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -pedantic -Werror)
 endif()
