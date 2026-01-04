@@ -1,5 +1,5 @@
 <map id="model_viewer::material::MTLMaterial::parseColor" name="model_viewer::material::MTLMaterial::parseColor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="233,5,401,46"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title=" " alt="" coords="5,5,185,46"/>
+<area shape="rect" id="Node000001" title="Parse a color value from an MTL line." alt="" coords="233,5,401,46"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title="Constructor." alt="" coords="5,5,185,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,28,185,28,185,23,217,23"/>
 </map>

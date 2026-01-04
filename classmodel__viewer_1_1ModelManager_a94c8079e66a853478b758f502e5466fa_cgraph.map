@@ -1,5 +1,5 @@
 <map id="model_viewer::ModelManager::geometry" name="model_viewer::ModelManager::geometry">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,198,46"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196" title=" " alt="" coords="246,5,395,46"/>
+<area shape="rect" id="Node000001" title="Get the geometry of the loaded model." alt="" coords="5,5,198,46"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196" title="Get the geometry of the loaded model." alt="" coords="246,5,395,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,23,230,23,230,28,198,28"/>
 </map>

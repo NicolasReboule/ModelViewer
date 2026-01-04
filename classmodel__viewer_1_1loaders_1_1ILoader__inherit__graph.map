@@ -1,5 +1,5 @@
 <map id="model_viewer::loaders::ILoader" name="model_viewer::loaders::ILoader">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,155,46"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html" title=" " alt="" coords="5,94,155,135"/>
+<area shape="rect" id="Node000001" title="Interface for model loaders." alt="" coords="5,5,155,46"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html" title="Class for loading OBJ models." alt="" coords="5,94,155,135"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,62,83,94,77,94,77,62"/>
 </map>

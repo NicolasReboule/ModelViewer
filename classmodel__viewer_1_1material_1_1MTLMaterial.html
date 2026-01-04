@@ -100,13 +100,16 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Class representing a material parsed from an MTL file.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Material_8hpp_source.html">Material.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for model_viewer::material::MTLMaterial:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial__inherit__graph.png" border="0" usemap="#amodel__viewer_1_1material_1_1MTLMaterial_inherit__map" alt="Inheritance graph"/></div>
 <map name="amodel__viewer_1_1material_1_1MTLMaterial_inherit__map" id="amodel__viewer_1_1material_1_1MTLMaterial_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,79,159,120"/>
+<area shape="rect" title="Class representing a material parsed from an MTL file." alt="" coords="5,79,159,120"/>
 <area shape="rect" title=" " alt="" coords="47,5,117,31"/>
 <area shape="poly" title=" " alt="" coords="85,46,85,79,79,79,79,46"/>
 </map>
@@ -116,7 +119,7 @@ Collaboration diagram for model_viewer::material::MTLMaterial:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial__coll__graph.png" border="0" usemap="#amodel__viewer_1_1material_1_1MTLMaterial_coll__map" alt="Collaboration graph"/></div>
 <map name="amodel__viewer_1_1material_1_1MTLMaterial_coll__map" id="amodel__viewer_1_1material_1_1MTLMaterial_coll__map">
-<area shape="rect" title=" " alt="" coords="5,79,159,120"/>
+<area shape="rect" title="Class representing a material parsed from an MTL file." alt="" coords="5,79,159,120"/>
 <area shape="rect" title=" " alt="" coords="47,5,117,31"/>
 <area shape="poly" title=" " alt="" coords="85,46,85,79,79,79,79,46"/>
 </map>
@@ -125,63 +128,91 @@ Collaboration diagram for model_viewer::material::MTLMaterial:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:a4c6fb10763a008a37efe839043172121" id="r_a4c6fb10763a008a37efe839043172121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c6fb10763a008a37efe839043172121">KdChanged</a> ()</td></tr>
+<tr class="memdesc:a4c6fb10763a008a37efe839043172121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the diffuse color changes.  <br /></td></tr>
 <tr class="separator:a4c6fb10763a008a37efe839043172121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4f5602965cd67a56e79e4fc1340de4e" id="r_af4f5602965cd67a56e79e4fc1340de4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4f5602965cd67a56e79e4fc1340de4e">illuminationChanged</a> ()</td></tr>
+<tr class="memdesc:af4f5602965cd67a56e79e4fc1340de4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the illumination model changes.  <br /></td></tr>
 <tr class="separator:af4f5602965cd67a56e79e4fc1340de4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c1cf4364f871713dcc08db8fc4bc6f2" id="r_a2c1cf4364f871713dcc08db8fc4bc6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c1cf4364f871713dcc08db8fc4bc6f2">dChanged</a> ()</td></tr>
+<tr class="memdesc:a2c1cf4364f871713dcc08db8fc4bc6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the opacity changes.  <br /></td></tr>
 <tr class="separator:a2c1cf4364f871713dcc08db8fc4bc6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1569c60c29e616819ed8a5244cb415" id="r_a3e1569c60c29e616819ed8a5244cb415"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e1569c60c29e616819ed8a5244cb415">NsChanged</a> ()</td></tr>
+<tr class="memdesc:a3e1569c60c29e616819ed8a5244cb415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the specular roughness changes.  <br /></td></tr>
 <tr class="separator:a3e1569c60c29e616819ed8a5244cb415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af22ce7769d73cda479073462dd03a69a" id="r_af22ce7769d73cda479073462dd03a69a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af22ce7769d73cda479073462dd03a69a">sharpnessChanged</a> ()</td></tr>
+<tr class="memdesc:af22ce7769d73cda479073462dd03a69a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the sharpness changes.  <br /></td></tr>
 <tr class="separator:af22ce7769d73cda479073462dd03a69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf9b8a9d88681f5e11ed5b30835ce29c" id="r_acf9b8a9d88681f5e11ed5b30835ce29c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf9b8a9d88681f5e11ed5b30835ce29c">NiChanged</a> ()</td></tr>
+<tr class="memdesc:acf9b8a9d88681f5e11ed5b30835ce29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the index of refraction changes.  <br /></td></tr>
 <tr class="separator:acf9b8a9d88681f5e11ed5b30835ce29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9f5957eebc85717ba05548949150a6" id="r_a4e9f5957eebc85717ba05548949150a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9f5957eebc85717ba05548949150a6">metalnessChanged</a> ()</td></tr>
+<tr class="memdesc:a4e9f5957eebc85717ba05548949150a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the metalness changes.  <br /></td></tr>
 <tr class="separator:a4e9f5957eebc85717ba05548949150a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedcd06d56e0383e7c19c1c7158da177e" id="r_aedcd06d56e0383e7c19c1c7158da177e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedcd06d56e0383e7c19c1c7158da177e">roughnessChanged</a> ()</td></tr>
+<tr class="memdesc:aedcd06d56e0383e7c19c1c7158da177e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the roughness changes.  <br /></td></tr>
 <tr class="separator:aedcd06d56e0383e7c19c1c7158da177e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53b90cab6f99f616774b22de223da715" id="r_a53b90cab6f99f616774b22de223da715"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b90cab6f99f616774b22de223da715">bumpStrengthChanged</a> ()</td></tr>
+<tr class="memdesc:a53b90cab6f99f616774b22de223da715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the bump strength changes.  <br /></td></tr>
 <tr class="separator:a53b90cab6f99f616774b22de223da715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6da8880cb4f0739106b415b9dae2ea7" id="r_aa6da8880cb4f0739106b415b9dae2ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6da8880cb4f0739106b415b9dae2ea7">diffuseMapChanged</a> ()</td></tr>
+<tr class="memdesc:aa6da8880cb4f0739106b415b9dae2ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the diffuse map changes.  <br /></td></tr>
 <tr class="separator:aa6da8880cb4f0739106b415b9dae2ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac55ad563a6ed5645b1394a64c2f24f8" id="r_aac55ad563a6ed5645b1394a64c2f24f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac55ad563a6ed5645b1394a64c2f24f8">specularReflectionMapChanged</a> ()</td></tr>
+<tr class="memdesc:aac55ad563a6ed5645b1394a64c2f24f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the specular reflection map changes.  <br /></td></tr>
 <tr class="separator:aac55ad563a6ed5645b1394a64c2f24f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeffcf1e8af7dbf0846d6027a7a7fc67" id="r_aaeffcf1e8af7dbf0846d6027a7a7fc67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeffcf1e8af7dbf0846d6027a7a7fc67">specularMapChanged</a> ()</td></tr>
+<tr class="memdesc:aaeffcf1e8af7dbf0846d6027a7a7fc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the specular map changes.  <br /></td></tr>
 <tr class="separator:aaeffcf1e8af7dbf0846d6027a7a7fc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a05989b0e69b6ca35e517811687826" id="r_aa9a05989b0e69b6ca35e517811687826"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9a05989b0e69b6ca35e517811687826">emissiveMapChanged</a> ()</td></tr>
+<tr class="memdesc:aa9a05989b0e69b6ca35e517811687826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the emissive map changes.  <br /></td></tr>
 <tr class="separator:aa9a05989b0e69b6ca35e517811687826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5971cda8ec487091ea461681977707be" id="r_a5971cda8ec487091ea461681977707be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5971cda8ec487091ea461681977707be">dissolveMapChanged</a> ()</td></tr>
+<tr class="memdesc:a5971cda8ec487091ea461681977707be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the dissolve map changes.  <br /></td></tr>
 <tr class="separator:a5971cda8ec487091ea461681977707be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe0873fa685bb8bf263f4c4a8b70a02b" id="r_abe0873fa685bb8bf263f4c4a8b70a02b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe0873fa685bb8bf263f4c4a8b70a02b">bumpMapChanged</a> ()</td></tr>
+<tr class="memdesc:abe0873fa685bb8bf263f4c4a8b70a02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the bump map changes.  <br /></td></tr>
 <tr class="separator:abe0873fa685bb8bf263f4c4a8b70a02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adb1ec3675f07c73f647b388a9b7b1e61" id="r_adb1ec3675f07c73f647b388a9b7b1e61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb1ec3675f07c73f647b388a9b7b1e61">MTLMaterial</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:adb1ec3675f07c73f647b388a9b7b1e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:adb1ec3675f07c73f647b388a9b7b1e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d31df610bfc95123570084337223e2d" id="r_a3d31df610bfc95123570084337223e2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d31df610bfc95123570084337223e2d">~MTLMaterial</a> () override=default</td></tr>
+<tr class="memdesc:a3d31df610bfc95123570084337223e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a3d31df610bfc95123570084337223e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacb29680b6a02d951d2bec548bc646be" id="r_aacb29680b6a02d951d2bec548bc646be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacb29680b6a02d951d2bec548bc646be">parseMTL</a> (const std::string &amp;filepath)</td></tr>
+<tr class="memdesc:aacb29680b6a02d951d2bec548bc646be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an MTL file and set the material properties.  <br /></td></tr>
 <tr class="separator:aacb29680b6a02d951d2bec548bc646be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeedd667610ee2d6d7d199a1c6e7db201" id="r_aeedd667610ee2d6d7d199a1c6e7db201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeedd667610ee2d6d7d199a1c6e7db201">resetMaterial</a> ()</td></tr>
+<tr class="memdesc:aeedd667610ee2d6d7d199a1c6e7db201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the material to default values.  <br /></td></tr>
 <tr class="separator:aeedd667610ee2d6d7d199a1c6e7db201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a236654c49b445a39bf628d5d08b9cd4b" id="r_a236654c49b445a39bf628d5d08b9cd4b"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a236654c49b445a39bf628d5d08b9cd4b">getAmbientMap</a> () const</td></tr>
+<tr class="memdesc:a236654c49b445a39bf628d5d08b9cd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Ambient Map URL.  <br /></td></tr>
 <tr class="separator:a236654c49b445a39bf628d5d08b9cd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f664d4032c04912fc6d924949ee0c39" id="r_a2f664d4032c04912fc6d924949ee0c39"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f664d4032c04912fc6d924949ee0c39">getDiffuseMap</a> () const</td></tr>
+<tr class="memdesc:a2f664d4032c04912fc6d924949ee0c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Diffuse Map URL.  <br /></td></tr>
 <tr class="separator:a2f664d4032c04912fc6d924949ee0c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d9e2c284dc69a6311946c33df62295" id="r_ac4d9e2c284dc69a6311946c33df62295"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d9e2c284dc69a6311946c33df62295">getSpecularReflectionMap</a> () const</td></tr>
+<tr class="memdesc:ac4d9e2c284dc69a6311946c33df62295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Specular Reflection Map URL.  <br /></td></tr>
 <tr class="separator:ac4d9e2c284dc69a6311946c33df62295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d9753f7a9b0488b3f9e82eade9de10" id="r_ab8d9753f7a9b0488b3f9e82eade9de10"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8d9753f7a9b0488b3f9e82eade9de10">getSpecularMap</a> () const</td></tr>
+<tr class="memdesc:ab8d9753f7a9b0488b3f9e82eade9de10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Specular Map URL.  <br /></td></tr>
 <tr class="separator:ab8d9753f7a9b0488b3f9e82eade9de10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d8b062039d0ff3af59d6af5105a0453" id="r_a5d8b062039d0ff3af59d6af5105a0453"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d8b062039d0ff3af59d6af5105a0453">getEmissiveMap</a> () const</td></tr>
+<tr class="memdesc:a5d8b062039d0ff3af59d6af5105a0453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Emissive Map URL.  <br /></td></tr>
 <tr class="separator:a5d8b062039d0ff3af59d6af5105a0453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3afa962b28a37fe50e1891eb3f8ebdf4" id="r_a3afa962b28a37fe50e1891eb3f8ebdf4"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3afa962b28a37fe50e1891eb3f8ebdf4">getDissolveMap</a> () const</td></tr>
+<tr class="memdesc:a3afa962b28a37fe50e1891eb3f8ebdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Dissolve Map URL.  <br /></td></tr>
 <tr class="separator:a3afa962b28a37fe50e1891eb3f8ebdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c9417a4550750da9a486cb573949120" id="r_a2c9417a4550750da9a486cb573949120"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c9417a4550750da9a486cb573949120">getBumpMap</a> () const</td></tr>
+<tr class="memdesc:a2c9417a4550750da9a486cb573949120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Bump/Normal Map URL.  <br /></td></tr>
 <tr class="separator:a2c9417a4550750da9a486cb573949120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd3978ff955f26e20b3939df242353b0" id="r_abd3978ff955f26e20b3939df242353b0"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd3978ff955f26e20b3939df242353b0">getDecalMap</a> () const</td></tr>
+<tr class="memdesc:abd3978ff955f26e20b3939df242353b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Decal Map URL.  <br /></td></tr>
 <tr class="separator:abd3978ff955f26e20b3939df242353b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20865574103d3d9a06c8c8698a391d63" id="r_a20865574103d3d9a06c8c8698a391d63"><td class="memItemLeft" align="right" valign="top">const QUrl &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20865574103d3d9a06c8c8698a391d63">getDispersionMap</a> () const</td></tr>
+<tr class="memdesc:a20865574103d3d9a06c8c8698a391d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Dispersion Map URL.  <br /></td></tr>
 <tr class="separator:a20865574103d3d9a06c8c8698a391d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
@@ -216,72 +247,106 @@ Properties</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ad2797ddef1bb24392efa0b70465ad40a" id="r_ad2797ddef1bb24392efa0b70465ad40a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues</a> ()</td></tr>
+<tr class="memdesc:ad2797ddef1bb24392efa0b70465ad40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply parsed values to the material properties.  <br /></td></tr>
 <tr class="separator:ad2797ddef1bb24392efa0b70465ad40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb64fee003e3ae2a23e85a9e9edcd730" id="r_abb64fee003e3ae2a23e85a9e9edcd730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb64fee003e3ae2a23e85a9e9edcd730">parseScalar</a> (const std::string &amp;line, const std::string &amp;key)</td></tr>
+<tr class="memdesc:abb64fee003e3ae2a23e85a9e9edcd730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a scalar value from an MTL line.  <br /></td></tr>
 <tr class="separator:abb64fee003e3ae2a23e85a9e9edcd730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab96c8f0edf9a593cfbe5043d9683b31d" id="r_ab96c8f0edf9a593cfbe5043d9683b31d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab96c8f0edf9a593cfbe5043d9683b31d">parseColor</a> (const std::string &amp;line, const std::string &amp;key)</td></tr>
+<tr class="memdesc:ab96c8f0edf9a593cfbe5043d9683b31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a color value from an MTL line.  <br /></td></tr>
 <tr class="separator:ab96c8f0edf9a593cfbe5043d9683b31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c15809900c2d355faeecc502cbc9221" id="r_a7c15809900c2d355faeecc502cbc9221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c15809900c2d355faeecc502cbc9221">parseMap</a> (const std::string &amp;line, const std::string &amp;key)</td></tr>
+<tr class="memdesc:a7c15809900c2d355faeecc502cbc9221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a texture map from an MTL line.  <br /></td></tr>
 <tr class="separator:a7c15809900c2d355faeecc502cbc9221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a835e07ca86aee083a920fcdb70f8fa89" id="r_a835e07ca86aee083a920fcdb70f8fa89"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a></td></tr>
+<tr class="memdesc:a835e07ca86aee083a920fcdb70f8fa89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent path of the MTL file.  <br /></td></tr>
 <tr class="separator:a835e07ca86aee083a920fcdb70f8fa89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae362ba9d2f557fcfb897dcd7a70e867d" id="r_ae362ba9d2f557fcfb897dcd7a70e867d"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae362ba9d2f557fcfb897dcd7a70e867d">_Ka</a></td></tr>
+<tr class="memdesc:ae362ba9d2f557fcfb897dcd7a70e867d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ambient Color.  <br /></td></tr>
 <tr class="separator:ae362ba9d2f557fcfb897dcd7a70e867d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a106573bfd59484dd8c2dcefb2bdd8843" id="r_a106573bfd59484dd8c2dcefb2bdd8843"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a106573bfd59484dd8c2dcefb2bdd8843">_Kd</a></td></tr>
+<tr class="memdesc:a106573bfd59484dd8c2dcefb2bdd8843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diffuse Color.  <br /></td></tr>
 <tr class="separator:a106573bfd59484dd8c2dcefb2bdd8843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7434ece78bcc7e9151fb0c2039edf1" id="r_a9b7434ece78bcc7e9151fb0c2039edf1"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a></td></tr>
+<tr class="memdesc:a9b7434ece78bcc7e9151fb0c2039edf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specular Color.  <br /></td></tr>
 <tr class="separator:a9b7434ece78bcc7e9151fb0c2039edf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5003695bea7b24f1a259eba3a2397cf8" id="r_a5003695bea7b24f1a259eba3a2397cf8"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5003695bea7b24f1a259eba3a2397cf8">_Ke</a></td></tr>
+<tr class="memdesc:a5003695bea7b24f1a259eba3a2397cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emissive Color.  <br /></td></tr>
 <tr class="separator:a5003695bea7b24f1a259eba3a2397cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e5dbc2f2364e5b621da963447c38adb" id="r_a7e5dbc2f2364e5b621da963447c38adb"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e5dbc2f2364e5b621da963447c38adb">_Tf</a></td></tr>
+<tr class="memdesc:a7e5dbc2f2364e5b621da963447c38adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmission Filter.  <br /></td></tr>
 <tr class="separator:a7e5dbc2f2364e5b621da963447c38adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8978444890ecd2a4284d6749a62a2e7f" id="r_a8978444890ecd2a4284d6749a62a2e7f"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8978444890ecd2a4284d6749a62a2e7f">_illumination</a></td></tr>
+<tr class="memdesc:a8978444890ecd2a4284d6749a62a2e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Illumination Model.  <br /></td></tr>
 <tr class="separator:a8978444890ecd2a4284d6749a62a2e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a146902354b7b1e08b0c2532a83b4da2b" id="r_a146902354b7b1e08b0c2532a83b4da2b"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a146902354b7b1e08b0c2532a83b4da2b">_d</a></td></tr>
+<tr class="memdesc:a146902354b7b1e08b0c2532a83b4da2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opacity.  <br /></td></tr>
 <tr class="separator:a146902354b7b1e08b0c2532a83b4da2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44b216ba789ae4f298ad4aaca9edac3" id="r_ae44b216ba789ae4f298ad4aaca9edac3"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae44b216ba789ae4f298ad4aaca9edac3">_Ns</a></td></tr>
+<tr class="memdesc:ae44b216ba789ae4f298ad4aaca9edac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specular Roughness.  <br /></td></tr>
 <tr class="separator:ae44b216ba789ae4f298ad4aaca9edac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a476577a27aec53b86e0b1a55f39ed46a" id="r_a476577a27aec53b86e0b1a55f39ed46a"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a476577a27aec53b86e0b1a55f39ed46a">_sharpness</a></td></tr>
+<tr class="memdesc:a476577a27aec53b86e0b1a55f39ed46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sharpness.  <br /></td></tr>
 <tr class="separator:a476577a27aec53b86e0b1a55f39ed46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a352243a3a9dea448ebfdfc63af863" id="r_ad3a352243a3a9dea448ebfdfc63af863"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3a352243a3a9dea448ebfdfc63af863">_Ni</a></td></tr>
+<tr class="memdesc:ad3a352243a3a9dea448ebfdfc63af863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of Refraction.  <br /></td></tr>
 <tr class="separator:ad3a352243a3a9dea448ebfdfc63af863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af046b7ecceb4cf807907a3cc2df154c4" id="r_af046b7ecceb4cf807907a3cc2df154c4"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af046b7ecceb4cf807907a3cc2df154c4">_metalness</a> = 0.0</td></tr>
+<tr class="memdesc:af046b7ecceb4cf807907a3cc2df154c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metalness.  <br /></td></tr>
 <tr class="separator:af046b7ecceb4cf807907a3cc2df154c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4ce0a24eb3368769567c9c9a92b3b2" id="r_a8f4ce0a24eb3368769567c9c9a92b3b2"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f4ce0a24eb3368769567c9c9a92b3b2">_roughness</a> = 0.0</td></tr>
+<tr class="memdesc:a8f4ce0a24eb3368769567c9c9a92b3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roughness.  <br /></td></tr>
 <tr class="separator:a8f4ce0a24eb3368769567c9c9a92b3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea4f688df6303751fea7b71ef9f8ce9" id="r_a1ea4f688df6303751fea7b71ef9f8ce9"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ea4f688df6303751fea7b71ef9f8ce9">_bumpStrength</a> = 0.0</td></tr>
+<tr class="memdesc:a1ea4f688df6303751fea7b71ef9f8ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bump/Normal Strength.  <br /></td></tr>
 <tr class="separator:a1ea4f688df6303751fea7b71ef9f8ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a180e3dd7b41c247d1a04b10185c924d5" id="r_a180e3dd7b41c247d1a04b10185c924d5"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a180e3dd7b41c247d1a04b10185c924d5">_ambientMap</a></td></tr>
+<tr class="memdesc:a180e3dd7b41c247d1a04b10185c924d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Ambient Map.  <br /></td></tr>
 <tr class="separator:a180e3dd7b41c247d1a04b10185c924d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb59cb7709fbfebc7c986ea27d37fefc" id="r_acb59cb7709fbfebc7c986ea27d37fefc"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb59cb7709fbfebc7c986ea27d37fefc">_diffuseMap</a></td></tr>
+<tr class="memdesc:acb59cb7709fbfebc7c986ea27d37fefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Diffuse Map.  <br /></td></tr>
 <tr class="separator:acb59cb7709fbfebc7c986ea27d37fefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa4057b2ce5ac00e648032c92b263e1" id="r_a6aa4057b2ce5ac00e648032c92b263e1"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6aa4057b2ce5ac00e648032c92b263e1">_specularReflectionMap</a></td></tr>
+<tr class="memdesc:a6aa4057b2ce5ac00e648032c92b263e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Specular Reflection Map.  <br /></td></tr>
 <tr class="separator:a6aa4057b2ce5ac00e648032c92b263e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18bd44ec5afe45e6f4269b5103d0e266" id="r_a18bd44ec5afe45e6f4269b5103d0e266"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18bd44ec5afe45e6f4269b5103d0e266">_specularMap</a></td></tr>
+<tr class="memdesc:a18bd44ec5afe45e6f4269b5103d0e266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Specular Map.  <br /></td></tr>
 <tr class="separator:a18bd44ec5afe45e6f4269b5103d0e266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59bdaa2351ed9c0c67d897c2ace46bff" id="r_a59bdaa2351ed9c0c67d897c2ace46bff"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59bdaa2351ed9c0c67d897c2ace46bff">_emissiveMap</a></td></tr>
+<tr class="memdesc:a59bdaa2351ed9c0c67d897c2ace46bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Emissive Map.  <br /></td></tr>
 <tr class="separator:a59bdaa2351ed9c0c67d897c2ace46bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a790ea4c051b0898c1bc6fc5050b4534e" id="r_a790ea4c051b0898c1bc6fc5050b4534e"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a790ea4c051b0898c1bc6fc5050b4534e">_dissolveMap</a></td></tr>
+<tr class="memdesc:a790ea4c051b0898c1bc6fc5050b4534e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Dissolve Map.  <br /></td></tr>
 <tr class="separator:a790ea4c051b0898c1bc6fc5050b4534e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76bea9cc7aa7af76363c8268474410fb" id="r_a76bea9cc7aa7af76363c8268474410fb"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76bea9cc7aa7af76363c8268474410fb">_bumpMap</a></td></tr>
+<tr class="memdesc:a76bea9cc7aa7af76363c8268474410fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Bump/Normal Map.  <br /></td></tr>
 <tr class="separator:a76bea9cc7aa7af76363c8268474410fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2efe581da1bd9cb7eac9d13d87e4bf6e" id="r_a2efe581da1bd9cb7eac9d13d87e4bf6e"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">_decalMap</a></td></tr>
+<tr class="memdesc:a2efe581da1bd9cb7eac9d13d87e4bf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Decal Map.  <br /></td></tr>
 <tr class="separator:a2efe581da1bd9cb7eac9d13d87e4bf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf993dd808d0019d126edc1226f6661" id="r_a1cf993dd808d0019d126edc1226f6661"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cf993dd808d0019d126edc1226f6661">_dispersionMap</a></td></tr>
+<tr class="memdesc:a1cf993dd808d0019d126edc1226f6661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the Dispersion Map.  <br /></td></tr>
 <tr class="separator:a1cf993dd808d0019d126edc1226f6661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a904ea8d72a9f74c9f7e7600d73a01" id="r_a55a904ea8d72a9f74c9f7e7600d73a01"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, qreal &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a></td></tr>
+<tr class="memdesc:a55a904ea8d72a9f74c9f7e7600d73a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps to store parsed values before applying them.  <br /></td></tr>
 <tr class="separator:a55a904ea8d72a9f74c9f7e7600d73a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847e694046b69d967b2ff23cabbf0810" id="r_a847e694046b69d967b2ff23cabbf0810"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, QColor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a></td></tr>
+<tr class="memdesc:a847e694046b69d967b2ff23cabbf0810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps to store parsed colors before applying them.  <br /></td></tr>
 <tr class="separator:a847e694046b69d967b2ff23cabbf0810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21959a05af51e0f9f61e274215ab344e" id="r_a21959a05af51e0f9f61e274215ab344e"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, QUrl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a></td></tr>
+<tr class="memdesc:a21959a05af51e0f9f61e274215ab344e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps to store parsed texture maps before applying them.  <br /></td></tr>
 <tr class="separator:a21959a05af51e0f9f61e274215ab344e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6f976baac1a4521a33da709b83bb54" id="r_a1f6f976baac1a4521a33da709b83bb54"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;, const std::string &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a></td></tr>
+<tr class="memdesc:a1f6f976baac1a4521a33da709b83bb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of parsing functions for different MTL line prefixes.  <br /></td></tr>
 <tr class="separator:a1f6f976baac1a4521a33da709b83bb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class representing a material parsed from an MTL file. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo</a></b></dt><dd>Seek ways to improve this class' architecture </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adb1ec3675f07c73f647b388a9b7b1e61" name="adb1ec3675f07c73f647b388a9b7b1e61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb1ec3675f07c73f647b388a9b7b1e61">&#9670;&#160;</a></span>MTLMaterial()</h2>
 
@@ -304,6 +369,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent QObject, nullptr by default </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>                                        : QObject(parent) {</div>
 <div class="line"><span class="lineno">   13</span>    <a class="code hl_variable" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a> = {</div>
 <div class="line"><span class="lineno">   14</span>        {<span class="stringliteral">&quot;Ka&quot;</span>, [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp;l,</div>
@@ -342,10 +415,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   47</span>                        <span class="keyword">const</span> std::string &amp;k) { <a class="code hl_function" href="#a7c15809900c2d355faeecc502cbc9221">parseMap</a>(l, k); }},</div>
 <div class="line"><span class="lineno">   48</span>    };</div>
 <div class="line"><span class="lineno">   49</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a1f6f976baac1a4521a33da709b83bb54"><div class="ttname"><a href="#a1f6f976baac1a4521a33da709b83bb54">model_viewer::material::MTLMaterial::_parseFunctions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;, const std::string &amp;)&gt; &gt; _parseFunctions</div><div class="ttdef"><b>Definition</b> Material.hpp:102</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a7c15809900c2d355faeecc502cbc9221"><div class="ttname"><a href="#a7c15809900c2d355faeecc502cbc9221">model_viewer::material::MTLMaterial::parseMap</a></div><div class="ttdeci">void parseMap(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdef"><b>Definition</b> Material.cpp:132</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ab96c8f0edf9a593cfbe5043d9683b31d"><div class="ttname"><a href="#ab96c8f0edf9a593cfbe5043d9683b31d">model_viewer::material::MTLMaterial::parseColor</a></div><div class="ttdeci">void parseColor(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdef"><b>Definition</b> Material.cpp:121</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_abb64fee003e3ae2a23e85a9e9edcd730"><div class="ttname"><a href="#abb64fee003e3ae2a23e85a9e9edcd730">model_viewer::material::MTLMaterial::parseScalar</a></div><div class="ttdeci">void parseScalar(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdef"><b>Definition</b> Material.cpp:111</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a1f6f976baac1a4521a33da709b83bb54"><div class="ttname"><a href="#a1f6f976baac1a4521a33da709b83bb54">model_viewer::material::MTLMaterial::_parseFunctions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;, const std::string &amp;)&gt; &gt; _parseFunctions</div><div class="ttdoc">Map of parsing functions for different MTL line prefixes.</div><div class="ttdef"><b>Definition</b> Material.hpp:132</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a7c15809900c2d355faeecc502cbc9221"><div class="ttname"><a href="#a7c15809900c2d355faeecc502cbc9221">model_viewer::material::MTLMaterial::parseMap</a></div><div class="ttdeci">void parseMap(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a texture map from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:132</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ab96c8f0edf9a593cfbe5043d9683b31d"><div class="ttname"><a href="#ab96c8f0edf9a593cfbe5043d9683b31d">model_viewer::material::MTLMaterial::parseColor</a></div><div class="ttdeci">void parseColor(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a color value from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:121</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_abb64fee003e3ae2a23e85a9e9edcd730"><div class="ttname"><a href="#abb64fee003e3ae2a23e85a9e9edcd730">model_viewer::material::MTLMaterial::parseScalar</a></div><div class="ttdeci">void parseScalar(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a scalar value from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:111</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>, <a class="el" href="#ab96c8f0edf9a593cfbe5043d9683b31d">parseColor()</a>, <a class="el" href="#a7c15809900c2d355faeecc502cbc9221">parseMap()</a>, and <a class="el" href="#abb64fee003e3ae2a23e85a9e9edcd730">parseScalar()</a>.</p>
 <div class="dynheader">
@@ -353,20 +426,20 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_adb1ec3675f07c73f647b388a9b7b1e61_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_adb1ec3675f07c73f647b388a9b7b1e61_cgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_adb1ec3675f07c73f647b388a9b7b1e61_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_adb1ec3675f07c73f647b388a9b7b1e61_cgraph">
-<area shape="rect" title=" " alt="" coords="5,71,185,111"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ab96c8f0edf9a593cfbe5043d9683b31d" title=" " alt="" coords="236,5,404,46"/>
+<area shape="rect" title="Constructor." alt="" coords="5,71,185,111"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ab96c8f0edf9a593cfbe5043d9683b31d" title="Parse a color value from an MTL line." alt="" coords="236,5,404,46"/>
 <area shape="poly" title=" " alt="" coords="167,68,232,48,234,54,168,73"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#a7c15809900c2d355faeecc502cbc9221" title=" " alt="" coords="239,71,402,111"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#a7c15809900c2d355faeecc502cbc9221" title="Parse a texture map from an MTL line." alt="" coords="239,71,402,111"/>
 <area shape="poly" title=" " alt="" coords="185,88,223,88,223,94,185,94"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#abb64fee003e3ae2a23e85a9e9edcd730" title=" " alt="" coords="233,136,408,177"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#abb64fee003e3ae2a23e85a9e9edcd730" title="Parse a scalar value from an MTL line." alt="" coords="233,136,408,177"/>
 <area shape="poly" title=" " alt="" coords="168,109,234,128,232,134,167,114"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title=" " alt="" coords="456,71,595,111"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="456,71,595,111"/>
 <area shape="poly" title=" " alt="" coords="387,44,446,63,444,68,386,49"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title=" " alt="" coords="643,71,783,111"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="643,71,783,111"/>
 <area shape="poly" title=" " alt="" coords="596,88,628,88,628,94,596,94"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title=" " alt="" coords="831,37,970,78"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="831,37,970,78"/>
 <area shape="poly" title=" " alt="" coords="783,76,815,70,816,75,784,81"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title=" " alt="" coords="831,103,970,143"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="831,103,970,143"/>
 <area shape="poly" title=" " alt="" coords="784,100,816,106,815,111,783,106"/>
 <area shape="poly" title=" " alt="" coords="402,88,441,88,441,94,402,94"/>
 <area shape="poly" title=" " alt="" coords="386,133,444,114,446,119,387,138"/>
@@ -398,6 +471,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Destructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -424,6 +499,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the bump map changes. </p>
+
 </div>
 </div>
 <a id="a53b90cab6f99f616774b22de223da715" name="a53b90cab6f99f616774b22de223da715"></a>
@@ -448,6 +525,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Signal emitted when the bump strength changes. </p>
 
 </div>
 </div>
@@ -474,6 +553,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the opacity changes. </p>
+
 </div>
 </div>
 <a id="aa6da8880cb4f0739106b415b9dae2ea7" name="aa6da8880cb4f0739106b415b9dae2ea7"></a>
@@ -498,6 +579,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Signal emitted when the diffuse map changes. </p>
 
 </div>
 </div>
@@ -524,6 +607,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the dissolve map changes. </p>
+
 </div>
 </div>
 <a id="aa9a05989b0e69b6ca35e517811687826" name="aa9a05989b0e69b6ca35e517811687826"></a>
@@ -549,6 +634,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the emissive map changes. </p>
+
 </div>
 </div>
 <a id="a236654c49b445a39bf628d5d08b9cd4b" name="a236654c49b445a39bf628d5d08b9cd4b"></a>
@@ -573,8 +660,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  113</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a180e3dd7b41c247d1a04b10185c924d5">_ambientMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a180e3dd7b41c247d1a04b10185c924d5"><div class="ttname"><a href="#a180e3dd7b41c247d1a04b10185c924d5">model_viewer::material::MTLMaterial::_ambientMap</a></div><div class="ttdeci">QUrl _ambientMap</div><div class="ttdef"><b>Definition</b> Material.hpp:76</div></div>
+
+<p>Get the Ambient Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Ambient Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a180e3dd7b41c247d1a04b10185c924d5">_ambientMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a180e3dd7b41c247d1a04b10185c924d5"><div class="ttname"><a href="#a180e3dd7b41c247d1a04b10185c924d5">model_viewer::material::MTLMaterial::_ambientMap</a></div><div class="ttdeci">QUrl _ambientMap</div><div class="ttdoc">Path to the Ambient Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:94</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a180e3dd7b41c247d1a04b10185c924d5">_ambientMap</a>.</p>
 
@@ -602,8 +692,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  127</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a76bea9cc7aa7af76363c8268474410fb">_bumpMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a76bea9cc7aa7af76363c8268474410fb"><div class="ttname"><a href="#a76bea9cc7aa7af76363c8268474410fb">model_viewer::material::MTLMaterial::_bumpMap</a></div><div class="ttdeci">QUrl _bumpMap</div><div class="ttdef"><b>Definition</b> Material.hpp:88</div></div>
+
+<p>Get the Bump/Normal Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Bump/Normal Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  195</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a76bea9cc7aa7af76363c8268474410fb">_bumpMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a76bea9cc7aa7af76363c8268474410fb"><div class="ttname"><a href="#a76bea9cc7aa7af76363c8268474410fb">model_viewer::material::MTLMaterial::_bumpMap</a></div><div class="ttdeci">QUrl _bumpMap</div><div class="ttdoc">Path to the Bump/Normal Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:112</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a76bea9cc7aa7af76363c8268474410fb">_bumpMap</a>.</p>
 
@@ -631,8 +724,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  129</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">_decalMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a2efe581da1bd9cb7eac9d13d87e4bf6e"><div class="ttname"><a href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">model_viewer::material::MTLMaterial::_decalMap</a></div><div class="ttdeci">QUrl _decalMap</div><div class="ttdef"><b>Definition</b> Material.hpp:90</div></div>
+
+<p>Get the Decal Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Decal Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  201</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">_decalMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a2efe581da1bd9cb7eac9d13d87e4bf6e"><div class="ttname"><a href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">model_viewer::material::MTLMaterial::_decalMap</a></div><div class="ttdeci">QUrl _decalMap</div><div class="ttdoc">Path to the Decal Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:115</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">_decalMap</a>.</p>
 
@@ -660,8 +756,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  115</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#acb59cb7709fbfebc7c986ea27d37fefc">_diffuseMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_acb59cb7709fbfebc7c986ea27d37fefc"><div class="ttname"><a href="#acb59cb7709fbfebc7c986ea27d37fefc">model_viewer::material::MTLMaterial::_diffuseMap</a></div><div class="ttdeci">QUrl _diffuseMap</div><div class="ttdef"><b>Definition</b> Material.hpp:78</div></div>
+
+<p>Get the Diffuse Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Diffuse Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#acb59cb7709fbfebc7c986ea27d37fefc">_diffuseMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_acb59cb7709fbfebc7c986ea27d37fefc"><div class="ttname"><a href="#acb59cb7709fbfebc7c986ea27d37fefc">model_viewer::material::MTLMaterial::_diffuseMap</a></div><div class="ttdeci">QUrl _diffuseMap</div><div class="ttdoc">Path to the Diffuse Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:97</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#acb59cb7709fbfebc7c986ea27d37fefc">_diffuseMap</a>.</p>
 
@@ -689,8 +788,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  131</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1cf993dd808d0019d126edc1226f6661">_dispersionMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a1cf993dd808d0019d126edc1226f6661"><div class="ttname"><a href="#a1cf993dd808d0019d126edc1226f6661">model_viewer::material::MTLMaterial::_dispersionMap</a></div><div class="ttdeci">QUrl _dispersionMap</div><div class="ttdef"><b>Definition</b> Material.hpp:92</div></div>
+
+<p>Get the Dispersion Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Dispersion Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  207</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1cf993dd808d0019d126edc1226f6661">_dispersionMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a1cf993dd808d0019d126edc1226f6661"><div class="ttname"><a href="#a1cf993dd808d0019d126edc1226f6661">model_viewer::material::MTLMaterial::_dispersionMap</a></div><div class="ttdeci">QUrl _dispersionMap</div><div class="ttdoc">Path to the Dispersion Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:118</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1cf993dd808d0019d126edc1226f6661">_dispersionMap</a>.</p>
 
@@ -718,8 +820,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  125</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a790ea4c051b0898c1bc6fc5050b4534e">_dissolveMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a790ea4c051b0898c1bc6fc5050b4534e"><div class="ttname"><a href="#a790ea4c051b0898c1bc6fc5050b4534e">model_viewer::material::MTLMaterial::_dissolveMap</a></div><div class="ttdeci">QUrl _dissolveMap</div><div class="ttdef"><b>Definition</b> Material.hpp:86</div></div>
+
+<p>Get the Dissolve Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Dissolve Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  189</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a790ea4c051b0898c1bc6fc5050b4534e">_dissolveMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a790ea4c051b0898c1bc6fc5050b4534e"><div class="ttname"><a href="#a790ea4c051b0898c1bc6fc5050b4534e">model_viewer::material::MTLMaterial::_dissolveMap</a></div><div class="ttdeci">QUrl _dissolveMap</div><div class="ttdoc">Path to the Dissolve Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:109</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a790ea4c051b0898c1bc6fc5050b4534e">_dissolveMap</a>.</p>
 
@@ -747,8 +852,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  123</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a59bdaa2351ed9c0c67d897c2ace46bff">_emissiveMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a59bdaa2351ed9c0c67d897c2ace46bff"><div class="ttname"><a href="#a59bdaa2351ed9c0c67d897c2ace46bff">model_viewer::material::MTLMaterial::_emissiveMap</a></div><div class="ttdeci">QUrl _emissiveMap</div><div class="ttdef"><b>Definition</b> Material.hpp:84</div></div>
+
+<p>Get the Emissive Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Emissive Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  183</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a59bdaa2351ed9c0c67d897c2ace46bff">_emissiveMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a59bdaa2351ed9c0c67d897c2ace46bff"><div class="ttname"><a href="#a59bdaa2351ed9c0c67d897c2ace46bff">model_viewer::material::MTLMaterial::_emissiveMap</a></div><div class="ttdeci">QUrl _emissiveMap</div><div class="ttdoc">Path to the Emissive Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:106</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a59bdaa2351ed9c0c67d897c2ace46bff">_emissiveMap</a>.</p>
 
@@ -776,8 +884,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  121</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a18bd44ec5afe45e6f4269b5103d0e266">_specularMap</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a18bd44ec5afe45e6f4269b5103d0e266"><div class="ttname"><a href="#a18bd44ec5afe45e6f4269b5103d0e266">model_viewer::material::MTLMaterial::_specularMap</a></div><div class="ttdeci">QUrl _specularMap</div><div class="ttdef"><b>Definition</b> Material.hpp:82</div></div>
+
+<p>Get the Specular Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Specular Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  177</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a18bd44ec5afe45e6f4269b5103d0e266">_specularMap</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a18bd44ec5afe45e6f4269b5103d0e266"><div class="ttname"><a href="#a18bd44ec5afe45e6f4269b5103d0e266">model_viewer::material::MTLMaterial::_specularMap</a></div><div class="ttdeci">QUrl _specularMap</div><div class="ttdoc">Path to the Specular Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:103</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a18bd44ec5afe45e6f4269b5103d0e266">_specularMap</a>.</p>
 
@@ -805,10 +916,13 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  117</span>                                                 {</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a6aa4057b2ce5ac00e648032c92b263e1">_specularReflectionMap</a>;</div>
-<div class="line"><span class="lineno">  119</span>    };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a6aa4057b2ce5ac00e648032c92b263e1"><div class="ttname"><a href="#a6aa4057b2ce5ac00e648032c92b263e1">model_viewer::material::MTLMaterial::_specularReflectionMap</a></div><div class="ttdeci">QUrl _specularReflectionMap</div><div class="ttdef"><b>Definition</b> Material.hpp:80</div></div>
+
+<p>Get the Specular Reflection Map URL. </p>
+<dl class="section return"><dt>Returns</dt><dd>Specular Reflection Map URL </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  169</span>                                                 {</div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a6aa4057b2ce5ac00e648032c92b263e1">_specularReflectionMap</a>;</div>
+<div class="line"><span class="lineno">  171</span>    };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a6aa4057b2ce5ac00e648032c92b263e1"><div class="ttname"><a href="#a6aa4057b2ce5ac00e648032c92b263e1">model_viewer::material::MTLMaterial::_specularReflectionMap</a></div><div class="ttdeci">QUrl _specularReflectionMap</div><div class="ttdoc">Path to the Specular Reflection Map.</div><div class="ttdef"><b>Definition</b> Material.hpp:100</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a6aa4057b2ce5ac00e648032c92b263e1">_specularReflectionMap</a>.</p>
 
@@ -837,6 +951,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the illumination model changes. </p>
+
 </div>
 </div>
 <a id="a4c6fb10763a008a37efe839043172121" name="a4c6fb10763a008a37efe839043172121"></a>
@@ -861,6 +977,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Signal emitted when the diffuse color changes. </p>
 
 </div>
 </div>
@@ -887,6 +1005,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the metalness changes. </p>
+
 </div>
 </div>
 <a id="acf9b8a9d88681f5e11ed5b30835ce29c" name="acf9b8a9d88681f5e11ed5b30835ce29c"></a>
@@ -912,6 +1032,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the index of refraction changes. </p>
+
 </div>
 </div>
 <a id="a3e1569c60c29e616819ed8a5244cb415" name="a3e1569c60c29e616819ed8a5244cb415"></a>
@@ -936,6 +1058,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Signal emitted when the specular roughness changes. </p>
 
 </div>
 </div>
@@ -965,6 +1089,15 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Parse a color value from an MTL line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Line to parse </td></tr>
+    <tr><td class="paramname">key</td><td>Key of the color value </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">  121</span>                                                                        {</div>
 <div class="line"><span class="lineno">  122</span>    <span class="keywordtype">float</span> r, g, b;</div>
 <div class="line"><span class="lineno">  123</span>    <span class="keyword">const</span> std::string lineTrimmed =</div>
@@ -975,8 +1108,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[key] = {<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(r * 255), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(g * 255),</div>
 <div class="line"><span class="lineno">  129</span>                        <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(b * 255)};</div>
 <div class="line"><span class="lineno">  130</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a847e694046b69d967b2ff23cabbf0810"><div class="ttname"><a href="#a847e694046b69d967b2ff23cabbf0810">model_viewer::material::MTLMaterial::_colors</a></div><div class="ttdeci">std::unordered_map&lt; std::string, QColor &gt; _colors</div><div class="ttdef"><b>Definition</b> Material.hpp:96</div></div>
-<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a49b0dd6a5b5a964aea3e324144240a11"><div class="ttname"><a href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:55</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a847e694046b69d967b2ff23cabbf0810"><div class="ttname"><a href="#a847e694046b69d967b2ff23cabbf0810">model_viewer::material::MTLMaterial::_colors</a></div><div class="ttdeci">std::unordered_map&lt; std::string, QColor &gt; _colors</div><div class="ttdoc">Maps to store parsed colors before applying them.</div><div class="ttdef"><b>Definition</b> Material.hpp:124</div></div>
+<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a49b0dd6a5b5a964aea3e324144240a11"><div class="ttname"><a href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdoc">Trim from both ends (copying)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:76</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
 
@@ -986,14 +1119,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_cgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,174,79"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title=" " alt="" coords="222,39,361,79"/>
+<area shape="rect" title="Parse a color value from an MTL line." alt="" coords="5,39,174,79"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="222,39,361,79"/>
 <area shape="poly" title=" " alt="" coords="174,56,206,56,206,62,174,62"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title=" " alt="" coords="409,39,548,79"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="409,39,548,79"/>
 <area shape="poly" title=" " alt="" coords="361,56,394,56,394,62,361,62"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title=" " alt="" coords="596,5,736,46"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="596,5,736,46"/>
 <area shape="poly" title=" " alt="" coords="548,44,580,38,581,43,549,49"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title=" " alt="" coords="596,71,736,111"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="596,71,736,111"/>
 <area shape="poly" title=" " alt="" coords="549,68,581,74,580,79,548,74"/>
 </map>
 </div>
@@ -1002,8 +1135,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_icgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_ab96c8f0edf9a593cfbe5043d9683b31d_icgraph">
-<area shape="rect" title=" " alt="" coords="233,5,401,46"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title=" " alt="" coords="5,5,185,46"/>
+<area shape="rect" title="Parse a color value from an MTL line." alt="" coords="233,5,401,46"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title="Constructor." alt="" coords="5,5,185,46"/>
 <area shape="poly" title=" " alt="" coords="217,28,185,28,185,23,217,23"/>
 </map>
 </div>
@@ -1036,6 +1169,15 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Parse a texture map from an MTL line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Line to parse </td></tr>
+    <tr><td class="paramname">key</td><td>Key of the texture map </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">  132</span>                                                                      {</div>
 <div class="line"><span class="lineno">  133</span>    <span class="keyword">const</span> std::string map =</div>
 <div class="line"><span class="lineno">  134</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(key.size() + 1));</div>
@@ -1043,8 +1185,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  136</span>    <span class="keyword">const</span> std::string mapPath = (<a class="code hl_variable" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a> / map).<span class="keywordtype">string</span>();</div>
 <div class="line"><span class="lineno">  137</span>    <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[key] = QUrl::fromLocalFile(mapPath.c_str());</div>
 <div class="line"><span class="lineno">  138</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a21959a05af51e0f9f61e274215ab344e"><div class="ttname"><a href="#a21959a05af51e0f9f61e274215ab344e">model_viewer::material::MTLMaterial::_maps</a></div><div class="ttdeci">std::unordered_map&lt; std::string, QUrl &gt; _maps</div><div class="ttdef"><b>Definition</b> Material.hpp:98</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a835e07ca86aee083a920fcdb70f8fa89"><div class="ttname"><a href="#a835e07ca86aee083a920fcdb70f8fa89">model_viewer::material::MTLMaterial::_parentPath</a></div><div class="ttdeci">std::filesystem::path _parentPath</div><div class="ttdef"><b>Definition</b> Material.hpp:48</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a21959a05af51e0f9f61e274215ab344e"><div class="ttname"><a href="#a21959a05af51e0f9f61e274215ab344e">model_viewer::material::MTLMaterial::_maps</a></div><div class="ttdeci">std::unordered_map&lt; std::string, QUrl &gt; _maps</div><div class="ttdoc">Maps to store parsed texture maps before applying them.</div><div class="ttdef"><b>Definition</b> Material.hpp:127</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a835e07ca86aee083a920fcdb70f8fa89"><div class="ttname"><a href="#a835e07ca86aee083a920fcdb70f8fa89">model_viewer::material::MTLMaterial::_parentPath</a></div><div class="ttdeci">std::filesystem::path _parentPath</div><div class="ttdoc">Parent path of the MTL file.</div><div class="ttdef"><b>Definition</b> Material.hpp:52</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>, <a class="el" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
 
@@ -1054,14 +1196,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_cgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,169,79"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title=" " alt="" coords="217,39,356,79"/>
+<area shape="rect" title="Parse a texture map from an MTL line." alt="" coords="5,39,169,79"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="217,39,356,79"/>
 <area shape="poly" title=" " alt="" coords="169,56,201,56,201,62,169,62"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title=" " alt="" coords="404,39,543,79"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="404,39,543,79"/>
 <area shape="poly" title=" " alt="" coords="356,56,389,56,389,62,356,62"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title=" " alt="" coords="591,5,731,46"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="591,5,731,46"/>
 <area shape="poly" title=" " alt="" coords="543,44,575,38,576,43,544,49"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title=" " alt="" coords="591,71,731,111"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="591,71,731,111"/>
 <area shape="poly" title=" " alt="" coords="544,68,576,74,575,79,543,74"/>
 </map>
 </div>
@@ -1070,8 +1212,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_icgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_a7c15809900c2d355faeecc502cbc9221_icgraph">
-<area shape="rect" title=" " alt="" coords="233,5,396,46"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title=" " alt="" coords="5,5,185,46"/>
+<area shape="rect" title="Parse a texture map from an MTL line." alt="" coords="233,5,396,46"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title="Constructor." alt="" coords="5,5,185,46"/>
 <area shape="poly" title=" " alt="" coords="217,28,185,28,185,23,217,23"/>
 </map>
 </div>
@@ -1092,6 +1234,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Parse an MTL file and set the material properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>Path to the MTL file </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">   51</span>                                                    {</div>
 <div class="line"><span class="lineno">   52</span>    std::ifstream in(filepath);</div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (!in.is_open()) {</div>
@@ -1113,7 +1263,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   69</span> </div>
 <div class="line"><span class="lineno">   70</span>    <a class="code hl_function" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues</a>();</div>
 <div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ad2797ddef1bb24392efa0b70465ad40a"><div class="ttname"><a href="#ad2797ddef1bb24392efa0b70465ad40a">model_viewer::material::MTLMaterial::setMaterialValues</a></div><div class="ttdeci">void setMaterialValues()</div><div class="ttdef"><b>Definition</b> Material.cpp:83</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ad2797ddef1bb24392efa0b70465ad40a"><div class="ttname"><a href="#ad2797ddef1bb24392efa0b70465ad40a">model_viewer::material::MTLMaterial::setMaterialValues</a></div><div class="ttdeci">void setMaterialValues()</div><div class="ttdoc">Apply parsed values to the material properties.</div><div class="ttdef"><b>Definition</b> Material.cpp:83</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a>, <a class="el" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>, <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
 <div class="dynheader">
@@ -1121,16 +1271,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,171,79"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title=" " alt="" coords="219,5,429,46"/>
+<area shape="rect" title="Parse an MTL file and set the material properties." alt="" coords="5,39,171,79"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title="Apply parsed values to the material properties." alt="" coords="219,5,429,46"/>
 <area shape="poly" title=" " alt="" coords="171,45,203,40,204,45,171,50"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title=" " alt="" coords="254,71,394,111"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="254,71,394,111"/>
 <area shape="poly" title=" " alt="" coords="171,68,239,77,238,82,171,73"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title=" " alt="" coords="477,71,616,111"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="477,71,616,111"/>
 <area shape="poly" title=" " alt="" coords="394,88,461,88,461,94,394,94"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title=" " alt="" coords="664,37,804,78"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="664,37,804,78"/>
 <area shape="poly" title=" " alt="" coords="616,76,648,70,649,75,617,81"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title=" " alt="" coords="664,103,804,143"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="664,103,804,143"/>
 <area shape="poly" title=" " alt="" coords="617,100,649,106,648,111,616,106"/>
 </map>
 </div>
@@ -1163,6 +1313,15 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Parse a scalar value from an MTL line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Line to parse </td></tr>
+    <tr><td class="paramname">key</td><td>Key of the scalar value </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">  111</span>                                                                         {</div>
 <div class="line"><span class="lineno">  112</span>    <span class="keywordtype">float</span> scalar;</div>
 <div class="line"><span class="lineno">  113</span>    <span class="keyword">const</span> std::string lineTrimmed =</div>
@@ -1172,7 +1331,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  117</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[key] = scalar;</div>
 <div class="line"><span class="lineno">  119</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a55a904ea8d72a9f74c9f7e7600d73a01"><div class="ttname"><a href="#a55a904ea8d72a9f74c9f7e7600d73a01">model_viewer::material::MTLMaterial::_scalars</a></div><div class="ttdeci">std::unordered_map&lt; std::string, qreal &gt; _scalars</div><div class="ttdef"><b>Definition</b> Material.hpp:94</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a55a904ea8d72a9f74c9f7e7600d73a01"><div class="ttname"><a href="#a55a904ea8d72a9f74c9f7e7600d73a01">model_viewer::material::MTLMaterial::_scalars</a></div><div class="ttdeci">std::unordered_map&lt; std::string, qreal &gt; _scalars</div><div class="ttdoc">Maps to store parsed values before applying them.</div><div class="ttdef"><b>Definition</b> Material.hpp:121</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
 
@@ -1182,14 +1341,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_cgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,181,79"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title=" " alt="" coords="229,39,368,79"/>
+<area shape="rect" title="Parse a scalar value from an MTL line." alt="" coords="5,39,181,79"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="229,39,368,79"/>
 <area shape="poly" title=" " alt="" coords="181,56,214,56,214,62,181,62"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title=" " alt="" coords="416,39,555,79"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="416,39,555,79"/>
 <area shape="poly" title=" " alt="" coords="368,56,401,56,401,62,368,62"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title=" " alt="" coords="603,5,743,46"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="603,5,743,46"/>
 <area shape="poly" title=" " alt="" coords="555,44,587,38,588,43,556,49"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title=" " alt="" coords="603,71,743,111"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="603,71,743,111"/>
 <area shape="poly" title=" " alt="" coords="556,68,588,74,587,79,555,74"/>
 </map>
 </div>
@@ -1198,8 +1357,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_icgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_abb64fee003e3ae2a23e85a9e9edcd730_icgraph">
-<area shape="rect" title=" " alt="" coords="233,5,408,46"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title=" " alt="" coords="5,5,185,46"/>
+<area shape="rect" title="Parse a scalar value from an MTL line." alt="" coords="233,5,408,46"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title="Constructor." alt="" coords="5,5,185,46"/>
 <area shape="poly" title=" " alt="" coords="217,28,185,28,185,23,217,23"/>
 </map>
 </div>
@@ -1220,6 +1379,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reset the material to default values. </p>
 <div class="fragment"><div class="line"><span class="lineno">   73</span>                                {</div>
 <div class="line"><span class="lineno">   74</span>    <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>.clear();</div>
 <div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>.clear();</div>
@@ -1236,8 +1397,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_aeedd667610ee2d6d7d199a1c6e7db201_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_aeedd667610ee2d6d7d199a1c6e7db201_cgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_aeedd667610ee2d6d7d199a1c6e7db201_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_aeedd667610ee2d6d7d199a1c6e7db201_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,187,46"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title=" " alt="" coords="235,5,445,46"/>
+<area shape="rect" title="Reset the material to default values." alt="" coords="5,5,187,46"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title="Apply parsed values to the material properties." alt="" coords="235,5,445,46"/>
 <area shape="poly" title=" " alt="" coords="187,23,219,23,219,28,187,28"/>
 </map>
 </div>
@@ -1267,6 +1428,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the roughness changes. </p>
+
 </div>
 </div>
 <a id="ad2797ddef1bb24392efa0b70465ad40a" name="ad2797ddef1bb24392efa0b70465ad40a"></a>
@@ -1291,6 +1454,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Apply parsed values to the material properties. </p>
 <div class="fragment"><div class="line"><span class="lineno">   83</span>                                    {</div>
 <div class="line"><span class="lineno">   84</span>    <a class="code hl_variable" href="#ae362ba9d2f557fcfb897dcd7a70e867d">_Ka</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Ka&quot;</span>];</div>
 <div class="line"><span class="lineno">   85</span>    <a class="code hl_variable" href="#a106573bfd59484dd8c2dcefb2bdd8843">_Kd</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Kd&quot;</span>];</div>
@@ -1318,18 +1483,18 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  107</span>    <a class="code hl_variable" href="#af046b7ecceb4cf807907a3cc2df154c4">_metalness</a> =</div>
 <div class="line"><span class="lineno">  108</span>        std::clamp((<a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.red() + <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.green() + <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.blue()) / 3.0, 0.0, 1.0);</div>
 <div class="line"><span class="lineno">  109</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a106573bfd59484dd8c2dcefb2bdd8843"><div class="ttname"><a href="#a106573bfd59484dd8c2dcefb2bdd8843">model_viewer::material::MTLMaterial::_Kd</a></div><div class="ttdeci">QColor _Kd</div><div class="ttdef"><b>Definition</b> Material.hpp:52</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a146902354b7b1e08b0c2532a83b4da2b"><div class="ttname"><a href="#a146902354b7b1e08b0c2532a83b4da2b">model_viewer::material::MTLMaterial::_d</a></div><div class="ttdeci">qreal _d</div><div class="ttdef"><b>Definition</b> Material.hpp:62</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a476577a27aec53b86e0b1a55f39ed46a"><div class="ttname"><a href="#a476577a27aec53b86e0b1a55f39ed46a">model_viewer::material::MTLMaterial::_sharpness</a></div><div class="ttdeci">qreal _sharpness</div><div class="ttdef"><b>Definition</b> Material.hpp:66</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a5003695bea7b24f1a259eba3a2397cf8"><div class="ttname"><a href="#a5003695bea7b24f1a259eba3a2397cf8">model_viewer::material::MTLMaterial::_Ke</a></div><div class="ttdeci">QColor _Ke</div><div class="ttdef"><b>Definition</b> Material.hpp:56</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a7e5dbc2f2364e5b621da963447c38adb"><div class="ttname"><a href="#a7e5dbc2f2364e5b621da963447c38adb">model_viewer::material::MTLMaterial::_Tf</a></div><div class="ttdeci">QColor _Tf</div><div class="ttdef"><b>Definition</b> Material.hpp:58</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a8978444890ecd2a4284d6749a62a2e7f"><div class="ttname"><a href="#a8978444890ecd2a4284d6749a62a2e7f">model_viewer::material::MTLMaterial::_illumination</a></div><div class="ttdeci">qreal _illumination</div><div class="ttdef"><b>Definition</b> Material.hpp:60</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a8f4ce0a24eb3368769567c9c9a92b3b2"><div class="ttname"><a href="#a8f4ce0a24eb3368769567c9c9a92b3b2">model_viewer::material::MTLMaterial::_roughness</a></div><div class="ttdeci">qreal _roughness</div><div class="ttdef"><b>Definition</b> Material.hpp:72</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a9b7434ece78bcc7e9151fb0c2039edf1"><div class="ttname"><a href="#a9b7434ece78bcc7e9151fb0c2039edf1">model_viewer::material::MTLMaterial::_Ks</a></div><div class="ttdeci">QColor _Ks</div><div class="ttdef"><b>Definition</b> Material.hpp:54</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ad3a352243a3a9dea448ebfdfc63af863"><div class="ttname"><a href="#ad3a352243a3a9dea448ebfdfc63af863">model_viewer::material::MTLMaterial::_Ni</a></div><div class="ttdeci">qreal _Ni</div><div class="ttdef"><b>Definition</b> Material.hpp:68</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ae362ba9d2f557fcfb897dcd7a70e867d"><div class="ttname"><a href="#ae362ba9d2f557fcfb897dcd7a70e867d">model_viewer::material::MTLMaterial::_Ka</a></div><div class="ttdeci">QColor _Ka</div><div class="ttdef"><b>Definition</b> Material.hpp:50</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ae44b216ba789ae4f298ad4aaca9edac3"><div class="ttname"><a href="#ae44b216ba789ae4f298ad4aaca9edac3">model_viewer::material::MTLMaterial::_Ns</a></div><div class="ttdeci">qreal _Ns</div><div class="ttdef"><b>Definition</b> Material.hpp:64</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_af046b7ecceb4cf807907a3cc2df154c4"><div class="ttname"><a href="#af046b7ecceb4cf807907a3cc2df154c4">model_viewer::material::MTLMaterial::_metalness</a></div><div class="ttdeci">qreal _metalness</div><div class="ttdef"><b>Definition</b> Material.hpp:70</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a106573bfd59484dd8c2dcefb2bdd8843"><div class="ttname"><a href="#a106573bfd59484dd8c2dcefb2bdd8843">model_viewer::material::MTLMaterial::_Kd</a></div><div class="ttdeci">QColor _Kd</div><div class="ttdoc">Diffuse Color.</div><div class="ttdef"><b>Definition</b> Material.hpp:58</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a146902354b7b1e08b0c2532a83b4da2b"><div class="ttname"><a href="#a146902354b7b1e08b0c2532a83b4da2b">model_viewer::material::MTLMaterial::_d</a></div><div class="ttdeci">qreal _d</div><div class="ttdoc">Opacity.</div><div class="ttdef"><b>Definition</b> Material.hpp:73</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a476577a27aec53b86e0b1a55f39ed46a"><div class="ttname"><a href="#a476577a27aec53b86e0b1a55f39ed46a">model_viewer::material::MTLMaterial::_sharpness</a></div><div class="ttdeci">qreal _sharpness</div><div class="ttdoc">Sharpness.</div><div class="ttdef"><b>Definition</b> Material.hpp:79</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a5003695bea7b24f1a259eba3a2397cf8"><div class="ttname"><a href="#a5003695bea7b24f1a259eba3a2397cf8">model_viewer::material::MTLMaterial::_Ke</a></div><div class="ttdeci">QColor _Ke</div><div class="ttdoc">Emissive Color.</div><div class="ttdef"><b>Definition</b> Material.hpp:64</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a7e5dbc2f2364e5b621da963447c38adb"><div class="ttname"><a href="#a7e5dbc2f2364e5b621da963447c38adb">model_viewer::material::MTLMaterial::_Tf</a></div><div class="ttdeci">QColor _Tf</div><div class="ttdoc">Transmission Filter.</div><div class="ttdef"><b>Definition</b> Material.hpp:67</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a8978444890ecd2a4284d6749a62a2e7f"><div class="ttname"><a href="#a8978444890ecd2a4284d6749a62a2e7f">model_viewer::material::MTLMaterial::_illumination</a></div><div class="ttdeci">qreal _illumination</div><div class="ttdoc">Illumination Model.</div><div class="ttdef"><b>Definition</b> Material.hpp:70</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a8f4ce0a24eb3368769567c9c9a92b3b2"><div class="ttname"><a href="#a8f4ce0a24eb3368769567c9c9a92b3b2">model_viewer::material::MTLMaterial::_roughness</a></div><div class="ttdeci">qreal _roughness</div><div class="ttdoc">Roughness.</div><div class="ttdef"><b>Definition</b> Material.hpp:88</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a9b7434ece78bcc7e9151fb0c2039edf1"><div class="ttname"><a href="#a9b7434ece78bcc7e9151fb0c2039edf1">model_viewer::material::MTLMaterial::_Ks</a></div><div class="ttdeci">QColor _Ks</div><div class="ttdoc">Specular Color.</div><div class="ttdef"><b>Definition</b> Material.hpp:61</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ad3a352243a3a9dea448ebfdfc63af863"><div class="ttname"><a href="#ad3a352243a3a9dea448ebfdfc63af863">model_viewer::material::MTLMaterial::_Ni</a></div><div class="ttdeci">qreal _Ni</div><div class="ttdoc">Index of Refraction.</div><div class="ttdef"><b>Definition</b> Material.hpp:82</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ae362ba9d2f557fcfb897dcd7a70e867d"><div class="ttname"><a href="#ae362ba9d2f557fcfb897dcd7a70e867d">model_viewer::material::MTLMaterial::_Ka</a></div><div class="ttdeci">QColor _Ka</div><div class="ttdoc">Ambient Color.</div><div class="ttdef"><b>Definition</b> Material.hpp:55</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ae44b216ba789ae4f298ad4aaca9edac3"><div class="ttname"><a href="#ae44b216ba789ae4f298ad4aaca9edac3">model_viewer::material::MTLMaterial::_Ns</a></div><div class="ttdeci">qreal _Ns</div><div class="ttdoc">Specular Roughness.</div><div class="ttdef"><b>Definition</b> Material.hpp:76</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_af046b7ecceb4cf807907a3cc2df154c4"><div class="ttname"><a href="#af046b7ecceb4cf807907a3cc2df154c4">model_viewer::material::MTLMaterial::_metalness</a></div><div class="ttdeci">qreal _metalness</div><div class="ttdoc">Metalness.</div><div class="ttdef"><b>Definition</b> Material.hpp:85</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a180e3dd7b41c247d1a04b10185c924d5">_ambientMap</a>, <a class="el" href="#a76bea9cc7aa7af76363c8268474410fb">_bumpMap</a>, <a class="el" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>, <a class="el" href="#a146902354b7b1e08b0c2532a83b4da2b">_d</a>, <a class="el" href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">_decalMap</a>, <a class="el" href="#acb59cb7709fbfebc7c986ea27d37fefc">_diffuseMap</a>, <a class="el" href="#a1cf993dd808d0019d126edc1226f6661">_dispersionMap</a>, <a class="el" href="#a790ea4c051b0898c1bc6fc5050b4534e">_dissolveMap</a>, <a class="el" href="#a59bdaa2351ed9c0c67d897c2ace46bff">_emissiveMap</a>, <a class="el" href="#a8978444890ecd2a4284d6749a62a2e7f">_illumination</a>, <a class="el" href="#ae362ba9d2f557fcfb897dcd7a70e867d">_Ka</a>, <a class="el" href="#a106573bfd59484dd8c2dcefb2bdd8843">_Kd</a>, <a class="el" href="#a5003695bea7b24f1a259eba3a2397cf8">_Ke</a>, <a class="el" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>, <a class="el" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>, <a class="el" href="#af046b7ecceb4cf807907a3cc2df154c4">_metalness</a>, <a class="el" href="#ad3a352243a3a9dea448ebfdfc63af863">_Ni</a>, <a class="el" href="#ae44b216ba789ae4f298ad4aaca9edac3">_Ns</a>, <a class="el" href="#a8f4ce0a24eb3368769567c9c9a92b3b2">_roughness</a>, <a class="el" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>, <a class="el" href="#a476577a27aec53b86e0b1a55f39ed46a">_sharpness</a>, <a class="el" href="#a18bd44ec5afe45e6f4269b5103d0e266">_specularMap</a>, <a class="el" href="#a6aa4057b2ce5ac00e648032c92b263e1">_specularReflectionMap</a>, and <a class="el" href="#a7e5dbc2f2364e5b621da963447c38adb">_Tf</a>.</p>
 
@@ -1339,10 +1504,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_ad2797ddef1bb24392efa0b70465ad40a_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_ad2797ddef1bb24392efa0b70465ad40a_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_ad2797ddef1bb24392efa0b70465ad40a_icgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_ad2797ddef1bb24392efa0b70465ad40a_icgraph">
-<area shape="rect" title=" " alt="" coords="235,39,445,79"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title=" " alt="" coords="13,5,179,46"/>
+<area shape="rect" title="Apply parsed values to the material properties." alt="" coords="235,39,445,79"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="13,5,179,46"/>
 <area shape="poly" title=" " alt="" coords="219,45,179,40,179,34,220,40"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aeedd667610ee2d6d7d199a1c6e7db201" title=" " alt="" coords="5,71,187,111"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aeedd667610ee2d6d7d199a1c6e7db201" title="Reset the material to default values." alt="" coords="5,71,187,111"/>
 <area shape="poly" title=" " alt="" coords="219,77,187,82,187,76,219,72"/>
 </map>
 </div>
@@ -1372,6 +1537,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the sharpness changes. </p>
+
 </div>
 </div>
 <a id="aaeffcf1e8af7dbf0846d6027a7a7fc67" name="aaeffcf1e8af7dbf0846d6027a7a7fc67"></a>
@@ -1396,6 +1563,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Signal emitted when the specular map changes. </p>
 
 </div>
 </div>
@@ -1422,6 +1591,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Signal emitted when the specular reflection map changes. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1444,6 +1615,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Path to the Ambient Map. </p>
 
 <p class="reference">Referenced by <a class="el" href="#a236654c49b445a39bf628d5d08b9cd4b">getAmbientMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1469,6 +1642,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Path to the Bump/Normal Map. </p>
+
 <p class="reference">Referenced by <a class="el" href="#a2c9417a4550750da9a486cb573949120">getBumpMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1493,6 +1668,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Bump/Normal Strength. </p>
+
 </div>
 </div>
 <a id="a847e694046b69d967b2ff23cabbf0810" name="a847e694046b69d967b2ff23cabbf0810"></a>
@@ -1514,6 +1691,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Maps to store parsed colors before applying them. </p>
 
 <p class="reference">Referenced by <a class="el" href="#ab96c8f0edf9a593cfbe5043d9683b31d">parseColor()</a>, <a class="el" href="#aeedd667610ee2d6d7d199a1c6e7db201">resetMaterial()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1539,6 +1718,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Opacity. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1562,6 +1743,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Path to the Decal Map. </p>
 
 <p class="reference">Referenced by <a class="el" href="#abd3978ff955f26e20b3939df242353b0">getDecalMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1587,6 +1770,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Path to the Diffuse Map. </p>
+
 <p class="reference">Referenced by <a class="el" href="#a2f664d4032c04912fc6d924949ee0c39">getDiffuseMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1610,6 +1795,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Path to the Dispersion Map. </p>
 
 <p class="reference">Referenced by <a class="el" href="#a20865574103d3d9a06c8c8698a391d63">getDispersionMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1635,6 +1822,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Path to the Dissolve Map. </p>
+
 <p class="reference">Referenced by <a class="el" href="#a3afa962b28a37fe50e1891eb3f8ebdf4">getDissolveMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1658,6 +1847,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Path to the Emissive Map. </p>
 
 <p class="reference">Referenced by <a class="el" href="#a5d8b062039d0ff3af59d6af5105a0453">getEmissiveMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1683,6 +1874,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Illumination Model. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1706,6 +1899,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Ambient Color. </p>
 
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1731,6 +1926,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Diffuse Color. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1754,6 +1951,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Emissive Color. </p>
 
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1779,6 +1978,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Specular Color. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1802,6 +2003,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Maps to store parsed texture maps before applying them. </p>
 
 <p class="reference">Referenced by <a class="el" href="#a7c15809900c2d355faeecc502cbc9221">parseMap()</a>, <a class="el" href="#aeedd667610ee2d6d7d199a1c6e7db201">resetMaterial()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1827,6 +2030,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Metalness. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1850,6 +2055,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Index of Refraction. </p>
 
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1875,6 +2082,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Specular Roughness. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1898,6 +2107,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Parent path of the MTL file. </p>
 
 <p class="reference">Referenced by <a class="el" href="#a7c15809900c2d355faeecc502cbc9221">parseMap()</a>, and <a class="el" href="#aacb29680b6a02d951d2bec548bc646be">parseMTL()</a>.</p>
 
@@ -1923,6 +2134,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Map of parsing functions for different MTL line prefixes. </p>
+
 <p class="reference">Referenced by <a class="el" href="#adb1ec3675f07c73f647b388a9b7b1e61">MTLMaterial()</a>, and <a class="el" href="#aacb29680b6a02d951d2bec548bc646be">parseMTL()</a>.</p>
 
 </div>
@@ -1946,6 +2159,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Roughness. </p>
 
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -1971,6 +2186,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Maps to store parsed values before applying them. </p>
+
 <p class="reference">Referenced by <a class="el" href="#abb64fee003e3ae2a23e85a9e9edcd730">parseScalar()</a>, <a class="el" href="#aeedd667610ee2d6d7d199a1c6e7db201">resetMaterial()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -1994,6 +2211,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sharpness. </p>
 
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
@@ -2019,6 +2238,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Path to the Specular Map. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ab8d9753f7a9b0488b3f9e82eade9de10">getSpecularMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -2043,6 +2264,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Path to the Specular Reflection Map. </p>
+
 <p class="reference">Referenced by <a class="el" href="#ac4d9e2c284dc69a6311946c33df62295">getSpecularReflectionMap()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 
 </div>
@@ -2066,6 +2289,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Transmission Filter. </p>
 
 <p class="reference">Referenced by <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 

@@ -1,10 +1,10 @@
 <map id="model_viewer::ModelManager" name="model_viewer::ModelManager">
-<area shape="rect" id="Node000001" title=" " alt="" coords="26,199,219,225"/>
+<area shape="rect" id="Node000001" title="Class for managing model loading and providing geometry and material." alt="" coords="26,199,219,225"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,103,75,128"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,138,114,197,110,200,58,142"/>
-<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html" title=" " alt="" coords="221,95,371,136"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html" title="Class for loading OBJ models." alt="" coords="221,95,371,136"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,146,146,201,144,196,245,141"/>
-<area shape="rect" id="Node000004" href="$classmodel__viewer_1_1loaders_1_1ILoader.html" title=" " alt="" coords="64,5,213,46"/>
+<area shape="rect" id="Node000004" href="$classmodel__viewer_1_1loaders_1_1ILoader.html" title="Interface for model loaders." alt="" coords="64,5,213,46"/>
 <area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="138,62,126,199,121,198,133,61"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="189,52,262,92,260,97,186,56"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="model_viewer::material::MTLMaterial::setMaterialValues" name="model_viewer::material::MTLMaterial::setMaterialValues">
-<area shape="rect" id="Node000001" title=" " alt="" coords="235,39,445,79"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title=" " alt="" coords="13,5,179,46"/>
+<area shape="rect" id="Node000001" title="Apply parsed values to the material properties." alt="" coords="235,39,445,79"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="13,5,179,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,45,179,40,179,34,220,40"/>
-<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#aeedd667610ee2d6d7d199a1c6e7db201" title=" " alt="" coords="5,71,187,111"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#aeedd667610ee2d6d7d199a1c6e7db201" title="Reset the material to default values." alt="" coords="5,71,187,111"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,77,187,82,187,76,219,72"/>
 </map>

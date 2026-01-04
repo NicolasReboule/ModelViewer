@@ -96,14 +96,17 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for model loaders.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ILoader_8hpp_source.html">ILoader.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for model_viewer::loaders::ILoader:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1loaders_1_1ILoader__inherit__graph.png" border="0" usemap="#amodel__viewer_1_1loaders_1_1ILoader_inherit__map" alt="Inheritance graph"/></div>
 <map name="amodel__viewer_1_1loaders_1_1ILoader_inherit__map" id="amodel__viewer_1_1loaders_1_1ILoader_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,5,155,46"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html" title=" " alt="" coords="5,94,155,135"/>
+<area shape="rect" title="Interface for model loaders." alt="" coords="5,5,155,46"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html" title="Class for loading OBJ models." alt="" coords="5,94,155,135"/>
 <area shape="poly" title=" " alt="" coords="83,62,83,94,77,94,77,62"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -111,15 +114,21 @@ Inheritance diagram for model_viewer::loaders::ILoader:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6acd92962f218277677ad74b151256ab" id="r_a6acd92962f218277677ad74b151256ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6acd92962f218277677ad74b151256ab">~ILoader</a> ()=default</td></tr>
+<tr class="memdesc:a6acd92962f218277677ad74b151256ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
 <tr class="separator:a6acd92962f218277677ad74b151256ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb1d69935db9f86f70fe468a920f8752" id="r_abb1d69935db9f86f70fe468a920f8752"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb1d69935db9f86f70fe468a920f8752">loadModel</a> (const std::string &amp;filepath)=0</td></tr>
+<tr class="memdesc:abb1d69935db9f86f70fe468a920f8752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a model from a file.  <br /></td></tr>
 <tr class="separator:abb1d69935db9f86f70fe468a920f8752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc8859d3dc6beaab4c029a8e5b5a6196" id="r_acc8859d3dc6beaab4c029a8e5b5a6196"><td class="memItemLeft" align="right" valign="top">virtual QQuick3DGeometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc8859d3dc6beaab4c029a8e5b5a6196">geometry</a> () const =0</td></tr>
+<tr class="memdesc:acc8859d3dc6beaab4c029a8e5b5a6196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the geometry of the loaded model.  <br /></td></tr>
 <tr class="separator:acc8859d3dc6beaab4c029a8e5b5a6196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b8eb74b100fbd8a4f9d27d950f0b82" id="r_a03b8eb74b100fbd8a4f9d27d950f0b82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmodel__viewer_1_1material_1_1MTLMaterial.html">material::MTLMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03b8eb74b100fbd8a4f9d27d950f0b82">material</a> () const =0</td></tr>
+<tr class="memdesc:a03b8eb74b100fbd8a4f9d27d950f0b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the material of the loaded model.  <br /></td></tr>
 <tr class="separator:a03b8eb74b100fbd8a4f9d27d950f0b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for model loaders. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6acd92962f218277677ad74b151256ab" name="a6acd92962f218277677ad74b151256ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6acd92962f218277677ad74b151256ab">&#9670;&#160;</a></span>~ILoader()</h2>
 
@@ -142,6 +151,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Virtual destructor. </p>
 
 </div>
 </div>
@@ -169,6 +180,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the geometry of the loaded model. </p>
+<dl class="section return"><dt>Returns</dt><dd>Geometry of the loaded model </dd></dl>
+
 <p>Implemented in <a class="el" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8f50a3bed97dc2837d95ef726f5c38b7">model_viewer::loaders::ObjLoader</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classmodel__viewer_1_1ModelManager.html#a94c8079e66a853478b758f502e5466fa">model_viewer::ModelManager::geometry()</a>.</p>
@@ -177,8 +191,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1loaders_1_1ILoader_acc8859d3dc6beaab4c029a8e5b5a6196_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1loaders_1_1ILoader_acc8859d3dc6beaab4c029a8e5b5a6196_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1loaders_1_1ILoader_acc8859d3dc6beaab4c029a8e5b5a6196_icgraph" id="aclassmodel__viewer_1_1loaders_1_1ILoader_acc8859d3dc6beaab4c029a8e5b5a6196_icgraph">
-<area shape="rect" title=" " alt="" coords="246,5,395,46"/>
-<area shape="rect" href="classmodel__viewer_1_1ModelManager.html#a94c8079e66a853478b758f502e5466fa" title=" " alt="" coords="5,5,198,46"/>
+<area shape="rect" title="Get the geometry of the loaded model." alt="" coords="246,5,395,46"/>
+<area shape="rect" href="classmodel__viewer_1_1ModelManager.html#a94c8079e66a853478b758f502e5466fa" title="Get the geometry of the loaded model." alt="" coords="5,5,198,46"/>
 <area shape="poly" title=" " alt="" coords="230,28,198,28,198,23,230,23"/>
 </map>
 </div>
@@ -208,6 +222,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Load a model from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>Path to the model file </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce">model_viewer::loaders::ObjLoader</a>.</p>
 
 </div>
@@ -235,6 +257,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Get the material of the loaded model. </p>
+<dl class="section return"><dt>Returns</dt><dd>Material of the loaded model </dd></dl>
+
 <p>Implemented in <a class="el" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#a9dbb46664e91bbfcdcd2b19de906cb2a">model_viewer::loaders::ObjLoader</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classmodel__viewer_1_1ModelManager.html#a8e9567df3713329eb533c5821a8ec37b">model_viewer::ModelManager::material()</a>.</p>
@@ -243,8 +268,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1loaders_1_1ILoader_a03b8eb74b100fbd8a4f9d27d950f0b82_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1loaders_1_1ILoader_a03b8eb74b100fbd8a4f9d27d950f0b82_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1loaders_1_1ILoader_a03b8eb74b100fbd8a4f9d27d950f0b82_icgraph" id="aclassmodel__viewer_1_1loaders_1_1ILoader_a03b8eb74b100fbd8a4f9d27d950f0b82_icgraph">
-<area shape="rect" title=" " alt="" coords="246,5,395,46"/>
-<area shape="rect" href="classmodel__viewer_1_1ModelManager.html#a8e9567df3713329eb533c5821a8ec37b" title=" " alt="" coords="5,5,198,46"/>
+<area shape="rect" title="Get the material of the loaded model." alt="" coords="246,5,395,46"/>
+<area shape="rect" href="classmodel__viewer_1_1ModelManager.html#a8e9567df3713329eb533c5821a8ec37b" title="Get the material of the loaded model." alt="" coords="5,5,198,46"/>
 <area shape="poly" title=" " alt="" coords="230,28,198,28,198,23,230,23"/>
 </map>
 </div>

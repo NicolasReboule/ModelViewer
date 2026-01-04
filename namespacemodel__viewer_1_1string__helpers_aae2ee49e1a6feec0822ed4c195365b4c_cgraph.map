@@ -1,5 +1,5 @@
 <map id="model_viewer::string_helpers::rtrim_copy" name="model_viewer::string_helpers::rtrim_copy">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,145,46"/>
-<area shape="rect" id="Node000002" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title=" " alt="" coords="193,5,332,46"/>
+<area shape="rect" id="Node000001" title="Trim from the end (copying)" alt="" coords="5,5,145,46"/>
+<area shape="rect" id="Node000002" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="193,5,332,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,23,177,23,177,28,145,28"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="model_viewer::geometry::ObjGeometry" name="model_viewer::geometry::ObjGeometry">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,166,120"/>
+<area shape="rect" id="Node000001" title="Class representing the geometry of an OBJ model." alt="" coords="5,79,166,120"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="17,5,154,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,46,88,79,83,79,83,46"/>
 </map>

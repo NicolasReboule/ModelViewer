@@ -1,5 +1,5 @@
 <map id="model_viewer::loaders::ILoader::material" name="model_viewer::loaders::ILoader::material">
-<area shape="rect" id="Node000001" title=" " alt="" coords="246,5,395,46"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1ModelManager.html#a8e9567df3713329eb533c5821a8ec37b" title=" " alt="" coords="5,5,198,46"/>
+<area shape="rect" id="Node000001" title="Get the material of the loaded model." alt="" coords="246,5,395,46"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1ModelManager.html#a8e9567df3713329eb533c5821a8ec37b" title="Get the material of the loaded model." alt="" coords="5,5,198,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,28,198,28,198,23,230,23"/>
 </map>

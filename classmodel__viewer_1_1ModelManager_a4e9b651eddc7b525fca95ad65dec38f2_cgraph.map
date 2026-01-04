@@ -1,7 +1,7 @@
 <map id="model_viewer::ModelManager::setLoading" name="model_viewer::ModelManager::setLoading">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,198,79"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1ModelManager.html#a6501cbd11dcf41e088d193cc0531376a" title=" " alt="" coords="246,5,438,46"/>
+<area shape="rect" id="Node000001" title="Set the loading state, emits loadingChanged signal." alt="" coords="5,39,198,79"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1ModelManager.html#a6501cbd11dcf41e088d193cc0531376a" title="Check if a model is currently loading." alt="" coords="246,5,438,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,43,230,39,231,44,199,48"/>
-<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1ModelManager.html#a7e7031719cb32d59aa8ece56e7e96293" title=" " alt="" coords="246,71,438,111"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1ModelManager.html#a7e7031719cb32d59aa8ece56e7e96293" title="Signal emitted when the loading state changes." alt="" coords="246,71,438,111"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,69,231,73,230,79,198,74"/>
 </map>

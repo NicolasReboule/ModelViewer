@@ -1,5 +1,5 @@
 <map id="model_viewer::material::MTLMaterial::resetMaterial" name="model_viewer::material::MTLMaterial::resetMaterial">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,187,46"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title=" " alt="" coords="235,5,445,46"/>
+<area shape="rect" id="Node000001" title="Reset the material to default values." alt="" coords="5,5,187,46"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title="Apply parsed values to the material properties." alt="" coords="235,5,445,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,23,219,23,219,28,187,28"/>
 </map>

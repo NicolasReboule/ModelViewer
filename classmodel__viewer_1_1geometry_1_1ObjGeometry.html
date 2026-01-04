@@ -96,13 +96,16 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Class representing the geometry of an OBJ model.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ObjGeometry_8hpp_source.html">ObjGeometry.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for model_viewer::geometry::ObjGeometry:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1geometry_1_1ObjGeometry__inherit__graph.png" border="0" usemap="#amodel__viewer_1_1geometry_1_1ObjGeometry_inherit__map" alt="Inheritance graph"/></div>
 <map name="amodel__viewer_1_1geometry_1_1ObjGeometry_inherit__map" id="amodel__viewer_1_1geometry_1_1ObjGeometry_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,79,166,120"/>
+<area shape="rect" title="Class representing the geometry of an OBJ model." alt="" coords="5,79,166,120"/>
 <area shape="rect" title=" " alt="" coords="17,5,154,31"/>
 <area shape="poly" title=" " alt="" coords="88,46,88,79,83,79,83,46"/>
 </map>
@@ -112,7 +115,7 @@ Collaboration diagram for model_viewer::geometry::ObjGeometry:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1geometry_1_1ObjGeometry__coll__graph.png" border="0" usemap="#amodel__viewer_1_1geometry_1_1ObjGeometry_coll__map" alt="Collaboration graph"/></div>
 <map name="amodel__viewer_1_1geometry_1_1ObjGeometry_coll__map" id="amodel__viewer_1_1geometry_1_1ObjGeometry_coll__map">
-<area shape="rect" title=" " alt="" coords="5,79,166,120"/>
+<area shape="rect" title="Class representing the geometry of an OBJ model." alt="" coords="5,79,166,120"/>
 <area shape="rect" title=" " alt="" coords="17,5,154,31"/>
 <area shape="poly" title=" " alt="" coords="88,46,88,79,83,79,83,46"/>
 </map>
@@ -121,11 +124,15 @@ Collaboration diagram for model_viewer::geometry::ObjGeometry:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abc3bef1bc3327e31952fc3a4da0a3066" id="r_abc3bef1bc3327e31952fc3a4da0a3066"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc3bef1bc3327e31952fc3a4da0a3066">ObjGeometry</a> (QQuick3DObject *parent=nullptr)</td></tr>
+<tr class="memdesc:abc3bef1bc3327e31952fc3a4da0a3066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:abc3bef1bc3327e31952fc3a4da0a3066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2661ba85b6995867a8c1c1524ff20e56" id="r_a2661ba85b6995867a8c1c1524ff20e56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2661ba85b6995867a8c1c1524ff20e56">setMesh</a> (const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html">Vector3</a> &gt; &amp;vertices, const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html">Vector3</a> &gt; &amp;normals, const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1TextureCoordinate.html">TextureCoordinate</a> &gt; &amp;textureCoords)</td></tr>
+<tr class="memdesc:a2661ba85b6995867a8c1c1524ff20e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mesh data.  <br /></td></tr>
 <tr class="separator:a2661ba85b6995867a8c1c1524ff20e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class representing the geometry of an OBJ model. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc3bef1bc3327e31952fc3a4da0a3066" name="abc3bef1bc3327e31952fc3a4da0a3066"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc3bef1bc3327e31952fc3a4da0a3066">&#9670;&#160;</a></span>ObjGeometry()</h2>
 
@@ -148,6 +155,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent QQuick3DObject, nullptr by default </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>: QQuick3DGeometry(parent) {}</div>
 </div><!-- fragment -->
 </div>
@@ -176,6 +191,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the mesh data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertices</td><td>Vertices of the model </td></tr>
+    <tr><td class="paramname">normals</td><td>Normals of the model </td></tr>
+    <tr><td class="paramname">textureCoords</td><td>Texture coordinates of the model </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>                                                                             {</div>
 <div class="line"><span class="lineno">   17</span>    clear();</div>
 <div class="line"><span class="lineno">   18</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> hasNormals = !normals.empty();</div>

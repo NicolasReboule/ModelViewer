@@ -1,7 +1,7 @@
 <map id="model_viewer::ModelManager::readyChanged" name="model_viewer::ModelManager::readyChanged">
-<area shape="rect" id="Node000001" title=" " alt="" coords="486,5,678,46"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1ModelManager.html#abc8ecabfb8ba7034705107565f07652b" title=" " alt="" coords="246,5,438,46"/>
+<area shape="rect" id="Node000001" title="Signal emitted when the ready state changes." alt="" coords="486,5,678,46"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1ModelManager.html#abc8ecabfb8ba7034705107565f07652b" title="Set the ready state, emits readyChanged signal." alt="" coords="246,5,438,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="471,28,438,28,438,23,471,23"/>
-<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1ModelManager.html#a91aca7454a20d880f0162f8cb065b317" title=" " alt="" coords="5,5,198,46"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1ModelManager.html#a91aca7454a20d880f0162f8cb065b317" title="Load a model from a file asynchronously." alt="" coords="5,5,198,46"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,28,198,28,198,23,230,23"/>
 </map>

@@ -1,15 +1,15 @@
 <map id="model_viewer::loaders::ObjLoader::loadModel" name="model_viewer::loaders::ObjLoader::loadModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,158,111"/>
-<area shape="rect" id="Node000002" href="$namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6" title=" " alt="" coords="206,5,364,46"/>
+<area shape="rect" id="Node000001" title="Load an OBJ model from a file." alt="" coords="5,71,158,111"/>
+<area shape="rect" id="Node000002" href="$namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6" title="Normalize a file path by removing &quot;file://&quot; scheme and leading slash on Windows paths." alt="" coords="206,5,364,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,68,204,49,205,54,148,73"/>
-<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#ac93abee1b5d6e807f20e4f58fd5bd2fb" title=" " alt="" coords="210,71,360,111"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#ac93abee1b5d6e807f20e4f58fd5bd2fb" title="Reset the OBJ loader state." alt="" coords="210,71,360,111"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,88,195,88,195,94,158,94"/>
-<area shape="rect" id="Node000004" href="$namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title=" " alt="" coords="215,136,354,177"/>
+<area shape="rect" id="Node000004" href="$namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="215,136,354,177"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,109,205,128,204,133,146,114"/>
-<area shape="rect" id="Node000005" href="$namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title=" " alt="" coords="412,136,551,177"/>
+<area shape="rect" id="Node000005" href="$namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="412,136,551,177"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="355,154,397,154,397,159,355,159"/>
-<area shape="rect" id="Node000006" href="$namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title=" " alt="" coords="599,103,739,143"/>
+<area shape="rect" id="Node000006" href="$namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="599,103,739,143"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="551,141,583,136,584,141,552,147"/>
-<area shape="rect" id="Node000007" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title=" " alt="" coords="599,168,739,209"/>
+<area shape="rect" id="Node000007" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="599,168,739,209"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="552,166,584,171,583,176,551,171"/>
 </map>

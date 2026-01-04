@@ -1,7 +1,7 @@
 <map id="model_viewer::loaders::ObjLoader::parseFaceIndex" name="model_viewer::loaders::ObjLoader::parseFaceIndex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="409,5,594,46"/>
-<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8d94415e80d71c8119e2523edbad6a43" title=" " alt="" coords="207,5,361,46"/>
+<area shape="rect" id="Node000001" title="Parse a face index token from the OBJ file." alt="" coords="409,5,594,46"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8d94415e80d71c8119e2523edbad6a43" title="Parse a face line from the OBJ file." alt="" coords="207,5,361,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,28,361,28,361,23,393,23"/>
-<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title=" " alt="" coords="5,5,159,46"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title="Constructor." alt="" coords="5,5,159,46"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="191,28,159,28,159,23,191,23"/>
 </map>
