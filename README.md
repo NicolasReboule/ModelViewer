@@ -39,25 +39,33 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/NicolasReboule/ModelViewer">
-    <img src="assets/logo.ico" alt="Logo" width="80" height="80">
-  </a>
+[//]: # (<!-- PROJECT LOGO -->)
+
+[//]: # (<br />)
+
+[//]: # (<div align="center">)
+
+[//]: # (  <a href="https://github.com/NicolasReboule/ModelViewer">)
+
+[//]: # (    <img src="assets/logo.ico" alt="Logo" width="80" height="80">)
+
+[//]: # (  </a>)
 
 <h3 align="center">ModelViewer</h3>
 
-  <p align="center">
-    ModelViewer is application to visualize 3D models, developed with Qt <br />
-    <br />
-    <a href="https://NicolasReboule.github.io/ModelViewer"><strong>Explore the source code docs »</strong></a>
-    <br />
-    <a href="https://github.com/NicolasReboule/ModelViewer/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/NicolasReboule/ModelViewer/issues">Request Feature</a>
-  </p>
-</div>
+<p align="center">
+    ModelViewer an is application to visualize 3D models, developed with Qt <br />
+</p>
+    
+![ModelViewer GIF](images/ModelViewer.gif)
+
+<p align="center">
+<a href="https://NicolasReboule.github.io/ModelViewer"><strong>Explore the source code docs »</strong></a>
+<br />
+<a href="https://github.com/NicolasReboule/ModelViewer/issues">Report Bug</a>
+·
+<a href="https://github.com/NicolasReboule/ModelViewer/issues">Request Feature</a>
+</p>
 
 <!-- TABLE OF CONTENTS -->
 <details>
