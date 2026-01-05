@@ -109,6 +109,7 @@
 
 - CMake
 - C++20
+- Qt6
 
 ### Installation
 
