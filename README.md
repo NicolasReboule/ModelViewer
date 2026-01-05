@@ -54,7 +54,7 @@
 <h3 align="center">ModelViewer</h3>
 
 <p align="center">
-    ModelViewer an is application to visualize 3D models, developed with Qt <br />
+    ModelViewer is an application to visualize 3D models, developed with Qt <br />
 </p>
     
 ![ModelViewer GIF](images/ModelViewer.gif)
