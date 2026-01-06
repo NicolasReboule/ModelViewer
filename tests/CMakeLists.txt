@@ -11,28 +11,32 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 # Test Executable
-add_executable(src_example_tests
+add_executable(${PROJECT_NAME}_Tests
         src/example_test.cpp
 )
 # Link headers
-target_include_directories(src_example_tests PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME}_Tests PRIVATE ${PROJECT_SOURCE_DIR}/include)
 # Link gtest
-target_link_libraries(src_example_tests PRIVATE GTest::gtest_main ${PROJECT_NAME}_Sources)
+target_link_libraries(${PROJECT_NAME}_Tests PRIVATE
+        ${PROJECT_NAME}_Sources
+        GTest::gtest_main
+)
 
 # Create tests
 include(GoogleTest)
-gtest_discover_tests(src_example_tests)
+gtest_discover_tests(${PROJECT_NAME}_Tests)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Test)
 
-qt_add_executable(qt_example_tests
+qt_add_executable(${PROJECT_NAME}_Qt_Tests
         qt/qt_example_test.cpp
 )
 
-target_link_libraries(qt_example_tests PRIVATE
+target_link_libraries(${PROJECT_NAME}_Qt_Tests PRIVATE
+        ${PROJECT_NAME}_Sources
         Qt::Test
 )
-add_test(NAME qt_example_tests COMMAND qt_example_tests)
+add_test(NAME ${PROJECT_NAME}_Qt_Tests COMMAND ${PROJECT_NAME}_Qt_Tests)
 
 
 # Add custom cmake test to build
@@ -41,3 +45,20 @@ configure_file(
         ${CMAKE_BINARY_DIR}/CTestCustom.cmake
         COPYONLY
 )
+
+# Deploy Qt (Add DLLs, ...)
+if (WIN32)
+    # Find windeployqt
+    get_target_property(_qmake_executable Qt6::qmake IMPORTED_LOCATION)
+    get_filename_component(_qt_bin_dir "${_qmake_executable}" DIRECTORY)
+
+    set(WINDEPLOYQT_EXECUTABLE "${_qt_bin_dir}/windeployqt.exe")
+    add_custom_command(TARGET ${PROJECT_NAME}_Qt_Tests POST_BUILD
+            COMMAND "${WINDEPLOYQT_EXECUTABLE}"
+            --no-translations
+            --no-opengl-sw
+            --qmldir "${CMAKE_SOURCE_DIR}"
+            "$<TARGET_FILE:${PROJECT_NAME}_Qt_Tests>"
+            COMMENT "Running windeployqt..."
+    )
+endif()
