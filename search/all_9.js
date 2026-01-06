@@ -1,20 +1,9 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['material_2',['material',['../classmodel__viewer_1_1ModelManager.html#a49428bd708d9474d5c4d74d44b8dc4c7',1,'model_viewer::ModelManager::material'],['../classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82',1,'model_viewer::loaders::ILoader::material()'],['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a9dbb46664e91bbfcdcd2b19de906cb2a',1,'model_viewer::loaders::ObjLoader::material()'],['../classmodel__viewer_1_1ModelManager.html#a8e9567df3713329eb533c5821a8ec37b',1,'model_viewer::ModelManager::material()']]],
-  ['material_2ecpp_3',['Material.cpp',['../Material_8cpp.html',1,'']]],
-  ['material_2ehpp_4',['Material.hpp',['../Material_8hpp.html',1,'']]],
-  ['materialchanged_5',['materialChanged',['../classmodel__viewer_1_1ModelManager.html#a20c9d2718f2756022856e4921c5479cb',1,'model_viewer::ModelManager']]],
-  ['metalness_6',['metalness',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#af18e36f16354ff32ad06f5158261a2d0',1,'model_viewer::material::MTLMaterial']]],
-  ['metalnesschanged_7',['metalnessChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a4e9f5957eebc85717ba05548949150a6',1,'model_viewer::material::MTLMaterial']]],
-  ['model_5fviewer_8',['model_viewer',['../namespacemodel__viewer.html',1,'']]],
-  ['model_5fviewer_3a_3ageometry_9',['geometry',['../namespacemodel__viewer_1_1geometry.html',1,'model_viewer']]],
-  ['model_5fviewer_3a_3aloaders_10',['loaders',['../namespacemodel__viewer_1_1loaders.html',1,'model_viewer']]],
-  ['model_5fviewer_3a_3amaterial_11',['material',['../namespacemodel__viewer_1_1material.html',1,'model_viewer']]],
-  ['model_5fviewer_3a_3astring_5fhelpers_12',['string_helpers',['../namespacemodel__viewer_1_1string__helpers.html',1,'model_viewer']]],
-  ['modelmanager_13',['ModelManager',['../classmodel__viewer_1_1ModelManager.html',1,'model_viewer::ModelManager'],['../classmodel__viewer_1_1ModelManager.html#a6a1886329513e96bf63e1606e79c7c6c',1,'model_viewer::ModelManager::ModelManager()']]],
-  ['modelmanager_2ecpp_14',['ModelManager.cpp',['../ModelManager_8cpp.html',1,'']]],
-  ['modelmanager_2ehpp_15',['ModelManager.hpp',['../ModelManager_8hpp.html',1,'']]],
-  ['mtlmaterial_16',['MTLMaterial',['../classmodel__viewer_1_1material_1_1MTLMaterial.html',1,'model_viewer::material::MTLMaterial'],['../classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61',1,'model_viewer::material::MTLMaterial::MTLMaterial()']]]
+  ['list_0',['Todo List',['../todo.html',1,'']]],
+  ['loading_1',['loading',['../classmodel__viewer_1_1ModelManager.html#a545e35ad2c962b9ba8b41ca369114954',1,'model_viewer::ModelManager']]],
+  ['loadingchanged_2',['loadingChanged',['../classmodel__viewer_1_1ModelManager.html#a7e7031719cb32d59aa8ece56e7e96293',1,'model_viewer::ModelManager']]],
+  ['loadmodel_3',['loadModel',['../classmodel__viewer_1_1loaders_1_1ILoader.html#abb1d69935db9f86f70fe468a920f8752',1,'model_viewer::loaders::ILoader::loadModel()'],['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce',1,'model_viewer::loaders::ObjLoader::loadModel()'],['../classmodel__viewer_1_1ModelManager.html#a91aca7454a20d880f0162f8cb065b317',1,'model_viewer::ModelManager::loadModel()']]],
+  ['ltrim_4',['ltrim',['../namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20',1,'model_viewer::string_helpers']]],
+  ['ltrim_5fcopy_5',['ltrim_copy',['../namespacemodel__viewer_1_1string__helpers.html#a6d0db231c476bb24a8d4328d00530f29',1,'model_viewer::string_helpers']]]
 ];

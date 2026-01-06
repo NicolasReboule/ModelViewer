@@ -246,6 +246,9 @@ Properties</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a693d9087f7db3804dabc9e2dfb397ce1" id="r_a693d9087f7db3804dabc9e2dfb397ce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a693d9087f7db3804dabc9e2dfb397ce1">parseMaterial</a> (std::ifstream &amp;file)</td></tr>
+<tr class="memdesc:a693d9087f7db3804dabc9e2dfb397ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the MTL file line by line.  <br /></td></tr>
+<tr class="separator:a693d9087f7db3804dabc9e2dfb397ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2797ddef1bb24392efa0b70465ad40a" id="r_ad2797ddef1bb24392efa0b70465ad40a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues</a> ()</td></tr>
 <tr class="memdesc:ad2797ddef1bb24392efa0b70465ad40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply parsed values to the material properties.  <br /></td></tr>
 <tr class="separator:ad2797ddef1bb24392efa0b70465ad40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,7 +348,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing a material parsed from an MTL file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo</a></b></dt><dd>Seek ways to improve this class' architecture </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>Seek ways to improve this class' architecture </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adb1ec3675f07c73f647b388a9b7b1e61" name="adb1ec3675f07c73f647b388a9b7b1e61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb1ec3675f07c73f647b388a9b7b1e61">&#9670;&#160;</a></span>MTLMaterial()</h2>
@@ -416,9 +419,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   48</span>    };</div>
 <div class="line"><span class="lineno">   49</span>}</div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a1f6f976baac1a4521a33da709b83bb54"><div class="ttname"><a href="#a1f6f976baac1a4521a33da709b83bb54">model_viewer::material::MTLMaterial::_parseFunctions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;, const std::string &amp;)&gt; &gt; _parseFunctions</div><div class="ttdoc">Map of parsing functions for different MTL line prefixes.</div><div class="ttdef"><b>Definition</b> Material.hpp:132</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a7c15809900c2d355faeecc502cbc9221"><div class="ttname"><a href="#a7c15809900c2d355faeecc502cbc9221">model_viewer::material::MTLMaterial::parseMap</a></div><div class="ttdeci">void parseMap(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a texture map from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:132</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ab96c8f0edf9a593cfbe5043d9683b31d"><div class="ttname"><a href="#ab96c8f0edf9a593cfbe5043d9683b31d">model_viewer::material::MTLMaterial::parseColor</a></div><div class="ttdeci">void parseColor(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a color value from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:121</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_abb64fee003e3ae2a23e85a9e9edcd730"><div class="ttname"><a href="#abb64fee003e3ae2a23e85a9e9edcd730">model_viewer::material::MTLMaterial::parseScalar</a></div><div class="ttdeci">void parseScalar(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a scalar value from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:111</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a7c15809900c2d355faeecc502cbc9221"><div class="ttname"><a href="#a7c15809900c2d355faeecc502cbc9221">model_viewer::material::MTLMaterial::parseMap</a></div><div class="ttdeci">void parseMap(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a texture map from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:133</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ab96c8f0edf9a593cfbe5043d9683b31d"><div class="ttname"><a href="#ab96c8f0edf9a593cfbe5043d9683b31d">model_viewer::material::MTLMaterial::parseColor</a></div><div class="ttdeci">void parseColor(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a color value from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:122</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_abb64fee003e3ae2a23e85a9e9edcd730"><div class="ttname"><a href="#abb64fee003e3ae2a23e85a9e9edcd730">model_viewer::material::MTLMaterial::parseScalar</a></div><div class="ttdeci">void parseScalar(const std::string &amp;line, const std::string &amp;key)</div><div class="ttdoc">Parse a scalar value from an MTL line.</div><div class="ttdef"><b>Definition</b> Material.cpp:112</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>, <a class="el" href="#ab96c8f0edf9a593cfbe5043d9683b31d">parseColor()</a>, <a class="el" href="#a7c15809900c2d355faeecc502cbc9221">parseMap()</a>, and <a class="el" href="#abb64fee003e3ae2a23e85a9e9edcd730">parseScalar()</a>.</p>
 <div class="dynheader">
@@ -1098,16 +1101,16 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>                                                                        {</div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordtype">float</span> r, g, b;</div>
-<div class="line"><span class="lineno">  123</span>    <span class="keyword">const</span> std::string lineTrimmed =</div>
-<div class="line"><span class="lineno">  124</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(key.size() + 1));</div>
-<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">if</span> (std::sscanf(lineTrimmed.c_str(), <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;r, &amp;g, &amp;b) &lt; 3)</div>
-<div class="line"><span class="lineno">  126</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid color at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[key] = {<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(r * 255), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(g * 255),</div>
-<div class="line"><span class="lineno">  129</span>                        <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(b * 255)};</div>
-<div class="line"><span class="lineno">  130</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>                                                                        {</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordtype">float</span> r, g, b;</div>
+<div class="line"><span class="lineno">  124</span>    <span class="keyword">const</span> std::string lineTrimmed =</div>
+<div class="line"><span class="lineno">  125</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(key.size() + 1));</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">if</span> (std::sscanf(lineTrimmed.c_str(), <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;r, &amp;g, &amp;b) &lt; 3)</div>
+<div class="line"><span class="lineno">  127</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid color at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  129</span>        <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[key] = {<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(r * 255), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(g * 255),</div>
+<div class="line"><span class="lineno">  130</span>                        <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(b * 255)};</div>
+<div class="line"><span class="lineno">  131</span>}</div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a847e694046b69d967b2ff23cabbf0810"><div class="ttname"><a href="#a847e694046b69d967b2ff23cabbf0810">model_viewer::material::MTLMaterial::_colors</a></div><div class="ttdeci">std::unordered_map&lt; std::string, QColor &gt; _colors</div><div class="ttdoc">Maps to store parsed colors before applying them.</div><div class="ttdef"><b>Definition</b> Material.hpp:124</div></div>
 <div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a49b0dd6a5b5a964aea3e324144240a11"><div class="ttname"><a href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdoc">Trim from both ends (copying)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:76</div></div>
 </div><!-- fragment -->
@@ -1178,13 +1181,13 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  132</span>                                                                      {</div>
-<div class="line"><span class="lineno">  133</span>    <span class="keyword">const</span> std::string map =</div>
-<div class="line"><span class="lineno">  134</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(key.size() + 1));</div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">if</span> (map.empty()) std::cerr &lt;&lt; <span class="stringliteral">&quot;Empty map at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  136</span>    <span class="keyword">const</span> std::string mapPath = (<a class="code hl_variable" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a> / map).<span class="keywordtype">string</span>();</div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[key] = QUrl::fromLocalFile(mapPath.c_str());</div>
-<div class="line"><span class="lineno">  138</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  133</span>                                                                      {</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keyword">const</span> std::string map =</div>
+<div class="line"><span class="lineno">  135</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(key.size() + 1));</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (map.empty()) std::cerr &lt;&lt; <span class="stringliteral">&quot;Empty map at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keyword">const</span> std::string mapPath = (<a class="code hl_variable" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a> / map).<span class="keywordtype">string</span>();</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[key] = QUrl::fromLocalFile(mapPath.c_str());</div>
+<div class="line"><span class="lineno">  139</span>}</div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a21959a05af51e0f9f61e274215ab344e"><div class="ttname"><a href="#a21959a05af51e0f9f61e274215ab344e">model_viewer::material::MTLMaterial::_maps</a></div><div class="ttdeci">std::unordered_map&lt; std::string, QUrl &gt; _maps</div><div class="ttdoc">Maps to store parsed texture maps before applying them.</div><div class="ttdef"><b>Definition</b> Material.hpp:127</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a835e07ca86aee083a920fcdb70f8fa89"><div class="ttname"><a href="#a835e07ca86aee083a920fcdb70f8fa89">model_viewer::material::MTLMaterial::_parentPath</a></div><div class="ttdeci">std::filesystem::path _parentPath</div><div class="ttdoc">Parent path of the MTL file.</div><div class="ttdef"><b>Definition</b> Material.hpp:52</div></div>
 </div><!-- fragment -->
@@ -1220,6 +1223,80 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a693d9087f7db3804dabc9e2dfb397ce1" name="a693d9087f7db3804dabc9e2dfb397ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693d9087f7db3804dabc9e2dfb397ce1">&#9670;&#160;</a></span>parseMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void model_viewer::material::MTLMaterial::parseMaterial </td>
+          <td>(</td>
+          <td class="paramtype">std::ifstream &amp;</td>          <td class="paramname"><span class="paramname"><em>file</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse the MTL file line by line. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Input file stream to parse </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Optimize parsing of the material </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                                 {</div>
+<div class="line"><span class="lineno">   64</span>    std::string line;</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keyword">const</span> <span class="keyword">auto</span> pos = line.find(<span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keyword">const</span> std::string lineStart =</div>
+<div class="line"><span class="lineno">   68</span>            <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(0, pos));</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>.contains(lineStart))</div>
+<div class="line"><span class="lineno">   70</span>            <a class="code hl_variable" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>.at(lineStart)(line, lineStart);</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#aacb29680b6a02d951d2bec548bc646be">parseMTL()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_cgraph" alt=""/></div>
+<map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_cgraph">
+<area shape="rect" title="Parse the MTL file line by line." alt="" coords="5,39,190,79"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="238,39,377,79"/>
+<area shape="poly" title=" " alt="" coords="190,56,222,56,222,62,190,62"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="425,39,564,79"/>
+<area shape="poly" title=" " alt="" coords="377,56,410,56,410,62,377,62"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="612,5,752,46"/>
+<area shape="poly" title=" " alt="" coords="564,44,596,38,597,43,565,49"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="612,71,752,111"/>
+<area shape="poly" title=" " alt="" coords="565,68,597,74,596,79,564,74"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_icgraph" alt=""/></div>
+<map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_icgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_a693d9087f7db3804dabc9e2dfb397ce1_icgraph">
+<area shape="rect" title="Parse the MTL file line by line." alt="" coords="219,5,403,46"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="5,5,171,46"/>
+<area shape="poly" title=" " alt="" coords="203,28,171,28,171,23,203,23"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aacb29680b6a02d951d2bec548bc646be" name="aacb29680b6a02d951d2bec548bc646be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacb29680b6a02d951d2bec548bc646be">&#9670;&#160;</a></span>parseMTL()</h2>
 
@@ -1249,39 +1326,32 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   55</span>                  &lt;&lt; std::strerror(errno) &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   57</span>    }</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_variable" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a> = std::filesystem::path(filepath).parent_path();</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>    std::string line;</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">while</span> (std::getline(in, line)) {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keyword">const</span> <span class="keyword">auto</span> pos = line.find(<span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keyword">const</span> std::string lineStart =</div>
-<div class="line"><span class="lineno">   65</span>            <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(0, pos));</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>.contains(lineStart))</div>
-<div class="line"><span class="lineno">   67</span>            <a class="code hl_variable" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>.at(lineStart)(line, lineStart);</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_function" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues</a>();</div>
-<div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ad2797ddef1bb24392efa0b70465ad40a"><div class="ttname"><a href="#ad2797ddef1bb24392efa0b70465ad40a">model_viewer::material::MTLMaterial::setMaterialValues</a></div><div class="ttdeci">void setMaterialValues()</div><div class="ttdoc">Apply parsed values to the material properties.</div><div class="ttdef"><b>Definition</b> Material.cpp:83</div></div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a> = std::filesystem::path(filepath).parent_path();</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="#a693d9087f7db3804dabc9e2dfb397ce1">parseMaterial</a>(in);</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues</a>();</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a693d9087f7db3804dabc9e2dfb397ce1"><div class="ttname"><a href="#a693d9087f7db3804dabc9e2dfb397ce1">model_viewer::material::MTLMaterial::parseMaterial</a></div><div class="ttdeci">void parseMaterial(std::ifstream &amp;file)</div><div class="ttdoc">Parse the MTL file line by line.</div><div class="ttdef"><b>Definition</b> Material.cpp:63</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_ad2797ddef1bb24392efa0b70465ad40a"><div class="ttname"><a href="#ad2797ddef1bb24392efa0b70465ad40a">model_viewer::material::MTLMaterial::setMaterialValues</a></div><div class="ttdeci">void setMaterialValues()</div><div class="ttdoc">Apply parsed values to the material properties.</div><div class="ttdef"><b>Definition</b> Material.cpp:84</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a>, <a class="el" href="#a1f6f976baac1a4521a33da709b83bb54">_parseFunctions</a>, <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
+<p class="reference">References <a class="el" href="#a835e07ca86aee083a920fcdb70f8fa89">_parentPath</a>, <a class="el" href="#a693d9087f7db3804dabc9e2dfb397ce1">parseMaterial()</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_aacb29680b6a02d951d2bec548bc646be_cgraph">
-<area shape="rect" title="Parse an MTL file and set the material properties." alt="" coords="5,39,171,79"/>
-<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title="Apply parsed values to the material properties." alt="" coords="219,5,429,46"/>
-<area shape="poly" title=" " alt="" coords="171,45,203,40,204,45,171,50"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="254,71,394,111"/>
-<area shape="poly" title=" " alt="" coords="171,68,239,77,238,82,171,73"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="477,71,616,111"/>
-<area shape="poly" title=" " alt="" coords="394,88,461,88,461,94,394,94"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="664,37,804,78"/>
-<area shape="poly" title=" " alt="" coords="616,76,648,70,649,75,617,81"/>
-<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="664,103,804,143"/>
-<area shape="poly" title=" " alt="" coords="617,100,649,106,648,111,616,106"/>
+<area shape="rect" title="Parse an MTL file and set the material properties." alt="" coords="5,72,171,113"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#a693d9087f7db3804dabc9e2dfb397ce1" title="Parse the MTL file line by line." alt="" coords="232,39,416,79"/>
+<area shape="poly" title=" " alt="" coords="171,78,216,72,216,77,171,83"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title="Apply parsed values to the material properties." alt="" coords="219,104,429,145"/>
+<area shape="poly" title=" " alt="" coords="171,101,204,105,203,111,171,106"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="477,39,616,79"/>
+<area shape="poly" title=" " alt="" coords="417,56,462,56,462,62,417,62"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="664,39,804,79"/>
+<area shape="poly" title=" " alt="" coords="617,56,649,56,649,62,617,62"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="852,5,991,46"/>
+<area shape="poly" title=" " alt="" coords="804,44,836,38,837,43,805,49"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="852,71,991,111"/>
+<area shape="poly" title=" " alt="" coords="805,68,837,74,836,79,804,74"/>
 </map>
 </div>
 
@@ -1322,15 +1392,15 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>                                                                         {</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordtype">float</span> scalar;</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keyword">const</span> std::string lineTrimmed =</div>
-<div class="line"><span class="lineno">  114</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(key.size() + 1));</div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (std::sscanf(lineTrimmed.c_str(), <span class="stringliteral">&quot;%f&quot;</span>, &amp;scalar) &lt; 1)</div>
-<div class="line"><span class="lineno">  116</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid scalar at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[key] = scalar;</div>
-<div class="line"><span class="lineno">  119</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>                                                                         {</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordtype">float</span> scalar;</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keyword">const</span> std::string lineTrimmed =</div>
+<div class="line"><span class="lineno">  115</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(key.size() + 1));</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (std::sscanf(lineTrimmed.c_str(), <span class="stringliteral">&quot;%f&quot;</span>, &amp;scalar) &lt; 1)</div>
+<div class="line"><span class="lineno">  117</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid scalar at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[key] = scalar;</div>
+<div class="line"><span class="lineno">  120</span>}</div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a55a904ea8d72a9f74c9f7e7600d73a01"><div class="ttname"><a href="#a55a904ea8d72a9f74c9f7e7600d73a01">model_viewer::material::MTLMaterial::_scalars</a></div><div class="ttdeci">std::unordered_map&lt; std::string, qreal &gt; _scalars</div><div class="ttdoc">Maps to store parsed values before applying them.</div><div class="ttdef"><b>Definition</b> Material.hpp:121</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
@@ -1381,15 +1451,15 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Reset the material to default values. </p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                {</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>.clear();</div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>.clear();</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>.clear();</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;d&quot;</span>] = 1.0;</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;illum&quot;</span>] = 1.0;</div>
-<div class="line"><span class="lineno">   79</span>    <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Kd&quot;</span>] = QColor(255, 255, 255);</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_function" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues</a>();</div>
-<div class="line"><span class="lineno">   81</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                {</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>.clear();</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>.clear();</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>.clear();</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;d&quot;</span>] = 1.0;</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;illum&quot;</span>] = 1.0;</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Kd&quot;</span>] = QColor(255, 255, 255);</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues</a>();</div>
+<div class="line"><span class="lineno">   82</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>, <a class="el" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>, <a class="el" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>, and <a class="el" href="#ad2797ddef1bb24392efa0b70465ad40a">setMaterialValues()</a>.</p>
 <div class="dynheader">
@@ -1456,33 +1526,33 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Apply parsed values to the material properties. </p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>                                    {</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_variable" href="#ae362ba9d2f557fcfb897dcd7a70e867d">_Ka</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Ka&quot;</span>];</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_variable" href="#a106573bfd59484dd8c2dcefb2bdd8843">_Kd</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Kd&quot;</span>];</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Ks&quot;</span>];</div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="#a7e5dbc2f2364e5b621da963447c38adb">_Tf</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Tf&quot;</span>];</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_variable" href="#a5003695bea7b24f1a259eba3a2397cf8">_Ke</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;ke&quot;</span>];</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_variable" href="#a8978444890ecd2a4284d6749a62a2e7f">_illumination</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;illum&quot;</span>];</div>
-<div class="line"><span class="lineno">   91</span>    <a class="code hl_variable" href="#a146902354b7b1e08b0c2532a83b4da2b">_d</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;d&quot;</span>];</div>
-<div class="line"><span class="lineno">   92</span>    <a class="code hl_variable" href="#ae44b216ba789ae4f298ad4aaca9edac3">_Ns</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;Ns&quot;</span>];</div>
-<div class="line"><span class="lineno">   93</span>    <a class="code hl_variable" href="#a476577a27aec53b86e0b1a55f39ed46a">_sharpness</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;sharpness&quot;</span>];</div>
-<div class="line"><span class="lineno">   94</span>    <a class="code hl_variable" href="#ad3a352243a3a9dea448ebfdfc63af863">_Ni</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;Ni&quot;</span>];</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="#a180e3dd7b41c247d1a04b10185c924d5">_ambientMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ka&quot;</span>];</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="#acb59cb7709fbfebc7c986ea27d37fefc">_diffuseMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Kd&quot;</span>];</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_variable" href="#a6aa4057b2ce5ac00e648032c92b263e1">_specularReflectionMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ks&quot;</span>];</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_variable" href="#a18bd44ec5afe45e6f4269b5103d0e266">_specularMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ns&quot;</span>];</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="#a59bdaa2351ed9c0c67d897c2ace46bff">_emissiveMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ke&quot;</span>];</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_variable" href="#a790ea4c051b0898c1bc6fc5050b4534e">_dissolveMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_d&quot;</span>];</div>
-<div class="line"><span class="lineno">  102</span>    <a class="code hl_variable" href="#a76bea9cc7aa7af76363c8268474410fb">_bumpMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;bump&quot;</span>];</div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_variable" href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">_decalMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;decal&quot;</span>];</div>
-<div class="line"><span class="lineno">  104</span>    <a class="code hl_variable" href="#a1cf993dd808d0019d126edc1226f6661">_dispersionMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;disp&quot;</span>];</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_variable" href="#a8f4ce0a24eb3368769567c9c9a92b3b2">_roughness</a> = std::clamp(1.0 - std::pow(<a class="code hl_variable" href="#ae44b216ba789ae4f298ad4aaca9edac3">_Ns</a> / 100.0, 0.25), 0.04, 1.0);</div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_variable" href="#af046b7ecceb4cf807907a3cc2df154c4">_metalness</a> =</div>
-<div class="line"><span class="lineno">  108</span>        std::clamp((<a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.red() + <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.green() + <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.blue()) / 3.0, 0.0, 1.0);</div>
-<div class="line"><span class="lineno">  109</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>                                    {</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_variable" href="#ae362ba9d2f557fcfb897dcd7a70e867d">_Ka</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Ka&quot;</span>];</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_variable" href="#a106573bfd59484dd8c2dcefb2bdd8843">_Kd</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Kd&quot;</span>];</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Ks&quot;</span>];</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_variable" href="#a7e5dbc2f2364e5b621da963447c38adb">_Tf</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;Tf&quot;</span>];</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_variable" href="#a5003695bea7b24f1a259eba3a2397cf8">_Ke</a> = <a class="code hl_variable" href="#a847e694046b69d967b2ff23cabbf0810">_colors</a>[<span class="stringliteral">&quot;ke&quot;</span>];</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_variable" href="#a8978444890ecd2a4284d6749a62a2e7f">_illumination</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;illum&quot;</span>];</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_variable" href="#a146902354b7b1e08b0c2532a83b4da2b">_d</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;d&quot;</span>];</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_variable" href="#ae44b216ba789ae4f298ad4aaca9edac3">_Ns</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;Ns&quot;</span>];</div>
+<div class="line"><span class="lineno">   94</span>    <a class="code hl_variable" href="#a476577a27aec53b86e0b1a55f39ed46a">_sharpness</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;sharpness&quot;</span>];</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_variable" href="#ad3a352243a3a9dea448ebfdfc63af863">_Ni</a> = <a class="code hl_variable" href="#a55a904ea8d72a9f74c9f7e7600d73a01">_scalars</a>[<span class="stringliteral">&quot;Ni&quot;</span>];</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="#a180e3dd7b41c247d1a04b10185c924d5">_ambientMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ka&quot;</span>];</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_variable" href="#acb59cb7709fbfebc7c986ea27d37fefc">_diffuseMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Kd&quot;</span>];</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_variable" href="#a6aa4057b2ce5ac00e648032c92b263e1">_specularReflectionMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ks&quot;</span>];</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="#a18bd44ec5afe45e6f4269b5103d0e266">_specularMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ns&quot;</span>];</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_variable" href="#a59bdaa2351ed9c0c67d897c2ace46bff">_emissiveMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_Ke&quot;</span>];</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_variable" href="#a790ea4c051b0898c1bc6fc5050b4534e">_dissolveMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;map_d&quot;</span>];</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_variable" href="#a76bea9cc7aa7af76363c8268474410fb">_bumpMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;bump&quot;</span>];</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_variable" href="#a2efe581da1bd9cb7eac9d13d87e4bf6e">_decalMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;decal&quot;</span>];</div>
+<div class="line"><span class="lineno">  105</span>    <a class="code hl_variable" href="#a1cf993dd808d0019d126edc1226f6661">_dispersionMap</a> = <a class="code hl_variable" href="#a21959a05af51e0f9f61e274215ab344e">_maps</a>[<span class="stringliteral">&quot;disp&quot;</span>];</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_variable" href="#a8f4ce0a24eb3368769567c9c9a92b3b2">_roughness</a> = std::clamp(1.0 - std::pow(<a class="code hl_variable" href="#ae44b216ba789ae4f298ad4aaca9edac3">_Ns</a> / 100.0, 0.25), 0.04, 1.0);</div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_variable" href="#af046b7ecceb4cf807907a3cc2df154c4">_metalness</a> =</div>
+<div class="line"><span class="lineno">  109</span>        std::clamp((<a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.red() + <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.green() + <a class="code hl_variable" href="#a9b7434ece78bcc7e9151fb0c2039edf1">_Ks</a>.blue()) / 3.0, 0.0, 1.0);</div>
+<div class="line"><span class="lineno">  110</span>}</div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a106573bfd59484dd8c2dcefb2bdd8843"><div class="ttname"><a href="#a106573bfd59484dd8c2dcefb2bdd8843">model_viewer::material::MTLMaterial::_Kd</a></div><div class="ttdeci">QColor _Kd</div><div class="ttdoc">Diffuse Color.</div><div class="ttdef"><b>Definition</b> Material.hpp:58</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a146902354b7b1e08b0c2532a83b4da2b"><div class="ttname"><a href="#a146902354b7b1e08b0c2532a83b4da2b">model_viewer::material::MTLMaterial::_d</a></div><div class="ttdeci">qreal _d</div><div class="ttdoc">Opacity.</div><div class="ttdef"><b>Definition</b> Material.hpp:73</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1material_1_1MTLMaterial_html_a476577a27aec53b86e0b1a55f39ed46a"><div class="ttname"><a href="#a476577a27aec53b86e0b1a55f39ed46a">model_viewer::material::MTLMaterial::_sharpness</a></div><div class="ttdeci">qreal _sharpness</div><div class="ttdoc">Sharpness.</div><div class="ttdef"><b>Definition</b> Material.hpp:79</div></div>
@@ -2136,7 +2206,7 @@ Here is the caller graph for this function:</div>
 
 <p>Map of parsing functions for different MTL line prefixes. </p>
 
-<p class="reference">Referenced by <a class="el" href="#adb1ec3675f07c73f647b388a9b7b1e61">MTLMaterial()</a>, and <a class="el" href="#aacb29680b6a02d951d2bec548bc646be">parseMTL()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#adb1ec3675f07c73f647b388a9b7b1e61">MTLMaterial()</a>, and <a class="el" href="#a693d9087f7db3804dabc9e2dfb397ce1">parseMaterial()</a>.</p>
 
 </div>
 </div>

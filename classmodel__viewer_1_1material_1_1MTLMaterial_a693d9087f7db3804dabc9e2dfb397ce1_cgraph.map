@@ -1,0 +1,11 @@
+<map id="model_viewer::material::MTLMaterial::parseMaterial" name="model_viewer::material::MTLMaterial::parseMaterial">
+<area shape="rect" id="Node000001" title="Parse the MTL file line by line." alt="" coords="5,39,190,79"/>
+<area shape="rect" id="Node000002" href="$namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="238,39,377,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,56,222,56,222,62,190,62"/>
+<area shape="rect" id="Node000003" href="$namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="425,39,564,79"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,56,410,56,410,62,377,62"/>
+<area shape="rect" id="Node000004" href="$namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="612,5,752,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="564,44,596,38,597,43,565,49"/>
+<area shape="rect" id="Node000005" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="612,71,752,111"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="565,68,597,74,596,79,564,74"/>
+</map>

@@ -1,7 +1,14 @@
 var searchData=
 [
-  ['texturecoordinate_0',['TextureCoordinate',['../structmodel__viewer_1_1geometry_1_1TextureCoordinate.html',1,'model_viewer::geometry']]],
-  ['todo_20list_1',['Todo List',['../todo.html',1,'']]],
-  ['trim_2',['trim',['../namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e',1,'model_viewer::string_helpers']]],
-  ['trim_5fcopy_3',['trim_copy',['../namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11',1,'model_viewer::string_helpers']]]
+  ['setloading_0',['setLoading',['../classmodel__viewer_1_1ModelManager.html#a4e9b651eddc7b525fca95ad65dec38f2',1,'model_viewer::ModelManager']]],
+  ['setmaterialvalues_1',['setMaterialValues',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a',1,'model_viewer::material::MTLMaterial']]],
+  ['setmesh_2',['setMesh',['../classmodel__viewer_1_1geometry_1_1ObjGeometry.html#a2661ba85b6995867a8c1c1524ff20e56',1,'model_viewer::geometry::ObjGeometry']]],
+  ['setmodeldata_3',['setModelData',['../classmodel__viewer_1_1geometry_1_1ObjGeometry.html#a2e499b2aff8e8052d3fa348d3a0c33bf',1,'model_viewer::geometry::ObjGeometry::setModelData()'],['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a7739d13e9e337e65f14343cbe2d886de',1,'model_viewer::loaders::ObjLoader::setModelData()']]],
+  ['setready_4',['setReady',['../classmodel__viewer_1_1ModelManager.html#abc8ecabfb8ba7034705107565f07652b',1,'model_viewer::ModelManager']]],
+  ['sharpnesschanged_5',['sharpnessChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#af22ce7769d73cda479073462dd03a69a',1,'model_viewer::material::MTLMaterial']]],
+  ['specularmap_6',['specularMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#af89d0b9c3b3dd6a8ff099aaa35c7d542',1,'model_viewer::material::MTLMaterial']]],
+  ['specularmapchanged_7',['specularMapChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aaeffcf1e8af7dbf0846d6027a7a7fc67',1,'model_viewer::material::MTLMaterial']]],
+  ['specularreflectionmap_8',['specularReflectionMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a4d4eed3d63bd649305aa7f71e8260f25',1,'model_viewer::material::MTLMaterial']]],
+  ['specularreflectionmapchanged_9',['specularReflectionMapChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aac55ad563a6ed5645b1394a64c2f24f8',1,'model_viewer::material::MTLMaterial']]],
+  ['stringhelpers_2ehpp_10',['StringHelpers.hpp',['../StringHelpers_8hpp.html',1,'']]]
 ];

@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['setloading_0',['setLoading',['../classmodel__viewer_1_1ModelManager.html#a4e9b651eddc7b525fca95ad65dec38f2',1,'model_viewer::ModelManager']]],
-  ['setmaterialvalues_1',['setMaterialValues',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a',1,'model_viewer::material::MTLMaterial']]],
-  ['setmesh_2',['setMesh',['../classmodel__viewer_1_1geometry_1_1ObjGeometry.html#a2661ba85b6995867a8c1c1524ff20e56',1,'model_viewer::geometry::ObjGeometry']]],
-  ['setready_3',['setReady',['../classmodel__viewer_1_1ModelManager.html#abc8ecabfb8ba7034705107565f07652b',1,'model_viewer::ModelManager']]],
-  ['sharpnesschanged_4',['sharpnessChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#af22ce7769d73cda479073462dd03a69a',1,'model_viewer::material::MTLMaterial']]],
-  ['specularmapchanged_5',['specularMapChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aaeffcf1e8af7dbf0846d6027a7a7fc67',1,'model_viewer::material::MTLMaterial']]],
-  ['specularreflectionmapchanged_6',['specularReflectionMapChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aac55ad563a6ed5645b1394a64c2f24f8',1,'model_viewer::material::MTLMaterial']]]
+  ['readychanged_0',['readyChanged',['../classmodel__viewer_1_1ModelManager.html#ab5eabf8fa08e2e322bb2e1c960def0df',1,'model_viewer::ModelManager']]],
+  ['reset_1',['reset',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8d13d1c314d3cc6c2bb680ac3cdee9db',1,'model_viewer::loaders::ObjLoader']]],
+  ['resetmaterial_2',['resetMaterial',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aeedd667610ee2d6d7d199a1c6e7db201',1,'model_viewer::material::MTLMaterial']]],
+  ['resetobj_3',['resetObj',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#ac93abee1b5d6e807f20e4f58fd5bd2fb',1,'model_viewer::loaders::ObjLoader']]],
+  ['retrievematerial_4',['retrieveMaterial',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#abd3f7e911f40f0e383bfb8d8380288bc',1,'model_viewer::loaders::ObjLoader']]],
+  ['roughnesschanged_5',['roughnessChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#aedcd06d56e0383e7c19c1c7158da177e',1,'model_viewer::material::MTLMaterial']]],
+  ['rtrim_6',['rtrim',['../namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf',1,'model_viewer::string_helpers']]],
+  ['rtrim_5fcopy_7',['rtrim_copy',['../namespacemodel__viewer_1_1string__helpers.html#aae2ee49e1a6feec0822ed4c195365b4c',1,'model_viewer::string_helpers']]]
 ];

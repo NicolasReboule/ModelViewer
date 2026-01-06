@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['objgeometry_0',['ObjGeometry',['../classmodel__viewer_1_1geometry_1_1ObjGeometry.html#abc3bef1bc3327e31952fc3a4da0a3066',1,'model_viewer::geometry::ObjGeometry']]],
-  ['objloader_1',['ObjLoader',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0',1,'model_viewer::loaders::ObjLoader']]]
+  ['nichanged_0',['NiChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#acf9b8a9d88681f5e11ed5b30835ce29c',1,'model_viewer::material::MTLMaterial']]],
+  ['normalizepath_1',['normalizePath',['../namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6',1,'model_viewer::string_helpers']]],
+  ['nschanged_2',['NsChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a3e1569c60c29e616819ed8a5244cb415',1,'model_viewer::material::MTLMaterial']]]
 ];

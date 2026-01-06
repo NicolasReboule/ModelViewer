@@ -1,0 +1,7 @@
+<map id="model_viewer::geometry::ObjGeometry::setMesh" name="model_viewer::geometry::ObjGeometry::setMesh">
+<area shape="rect" id="Node000001" title="Set the mesh data." alt="" coords="5,49,166,90"/>
+<area shape="rect" id="Node000002" href="$classmodel__viewer_1_1geometry_1_1ObjGeometry.html#ac217093d5356591d179bfa9807d66fe2" title="Configure the vertex layout of the geometry based on the data." alt="" coords="214,5,412,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,54,198,49,199,54,166,59"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1geometry_1_1ObjGeometry.html#a2e499b2aff8e8052d3fa348d3a0c33bf" title="Set the model data to the geometry." alt="" coords="218,85,408,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,79,203,85,202,90,166,84"/>
+</map>

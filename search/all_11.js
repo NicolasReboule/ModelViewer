@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['v_0',['v',['../structmodel__viewer_1_1geometry_1_1FaceIndex.html#a7cb5a884f13a2e3a81fed7187adfb2cb',1,'model_viewer::geometry::FaceIndex::v'],['../structmodel__viewer_1_1geometry_1_1TextureCoordinate.html#ac4875dc9477c234d8d38fe33a2dd7b12',1,'model_viewer::geometry::TextureCoordinate::v']]],
-  ['vector3_1',['Vector3',['../structmodel__viewer_1_1geometry_1_1Vector3.html',1,'model_viewer::geometry']]],
-  ['vn_2',['vn',['../structmodel__viewer_1_1geometry_1_1FaceIndex.html#a5bd205744b412a00c6e31b850845c221',1,'model_viewer::geometry::FaceIndex']]],
-  ['vt_3',['vt',['../structmodel__viewer_1_1geometry_1_1FaceIndex.html#aa6a196bc9d0a9f9f1a847445235cbcf9',1,'model_viewer::geometry::FaceIndex']]]
+  ['u_0',['u',['../structmodel__viewer_1_1geometry_1_1TextureCoordinate.html#a70de08b0e7c5fa76ac75eec48bb52b9a',1,'model_viewer::geometry::TextureCoordinate']]]
 ];

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['material_1',['material',['../classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82',1,'model_viewer::loaders::ILoader::material()'],['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a9dbb46664e91bbfcdcd2b19de906cb2a',1,'model_viewer::loaders::ObjLoader::material()'],['../classmodel__viewer_1_1ModelManager.html#a8e9567df3713329eb533c5821a8ec37b',1,'model_viewer::ModelManager::material() const']]],
-  ['materialchanged_2',['materialChanged',['../classmodel__viewer_1_1ModelManager.html#a20c9d2718f2756022856e4921c5479cb',1,'model_viewer::ModelManager']]],
-  ['metalnesschanged_3',['metalnessChanged',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a4e9f5957eebc85717ba05548949150a6',1,'model_viewer::material::MTLMaterial']]],
-  ['modelmanager_4',['ModelManager',['../classmodel__viewer_1_1ModelManager.html#a6a1886329513e96bf63e1606e79c7c6c',1,'model_viewer::ModelManager']]],
-  ['mtlmaterial_5',['MTLMaterial',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61',1,'model_viewer::material::MTLMaterial']]]
+  ['loadingchanged_0',['loadingChanged',['../classmodel__viewer_1_1ModelManager.html#a7e7031719cb32d59aa8ece56e7e96293',1,'model_viewer::ModelManager']]],
+  ['loadmodel_1',['loadModel',['../classmodel__viewer_1_1loaders_1_1ILoader.html#abb1d69935db9f86f70fe468a920f8752',1,'model_viewer::loaders::ILoader::loadModel()'],['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce',1,'model_viewer::loaders::ObjLoader::loadModel()'],['../classmodel__viewer_1_1ModelManager.html#a91aca7454a20d880f0162f8cb065b317',1,'model_viewer::ModelManager::loadModel()']]],
+  ['ltrim_2',['ltrim',['../namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20',1,'model_viewer::string_helpers']]],
+  ['ltrim_5fcopy_3',['ltrim_copy',['../namespacemodel__viewer_1_1string__helpers.html#a6d0db231c476bb24a8d4328d00530f29',1,'model_viewer::string_helpers']]]
 ];
