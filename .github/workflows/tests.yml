@@ -87,11 +87,11 @@ jobs:
 
       - name: Build Sources Unit Test
         shell: bash
-        run: cmake --build ./build --target src_example_tests -j`nproc`
+        run: cmake --build ./build --target ModelViewer_Tests -j`nproc`
 
       - name: Build Qt Unit Test
         shell: bash
-        run: cmake --build ./build --target qt_example_tests -j`nproc`
+        run: cmake --build ./build --target ModelViewer_Qt_Tests -j`nproc`
 
       - name: Run Unit Test
         shell: bash
@@ -117,6 +117,7 @@ jobs:
           lcov --remove ./build/coverage.info '**/_deps/**' --output-file ./build/coverage.info
           lcov --remove ./build/coverage.info '**/tests/**' --output-file ./build/coverage.info
           lcov --remove ./build/coverage.info '**/ModelViewer_autogen/**' --output-file ./build/coverage.info --ignore-errors unused
+          lcov --remove ./build/coverage.info '**/ModelViewer_Sources_autogen/**' --output-file ./build/coverage.info --ignore-errors unused
           lcov --list ./build/coverage.info
 
       - name: Upload coverage to Codecov
