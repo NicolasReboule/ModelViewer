@@ -2,20 +2,15 @@
 // Created by nicol on 29/12/2024.
 //
 
-#include "example.hpp"
-
 #include <gtest/gtest.h>
 
-TEST(ExampleTest, PrintHello) {
-    testing::internal::CaptureStdout();
-    example::ExampleClass::printHello();
-    const std::string output = testing::internal::GetCapturedStdout();
-    EXPECT_EQ(output, "Hello new project!\n");
-}
+#include "ModelManager.hpp"
 
-TEST(ExampleTest, PrintHelloFail) {
-    testing::internal::CaptureStdout();
-    example::ExampleClass::printHello();
-    const std::string output = testing::internal::GetCapturedStdout();
-    EXPECT_NE(output, "Hello new project\n");
+TEST(Coverage, TouchAllClasses) {
+    const model_viewer::loaders::ObjLoader loader;
+    const model_viewer::geometry::ObjGeometry geometry;
+    const model_viewer::material::MTLMaterial material;
+    const model_viewer::ModelManager manager;
+
+    SUCCEED();
 }

@@ -43,8 +43,7 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Qml Quick Quick3D)
 qt_standard_project_setup(REQUIRES 6.5)
 
 # Sources, Hpp files for Qt Objects are included so moc files are generated using AUTOMOC
-add_library(${PROJECT_NAME}_Sources SHARED
-        src/example.cpp
+add_library(${PROJECT_NAME}_Sources STATIC
         src/Loaders/Obj/ObjLoader.cpp
         include/Loaders/Obj/ObjLoader.hpp
         src/Geometry/ObjGeometry.cpp
