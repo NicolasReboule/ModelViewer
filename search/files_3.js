@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['material_2ecpp_1',['Material.cpp',['../Material_8cpp.html',1,'']]],
-  ['material_2ehpp_2',['Material.hpp',['../Material_8hpp.html',1,'']]],
-  ['modelmanager_2ecpp_3',['ModelManager.cpp',['../ModelManager_8cpp.html',1,'']]],
-  ['modelmanager_2ehpp_4',['ModelManager.hpp',['../ModelManager_8hpp.html',1,'']]]
+  ['objgeometry_2ecpp_0',['ObjGeometry.cpp',['../ObjGeometry_8cpp.html',1,'']]],
+  ['objgeometry_2ehpp_1',['ObjGeometry.hpp',['../ObjGeometry_8hpp.html',1,'']]],
+  ['objloader_2ecpp_2',['ObjLoader.cpp',['../ObjLoader_8cpp.html',1,'']]],
+  ['objloader_2ehpp_3',['ObjLoader.hpp',['../ObjLoader_8hpp.html',1,'']]]
 ];

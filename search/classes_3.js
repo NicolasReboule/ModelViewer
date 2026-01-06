@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['modelmanager_0',['ModelManager',['../classmodel__viewer_1_1ModelManager.html',1,'model_viewer']]],
-  ['mtlmaterial_1',['MTLMaterial',['../classmodel__viewer_1_1material_1_1MTLMaterial.html',1,'model_viewer::material']]]
+  ['objgeometry_0',['ObjGeometry',['../classmodel__viewer_1_1geometry_1_1ObjGeometry.html',1,'model_viewer::geometry']]],
+  ['objloader_1',['ObjLoader',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html',1,'model_viewer::loaders']]]
 ];
