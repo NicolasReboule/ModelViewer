@@ -60,7 +60,6 @@ class ObjLoader final : public ILoader {
     /**
      * @brief Load an OBJ model from a file
      * @param filepath Path to the OBJ file
-     * @todo Optimize parsing of the model
      * @todo Add support for groups and multiple materials
      */
     void loadModel(const std::string &filepath) override;
@@ -81,6 +80,19 @@ class ObjLoader final : public ILoader {
 
    private:
     //! Reset the OBJ loader state
+    void reset();
+
+    /**
+     * @brief Parse an OBJ file line by line
+     * @param file Input file stream to parse
+     * @todo Optimize parsing of the model
+     */
+    void parseModel(std::ifstream &file);
+
+    //! Set the model data to the geometry
+    void setModelData();
+
+    //! Reset the OBJ model state
     void resetObj();
 
     /**

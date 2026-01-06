@@ -55,19 +55,20 @@ void MTLMaterial::parseMTL(const std::string &filepath) {
                   << std::strerror(errno) << std::endl;
         return;
     }
-
     _parentPath = std::filesystem::path(filepath).parent_path();
+    parseMaterial(in);
+    setMaterialValues();
+}
 
+void MTLMaterial::parseMaterial(std::ifstream &file) {
     std::string line;
-    while (std::getline(in, line)) {
+    while (std::getline(file, line)) {
         const auto pos = line.find(' ');
         const std::string lineStart =
             string_helpers::trim_copy(line.substr(0, pos));
         if (_parseFunctions.contains(lineStart))
             _parseFunctions.at(lineStart)(line, lineStart);
     }
-
-    setMaterialValues();
 }
 
 void MTLMaterial::resetMaterial() {

@@ -17,6 +17,7 @@ int main(int argc, char *argv[]) {
     QQmlApplicationEngine *engine = new QQmlApplicationEngine();
     model_viewer::ModelManager modelManager;
     engine->rootContext()->setContextProperty("ModelManager", &modelManager);
+    // Cleans up engine on exit
     QObject::connect(&app, &QGuiApplication::aboutToQuit, engine,
                      &QQmlApplicationEngine::deleteLater);
     engine->loadFromModule("ModelViewerModule", "Main");

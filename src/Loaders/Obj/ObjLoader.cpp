@@ -24,9 +24,7 @@ ObjLoader::ObjLoader()
 }
 
 void ObjLoader::loadModel(const std::string &filepath) {
-    resetObj();
-    _material->resetMaterial();
-
+    reset();
     _modelPath = string_helpers::normalizePath(filepath);
     std::ifstream in(_modelPath, std::ios::in);
     if (!in.is_open()) {
@@ -34,35 +32,47 @@ void ObjLoader::loadModel(const std::string &filepath) {
                   << std::strerror(errno) << std::endl;
         return;
     }
+    parseModel(in);
+    setModelData();
+}
+
+void ObjLoader::reset() {
+    resetObj();
+    _material->resetMaterial();
+}
+
+void ObjLoader::parseModel(std::ifstream &file) {
     std::string line;
-    while (std::getline(in, line)) {
+    while (std::getline(file, line)) {
         const auto pos = line.find(' ');
         const std::string lineStart =
             string_helpers::trim_copy(line.substr(0, pos));
         if (_parseFunctions.contains(lineStart))
             _parseFunctions.at(lineStart)(line);
     }
+}
 
-    std::vector<geometry::Vector3> v;
-    std::vector<geometry::TextureCoordinate> vt;
-    std::vector<geometry::Vector3> vn;
-    for (auto f : _faces) {
-        if (!_vertices.empty() && f.v != 0) {
-            const int vIdx = f.v > 0 ? f.v - 1 : _vertices.size() + f.v;
-            v.push_back(_vertices[vIdx]);
+void ObjLoader::setModelData() {
+    std::vector<geometry::Vector3> vVector;
+    std::vector<geometry::TextureCoordinate> vtVector;
+    std::vector<geometry::Vector3> vnVector;
+    for (auto [v, vt, vn] : _faces) {
+        if (!_vertices.empty() && v != 0) {
+            const int vIdx = v > 0 ? v - 1 : _vertices.size() + v;
+            vVector.push_back(_vertices[vIdx]);
         }
-        if (!_textureCoords.empty() && f.vt != 0) {
-            const int vtIdx = f.vt > 0 ? f.vt - 1 : _vertices.size() + f.vt;
-            vt.push_back(_textureCoords[vtIdx]);
+        if (!_textureCoords.empty() && vt != 0) {
+            const int vtIdx = vt > 0 ? vt - 1 : _vertices.size() + vt;
+            vtVector.push_back(_textureCoords[vtIdx]);
         }
-        if (!_normals.empty() && f.vn != 0) {
-            const int vnIdx = f.vn > 0 ? f.vn - 1 : _vertices.size() + f.vn;
-            vn.push_back(_normals[vnIdx]);
+        if (!_normals.empty() && vn != 0) {
+            const int vnIdx = vn > 0 ? vn - 1 : _vertices.size() + vn;
+            vnVector.push_back(_normals[vnIdx]);
         }
     }
-    _vertices = v;
-    _textureCoords = vt;
-    _normals = vn;
+    _vertices = vVector;
+    _textureCoords = vtVector;
+    _normals = vnVector;
     _geometry->setMesh(_vertices, _normals, _textureCoords);
 }
 

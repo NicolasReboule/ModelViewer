@@ -252,6 +252,13 @@ class MTLMaterial final : public QObject {
     void bumpMapChanged();
 
    private:
+    /**
+     * @brief Parse the MTL file line by line
+     * @param file Input file stream to parse
+     * @todo Optimize parsing of the material
+     */
+    void parseMaterial(std::ifstream &file);
+
     //! Apply parsed values to the material properties
     void setMaterialValues();
 
