@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Reset the OBJ model state." alt="" coords="403,5,552,46"/>
 <area shape="rect" id="Node000002" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8d13d1c314d3cc6c2bb680ac3cdee9db" title="Reset the OBJ loader state." alt="" coords="206,5,355,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="388,28,355,28,355,23,388,23"/>
-<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
+<area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,28,158,28,158,23,190,23"/>
 </map>

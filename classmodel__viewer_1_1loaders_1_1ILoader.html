@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6acd92962f218277677ad74b151256ab" id="r_a6acd92962f218277677ad74b151256ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6acd92962f218277677ad74b151256ab">~ILoader</a> ()=default</td></tr>
 <tr class="memdesc:a6acd92962f218277677ad74b151256ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
 <tr class="separator:a6acd92962f218277677ad74b151256ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb1d69935db9f86f70fe468a920f8752" id="r_abb1d69935db9f86f70fe468a920f8752"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb1d69935db9f86f70fe468a920f8752">loadModel</a> (const std::string &amp;filepath)=0</td></tr>
-<tr class="memdesc:abb1d69935db9f86f70fe468a920f8752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a model from a file.  <br /></td></tr>
-<tr class="separator:abb1d69935db9f86f70fe468a920f8752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93980bbe2ced148d591ea5167144a38" id="r_ab93980bbe2ced148d591ea5167144a38"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab93980bbe2ced148d591ea5167144a38">loadModel</a> (const std::string &amp;filepath)=0</td></tr>
+<tr class="memdesc:ab93980bbe2ced148d591ea5167144a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a model from a file.  <br /></td></tr>
+<tr class="separator:ab93980bbe2ced148d591ea5167144a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc8859d3dc6beaab4c029a8e5b5a6196" id="r_acc8859d3dc6beaab4c029a8e5b5a6196"><td class="memItemLeft" align="right" valign="top">virtual QQuick3DGeometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc8859d3dc6beaab4c029a8e5b5a6196">geometry</a> () const =0</td></tr>
 <tr class="memdesc:acc8859d3dc6beaab4c029a8e5b5a6196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the geometry of the loaded model.  <br /></td></tr>
 <tr class="separator:acc8859d3dc6beaab4c029a8e5b5a6196"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,8 +199,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="abb1d69935db9f86f70fe468a920f8752" name="abb1d69935db9f86f70fe468a920f8752"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb1d69935db9f86f70fe468a920f8752">&#9670;&#160;</a></span>loadModel()</h2>
+<a id="ab93980bbe2ced148d591ea5167144a38" name="ab93980bbe2ced148d591ea5167144a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93980bbe2ced148d591ea5167144a38">&#9670;&#160;</a></span>loadModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +209,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void model_viewer::loaders::ILoader::loadModel </td>
+          <td class="memname">virtual bool model_viewer::loaders::ILoader::loadModel </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span></td><td>)</td>
           <td></td>
@@ -229,8 +229,9 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Boolean indicating whether the model was loaded successfully </dd></dl>
 
-<p>Implemented in <a class="el" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce">model_viewer::loaders::ObjLoader</a>.</p>
+<p>Implemented in <a class="el" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a">model_viewer::loaders::ObjLoader</a>.</p>
 
 </div>
 </div>

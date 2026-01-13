@@ -19,7 +19,7 @@
 <area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="228,94,185,94,185,88,228,88"/>
 <area shape="rect" id="Node000007" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="12,201,178,242"/>
 <area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="217,224,178,224,178,219,217,219"/>
-<area shape="rect" id="Node000009" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
+<area shape="rect" id="Node000009" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
 <area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="229,290,172,290,172,284,229,284"/>
 <area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="236,134,169,115,170,109,237,129"/>
 <area shape="rect" id="Node000012" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title="Constructor." alt="" coords="18,332,172,373"/>

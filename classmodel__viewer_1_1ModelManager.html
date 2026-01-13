@@ -173,6 +173,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc8ecabfb8ba7034705107565f07652b" id="r_abc8ecabfb8ba7034705107565f07652b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc8ecabfb8ba7034705107565f07652b">setReady</a> (bool <a class="el" href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">isReady</a>)</td></tr>
 <tr class="memdesc:abc8ecabfb8ba7034705107565f07652b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ready state, emits readyChanged signal.  <br /></td></tr>
 <tr class="separator:abc8ecabfb8ba7034705107565f07652b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20d9f6e4bb6c26586a3ed0ff02ff24a" id="r_ae20d9f6e4bb6c26586a3ed0ff02ff24a"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; std::string, <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html">loaders::ILoader</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae20d9f6e4bb6c26586a3ed0ff02ff24a">getLoaders</a> () const</td></tr>
+<tr class="separator:ae20d9f6e4bb6c26586a3ed0ff02ff24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -239,8 +241,16 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>: QObject(parent) {}</div>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                                          : QObject(parent) {</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a> = {</div>
+<div class="line"><span class="lineno">   16</span>        {<span class="stringliteral">&quot;.obj&quot;</span>, &amp;<a class="code hl_variable" href="#a3b0aeffd8a0c2dd15db80efe23af91d9">_objLoader</a>},</div>
+<div class="line"><span class="lineno">   17</span>    };</div>
+<div class="line"><span class="lineno">   18</span>}</div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a3b0aeffd8a0c2dd15db80efe23af91d9"><div class="ttname"><a href="#a3b0aeffd8a0c2dd15db80efe23af91d9">model_viewer::ModelManager::_objLoader</a></div><div class="ttdeci">loaders::ObjLoader _objLoader</div><div class="ttdoc">OBJ loader instance.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:30</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a76819cbfe8b66867c5a841c7c1ec6d0a"><div class="ttname"><a href="#a76819cbfe8b66867c5a841c7c1ec6d0a">model_viewer::ModelManager::_loaders</a></div><div class="ttdeci">std::unordered_map&lt; std::string, loaders::ILoader * &gt; _loaders</div><div class="ttdoc">Map of file extensions to their respective loaders.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:33</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>, and <a class="el" href="#a3b0aeffd8a0c2dd15db80efe23af91d9">_objLoader</a>.</p>
+
 </div>
 </div>
 <a id="a78af0ebae606bbc3c7cc75b53c0ca7f0" name="a78af0ebae606bbc3c7cc75b53c0ca7f0"></a>
@@ -296,8 +306,8 @@ Private Attributes</h2></td></tr>
 
 <p>Get the geometry of the loaded model. </p>
 <dl class="section return"><dt>Returns</dt><dd>Geometry of the loaded model </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a>-&gt;<a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">geometry</a>(); };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_ae7dd38f4e4e231362273f00f6cd92b98"><div class="ttname"><a href="#ae7dd38f4e4e231362273f00f6cd92b98">model_viewer::ModelManager::_lastLoaded</a></div><div class="ttdeci">loaders::ILoader * _lastLoaded</div><div class="ttdoc">Pointer to the last used loader.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:38</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a>-&gt;<a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">geometry</a>(); };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_ae7dd38f4e4e231362273f00f6cd92b98"><div class="ttname"><a href="#ae7dd38f4e4e231362273f00f6cd92b98">model_viewer::ModelManager::_lastLoaded</a></div><div class="ttdeci">loaders::ILoader * _lastLoaded</div><div class="ttdoc">Pointer to the last used loader.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:36</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ILoader_html_acc8859d3dc6beaab4c029a8e5b5a6196"><div class="ttname"><a href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">model_viewer::loaders::ILoader::geometry</a></div><div class="ttdeci">virtual QQuick3DGeometry * geometry() const =0</div><div class="ttdoc">Get the geometry of the loaded model.</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a>, and <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">model_viewer::loaders::ILoader::geometry()</a>.</p>
@@ -353,6 +363,36 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ae20d9f6e4bb6c26586a3ed0ff02ff24a" name="ae20d9f6e4bb6c26586a3ed0ff02ff24a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20d9f6e4bb6c26586a3ed0ff02ff24a">&#9670;&#160;</a></span>getLoaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::unordered_map&lt; std::string, <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html">loaders::ILoader</a> * &gt; &amp; model_viewer::ModelManager::getLoaders </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  115</span>              {</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>;</div>
+<div class="line"><span class="lineno">  117</span>    };</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>.</p>
+
+</div>
+</div>
 <a id="a6501cbd11dcf41e088d193cc0531376a" name="a6501cbd11dcf41e088d193cc0531376a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6501cbd11dcf41e088d193cc0531376a">&#9670;&#160;</a></span>isLoading()</h2>
 
@@ -378,8 +418,8 @@ Here is the caller graph for this function:</div>
 
 <p>Check if a model is currently loading. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if a model is loading, false otherwise </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   96</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a9b9471c4b17fed337512f9d86e396e2c">_loading</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a9b9471c4b17fed337512f9d86e396e2c"><div class="ttname"><a href="#a9b9471c4b17fed337512f9d86e396e2c">model_viewer::ModelManager::_loading</a></div><div class="ttdeci">bool _loading</div><div class="ttdoc">Boolean indicating if a model is currently loading.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:44</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a9b9471c4b17fed337512f9d86e396e2c">_loading</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a9b9471c4b17fed337512f9d86e396e2c"><div class="ttname"><a href="#a9b9471c4b17fed337512f9d86e396e2c">model_viewer::ModelManager::_loading</a></div><div class="ttdeci">bool _loading</div><div class="ttdoc">Boolean indicating if a model is currently loading.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:42</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a9b9471c4b17fed337512f9d86e396e2c">_loading</a>.</p>
 
@@ -426,8 +466,8 @@ Here is the caller graph for this function:</div>
 
 <p>Check if a model is ready. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if a model is ready, false otherwise </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">_ready</a>; };</div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a7ff54f5b9d42ba04bc2073d23c4e95b5"><div class="ttname"><a href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">model_viewer::ModelManager::_ready</a></div><div class="ttdeci">bool _ready</div><div class="ttdoc">Boolean indicating if a model is ready.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:47</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">_ready</a>; };</div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a7ff54f5b9d42ba04bc2073d23c4e95b5"><div class="ttname"><a href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">model_viewer::ModelManager::_ready</a></div><div class="ttdeci">bool _ready</div><div class="ttdoc">Boolean indicating if a model is ready.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:45</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">_ready</a>.</p>
 
@@ -512,25 +552,24 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                    {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keyword">const</span> std::string strPath =</div>
-<div class="line"><span class="lineno">   18</span>        filepath.toStdString().substr(<span class="keyword">sizeof</span>(<span class="stringliteral">&quot;file://&quot;</span>) - 1);</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keyword">const</span> <span class="keyword">auto</span> pos = strPath.find_last_of(<span class="charliteral">&#39;.&#39;</span>);</div>
-<div class="line"><span class="lineno">   20</span>    <span class="keyword">const</span> std::string ext = strPath.substr(pos);</div>
-<div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>    <span class="keyword">auto</span> result = QtConcurrent::run([&amp;, strPath, ext] {</div>
-<div class="line"><span class="lineno">   23</span>        <a class="code hl_function" href="#abc8ecabfb8ba7034705107565f07652b">setReady</a>(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   24</span>        <a class="code hl_variable" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>[ext]-&gt;loadModel(strPath);</div>
-<div class="line"><span class="lineno">   25</span>        emit <a class="code hl_signal" href="#a0b0e28a624adc66bd430e226a17daf67">geometryChanged</a>();</div>
-<div class="line"><span class="lineno">   26</span>        emit <a class="code hl_signal" href="#a20c9d2718f2756022856e4921c5479cb">materialChanged</a>();</div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_variable" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a> = <a class="code hl_variable" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>[ext];</div>
-<div class="line"><span class="lineno">   28</span>        <a class="code hl_function" href="#abc8ecabfb8ba7034705107565f07652b">setReady</a>(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   29</span>    });</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>                                                    {</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keyword">const</span> std::string strPath =</div>
+<div class="line"><span class="lineno">   22</span>        filepath.toStdString().substr(<span class="keyword">sizeof</span>(<span class="stringliteral">&quot;file://&quot;</span>) - 1);</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keyword">const</span> <span class="keyword">auto</span> pos = strPath.find_last_of(<span class="charliteral">&#39;.&#39;</span>);</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keyword">const</span> std::string ext = strPath.substr(pos);</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="keyword">auto</span> result = QtConcurrent::run([&amp;, strPath, ext] {</div>
+<div class="line"><span class="lineno">   27</span>        <a class="code hl_function" href="#abc8ecabfb8ba7034705107565f07652b">setReady</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_variable" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>[ext]-&gt;loadModel(strPath);</div>
+<div class="line"><span class="lineno">   29</span>        emit <a class="code hl_signal" href="#a0b0e28a624adc66bd430e226a17daf67">geometryChanged</a>();</div>
+<div class="line"><span class="lineno">   30</span>        emit <a class="code hl_signal" href="#a20c9d2718f2756022856e4921c5479cb">materialChanged</a>();</div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_variable" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a> = <a class="code hl_variable" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>[ext];</div>
+<div class="line"><span class="lineno">   32</span>        <a class="code hl_function" href="#abc8ecabfb8ba7034705107565f07652b">setReady</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   33</span>    });</div>
+<div class="line"><span class="lineno">   34</span>}</div>
 <div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a0b0e28a624adc66bd430e226a17daf67"><div class="ttname"><a href="#a0b0e28a624adc66bd430e226a17daf67">model_viewer::ModelManager::geometryChanged</a></div><div class="ttdeci">void geometryChanged()</div><div class="ttdoc">Signal emitted when the geometry changes.</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a20c9d2718f2756022856e4921c5479cb"><div class="ttname"><a href="#a20c9d2718f2756022856e4921c5479cb">model_viewer::ModelManager::materialChanged</a></div><div class="ttdeci">void materialChanged()</div><div class="ttdoc">Signal emitted when the material changes.</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a76819cbfe8b66867c5a841c7c1ec6d0a"><div class="ttname"><a href="#a76819cbfe8b66867c5a841c7c1ec6d0a">model_viewer::ModelManager::_loaders</a></div><div class="ttdeci">std::unordered_map&lt; std::string, loaders::ILoader * &gt; _loaders</div><div class="ttdoc">Map of file extensions to their respective loaders.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:33</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_abc8ecabfb8ba7034705107565f07652b"><div class="ttname"><a href="#abc8ecabfb8ba7034705107565f07652b">model_viewer::ModelManager::setReady</a></div><div class="ttdeci">void setReady(bool isReady)</div><div class="ttdoc">Set the ready state, emits readyChanged signal.</div><div class="ttdef"><b>Definition</b> ModelManager.cpp:37</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_abc8ecabfb8ba7034705107565f07652b"><div class="ttname"><a href="#abc8ecabfb8ba7034705107565f07652b">model_viewer::ModelManager::setReady</a></div><div class="ttdeci">void setReady(bool isReady)</div><div class="ttdoc">Set the ready state, emits readyChanged signal.</div><div class="ttdef"><b>Definition</b> ModelManager.cpp:41</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a>, <a class="el" href="#a76819cbfe8b66867c5a841c7c1ec6d0a">_loaders</a>, <a class="el" href="#a0b0e28a624adc66bd430e226a17daf67">geometryChanged()</a>, <a class="el" href="#a20c9d2718f2756022856e4921c5479cb">materialChanged()</a>, and <a class="el" href="#abc8ecabfb8ba7034705107565f07652b">setReady()</a>.</p>
 <div class="dynheader">
@@ -585,7 +624,7 @@ Here is the call graph for this function:</div>
 
 <p>Get the material of the loaded model. </p>
 <dl class="section return"><dt>Returns</dt><dd>Material of the loaded model </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a>-&gt;<a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">material</a>(); };</div>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a>-&gt;<a class="code hl_function" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">material</a>(); };</div>
 <div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ILoader_html_a03b8eb74b100fbd8a4f9d27d950f0b82"><div class="ttname"><a href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">model_viewer::loaders::ILoader::material</a></div><div class="ttdeci">virtual material::MTLMaterial * material() const =0</div><div class="ttdoc">Get the material of the loaded model.</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ae7dd38f4e4e231362273f00f6cd92b98">_lastLoaded</a>, and <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">model_viewer::loaders::ILoader::material()</a>.</p>
@@ -704,11 +743,11 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                                                  {</div>
-<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="#a9b9471c4b17fed337512f9d86e396e2c">_loading</a> = <a class="code hl_function" href="#a6501cbd11dcf41e088d193cc0531376a">isLoading</a>;</div>
-<div class="line"><span class="lineno">   34</span>    emit <a class="code hl_signal" href="#a7e7031719cb32d59aa8ece56e7e96293">loadingChanged</a>();</div>
-<div class="line"><span class="lineno">   35</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a6501cbd11dcf41e088d193cc0531376a"><div class="ttname"><a href="#a6501cbd11dcf41e088d193cc0531376a">model_viewer::ModelManager::isLoading</a></div><div class="ttdeci">bool isLoading() const</div><div class="ttdoc">Check if a model is currently loading.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:96</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                                  {</div>
+<div class="line"><span class="lineno">   37</span>    <a class="code hl_variable" href="#a9b9471c4b17fed337512f9d86e396e2c">_loading</a> = <a class="code hl_function" href="#a6501cbd11dcf41e088d193cc0531376a">isLoading</a>;</div>
+<div class="line"><span class="lineno">   38</span>    emit <a class="code hl_signal" href="#a7e7031719cb32d59aa8ece56e7e96293">loadingChanged</a>();</div>
+<div class="line"><span class="lineno">   39</span>}</div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a6501cbd11dcf41e088d193cc0531376a"><div class="ttname"><a href="#a6501cbd11dcf41e088d193cc0531376a">model_viewer::ModelManager::isLoading</a></div><div class="ttdeci">bool isLoading() const</div><div class="ttdoc">Check if a model is currently loading.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:94</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a7e7031719cb32d59aa8ece56e7e96293"><div class="ttname"><a href="#a7e7031719cb32d59aa8ece56e7e96293">model_viewer::ModelManager::loadingChanged</a></div><div class="ttdeci">void loadingChanged()</div><div class="ttdoc">Signal emitted when the loading state changes.</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a9b9471c4b17fed337512f9d86e396e2c">_loading</a>, <a class="el" href="#a6501cbd11dcf41e088d193cc0531376a">isLoading()</a>, and <a class="el" href="#a7e7031719cb32d59aa8ece56e7e96293">loadingChanged()</a>.</p>
@@ -763,14 +802,14 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>                                              {</div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_variable" href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">_ready</a> = <a class="code hl_function" href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">isReady</a>;</div>
-<div class="line"><span class="lineno">   39</span>    emit <a class="code hl_signal" href="#ab5eabf8fa08e2e322bb2e1c960def0df">readyChanged</a>();</div>
-<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="#a4e9b651eddc7b525fca95ad65dec38f2">setLoading</a>(!<a class="code hl_function" href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">isReady</a>);</div>
-<div class="line"><span class="lineno">   41</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a4e9b651eddc7b525fca95ad65dec38f2"><div class="ttname"><a href="#a4e9b651eddc7b525fca95ad65dec38f2">model_viewer::ModelManager::setLoading</a></div><div class="ttdeci">void setLoading(bool isLoading)</div><div class="ttdoc">Set the loading state, emits loadingChanged signal.</div><div class="ttdef"><b>Definition</b> ModelManager.cpp:32</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                                              {</div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_variable" href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">_ready</a> = <a class="code hl_function" href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">isReady</a>;</div>
+<div class="line"><span class="lineno">   43</span>    emit <a class="code hl_signal" href="#ab5eabf8fa08e2e322bb2e1c960def0df">readyChanged</a>();</div>
+<div class="line"><span class="lineno">   44</span>    <a class="code hl_function" href="#a4e9b651eddc7b525fca95ad65dec38f2">setLoading</a>(!<a class="code hl_function" href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">isReady</a>);</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a4e9b651eddc7b525fca95ad65dec38f2"><div class="ttname"><a href="#a4e9b651eddc7b525fca95ad65dec38f2">model_viewer::ModelManager::setLoading</a></div><div class="ttdeci">void setLoading(bool isLoading)</div><div class="ttdoc">Set the loading state, emits loadingChanged signal.</div><div class="ttdef"><b>Definition</b> ModelManager.cpp:36</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_ab5eabf8fa08e2e322bb2e1c960def0df"><div class="ttname"><a href="#ab5eabf8fa08e2e322bb2e1c960def0df">model_viewer::ModelManager::readyChanged</a></div><div class="ttdeci">void readyChanged()</div><div class="ttdoc">Signal emitted when the ready state changes.</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_ad11f2b7b4e3e178a4c0eed0db7a15a6e"><div class="ttname"><a href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">model_viewer::ModelManager::isReady</a></div><div class="ttdeci">bool isReady() const</div><div class="ttdoc">Check if a model is ready.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:108</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_ad11f2b7b4e3e178a4c0eed0db7a15a6e"><div class="ttname"><a href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">model_viewer::ModelManager::isReady</a></div><div class="ttdeci">bool isReady() const</div><div class="ttdoc">Check if a model is ready.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:106</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a7ff54f5b9d42ba04bc2073d23c4e95b5">_ready</a>, <a class="el" href="#ad11f2b7b4e3e178a4c0eed0db7a15a6e">isReady()</a>, <a class="el" href="#ab5eabf8fa08e2e322bb2e1c960def0df">readyChanged()</a>, and <a class="el" href="#a4e9b651eddc7b525fca95ad65dec38f2">setLoading()</a>.</p>
 
@@ -876,17 +915,10 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        {<span class="stringliteral">&quot;.obj&quot;</span>, &amp;<a class="code hl_variable" href="#a3b0aeffd8a0c2dd15db80efe23af91d9">_objLoader</a>},</div>
-<div class="line">    }</div>
-<div class="ttc" id="aclassmodel__viewer_1_1ModelManager_html_a3b0aeffd8a0c2dd15db80efe23af91d9"><div class="ttname"><a href="#a3b0aeffd8a0c2dd15db80efe23af91d9">model_viewer::ModelManager::_objLoader</a></div><div class="ttdeci">loaders::ObjLoader _objLoader</div><div class="ttdoc">OBJ loader instance.</div><div class="ttdef"><b>Definition</b> ModelManager.hpp:30</div></div>
-</div><!-- fragment -->
+
 <p>Map of file extensions to their respective loaders. </p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                             {</div>
-<div class="line"><span class="lineno">   34</span>        {<span class="stringliteral">&quot;.obj&quot;</span>, &amp;<a class="code hl_variable" href="#a3b0aeffd8a0c2dd15db80efe23af91d9">_objLoader</a>},</div>
-<div class="line"><span class="lineno">   35</span>    };</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="#a91aca7454a20d880f0162f8cb065b317">loadModel()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ae20d9f6e4bb6c26586a3ed0ff02ff24a">getLoaders()</a>, <a class="el" href="#a91aca7454a20d880f0162f8cb065b317">loadModel()</a>, and <a class="el" href="#a6a1886329513e96bf63e1606e79c7c6c">ModelManager()</a>.</p>
 
 </div>
 </div>
@@ -937,6 +969,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>OBJ loader instance. </p>
+
+<p class="reference">Referenced by <a class="el" href="#a6a1886329513e96bf63e1606e79c7c6c">ModelManager()</a>.</p>
 
 </div>
 </div>

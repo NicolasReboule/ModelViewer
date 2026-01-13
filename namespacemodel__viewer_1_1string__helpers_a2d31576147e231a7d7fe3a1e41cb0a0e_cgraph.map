@@ -2,6 +2,8 @@
 <area shape="rect" id="Node000001" title="Trim from both ends (in place)" alt="" coords="5,39,145,79"/>
 <area shape="rect" id="Node000002" href="$namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="193,5,332,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,44,177,38,178,43,146,49"/>
-<area shape="rect" id="Node000003" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="193,71,332,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,68,178,74,177,79,145,74"/>
+<area shape="rect" id="Node000004" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="193,71,332,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,68,178,74,177,79,145,74"/>
+<area shape="rect" id="Node000003" href="$namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="380,5,524,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,23,365,23,365,28,332,28"/>
 </map>

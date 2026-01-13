@@ -2,14 +2,16 @@
 <area shape="rect" id="Node000001" title="Parse an MTL file and set the material properties." alt="" coords="5,72,171,113"/>
 <area shape="rect" id="Node000002" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#a693d9087f7db3804dabc9e2dfb397ce1" title="Parse the MTL file line by line." alt="" coords="232,39,416,79"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,78,216,72,216,77,171,83"/>
-<area shape="rect" id="Node000007" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title="Apply parsed values to the material properties." alt="" coords="219,104,429,145"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="171,101,204,105,203,111,171,106"/>
+<area shape="rect" id="Node000008" href="$classmodel__viewer_1_1material_1_1MTLMaterial.html#ad2797ddef1bb24392efa0b70465ad40a" title="Apply parsed values to the material properties." alt="" coords="219,104,429,145"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="171,101,204,105,203,111,171,106"/>
 <area shape="rect" id="Node000003" href="$namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="477,39,616,79"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,56,462,56,462,62,417,62"/>
 <area shape="rect" id="Node000004" href="$namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="664,39,804,79"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="617,56,649,56,649,62,617,62"/>
 <area shape="rect" id="Node000005" href="$namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="852,5,991,46"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="804,44,836,38,837,43,805,49"/>
-<area shape="rect" id="Node000006" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="852,71,991,111"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="805,68,837,74,836,79,804,74"/>
+<area shape="rect" id="Node000007" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="852,71,991,111"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="805,68,837,74,836,79,804,74"/>
+<area shape="rect" id="Node000006" href="$namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="1039,5,1183,46"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="991,23,1024,23,1024,28,991,28"/>
 </map>

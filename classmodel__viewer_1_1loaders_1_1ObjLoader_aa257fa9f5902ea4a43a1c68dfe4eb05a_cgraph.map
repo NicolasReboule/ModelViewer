@@ -4,18 +4,20 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,101,205,57,220,50,222,55,207,61,121,106"/>
 <area shape="rect" id="Node000003" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a3551b16e5a7ed0144f52581a0c6f3a20" title="Parse an OBJ file line by line." alt="" coords="212,71,372,111"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,110,196,103,197,109,158,115"/>
-<area shape="rect" id="Node000008" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8d13d1c314d3cc6c2bb680ac3cdee9db" title="Reset the OBJ loader state." alt="" coords="218,136,367,177"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="158,133,202,140,202,145,158,139"/>
-<area shape="rect" id="Node000010" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a7739d13e9e337e65f14343cbe2d886de" title="Set the model data to the geometry." alt="" coords="206,201,379,242"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="122,143,207,186,222,193,220,198,205,191,119,148"/>
+<area shape="rect" id="Node000009" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8d13d1c314d3cc6c2bb680ac3cdee9db" title="Reset the OBJ loader state." alt="" coords="218,136,367,177"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="158,133,202,140,202,145,158,139"/>
+<area shape="rect" id="Node000011" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#a7739d13e9e337e65f14343cbe2d886de" title="Set the model data to the geometry." alt="" coords="206,201,379,242"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="122,143,207,186,222,193,220,198,205,191,119,148"/>
 <area shape="rect" id="Node000004" href="$namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="432,71,571,111"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="373,88,416,88,416,94,373,94"/>
 <area shape="rect" id="Node000005" href="$namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="624,71,764,111"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="571,88,609,88,609,94,571,94"/>
 <area shape="rect" id="Node000006" href="$namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="812,37,951,78"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="764,76,796,70,797,75,765,81"/>
-<area shape="rect" id="Node000007" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="812,103,951,143"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="765,100,797,106,796,111,764,106"/>
-<area shape="rect" id="Node000009" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#ac93abee1b5d6e807f20e4f58fd5bd2fb" title="Reset the OBJ model state." alt="" coords="427,136,576,177"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="367,154,411,154,411,159,367,159"/>
+<area shape="rect" id="Node000008" href="$namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="812,103,951,143"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="765,100,797,106,796,111,764,106"/>
+<area shape="rect" id="Node000007" href="$namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="999,37,1143,78"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="951,55,984,55,984,60,951,60"/>
+<area shape="rect" id="Node000010" href="$classmodel__viewer_1_1loaders_1_1ObjLoader.html#ac93abee1b5d6e807f20e4f58fd5bd2fb" title="Reset the OBJ model state." alt="" coords="427,136,576,177"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="367,154,411,154,411,159,367,159"/>
 </map>

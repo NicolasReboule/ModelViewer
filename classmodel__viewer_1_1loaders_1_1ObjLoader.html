@@ -131,15 +131,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06ea4d889d528f8948facfe7372feed7" id="r_a06ea4d889d528f8948facfe7372feed7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06ea4d889d528f8948facfe7372feed7">~ObjLoader</a> () override=default</td></tr>
 <tr class="memdesc:a06ea4d889d528f8948facfe7372feed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a06ea4d889d528f8948facfe7372feed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66d37dead2af155295997b6445898ce" id="r_ae66d37dead2af155295997b6445898ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66d37dead2af155295997b6445898ce">loadModel</a> (const std::string &amp;filepath) override</td></tr>
-<tr class="memdesc:ae66d37dead2af155295997b6445898ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an OBJ model from a file.  <br /></td></tr>
-<tr class="separator:ae66d37dead2af155295997b6445898ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa257fa9f5902ea4a43a1c68dfe4eb05a" id="r_aa257fa9f5902ea4a43a1c68dfe4eb05a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa257fa9f5902ea4a43a1c68dfe4eb05a">loadModel</a> (const std::string &amp;filepath) override</td></tr>
+<tr class="memdesc:aa257fa9f5902ea4a43a1c68dfe4eb05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an OBJ model from a file.  <br /></td></tr>
+<tr class="separator:aa257fa9f5902ea4a43a1c68dfe4eb05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f50a3bed97dc2837d95ef726f5c38b7" id="r_a8f50a3bed97dc2837d95ef726f5c38b7"><td class="memItemLeft" align="right" valign="top">QQuick3DGeometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f50a3bed97dc2837d95ef726f5c38b7">geometry</a> () const override</td></tr>
 <tr class="memdesc:a8f50a3bed97dc2837d95ef726f5c38b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the geometry of the loaded model.  <br /></td></tr>
 <tr class="separator:a8f50a3bed97dc2837d95ef726f5c38b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dbb46664e91bbfcdcd2b19de906cb2a" id="r_a9dbb46664e91bbfcdcd2b19de906cb2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel__viewer_1_1material_1_1MTLMaterial.html">material::MTLMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dbb46664e91bbfcdcd2b19de906cb2a">material</a> () const override</td></tr>
 <tr class="memdesc:a9dbb46664e91bbfcdcd2b19de906cb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the material of the loaded model.  <br /></td></tr>
 <tr class="separator:a9dbb46664e91bbfcdcd2b19de906cb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538f18d57a7d783ffd83b1a1a44bc82f" id="r_a538f18d57a7d783ffd83b1a1a44bc82f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html">geometry::Vector3</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a538f18d57a7d783ffd83b1a1a44bc82f">getVertices</a> () const</td></tr>
+<tr class="separator:a538f18d57a7d783ffd83b1a1a44bc82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733cc79d2d45d3f8e24c18ed538eceb6" id="r_a733cc79d2d45d3f8e24c18ed538eceb6"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1TextureCoordinate.html">geometry::TextureCoordinate</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a733cc79d2d45d3f8e24c18ed538eceb6">getTextureCoords</a> () const</td></tr>
+<tr class="separator:a733cc79d2d45d3f8e24c18ed538eceb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc5941920b5c46458c07ab781667553" id="r_aefc5941920b5c46458c07ab781667553"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html">geometry::Vector3</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefc5941920b5c46458c07ab781667553">getNormals</a> () const</td></tr>
+<tr class="separator:aefc5941920b5c46458c07ab781667553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82576fa1ce4b11d96ac0655fc40cff87" id="r_a82576fa1ce4b11d96ac0655fc40cff87"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1FaceIndex.html">geometry::FaceIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82576fa1ce4b11d96ac0655fc40cff87">getFaces</a> () const</td></tr>
+<tr class="separator:a82576fa1ce4b11d96ac0655fc40cff87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43649e8959caeeecb9fc6704708db2e4" id="r_a43649e8959caeeecb9fc6704708db2e4"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43649e8959caeeecb9fc6704708db2e4">getModelPath</a> () const</td></tr>
+<tr class="separator:a43649e8959caeeecb9fc6704708db2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmodel__viewer_1_1loaders_1_1ILoader"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classmodel__viewer_1_1loaders_1_1ILoader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html">model_viewer::loaders::ILoader</a></td></tr>
 <tr class="memitem:a6acd92962f218277677ad74b151256ab inherit pub_methods_classmodel__viewer_1_1loaders_1_1ILoader" id="r_a6acd92962f218277677ad74b151256ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a6acd92962f218277677ad74b151256ab">~ILoader</a> ()=default</td></tr>
 <tr class="memdesc:a6acd92962f218277677ad74b151256ab inherit pub_methods_classmodel__viewer_1_1loaders_1_1ILoader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <br /></td></tr>
@@ -235,13 +245,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   23</span>    };</div>
 <div class="line"><span class="lineno">   24</span>}</div>
 <div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a1787fb80072b06d47018afed0c364939"><div class="ttname"><a href="#a1787fb80072b06d47018afed0c364939">model_viewer::loaders::ObjLoader::_material</a></div><div class="ttdeci">std::unique_ptr&lt; material::MTLMaterial &gt; _material</div><div class="ttdoc">Material of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:51</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a2a06892dd8f73dbeab8deebad3ea7af6"><div class="ttname"><a href="#a2a06892dd8f73dbeab8deebad3ea7af6">model_viewer::loaders::ObjLoader::parseVertice</a></div><div class="ttdeci">void parseVertice(const std::string &amp;line)</div><div class="ttdoc">Parse a vertice line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:86</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a8d94415e80d71c8119e2523edbad6a43"><div class="ttname"><a href="#a8d94415e80d71c8119e2523edbad6a43">model_viewer::loaders::ObjLoader::parseFace</a></div><div class="ttdeci">void parseFace(const std::string &amp;line)</div><div class="ttdoc">Parse a face line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:110</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a2a06892dd8f73dbeab8deebad3ea7af6"><div class="ttname"><a href="#a2a06892dd8f73dbeab8deebad3ea7af6">model_viewer::loaders::ObjLoader::parseVertice</a></div><div class="ttdeci">void parseVertice(const std::string &amp;line)</div><div class="ttdoc">Parse a vertice line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:87</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a8d94415e80d71c8119e2523edbad6a43"><div class="ttname"><a href="#a8d94415e80d71c8119e2523edbad6a43">model_viewer::loaders::ObjLoader::parseFace</a></div><div class="ttdeci">void parseFace(const std::string &amp;line)</div><div class="ttdoc">Parse a face line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:111</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aa7e920b5833d959d02a1231eea81f99a"><div class="ttname"><a href="#aa7e920b5833d959d02a1231eea81f99a">model_viewer::loaders::ObjLoader::_geometry</a></div><div class="ttdeci">std::unique_ptr&lt; geometry::ObjGeometry &gt; _geometry</div><div class="ttdoc">Geometry of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:48</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_ab7c433f5467daeb81d0a458091a1840d"><div class="ttname"><a href="#ab7c433f5467daeb81d0a458091a1840d">model_viewer::loaders::ObjLoader::parseNormal</a></div><div class="ttdeci">void parseNormal(const std::string &amp;line)</div><div class="ttdoc">Parse a normal vertice line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:94</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_ab7c433f5467daeb81d0a458091a1840d"><div class="ttname"><a href="#ab7c433f5467daeb81d0a458091a1840d">model_viewer::loaders::ObjLoader::parseNormal</a></div><div class="ttdeci">void parseNormal(const std::string &amp;line)</div><div class="ttdoc">Parse a normal vertice line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:95</div></div>
 <div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aba6c54c3e17eba27a0fa6884b92aa37f"><div class="ttname"><a href="#aba6c54c3e17eba27a0fa6884b92aa37f">model_viewer::loaders::ObjLoader::_parseFunctions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::function&lt; void(const std::string &amp;)&gt; &gt; _parseFunctions</div><div class="ttdoc">Map of parsing functions for different OBJ line prefixes.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:45</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_abd3f7e911f40f0e383bfb8d8380288bc"><div class="ttname"><a href="#abd3f7e911f40f0e383bfb8d8380288bc">model_viewer::loaders::ObjLoader::retrieveMaterial</a></div><div class="ttdeci">void retrieveMaterial(const std::string &amp;line)</div><div class="ttdoc">Retrieve material from a material library line and call material's parsing method.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:139</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_ae35bffc2ba5e370f733ced0d7b70dcf0"><div class="ttname"><a href="#ae35bffc2ba5e370f733ced0d7b70dcf0">model_viewer::loaders::ObjLoader::parseTextureCoordinate</a></div><div class="ttdeci">void parseTextureCoordinate(const std::string &amp;line)</div><div class="ttdoc">Parse a texture coordinate vertice line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:102</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_abd3f7e911f40f0e383bfb8d8380288bc"><div class="ttname"><a href="#abd3f7e911f40f0e383bfb8d8380288bc">model_viewer::loaders::ObjLoader::retrieveMaterial</a></div><div class="ttdeci">void retrieveMaterial(const std::string &amp;line)</div><div class="ttdoc">Retrieve material from a material library line and call material's parsing method.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:140</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_ae35bffc2ba5e370f733ced0d7b70dcf0"><div class="ttname"><a href="#ae35bffc2ba5e370f733ced0d7b70dcf0">model_viewer::loaders::ObjLoader::parseTextureCoordinate</a></div><div class="ttdeci">void parseTextureCoordinate(const std::string &amp;line)</div><div class="ttdoc">Parse a texture coordinate vertice line from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:103</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aba6c54c3e17eba27a0fa6884b92aa37f">_parseFunctions</a>, <a class="el" href="#a8d94415e80d71c8119e2523edbad6a43">parseFace()</a>, <a class="el" href="#ab7c433f5467daeb81d0a458091a1840d">parseNormal()</a>, <a class="el" href="#ae35bffc2ba5e370f733ced0d7b70dcf0">parseTextureCoordinate()</a>, <a class="el" href="#a2a06892dd8f73dbeab8deebad3ea7af6">parseVertice()</a>, and <a class="el" href="#abd3f7e911f40f0e383bfb8d8380288bc">retrieveMaterial()</a>.</p>
 <div class="dynheader">
@@ -270,6 +280,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="858,272,890,266,891,271,859,277"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="906,299,1045,339"/>
 <area shape="poly" title=" " alt="" coords="859,296,891,302,890,307,858,302"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="1093,233,1237,274"/>
+<area shape="poly" title=" " alt="" coords="1045,251,1078,251,1078,256,1045,256"/>
 </map>
 </div>
 
@@ -330,14 +342,14 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Geometry of the loaded model </dd></dl>
 
 <p>Implements <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html#acc8859d3dc6beaab4c029a8e5b5a6196">model_viewer::loaders::ILoader</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>.get(); };</div>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>.get(); };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>.</p>
 
 </div>
 </div>
-<a id="ae66d37dead2af155295997b6445898ce" name="ae66d37dead2af155295997b6445898ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66d37dead2af155295997b6445898ce">&#9670;&#160;</a></span>loadModel()</h2>
+<a id="a82576fa1ce4b11d96ac0655fc40cff87" name="a82576fa1ce4b11d96ac0655fc40cff87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82576fa1ce4b11d96ac0655fc40cff87">&#9670;&#160;</a></span>getFaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +358,158 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void model_viewer::loaders::ObjLoader::loadModel </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1FaceIndex.html">geometry::FaceIndex</a> &gt; &amp; model_viewer::loaders::ObjLoader::getFaces </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>; }</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aa68b5cb515c86d68e598ca19bc05db54"><div class="ttname"><a href="#aa68b5cb515c86d68e598ca19bc05db54">model_viewer::loaders::ObjLoader::_faces</a></div><div class="ttdeci">std::vector&lt; geometry::FaceIndex &gt; _faces</div><div class="ttdoc">Faces of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:38</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.</p>
+
+</div>
+</div>
+<a id="a43649e8959caeeecb9fc6704708db2e4" name="a43649e8959caeeecb9fc6704708db2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43649e8959caeeecb9fc6704708db2e4">&#9670;&#160;</a></span>getModelPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; model_viewer::loaders::ObjLoader::getModelPath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   96</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a>; }</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aca1fcf63b06a862844f21c951b8405cb"><div class="ttname"><a href="#aca1fcf63b06a862844f21c951b8405cb">model_viewer::loaders::ObjLoader::_modelPath</a></div><div class="ttdeci">std::string _modelPath</div><div class="ttdoc">Path to the model file.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:41</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a>.</p>
+
+</div>
+</div>
+<a id="aefc5941920b5c46458c07ab781667553" name="aefc5941920b5c46458c07ab781667553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc5941920b5c46458c07ab781667553">&#9670;&#160;</a></span>getNormals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html">geometry::Vector3</a> &gt; &amp; model_viewer::loaders::ObjLoader::getNormals </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   90</span>                                                         {</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aa7a28fd36643d286c9b764c629650b85"><div class="ttname"><a href="#aa7a28fd36643d286c9b764c629650b85">model_viewer::loaders::ObjLoader::_normals</a></div><div class="ttdeci">std::vector&lt; geometry::Vector3 &gt; _normals</div><div class="ttdoc">Normals of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:35</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.</p>
+
+</div>
+</div>
+<a id="a733cc79d2d45d3f8e24c18ed538eceb6" name="a733cc79d2d45d3f8e24c18ed538eceb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733cc79d2d45d3f8e24c18ed538eceb6">&#9670;&#160;</a></span>getTextureCoords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1TextureCoordinate.html">geometry::TextureCoordinate</a> &gt; &amp; model_viewer::loaders::ObjLoader::getTextureCoords </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                                         {</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>;</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a6919f398588d531e5a8a46d271dcaff1"><div class="ttname"><a href="#a6919f398588d531e5a8a46d271dcaff1">model_viewer::loaders::ObjLoader::_textureCoords</a></div><div class="ttdeci">std::vector&lt; geometry::TextureCoordinate &gt; _textureCoords</div><div class="ttdoc">Texture coordinates of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:32</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.</p>
+
+</div>
+</div>
+<a id="a538f18d57a7d783ffd83b1a1a44bc82f" name="a538f18d57a7d783ffd83b1a1a44bc82f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538f18d57a7d783ffd83b1a1a44bc82f">&#9670;&#160;</a></span>getVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="structmodel__viewer_1_1geometry_1_1Vector3.html">geometry::Vector3</a> &gt; &amp; model_viewer::loaders::ObjLoader::getVertices </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                                                          {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>;</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a6aa5d391dd6cb2f6bbf213544396fd62"><div class="ttname"><a href="#a6aa5d391dd6cb2f6bbf213544396fd62">model_viewer::loaders::ObjLoader::_vertices</a></div><div class="ttdeci">std::vector&lt; geometry::Vector3 &gt; _vertices</div><div class="ttdoc">Vertices of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:29</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.</p>
+
+</div>
+</div>
+<a id="aa257fa9f5902ea4a43a1c68dfe4eb05a" name="aa257fa9f5902ea4a43a1c68dfe4eb05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa257fa9f5902ea4a43a1c68dfe4eb05a">&#9670;&#160;</a></span>loadModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool model_viewer::loaders::ObjLoader::loadModel </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span></td><td>)</td>
           <td></td>
@@ -366,9 +529,10 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Boolean indicating whether the model was loaded successfully </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo</a></b></dt><dd>Add support for groups and multiple materials </dd></dl>
 
-<p>Implements <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html#abb1d69935db9f86f70fe468a920f8752">model_viewer::loaders::ILoader</a>.</p>
+<p>Implements <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html#ab93980bbe2ced148d591ea5167144a38">model_viewer::loaders::ILoader</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   26</span>                                                   {</div>
 <div class="line"><span class="lineno">   27</span>    <a class="code hl_function" href="#a8d13d1c314d3cc6c2bb680ac3cdee9db">reset</a>();</div>
 <div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a> = <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6">string_helpers::normalizePath</a>(filepath);</div>
@@ -376,23 +540,23 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (!in.is_open()) {</div>
 <div class="line"><span class="lineno">   31</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;ObjLoader: Could not open file &quot;</span> &lt;&lt; <a class="code hl_variable" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
 <div class="line"><span class="lineno">   32</span>                  &lt;&lt; std::strerror(errno) &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   34</span>    }</div>
 <div class="line"><span class="lineno">   35</span>    <a class="code hl_function" href="#a3551b16e5a7ed0144f52581a0c6f3a20">parseModel</a>(in);</div>
 <div class="line"><span class="lineno">   36</span>    <a class="code hl_function" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData</a>();</div>
-<div class="line"><span class="lineno">   37</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a3551b16e5a7ed0144f52581a0c6f3a20"><div class="ttname"><a href="#a3551b16e5a7ed0144f52581a0c6f3a20">model_viewer::loaders::ObjLoader::parseModel</a></div><div class="ttdeci">void parseModel(std::ifstream &amp;file)</div><div class="ttdoc">Parse an OBJ file line by line.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:44</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a7739d13e9e337e65f14343cbe2d886de"><div class="ttname"><a href="#a7739d13e9e337e65f14343cbe2d886de">model_viewer::loaders::ObjLoader::setModelData</a></div><div class="ttdeci">void setModelData()</div><div class="ttdoc">Set the model data to the geometry.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:55</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a8d13d1c314d3cc6c2bb680ac3cdee9db"><div class="ttname"><a href="#a8d13d1c314d3cc6c2bb680ac3cdee9db">model_viewer::loaders::ObjLoader::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Reset the OBJ loader state.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:39</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aca1fcf63b06a862844f21c951b8405cb"><div class="ttname"><a href="#aca1fcf63b06a862844f21c951b8405cb">model_viewer::loaders::ObjLoader::_modelPath</a></div><div class="ttdeci">std::string _modelPath</div><div class="ttdoc">Path to the model file.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:41</div></div>
-<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_ac6f5e1bc8bb506a91c4468067a2eaca6"><div class="ttname"><a href="namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6">model_viewer::string_helpers::normalizePath</a></div><div class="ttdeci">std::string normalizePath(std::string p)</div><div class="ttdoc">Normalize a file path by removing &quot;file://&quot; scheme and leading slash on Windows paths.</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:87</div></div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   38</span>}</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a3551b16e5a7ed0144f52581a0c6f3a20"><div class="ttname"><a href="#a3551b16e5a7ed0144f52581a0c6f3a20">model_viewer::loaders::ObjLoader::parseModel</a></div><div class="ttdeci">void parseModel(std::ifstream &amp;file)</div><div class="ttdoc">Parse an OBJ file line by line.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:45</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a7739d13e9e337e65f14343cbe2d886de"><div class="ttname"><a href="#a7739d13e9e337e65f14343cbe2d886de">model_viewer::loaders::ObjLoader::setModelData</a></div><div class="ttdeci">void setModelData()</div><div class="ttdoc">Set the model data to the geometry.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:56</div></div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a8d13d1c314d3cc6c2bb680ac3cdee9db"><div class="ttname"><a href="#a8d13d1c314d3cc6c2bb680ac3cdee9db">model_viewer::loaders::ObjLoader::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Reset the OBJ loader state.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:40</div></div>
+<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_ac6f5e1bc8bb506a91c4468067a2eaca6"><div class="ttname"><a href="namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6">model_viewer::string_helpers::normalizePath</a></div><div class="ttdeci">std::string normalizePath(std::string p)</div><div class="ttdoc">Normalize a file path by removing &quot;file://&quot; scheme and leading slash on Windows paths.</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:89</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a>, <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6">model_viewer::string_helpers::normalizePath()</a>, <a class="el" href="#a3551b16e5a7ed0144f52581a0c6f3a20">parseModel()</a>, <a class="el" href="#a8d13d1c314d3cc6c2bb680ac3cdee9db">reset()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classmodel__viewer_1_1loaders_1_1ObjLoader_ae66d37dead2af155295997b6445898ce_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1loaders_1_1ObjLoader_ae66d37dead2af155295997b6445898ce_cgraph" alt=""/></div>
-<map name="aclassmodel__viewer_1_1loaders_1_1ObjLoader_ae66d37dead2af155295997b6445898ce_cgraph" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_ae66d37dead2af155295997b6445898ce_cgraph">
+<div class="center"><img src="classmodel__viewer_1_1loaders_1_1ObjLoader_aa257fa9f5902ea4a43a1c68dfe4eb05a_cgraph.png" border="0" usemap="#aclassmodel__viewer_1_1loaders_1_1ObjLoader_aa257fa9f5902ea4a43a1c68dfe4eb05a_cgraph" alt=""/></div>
+<map name="aclassmodel__viewer_1_1loaders_1_1ObjLoader_aa257fa9f5902ea4a43a1c68dfe4eb05a_cgraph" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_aa257fa9f5902ea4a43a1c68dfe4eb05a_cgraph">
 <area shape="rect" title="Load an OBJ model from a file." alt="" coords="5,104,158,145"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#ac6f5e1bc8bb506a91c4468067a2eaca6" title="Normalize a file path by removing &quot;file://&quot; scheme and leading slash on Windows paths." alt="" coords="213,5,372,46"/>
 <area shape="poly" title=" " alt="" coords="118,101,205,57,220,50,222,55,207,61,121,106"/>
@@ -410,6 +574,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="764,76,796,70,797,75,765,81"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="812,103,951,143"/>
 <area shape="poly" title=" " alt="" coords="765,100,797,106,796,111,764,106"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="999,37,1143,78"/>
+<area shape="poly" title=" " alt="" coords="951,55,984,55,984,60,951,60"/>
 <area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ac93abee1b5d6e807f20e4f58fd5bd2fb" title="Reset the OBJ model state." alt="" coords="427,136,576,177"/>
 <area shape="poly" title=" " alt="" coords="367,154,411,154,411,159,367,159"/>
 </map>
@@ -444,9 +610,9 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Material of the loaded model </dd></dl>
 
 <p>Implements <a class="el" href="classmodel__viewer_1_1loaders_1_1ILoader.html#a03b8eb74b100fbd8a4f9d27d950f0b82">model_viewer::loaders::ILoader</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                   {</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>.get();</div>
-<div class="line"><span class="lineno">   79</span>    };</div>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                                                   {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>.get();</div>
+<div class="line"><span class="lineno">   80</span>    };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1787fb80072b06d47018afed0c364939">_material</a>.</p>
 
@@ -482,19 +648,18 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>                                               {</div>
-<div class="line"><span class="lineno">  111</span>    std::istringstream f(line.substr(2));</div>
-<div class="line"><span class="lineno">  112</span>    std::string token;</div>
-<div class="line"><span class="lineno">  113</span>    std::vector&lt;geometry::FaceIndex&gt; face;</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">while</span> (f &gt;&gt; token) face.push_back(<a class="code hl_function" href="#a3616eefa68aea110e6d9091a4e97e632">parseFaceIndex</a>(token));</div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i + 1 &lt; face.size(); ++i) {</div>
-<div class="line"><span class="lineno">  116</span>        this-&gt;<a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.push_back(face[0]);</div>
-<div class="line"><span class="lineno">  117</span>        this-&gt;<a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.push_back(face[i]);</div>
-<div class="line"><span class="lineno">  118</span>        this-&gt;<a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.push_back(face[i + 1]);</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a3616eefa68aea110e6d9091a4e97e632"><div class="ttname"><a href="#a3616eefa68aea110e6d9091a4e97e632">model_viewer::loaders::ObjLoader::parseFaceIndex</a></div><div class="ttdeci">geometry::FaceIndex parseFaceIndex(const std::string &amp;token)</div><div class="ttdoc">Parse a face index token from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:122</div></div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aa68b5cb515c86d68e598ca19bc05db54"><div class="ttname"><a href="#aa68b5cb515c86d68e598ca19bc05db54">model_viewer::loaders::ObjLoader::_faces</a></div><div class="ttdeci">std::vector&lt; geometry::FaceIndex &gt; _faces</div><div class="ttdoc">Faces of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:38</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>                                               {</div>
+<div class="line"><span class="lineno">  112</span>    std::istringstream f(line.substr(2));</div>
+<div class="line"><span class="lineno">  113</span>    std::string token;</div>
+<div class="line"><span class="lineno">  114</span>    std::vector&lt;geometry::FaceIndex&gt; face;</div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">while</span> (f &gt;&gt; token) face.push_back(<a class="code hl_function" href="#a3616eefa68aea110e6d9091a4e97e632">parseFaceIndex</a>(token));</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i + 1 &lt; face.size(); ++i) {</div>
+<div class="line"><span class="lineno">  117</span>        this-&gt;<a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.push_back(face[0]);</div>
+<div class="line"><span class="lineno">  118</span>        this-&gt;<a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.push_back(face[i]);</div>
+<div class="line"><span class="lineno">  119</span>        this-&gt;<a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.push_back(face[i + 1]);</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="line"><span class="lineno">  121</span>}</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a3616eefa68aea110e6d9091a4e97e632"><div class="ttname"><a href="#a3616eefa68aea110e6d9091a4e97e632">model_viewer::loaders::ObjLoader::parseFaceIndex</a></div><div class="ttdeci">geometry::FaceIndex parseFaceIndex(const std::string &amp;token)</div><div class="ttdoc">Parse a face index token from the OBJ file.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:123</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>, and <a class="el" href="#a3616eefa68aea110e6d9091a4e97e632">parseFaceIndex()</a>.</p>
 
@@ -553,22 +718,22 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Parsed FaceIndex struct </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  122</span>                                                                  {</div>
-<div class="line"><span class="lineno">  123</span>    geometry::FaceIndex idx;</div>
-<div class="line"><span class="lineno">  124</span>    std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d/%d&quot;</span>, &amp;idx.v, &amp;idx.vt, &amp;idx.vn);</div>
-<div class="line"><span class="lineno">  125</span> </div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">if</span> (token.find(<span class="stringliteral">&quot;//&quot;</span>) != std::string::npos) {</div>
-<div class="line"><span class="lineno">  127</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d//%d&quot;</span>, &amp;idx.v, &amp;idx.vn);</div>
-<div class="line"><span class="lineno">  128</span>        idx.vt = 0;</div>
-<div class="line"><span class="lineno">  129</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) != std::string::npos &amp;&amp;</div>
-<div class="line"><span class="lineno">  130</span>               std::ranges::count(token, <span class="charliteral">&#39;/&#39;</span>) == 1) {</div>
-<div class="line"><span class="lineno">  131</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d&quot;</span>, &amp;idx.v, &amp;idx.vt);</div>
-<div class="line"><span class="lineno">  132</span>        idx.vn = 0;</div>
-<div class="line"><span class="lineno">  133</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) == std::string::npos) {</div>
-<div class="line"><span class="lineno">  134</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d&quot;</span>, &amp;idx.v);</div>
-<div class="line"><span class="lineno">  135</span>    }</div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">return</span> idx;</div>
-<div class="line"><span class="lineno">  137</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  123</span>                                                                  {</div>
+<div class="line"><span class="lineno">  124</span>    geometry::FaceIndex idx;</div>
+<div class="line"><span class="lineno">  125</span>    std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d/%d&quot;</span>, &amp;idx.v, &amp;idx.vt, &amp;idx.vn);</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (token.find(<span class="stringliteral">&quot;//&quot;</span>) != std::string::npos) {</div>
+<div class="line"><span class="lineno">  128</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d//%d&quot;</span>, &amp;idx.v, &amp;idx.vn);</div>
+<div class="line"><span class="lineno">  129</span>        idx.vt = 0;</div>
+<div class="line"><span class="lineno">  130</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) != std::string::npos &amp;&amp;</div>
+<div class="line"><span class="lineno">  131</span>               std::ranges::count(token, <span class="charliteral">&#39;/&#39;</span>) == 1) {</div>
+<div class="line"><span class="lineno">  132</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d/%d&quot;</span>, &amp;idx.v, &amp;idx.vt);</div>
+<div class="line"><span class="lineno">  133</span>        idx.vn = 0;</div>
+<div class="line"><span class="lineno">  134</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (token.find(<span class="charliteral">&#39;/&#39;</span>) == std::string::npos) {</div>
+<div class="line"><span class="lineno">  135</span>        std::sscanf(token.c_str(), <span class="stringliteral">&quot;%d&quot;</span>, &amp;idx.v);</div>
+<div class="line"><span class="lineno">  136</span>    }</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span> idx;</div>
+<div class="line"><span class="lineno">  138</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="structmodel__viewer_1_1geometry_1_1FaceIndex.html#a7cb5a884f13a2e3a81fed7187adfb2cb">model_viewer::geometry::FaceIndex::v</a>, <a class="el" href="structmodel__viewer_1_1geometry_1_1FaceIndex.html#a5bd205744b412a00c6e31b850845c221">model_viewer::geometry::FaceIndex::vn</a>, and <a class="el" href="structmodel__viewer_1_1geometry_1_1FaceIndex.html#aa6a196bc9d0a9f9f1a847445235cbcf9">model_viewer::geometry::FaceIndex::vt</a>.</p>
 
@@ -619,21 +784,21 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo</a></b></dt><dd>Optimize parsing of the model </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                                            {</div>
-<div class="line"><span class="lineno">   45</span>    std::string line;</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keyword">const</span> <span class="keyword">auto</span> pos = line.find(<span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><span class="lineno">   48</span>        <span class="keyword">const</span> std::string lineStart =</div>
-<div class="line"><span class="lineno">   49</span>            <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(0, pos));</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aba6c54c3e17eba27a0fa6884b92aa37f">_parseFunctions</a>.contains(lineStart))</div>
-<div class="line"><span class="lineno">   51</span>            <a class="code hl_variable" href="#aba6c54c3e17eba27a0fa6884b92aa37f">_parseFunctions</a>.at(lineStart)(line);</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
-<div class="line"><span class="lineno">   53</span>}</div>
-<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a49b0dd6a5b5a964aea3e324144240a11"><div class="ttname"><a href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdoc">Trim from both ends (copying)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:76</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                            {</div>
+<div class="line"><span class="lineno">   46</span>    std::string line;</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">while</span> (std::getline(file, line)) {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keyword">const</span> <span class="keyword">auto</span> pos = line.find(<span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keyword">const</span> std::string lineStart =</div>
+<div class="line"><span class="lineno">   50</span>            <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(0, pos));</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aba6c54c3e17eba27a0fa6884b92aa37f">_parseFunctions</a>.contains(lineStart))</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#aba6c54c3e17eba27a0fa6884b92aa37f">_parseFunctions</a>.at(lineStart)(line);</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a49b0dd6a5b5a964aea3e324144240a11"><div class="ttname"><a href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdoc">Trim from both ends (copying)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:78</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aba6c54c3e17eba27a0fa6884b92aa37f">_parseFunctions</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="#ae66d37dead2af155295997b6445898ce">loadModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#aa257fa9f5902ea4a43a1c68dfe4eb05a">loadModel()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -648,6 +813,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="540,44,572,38,573,43,541,49"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="588,71,728,111"/>
 <area shape="poly" title=" " alt="" coords="541,68,573,74,572,79,540,74"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="776,5,920,46"/>
+<area shape="poly" title=" " alt="" coords="728,23,760,23,760,28,728,28"/>
 </map>
 </div>
 <div class="dynheader">
@@ -656,7 +823,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classmodel__viewer_1_1loaders_1_1ObjLoader_a3551b16e5a7ed0144f52581a0c6f3a20_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1loaders_1_1ObjLoader_a3551b16e5a7ed0144f52581a0c6f3a20_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1loaders_1_1ObjLoader_a3551b16e5a7ed0144f52581a0c6f3a20_icgraph" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_a3551b16e5a7ed0144f52581a0c6f3a20_icgraph">
 <area shape="rect" title="Parse an OBJ file line by line." alt="" coords="206,5,366,46"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
 <area shape="poly" title=" " alt="" coords="190,28,158,28,158,23,190,23"/>
 </map>
 </div>
@@ -693,14 +860,13 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                                                 {</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordtype">float</span> x, y, z;</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
-<div class="line"><span class="lineno">   97</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   99</span>        this-&gt;<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.push_back({x, y, z});</div>
-<div class="line"><span class="lineno">  100</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_aa7a28fd36643d286c9b764c629650b85"><div class="ttname"><a href="#aa7a28fd36643d286c9b764c629650b85">model_viewer::loaders::ObjLoader::_normals</a></div><div class="ttdeci">std::vector&lt; geometry::Vector3 &gt; _normals</div><div class="ttdoc">Normals of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:35</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                                                 {</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
+<div class="line"><span class="lineno">   98</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  100</span>        this-&gt;<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.push_back({x, y, z});</div>
+<div class="line"><span class="lineno">  101</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.</p>
 
@@ -748,14 +914,13 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  102</span>                                                            {</div>
-<div class="line"><span class="lineno">  103</span>    <span class="keywordtype">float</span> u, v;  <span class="comment">// Missing w</span></div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f&quot;</span>, &amp;u, &amp;v) &lt; 2)</div>
-<div class="line"><span class="lineno">  105</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  107</span>        this-&gt;<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.push_back({u, v});</div>
-<div class="line"><span class="lineno">  108</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a6919f398588d531e5a8a46d271dcaff1"><div class="ttname"><a href="#a6919f398588d531e5a8a46d271dcaff1">model_viewer::loaders::ObjLoader::_textureCoords</a></div><div class="ttdeci">std::vector&lt; geometry::TextureCoordinate &gt; _textureCoords</div><div class="ttdoc">Texture coordinates of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:32</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>                                                            {</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordtype">float</span> u, v;  <span class="comment">// Missing w</span></div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f&quot;</span>, &amp;u, &amp;v) &lt; 2)</div>
+<div class="line"><span class="lineno">  106</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid normal at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  108</span>        this-&gt;<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.push_back({u, v});</div>
+<div class="line"><span class="lineno">  109</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.</p>
 
@@ -803,14 +968,13 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                  {</div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">float</span> x, y, z;  <span class="comment">// Missing optional w</span></div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
-<div class="line"><span class="lineno">   89</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid vertice at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   91</span>        this-&gt;<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.push_back({x, y, z});</div>
-<div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_a6aa5d391dd6cb2f6bbf213544396fd62"><div class="ttname"><a href="#a6aa5d391dd6cb2f6bbf213544396fd62">model_viewer::loaders::ObjLoader::_vertices</a></div><div class="ttdeci">std::vector&lt; geometry::Vector3 &gt; _vertices</div><div class="ttdoc">Vertices of the model.</div><div class="ttdef"><b>Definition</b> ObjLoader.hpp:29</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                                                  {</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordtype">float</span> x, y, z;  <span class="comment">// Missing optional w</span></div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (std::sscanf(line.c_str() + 2, <span class="stringliteral">&quot;%f %f %f&quot;</span>, &amp;x, &amp;y, &amp;z) &lt; 3)</div>
+<div class="line"><span class="lineno">   90</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid vertice at line &quot;</span> &lt;&lt; line &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   92</span>        this-&gt;<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.push_back({x, y, z});</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.</p>
 
@@ -852,15 +1016,15 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Reset the OBJ loader state. </p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>                      {</div>
-<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj</a>();</div>
-<div class="line"><span class="lineno">   41</span>    <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>-&gt;resetMaterial();</div>
-<div class="line"><span class="lineno">   42</span>}</div>
-<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_ac93abee1b5d6e807f20e4f58fd5bd2fb"><div class="ttname"><a href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">model_viewer::loaders::ObjLoader::resetObj</a></div><div class="ttdeci">void resetObj()</div><div class="ttdoc">Reset the OBJ model state.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:79</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                      {</div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_function" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj</a>();</div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>-&gt;resetMaterial();</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+<div class="ttc" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_html_ac93abee1b5d6e807f20e4f58fd5bd2fb"><div class="ttname"><a href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">model_viewer::loaders::ObjLoader::resetObj</a></div><div class="ttdeci">void resetObj()</div><div class="ttdoc">Reset the OBJ model state.</div><div class="ttdef"><b>Definition</b> ObjLoader.cpp:80</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1787fb80072b06d47018afed0c364939">_material</a>, and <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="#ae66d37dead2af155295997b6445898ce">loadModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#aa257fa9f5902ea4a43a1c68dfe4eb05a">loadModel()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -877,7 +1041,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classmodel__viewer_1_1loaders_1_1ObjLoader_a8d13d1c314d3cc6c2bb680ac3cdee9db_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1loaders_1_1ObjLoader_a8d13d1c314d3cc6c2bb680ac3cdee9db_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1loaders_1_1ObjLoader_a8d13d1c314d3cc6c2bb680ac3cdee9db_icgraph" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_a8d13d1c314d3cc6c2bb680ac3cdee9db_icgraph">
 <area shape="rect" title="Reset the OBJ loader state." alt="" coords="206,5,355,46"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
 <area shape="poly" title=" " alt="" coords="190,28,158,28,158,23,190,23"/>
 </map>
 </div>
@@ -908,12 +1072,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Reset the OBJ model state. </p>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>                         {</div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.clear();</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.clear();</div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.clear();</div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.clear();</div>
-<div class="line"><span class="lineno">   84</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>                         {</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>.clear();</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.clear();</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.clear();</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.clear();</div>
+<div class="line"><span class="lineno">   85</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>, <a class="el" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>, <a class="el" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>, and <a class="el" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.</p>
 
@@ -926,7 +1090,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Reset the OBJ model state." alt="" coords="403,5,552,46"/>
 <area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#a8d13d1c314d3cc6c2bb680ac3cdee9db" title="Reset the OBJ loader state." alt="" coords="206,5,355,46"/>
 <area shape="poly" title=" " alt="" coords="388,28,355,28,355,23,388,23"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
 <area shape="poly" title=" " alt="" coords="190,28,158,28,158,23,190,23"/>
 </map>
 </div>
@@ -963,13 +1127,13 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>                                                      {</div>
-<div class="line"><span class="lineno">  140</span>    <span class="keyword">const</span> std::string name =</div>
-<div class="line"><span class="lineno">  141</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(<span class="keyword">sizeof</span>(<span class="stringliteral">&quot;mtllib&quot;</span>)));</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keyword">const</span> std::filesystem::path path =</div>
-<div class="line"><span class="lineno">  143</span>        std::filesystem::path(<a class="code hl_variable" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a>).parent_path() / name;</div>
-<div class="line"><span class="lineno">  144</span>    <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>-&gt;parseMTL(path.string());</div>
-<div class="line"><span class="lineno">  145</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>                                                      {</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keyword">const</span> std::string name =</div>
+<div class="line"><span class="lineno">  142</span>        <a class="code hl_function" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">string_helpers::trim_copy</a>(line.substr(<span class="keyword">sizeof</span>(<span class="stringliteral">&quot;mtllib&quot;</span>)));</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keyword">const</span> std::filesystem::path path =</div>
+<div class="line"><span class="lineno">  144</span>        std::filesystem::path(<a class="code hl_variable" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a>).parent_path() / name;</div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_variable" href="#a1787fb80072b06d47018afed0c364939">_material</a>-&gt;parseMTL(path.string());</div>
+<div class="line"><span class="lineno">  146</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1787fb80072b06d47018afed0c364939">_material</a>, <a class="el" href="#aca1fcf63b06a862844f21c951b8405cb">_modelPath</a>, and <a class="el" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11">model_viewer::string_helpers::trim_copy()</a>.</p>
 
@@ -988,6 +1152,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="562,44,594,38,595,43,563,49"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="610,71,750,111"/>
 <area shape="poly" title=" " alt="" coords="563,68,595,74,594,79,562,74"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="798,5,942,46"/>
+<area shape="poly" title=" " alt="" coords="750,23,782,23,782,28,750,28"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1027,40 +1193,40 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Set the model data to the geometry. </p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>                             {</div>
-<div class="line"><span class="lineno">   56</span>    std::vector&lt;geometry::Vector3&gt; vVector;</div>
-<div class="line"><span class="lineno">   57</span>    std::vector&lt;geometry::TextureCoordinate&gt; vtVector;</div>
-<div class="line"><span class="lineno">   58</span>    std::vector&lt;geometry::Vector3&gt; vnVector;</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [v, vt, vn] : <a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>) {</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.empty() &amp;&amp; v != 0) {</div>
-<div class="line"><span class="lineno">   61</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vIdx = v &gt; 0 ? v - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + v;</div>
-<div class="line"><span class="lineno">   62</span>            vVector.push_back(<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>[vIdx]);</div>
-<div class="line"><span class="lineno">   63</span>        }</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.empty() &amp;&amp; vt != 0) {</div>
-<div class="line"><span class="lineno">   65</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vtIdx = vt &gt; 0 ? vt - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + vt;</div>
-<div class="line"><span class="lineno">   66</span>            vtVector.push_back(<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>[vtIdx]);</div>
-<div class="line"><span class="lineno">   67</span>        }</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.empty() &amp;&amp; vn != 0) {</div>
-<div class="line"><span class="lineno">   69</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vnIdx = vn &gt; 0 ? vn - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + vn;</div>
-<div class="line"><span class="lineno">   70</span>            vnVector.push_back(<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>[vnIdx]);</div>
-<div class="line"><span class="lineno">   71</span>        }</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a> = vVector;</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a> = vtVector;</div>
-<div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a> = vnVector;</div>
-<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>-&gt;setMesh(<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>, <a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>, <a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>);</div>
-<div class="line"><span class="lineno">   77</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                             {</div>
+<div class="line"><span class="lineno">   57</span>    std::vector&lt;geometry::Vector3&gt; vVector;</div>
+<div class="line"><span class="lineno">   58</span>    std::vector&lt;geometry::TextureCoordinate&gt; vtVector;</div>
+<div class="line"><span class="lineno">   59</span>    std::vector&lt;geometry::Vector3&gt; vnVector;</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [v, vt, vn] : <a class="code hl_variable" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>) {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.empty() &amp;&amp; v != 0) {</div>
+<div class="line"><span class="lineno">   62</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vIdx = v &gt; 0 ? v - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + v;</div>
+<div class="line"><span class="lineno">   63</span>            vVector.push_back(<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>[vIdx]);</div>
+<div class="line"><span class="lineno">   64</span>        }</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>.empty() &amp;&amp; vt != 0) {</div>
+<div class="line"><span class="lineno">   66</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vtIdx = vt &gt; 0 ? vt - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + vt;</div>
+<div class="line"><span class="lineno">   67</span>            vtVector.push_back(<a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>[vtIdx]);</div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>.empty() &amp;&amp; vn != 0) {</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vnIdx = vn &gt; 0 ? vn - 1 : <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.size() + vn;</div>
+<div class="line"><span class="lineno">   71</span>            vnVector.push_back(<a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>[vnIdx]);</div>
+<div class="line"><span class="lineno">   72</span>        }</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a> = vVector;</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a> = vtVector;</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a> = vnVector;</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>-&gt;setMesh(<a class="code hl_variable" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>, <a class="code hl_variable" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>, <a class="code hl_variable" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>);</div>
+<div class="line"><span class="lineno">   78</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aa68b5cb515c86d68e598ca19bc05db54">_faces</a>, <a class="el" href="#aa7e920b5833d959d02a1231eea81f99a">_geometry</a>, <a class="el" href="#aa7a28fd36643d286c9b764c629650b85">_normals</a>, <a class="el" href="#a6919f398588d531e5a8a46d271dcaff1">_textureCoords</a>, and <a class="el" href="#a6aa5d391dd6cb2f6bbf213544396fd62">_vertices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="#ae66d37dead2af155295997b6445898ce">loadModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#aa257fa9f5902ea4a43a1c68dfe4eb05a">loadModel()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmodel__viewer_1_1loaders_1_1ObjLoader_a7739d13e9e337e65f14343cbe2d886de_icgraph.png" border="0" usemap="#aclassmodel__viewer_1_1loaders_1_1ObjLoader_a7739d13e9e337e65f14343cbe2d886de_icgraph" alt=""/></div>
 <map name="aclassmodel__viewer_1_1loaders_1_1ObjLoader_a7739d13e9e337e65f14343cbe2d886de_icgraph" id="aclassmodel__viewer_1_1loaders_1_1ObjLoader_a7739d13e9e337e65f14343cbe2d886de_icgraph">
 <area shape="rect" title="Set the model data to the geometry." alt="" coords="206,5,379,46"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
 <area shape="poly" title=" " alt="" coords="190,28,158,28,158,23,190,23"/>
 </map>
 </div>
@@ -1090,7 +1256,7 @@ Here is the caller graph for this function:</div>
 
 <p>Faces of the model. </p>
 
-<p class="reference">Referenced by <a class="el" href="#a8d94415e80d71c8119e2523edbad6a43">parseFace()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a82576fa1ce4b11d96ac0655fc40cff87">getFaces()</a>, <a class="el" href="#a8d94415e80d71c8119e2523edbad6a43">parseFace()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1334,7 @@ Here is the caller graph for this function:</div>
 
 <p>Path to the model file. </p>
 
-<p class="reference">Referenced by <a class="el" href="#ae66d37dead2af155295997b6445898ce">loadModel()</a>, and <a class="el" href="#abd3f7e911f40f0e383bfb8d8380288bc">retrieveMaterial()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a43649e8959caeeecb9fc6704708db2e4">getModelPath()</a>, <a class="el" href="#aa257fa9f5902ea4a43a1c68dfe4eb05a">loadModel()</a>, and <a class="el" href="#abd3f7e911f40f0e383bfb8d8380288bc">retrieveMaterial()</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1360,7 @@ Here is the caller graph for this function:</div>
 
 <p>Normals of the model. </p>
 
-<p class="reference">Referenced by <a class="el" href="#ab7c433f5467daeb81d0a458091a1840d">parseNormal()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#aefc5941920b5c46458c07ab781667553">getNormals()</a>, <a class="el" href="#ab7c433f5467daeb81d0a458091a1840d">parseNormal()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
 
 </div>
 </div>
@@ -1246,7 +1412,7 @@ Here is the caller graph for this function:</div>
 
 <p>Texture coordinates of the model. </p>
 
-<p class="reference">Referenced by <a class="el" href="#ae35bffc2ba5e370f733ced0d7b70dcf0">parseTextureCoordinate()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a733cc79d2d45d3f8e24c18ed538eceb6">getTextureCoords()</a>, <a class="el" href="#ae35bffc2ba5e370f733ced0d7b70dcf0">parseTextureCoordinate()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1438,7 @@ Here is the caller graph for this function:</div>
 
 <p>Vertices of the model. </p>
 
-<p class="reference">Referenced by <a class="el" href="#a2a06892dd8f73dbeab8deebad3ea7af6">parseVertice()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="#a538f18d57a7d783ffd83b1a1a44bc82f">getVertices()</a>, <a class="el" href="#a2a06892dd8f73dbeab8deebad3ea7af6">parseVertice()</a>, <a class="el" href="#ac93abee1b5d6e807f20e4f58fd5bd2fb">resetObj()</a>, and <a class="el" href="#a7739d13e9e337e65f14343cbe2d886de">setModelData()</a>.</p>
 
 </div>
 </div>

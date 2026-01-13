@@ -97,6 +97,8 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a444bc009c5147f13ee737e1c34ce24fc" id="r_a444bc009c5147f13ee737e1c34ce24fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a444bc009c5147f13ee737e1c34ce24fc">isNotSpace</a> (const unsigned char ch) noexcept</td></tr>
+<tr class="separator:a444bc009c5147f13ee737e1c34ce24fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d71e736fd4726f6e87a885002373f20" id="r_a1d71e736fd4726f6e87a885002373f20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d71e736fd4726f6e87a885002373f20">ltrim</a> (std::string &amp;s)</td></tr>
 <tr class="memdesc:a1d71e736fd4726f6e87a885002373f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim from the start (in place)  <br /></td></tr>
 <tr class="separator:a1d71e736fd4726f6e87a885002373f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +122,74 @@ Functions</h2></td></tr>
 <tr class="separator:ac6f5e1bc8bb506a91c4468067a2eaca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a444bc009c5147f13ee737e1c34ce24fc" name="a444bc009c5147f13ee737e1c34ce24fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444bc009c5147f13ee737e1c34ce24fc">&#9670;&#160;</a></span>isNotSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool model_viewer::string_helpers::isNotSpace </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char</td>          <td class="paramname"><span class="paramname"><em>ch</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                        {</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> std::isspace(ch) == 0;</div>
+<div class="line"><span class="lineno">   23</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="#a1d71e736fd4726f6e87a885002373f20">ltrim()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacemodel__viewer_1_1string__helpers_a444bc009c5147f13ee737e1c34ce24fc_icgraph.png" border="0" usemap="#anamespacemodel__viewer_1_1string__helpers_a444bc009c5147f13ee737e1c34ce24fc_icgraph" alt=""/></div>
+<map name="anamespacemodel__viewer_1_1string__helpers_a444bc009c5147f13ee737e1c34ce24fc_icgraph" id="anamespacemodel__viewer_1_1string__helpers_a444bc009c5147f13ee737e1c34ce24fc_icgraph">
+<area shape="rect" title=" " alt="" coords="1027,137,1171,178"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="840,137,979,178"/>
+<area shape="poly" title=" " alt="" coords="1011,160,979,160,979,155,1011,155"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a6d0db231c476bb24a8d4328d00530f29" title="Trim from the start (copying)" alt="" coords="652,104,792,145"/>
+<area shape="poly" title=" " alt="" coords="824,145,792,139,793,134,825,140"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a2d31576147e231a7d7fe3a1e41cb0a0e" title="Trim from both ends (in place)" alt="" coords="652,169,792,210"/>
+<area shape="poly" title=" " alt="" coords="825,175,793,180,792,175,824,170"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a49b0dd6a5b5a964aea3e324144240a11" title="Trim from both ends (copying)" alt="" coords="465,169,604,210"/>
+<area shape="poly" title=" " alt="" coords="637,192,605,192,605,187,637,187"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#ab96c8f0edf9a593cfbe5043d9683b31d" title="Parse a color value from an MTL line." alt="" coords="241,5,409,46"/>
+<area shape="poly" title=" " alt="" coords="509,158,469,109,443,83,416,61,393,49,396,44,418,57,447,79,473,105,513,155"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#a7c15809900c2d355faeecc502cbc9221" title="Parse a texture map from an MTL line." alt="" coords="243,71,406,111"/>
+<area shape="poly" title=" " alt="" coords="485,163,416,127,386,114,388,109,418,122,488,159"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#a693d9087f7db3804dabc9e2dfb397ce1" title="Parse the MTL file line by line." alt="" coords="233,201,417,242"/>
+<area shape="poly" title=" " alt="" coords="450,205,418,210,417,205,449,200"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#a3551b16e5a7ed0144f52581a0c6f3a20" title="Parse an OBJ file line by line." alt="" coords="245,267,405,307"/>
+<area shape="poly" title=" " alt="" coords="487,220,418,256,388,268,386,264,416,251,485,216"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#abb64fee003e3ae2a23e85a9e9edcd730" title="Parse a scalar value from an MTL line." alt="" coords="237,136,412,177"/>
+<area shape="poly" title=" " alt="" coords="449,179,412,173,413,168,450,174"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#abd3f7e911f40f0e383bfb8d8380288bc" title="Retrieve material from a material library line and call material&#39;s parsing method." alt="" coords="234,332,416,373"/>
+<area shape="poly" title=" " alt="" coords="513,224,472,274,447,299,418,321,396,334,393,329,416,317,443,295,468,270,509,221"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#adb1ec3675f07c73f647b388a9b7b1e61" title="Constructor." alt="" coords="5,71,185,111"/>
+<area shape="poly" title=" " alt="" coords="237,53,170,73,169,67,236,48"/>
+<area shape="poly" title=" " alt="" coords="228,94,185,94,185,88,228,88"/>
+<area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="12,201,178,242"/>
+<area shape="poly" title=" " alt="" coords="217,224,178,224,178,219,217,219"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
+<area shape="poly" title=" " alt="" coords="229,290,172,290,172,284,229,284"/>
+<area shape="poly" title=" " alt="" coords="236,134,169,115,170,109,237,129"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title="Constructor." alt="" coords="18,332,172,373"/>
+<area shape="poly" title=" " alt="" coords="218,355,172,355,172,350,218,350"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a1d71e736fd4726f6e87a885002373f20" name="a1d71e736fd4726f6e87a885002373f20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d71e736fd4726f6e87a885002373f20">&#9670;&#160;</a></span>ltrim()</h2>
 
@@ -150,13 +220,23 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                                {</div>
-<div class="line"><span class="lineno">   26</span>    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch) {</div>
-<div class="line"><span class="lineno">   27</span>                return !std::isspace(ch);</div>
-<div class="line"><span class="lineno">   28</span>            }));</div>
-<div class="line"><span class="lineno">   29</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                {</div>
+<div class="line"><span class="lineno">   30</span>    s.erase(s.begin(), std::ranges::find_if(s, isNotSpace));</div>
+<div class="line"><span class="lineno">   31</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a444bc009c5147f13ee737e1c34ce24fc">isNotSpace()</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="#a6d0db231c476bb24a8d4328d00530f29">ltrim_copy()</a>, and <a class="el" href="#a2d31576147e231a7d7fe3a1e41cb0a0e">trim()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacemodel__viewer_1_1string__helpers_a1d71e736fd4726f6e87a885002373f20_cgraph.png" border="0" usemap="#anamespacemodel__viewer_1_1string__helpers_a1d71e736fd4726f6e87a885002373f20_cgraph" alt=""/></div>
+<map name="anamespacemodel__viewer_1_1string__helpers_a1d71e736fd4726f6e87a885002373f20_cgraph" id="anamespacemodel__viewer_1_1string__helpers_a1d71e736fd4726f6e87a885002373f20_cgraph">
+<area shape="rect" title="Trim from the start (in place)" alt="" coords="5,5,145,46"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="193,5,337,46"/>
+<area shape="poly" title=" " alt="" coords="145,23,177,23,177,28,145,28"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -186,7 +266,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="228,94,185,94,185,88,228,88"/>
 <area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="12,201,178,242"/>
 <area shape="poly" title=" " alt="" coords="217,224,178,224,178,219,217,219"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
 <area shape="poly" title=" " alt="" coords="229,290,172,290,172,284,229,284"/>
 <area shape="poly" title=" " alt="" coords="236,134,169,115,170,109,237,129"/>
 <area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title="Constructor." alt="" coords="18,332,172,373"/>
@@ -227,11 +307,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Trimmed string </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>                                         {</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_function" href="#a1d71e736fd4726f6e87a885002373f20">ltrim</a>(s);</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">return</span> s;</div>
-<div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a1d71e736fd4726f6e87a885002373f20"><div class="ttname"><a href="#a1d71e736fd4726f6e87a885002373f20">model_viewer::string_helpers::ltrim</a></div><div class="ttdeci">void ltrim(std::string &amp;s)</div><div class="ttdoc">Trim from the start (in place)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:25</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                         {</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="#a1d71e736fd4726f6e87a885002373f20">ltrim</a>(s);</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> s;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a1d71e736fd4726f6e87a885002373f20"><div class="ttname"><a href="#a1d71e736fd4726f6e87a885002373f20">model_viewer::string_helpers::ltrim</a></div><div class="ttdeci">void ltrim(std::string &amp;s)</div><div class="ttdoc">Trim from the start (in place)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:29</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1d71e736fd4726f6e87a885002373f20">ltrim()</a>.</p>
 <div class="dynheader">
@@ -242,6 +322,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Trim from the start (copying)" alt="" coords="5,5,145,46"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a1d71e736fd4726f6e87a885002373f20" title="Trim from the start (in place)" alt="" coords="193,5,332,46"/>
 <area shape="poly" title=" " alt="" coords="145,23,177,23,177,28,145,28"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="380,5,524,46"/>
+<area shape="poly" title=" " alt="" coords="332,23,365,23,365,28,332,28"/>
 </map>
 </div>
 
@@ -278,26 +360,26 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Normalized path </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>                                            {</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keyword">const</span> std::string fileScheme = <span class="stringliteral">&quot;file://&quot;</span>;</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (p.rfind(fileScheme, 0) == 0) {</div>
-<div class="line"><span class="lineno">   90</span>        p.erase(0, fileScheme.size());</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">if</span> (p.size() &gt;= 3 &amp;&amp; p[0] == <span class="charliteral">&#39;/&#39;</span> &amp;&amp;</div>
-<div class="line"><span class="lineno">   93</span>        std::isalpha(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(p[1])) &amp;&amp; p[2] == <span class="charliteral">&#39;:&#39;</span>) {</div>
-<div class="line"><span class="lineno">   94</span>        p.erase(0, 1);</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> p;</div>
-<div class="line"><span class="lineno">   97</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>                                            {</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keyword">const</span> std::string fileScheme = <span class="stringliteral">&quot;file://&quot;</span>;</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (p.rfind(fileScheme, 0) == 0) {</div>
+<div class="line"><span class="lineno">   92</span>        p.erase(0, fileScheme.size());</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (p.size() &gt;= 3 &amp;&amp; p[0] == <span class="charliteral">&#39;/&#39;</span> &amp;&amp;</div>
+<div class="line"><span class="lineno">   95</span>        std::isalpha(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(p[1])) &amp;&amp; p[2] == <span class="charliteral">&#39;:&#39;</span>) {</div>
+<div class="line"><span class="lineno">   96</span>        p.erase(0, 1);</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">return</span> p;</div>
+<div class="line"><span class="lineno">   99</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce">model_viewer::loaders::ObjLoader::loadModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a">model_viewer::loaders::ObjLoader::loadModel()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacemodel__viewer_1_1string__helpers_ac6f5e1bc8bb506a91c4468067a2eaca6_icgraph.png" border="0" usemap="#anamespacemodel__viewer_1_1string__helpers_ac6f5e1bc8bb506a91c4468067a2eaca6_icgraph" alt=""/></div>
 <map name="anamespacemodel__viewer_1_1string__helpers_ac6f5e1bc8bb506a91c4468067a2eaca6_icgraph" id="anamespacemodel__viewer_1_1string__helpers_ac6f5e1bc8bb506a91c4468067a2eaca6_icgraph">
 <area shape="rect" title="Normalize a file path by removing &quot;file://&quot; scheme and leading slash on Windows paths." alt="" coords="206,5,364,46"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="5,5,158,46"/>
 <area shape="poly" title=" " alt="" coords="190,28,158,28,158,23,190,23"/>
 </map>
 </div>
@@ -334,12 +416,12 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>                                {</div>
-<div class="line"><span class="lineno">   36</span>    s.erase(std::find_if(s.rbegin(), s.rend(),</div>
-<div class="line"><span class="lineno">   37</span>                         [](<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch) { return !std::isspace(ch); })</div>
-<div class="line"><span class="lineno">   38</span>                .base(),</div>
-<div class="line"><span class="lineno">   39</span>            s.end());</div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                {</div>
+<div class="line"><span class="lineno">   38</span>    s.erase(std::find_if(s.rbegin(), s.rend(),</div>
+<div class="line"><span class="lineno">   39</span>                         [](<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch) { return !std::isspace(ch); })</div>
+<div class="line"><span class="lineno">   40</span>                .base(),</div>
+<div class="line"><span class="lineno">   41</span>            s.end());</div>
+<div class="line"><span class="lineno">   42</span>}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="#aae2ee49e1a6feec0822ed4c195365b4c">rtrim_copy()</a>, and <a class="el" href="#a2d31576147e231a7d7fe3a1e41cb0a0e">trim()</a>.</p>
 <div class="dynheader">
@@ -371,7 +453,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="228,94,185,94,185,88,228,88"/>
 <area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="12,201,178,242"/>
 <area shape="poly" title=" " alt="" coords="217,224,178,224,178,219,217,219"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
 <area shape="poly" title=" " alt="" coords="229,290,172,290,172,284,229,284"/>
 <area shape="poly" title=" " alt="" coords="236,134,169,115,170,109,237,129"/>
 <area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title="Constructor." alt="" coords="18,332,172,373"/>
@@ -412,11 +494,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Trimmed string </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>                                         {</div>
-<div class="line"><span class="lineno">   67</span>    <a class="code hl_function" href="#aaaa218407681eb1cf3fe00e9a7741ddf">rtrim</a>(s);</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">return</span> s;</div>
-<div class="line"><span class="lineno">   69</span>}</div>
-<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_aaaa218407681eb1cf3fe00e9a7741ddf"><div class="ttname"><a href="#aaaa218407681eb1cf3fe00e9a7741ddf">model_viewer::string_helpers::rtrim</a></div><div class="ttdeci">void rtrim(std::string &amp;s)</div><div class="ttdoc">Trim from the end (in place)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:35</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                                         {</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_function" href="#aaaa218407681eb1cf3fe00e9a7741ddf">rtrim</a>(s);</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> s;</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_aaaa218407681eb1cf3fe00e9a7741ddf"><div class="ttname"><a href="#aaaa218407681eb1cf3fe00e9a7741ddf">model_viewer::string_helpers::rtrim</a></div><div class="ttdeci">void rtrim(std::string &amp;s)</div><div class="ttdoc">Trim from the end (in place)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:37</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#aaaa218407681eb1cf3fe00e9a7741ddf">rtrim()</a>.</p>
 <div class="dynheader">
@@ -462,10 +544,10 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                               {</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="#aaaa218407681eb1cf3fe00e9a7741ddf">rtrim</a>(s);</div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_function" href="#a1d71e736fd4726f6e87a885002373f20">ltrim</a>(s);</div>
-<div class="line"><span class="lineno">   49</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                               {</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_function" href="#aaaa218407681eb1cf3fe00e9a7741ddf">rtrim</a>(s);</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_function" href="#a1d71e736fd4726f6e87a885002373f20">ltrim</a>(s);</div>
+<div class="line"><span class="lineno">   51</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a1d71e736fd4726f6e87a885002373f20">ltrim()</a>, and <a class="el" href="#aaaa218407681eb1cf3fe00e9a7741ddf">rtrim()</a>.</p>
 
@@ -480,6 +562,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="145,44,177,38,178,43,146,49"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="193,71,332,111"/>
 <area shape="poly" title=" " alt="" coords="146,68,178,74,177,79,145,74"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="380,5,524,46"/>
+<area shape="poly" title=" " alt="" coords="332,23,365,23,365,28,332,28"/>
 </map>
 </div>
 <div class="dynheader">
@@ -507,7 +591,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="228,94,185,94,185,88,228,88"/>
 <area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="12,201,178,242"/>
 <area shape="poly" title=" " alt="" coords="217,224,178,224,178,219,217,219"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
 <area shape="poly" title=" " alt="" coords="229,290,172,290,172,284,229,284"/>
 <area shape="poly" title=" " alt="" coords="236,134,169,115,170,109,237,129"/>
 <area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title="Constructor." alt="" coords="18,332,172,373"/>
@@ -548,11 +632,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Trimmed string </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                        {</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_function" href="#a2d31576147e231a7d7fe3a1e41cb0a0e">trim</a>(s);</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> s;</div>
-<div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a2d31576147e231a7d7fe3a1e41cb0a0e"><div class="ttname"><a href="#a2d31576147e231a7d7fe3a1e41cb0a0e">model_viewer::string_helpers::trim</a></div><div class="ttdeci">void trim(std::string &amp;s)</div><div class="ttdoc">Trim from both ends (in place)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:46</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                                        {</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_function" href="#a2d31576147e231a7d7fe3a1e41cb0a0e">trim</a>(s);</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> s;</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+<div class="ttc" id="anamespacemodel__viewer_1_1string__helpers_html_a2d31576147e231a7d7fe3a1e41cb0a0e"><div class="ttname"><a href="#a2d31576147e231a7d7fe3a1e41cb0a0e">model_viewer::string_helpers::trim</a></div><div class="ttdeci">void trim(std::string &amp;s)</div><div class="ttdoc">Trim from both ends (in place)</div><div class="ttdef"><b>Definition</b> StringHelpers.hpp:48</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#a2d31576147e231a7d7fe3a1e41cb0a0e">trim()</a>.</p>
 
@@ -569,6 +653,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="332,44,364,38,365,43,333,49"/>
 <area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#aaaa218407681eb1cf3fe00e9a7741ddf" title="Trim from the end (in place)" alt="" coords="380,71,519,111"/>
 <area shape="poly" title=" " alt="" coords="333,68,365,74,364,79,332,74"/>
+<area shape="rect" href="namespacemodel__viewer_1_1string__helpers.html#a444bc009c5147f13ee737e1c34ce24fc" title=" " alt="" coords="567,5,712,46"/>
+<area shape="poly" title=" " alt="" coords="520,23,552,23,552,28,520,28"/>
 </map>
 </div>
 <div class="dynheader">
@@ -594,7 +680,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="228,94,185,94,185,88,228,88"/>
 <area shape="rect" href="classmodel__viewer_1_1material_1_1MTLMaterial.html#aacb29680b6a02d951d2bec548bc646be" title="Parse an MTL file and set the material properties." alt="" coords="12,201,178,242"/>
 <area shape="poly" title=" " alt="" coords="217,224,178,224,178,219,217,219"/>
-<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#ae66d37dead2af155295997b6445898ce" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
+<area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa257fa9f5902ea4a43a1c68dfe4eb05a" title="Load an OBJ model from a file." alt="" coords="19,267,171,307"/>
 <area shape="poly" title=" " alt="" coords="229,290,172,290,172,284,229,284"/>
 <area shape="poly" title=" " alt="" coords="236,134,169,115,170,109,237,129"/>
 <area shape="rect" href="classmodel__viewer_1_1loaders_1_1ObjLoader.html#aa57198c88d936298b2298e454c7829a0" title="Constructor." alt="" coords="18,332,172,373"/>

@@ -10,6 +10,12 @@ var searchData=
   ['getdispersionmap_7',['getDispersionMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a20865574103d3d9a06c8c8698a391d63',1,'model_viewer::material::MTLMaterial']]],
   ['getdissolvemap_8',['getDissolveMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a3afa962b28a37fe50e1891eb3f8ebdf4',1,'model_viewer::material::MTLMaterial']]],
   ['getemissivemap_9',['getEmissiveMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#a5d8b062039d0ff3af59d6af5105a0453',1,'model_viewer::material::MTLMaterial']]],
-  ['getspecularmap_10',['getSpecularMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#ab8d9753f7a9b0488b3f9e82eade9de10',1,'model_viewer::material::MTLMaterial']]],
-  ['getspecularreflectionmap_11',['getSpecularReflectionMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#ac4d9e2c284dc69a6311946c33df62295',1,'model_viewer::material::MTLMaterial']]]
+  ['getfaces_10',['getFaces',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a82576fa1ce4b11d96ac0655fc40cff87',1,'model_viewer::loaders::ObjLoader']]],
+  ['getloaders_11',['getLoaders',['../classmodel__viewer_1_1ModelManager.html#ae20d9f6e4bb6c26586a3ed0ff02ff24a',1,'model_viewer::ModelManager']]],
+  ['getmodelpath_12',['getModelPath',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a43649e8959caeeecb9fc6704708db2e4',1,'model_viewer::loaders::ObjLoader']]],
+  ['getnormals_13',['getNormals',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#aefc5941920b5c46458c07ab781667553',1,'model_viewer::loaders::ObjLoader']]],
+  ['getspecularmap_14',['getSpecularMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#ab8d9753f7a9b0488b3f9e82eade9de10',1,'model_viewer::material::MTLMaterial']]],
+  ['getspecularreflectionmap_15',['getSpecularReflectionMap',['../classmodel__viewer_1_1material_1_1MTLMaterial.html#ac4d9e2c284dc69a6311946c33df62295',1,'model_viewer::material::MTLMaterial']]],
+  ['gettexturecoords_16',['getTextureCoords',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a733cc79d2d45d3f8e24c18ed538eceb6',1,'model_viewer::loaders::ObjLoader']]],
+  ['getvertices_17',['getVertices',['../classmodel__viewer_1_1loaders_1_1ObjLoader.html#a538f18d57a7d783ffd83b1a1a44bc82f',1,'model_viewer::loaders::ObjLoader']]]
 ];
