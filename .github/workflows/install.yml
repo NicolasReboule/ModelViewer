@@ -42,7 +42,7 @@ jobs:
         run: cpack -G "DEB;RPM;TGZ"
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           name: linux_installer
           path: |
@@ -86,7 +86,7 @@ jobs:
         run: cpack -G "NSIS"
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           name: windows_installer
           path: |
@@ -128,7 +128,7 @@ jobs:
         run: cpack -G "DragNDrop"
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           name: macos_installer
           path: |
