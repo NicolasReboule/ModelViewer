@@ -65,9 +65,11 @@ target_link_libraries(${PROJECT_NAME}_Sources PUBLIC
 )
 
 # Main executable with QT
-qt_add_executable(${PROJECT_NAME}
-        main.cpp
-)
+if (APPLE)
+    qt_add_executable(${PROJECT_NAME} MACOSX_BUNDLE main.cpp)
+else ()
+    qt_add_executable(${PROJECT_NAME} main.cpp)
+endif ()
 
 qt_add_qml_module(${PROJECT_NAME}
         URI ${PROJECT_NAME}Module
