@@ -14,8 +14,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
 option(BUILD_COVERAGE "Build the coverage" OFF)
 option(BUILD_TESTS "Build the tests" OFF)
+option(DEPLOY_PROJECT "Deploy application" ON)
 option(USE_CLANG_TIDY "Use clang-tidy" OFF) # Used by the CI
 option(USE_CLANG_TIDY_WITH_ERRORS "Use clang tidy but all warnings are errors" OFF) # Used by the CI
 option(USE_CLANG_TIDY_WITH_FIX "Use clang-tidy with fix" OFF) # Used by the CI
@@ -33,10 +36,10 @@ target_include_directories(${PROJECT_NAME}_Headers INTERFACE
 )
 
 # Coverage
-if(BUILD_COVERAGE)
+if (BUILD_COVERAGE)
     target_compile_options(${PROJECT_NAME}_Headers INTERFACE --coverage)
     target_link_options(${PROJECT_NAME}_Headers INTERFACE --coverage)
-endif()
+endif ()
 
 # QT
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Qml Quick Quick3D)
@@ -68,6 +71,7 @@ qt_add_executable(${PROJECT_NAME}
 
 qt_add_qml_module(${PROJECT_NAME}
         URI ${PROJECT_NAME}Module
+        VERSION 1.0
         QML_FILES
             Main.qml
             qml_src/ModelEditor.qml
@@ -93,7 +97,7 @@ if (MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /W4 /WX /wd4702)
 else ()
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -pedantic -Werror)
-endif()
+endif ()
 
 # Tests
 if (BUILD_TESTS)
@@ -102,7 +106,7 @@ if (BUILD_TESTS)
     # Copy for tests
     file(COPY ${CMAKE_CURRENT_LIST_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/tests)
 
-endif()
+endif ()
 
 # Copy for executable
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
@@ -140,4 +144,19 @@ if (WIN32)
             "$<TARGET_FILE:${PROJECT_NAME}>"
             COMMENT "Running windeployqt..."
     )
-endif()
+endif ()
+
+
+if (DEPLOY_PROJECT)
+    install(TARGETS ${PROJECT_NAME}
+            BUNDLE  DESTINATION .
+            RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    )
+    qt_generate_deploy_qml_app_script(
+            TARGET ${PROJECT_NAME}
+            OUTPUT_SCRIPT deploy_script
+    )
+    install(SCRIPT ${deploy_script})
+
+    include(${CMAKE_SOURCE_DIR}/cmake/CPackConfig.cmake)
+endif ()

@@ -1,0 +1,136 @@
+name: Installer Action
+
+on:
+  push:
+    branches:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  linux-installer:
+    name: Install on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: 6.6.3
+          modules: 'qtquick3d qtshadertools'
+          cache: true
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S . -DDEPLOY_PROJECT=ON
+
+      - name: Build Release
+        shell: bash
+        run: cmake --build ./build --config Release -j`nproc`
+
+      - name: Create Installer
+        shell: bash
+        working-directory: build
+        run: cpack -G "DEB;RPM;TGZ"
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: linux_installer
+          path: |
+            build/*.deb
+            build/*.rpm
+            build/*.tar.gz
+            build/*.sha256
+
+  windows-installer:
+    name: Install on Windows
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: 6.6.3
+          modules: 'qtquick3d qtshadertools'
+          cache: true
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S . -DDEPLOY_PROJECT=ON -G "Visual Studio 17 2022" -A x64
+
+      - name: Build Release
+        shell: bash
+        run: cmake --build ./build --config Release -j"$env:NUMBER_OF_PROCESSORS"
+
+      - name: Create Installer
+        shell: bash
+        working-directory: build
+        run: cpack -G "NSIS"
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: windows_installer
+          path: |
+            build/*.exe
+            build/*.sha256
+
+  macos-installer:
+    name: Install on Windows
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache libraries
+        id: cache-libraries
+        uses: actions/cache@v3
+        with:
+          path: ./build/_deps
+          key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: 6.6.3
+          modules: 'qtquick3d qtshadertools'
+          cache: true
+
+      - name: Configure CMake
+        shell: bash
+        run: cmake -B ./build -S . -DDEPLOY_PROJECT=ON
+
+      - name: Build Release
+        shell: bash
+        run: cmake --build ./build --config Release -j`nproc`
+
+      - name: Create Installer
+        shell: bash
+        working-directory: build
+        run: cpack -G "DragNDrop"
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: macos_installer
+          path: |
+            build/*.dmg
+            build/*.sha256
