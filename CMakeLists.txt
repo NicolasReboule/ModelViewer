@@ -18,7 +18,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 option(BUILD_COVERAGE "Build the coverage" OFF)
 option(BUILD_TESTS "Build the tests" OFF)
-option(DEPLOY_PROJECT "Deploy application" ON)
+option(DEPLOY_PROJECT "Deploy application" OFF)
 option(USE_CLANG_TIDY "Use clang-tidy" OFF) # Used by the CI
 option(USE_CLANG_TIDY_WITH_ERRORS "Use clang tidy but all warnings are errors" OFF) # Used by the CI
 option(USE_CLANG_TIDY_WITH_FIX "Use clang-tidy with fix" OFF) # Used by the CI
@@ -155,6 +155,9 @@ if (DEPLOY_PROJECT)
     qt_generate_deploy_qml_app_script(
             TARGET ${PROJECT_NAME}
             OUTPUT_SCRIPT deploy_script
+            MACOS_BUNDLE_POST_BUILD
+            NO_UNSUPPORTED_PLATFORM_ERROR
+            DEPLOY_USER_QML_MODULES_ON_UNSUPPORTED_PLATFORM
     )
     install(SCRIPT ${deploy_script})
 
