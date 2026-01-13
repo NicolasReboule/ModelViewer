@@ -99,8 +99,12 @@ endif()
 if (BUILD_TESTS)
     enable_testing()
     add_subdirectory(tests)
+    # Copy for tests
+    file(COPY ${CMAKE_CURRENT_LIST_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/tests)
+
 endif()
 
+# Copy for executable
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 # CLang-tidy

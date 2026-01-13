@@ -30,9 +30,7 @@ class ModelManager final : public QObject {
     loaders::ObjLoader _objLoader;
 
     //! Map of file extensions to their respective loaders
-    std::unordered_map<std::string, loaders::ILoader *> _loaders = {
-        {".obj", &_objLoader},
-    };
+    std::unordered_map<std::string, loaders::ILoader *> _loaders;
 
     //! Pointer to the last used loader
     loaders::ILoader *_lastLoaded = &_objLoader;
@@ -112,6 +110,11 @@ class ModelManager final : public QObject {
      * @param isReady New ready state
      */
     void setReady(bool isReady);
+
+    const std::unordered_map<std::string, loaders::ILoader *> &getLoaders()
+        const {
+        return _loaders;
+    };
 };
 
 }  // namespace model_viewer

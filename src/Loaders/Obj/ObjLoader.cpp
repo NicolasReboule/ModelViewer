@@ -23,17 +23,18 @@ ObjLoader::ObjLoader()
     };
 }
 
-void ObjLoader::loadModel(const std::string &filepath) {
+bool ObjLoader::loadModel(const std::string &filepath) {
     reset();
     _modelPath = string_helpers::normalizePath(filepath);
     std::ifstream in(_modelPath, std::ios::in);
     if (!in.is_open()) {
         std::cerr << "ObjLoader: Could not open file " << _modelPath << ": "
                   << std::strerror(errno) << std::endl;
-        return;
+        return false;
     }
     parseModel(in);
     setModelData();
+    return true;
 }
 
 void ObjLoader::reset() {

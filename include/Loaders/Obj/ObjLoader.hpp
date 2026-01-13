@@ -60,9 +60,10 @@ class ObjLoader final : public ILoader {
     /**
      * @brief Load an OBJ model from a file
      * @param filepath Path to the OBJ file
+     * @return Boolean indicating whether the model was loaded successfully
      * @todo Add support for groups and multiple materials
      */
-    void loadModel(const std::string &filepath) override;
+    bool loadModel(const std::string &filepath) override;
 
     /**
      * @brief Get the geometry of the loaded model
@@ -77,6 +78,22 @@ class ObjLoader final : public ILoader {
     material::MTLMaterial *material() const override {
         return _material.get();
     };
+
+    const std::vector<geometry::Vector3> &getVertices() const {
+        return _vertices;
+    }
+
+    const std::vector<geometry::TextureCoordinate> &getTextureCoords() const {
+        return _textureCoords;
+    }
+
+    const std::vector<geometry::Vector3> &getNormals() const {
+        return _normals;
+    }
+
+    const std::vector<geometry::FaceIndex> &getFaces() const { return _faces; }
+
+    const std::string &getModelPath() const { return _modelPath; }
 
    private:
     //! Reset the OBJ loader state

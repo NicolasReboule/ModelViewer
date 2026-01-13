@@ -11,7 +11,11 @@
 
 namespace model_viewer {
 
-ModelManager::ModelManager(QObject *parent) : QObject(parent) {}
+ModelManager::ModelManager(QObject *parent) : QObject(parent) {
+    _loaders = {
+        {".obj", &_objLoader},
+    };
+}
 
 void ModelManager::loadModel(const QString &filepath) {
     const std::string strPath =

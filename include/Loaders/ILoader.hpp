@@ -25,8 +25,9 @@ class ILoader {
     /**
      * @brief Load a model from a file
      * @param filepath Path to the model file
+     * @return Boolean indicating whether the model was loaded successfully
      */
-    virtual void loadModel(const std::string &filepath) = 0;
+    virtual bool loadModel(const std::string &filepath) = 0;
 
     /**
      * @brief Get the geometry of the loaded model

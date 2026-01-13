@@ -12,7 +12,10 @@ FetchContent_MakeAvailable(googletest)
 
 # Test Executable
 add_executable(${PROJECT_NAME}_Tests
-        src/example_test.cpp
+        src/general_tests.cpp
+        src/model_manager_tests.cpp
+        src/obj_loader_tests.cpp
+        src/string_helpers_tests.cpp
 )
 # Link headers
 target_include_directories(${PROJECT_NAME}_Tests PRIVATE ${PROJECT_SOURCE_DIR}/include)

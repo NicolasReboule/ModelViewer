@@ -18,14 +18,16 @@
 
 namespace model_viewer::string_helpers {
 
+inline bool isNotSpace(const unsigned char ch) noexcept {
+    return std::isspace(ch) == 0;
+}
+
 /**
  * @brief Trim from the start (in place)
  * @param s String to trim
  */
 inline void ltrim(std::string &s) {
-    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](unsigned char ch) {
-                return !std::isspace(ch);
-            }));
+    s.erase(s.begin(), std::ranges::find_if(s, isNotSpace));
 }
 
 /**
