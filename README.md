@@ -12,7 +12,7 @@
 
 <!-- PROJECT SHIELDS -->
 <!--
-*** I'm using markdown "reference style" links for readability.
+*** I'm using Markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
@@ -103,6 +103,26 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Goals of the project
+
+The project goal was to discover how Qt and Qml and how to build application with them.
+
+### State of the project
+
+The project is still in development.
+
+I am currently working on improving the OBJ parser to manage groups and multiple textures.
+
+I want to add a better sidebar to have features such as managing the position of the camera, the model and the lighting and more.
+
+I should also implement caching model data so it does not need to be reloaded when changing to a model that was already loaded during this session.
+
+I would like to add a shader and material editor.
+
+And finally add support for other model formats.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Getting Started
 
 ### Prerequisites
@@ -177,10 +197,14 @@ Execute the ModelViewer binary located in the build directory:
 ./ModelViewer
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Documentation
 
 The documentation of this project can be found at:
 - Source code documentation: [https://nicolasreboule.github.io/ModelViewer][github.io-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
