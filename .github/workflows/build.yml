@@ -92,7 +92,7 @@ jobs:
   build-macos:
     name: Build on MacOS
     needs: [build-linux]
-    runs-on: macos-latest
+    runs-on: macos-15
     steps:
       - name: Checkout
         uses: actions/checkout@v6
