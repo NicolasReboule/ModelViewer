@@ -53,7 +53,7 @@ jobs:
 
   windows-installer:
     name: Install on Windows
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
       - name: Checkout
         uses: actions/checkout@v6
