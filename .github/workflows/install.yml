@@ -138,3 +138,34 @@ jobs:
           path: |
             build/*.dmg
             build/*.sha256
+
+  release:
+    name: Create Release
+    needs: [ linux-installer, windows-installer, macos-installer ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: linux_installer
+          path: ./release-files
+
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: windows_installer
+          path: ./release-files
+
+      - name: Download macOS artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: macos_installer
+          path: ./release-files
+
+      - name: Create or Update Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          prerelease: false
+          files: ./release-files/*
