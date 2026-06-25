@@ -16,7 +16,7 @@ jobs:
 
       - name: Cache libraries
         id: cache-libraries
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: ./build/_deps
           key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
@@ -60,7 +60,7 @@ jobs:
 
       - name: Cache libraries
         id: cache-libraries
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: ./build/_deps
           key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
@@ -106,7 +106,7 @@ jobs:
 
       - name: Cache libraries
         id: cache-libraries
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: ./build/_deps
           key: ${{ runner.os }}-libraries-${{ hashFiles('**/CMakeLists.txt') }}
