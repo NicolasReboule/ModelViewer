@@ -133,7 +133,60 @@ And finally add support for other model formats.
 
 ### Installation
 
-#### Before you begin
+#### Releases
+
+Check the [latest release](https://github.com/NicolasReboule/ModelViewer/releases) and look for your distribution:
+
+##### Linux
+
+Download one of the package and install it:
+
+Using the .deb:
+
+```sh
+sudo dpkg -i ModelViewer-{{version}}-Linux.deb
+# If dependency errors appear:
+sudo apt-get install -f
+```
+
+Using the .rpm:
+
+```sh
+sudo rpm -i ModelViewer-{{version}}-Linux.rpm
+# or, on dnf-based systems, this handles deps automatically:
+sudo dnf install ModelViewer-{{version}}-Linux.rpm
+```
+
+Using the .tar.gz:
+
+```sh
+tar -xzf ModelViewer-{{version}}-Linux.tar.gz
+cd ModelViewer-{{version}}-Linux
+./ModelViewer   # or whatever the binary is named inside
+```
+
+##### Windows
+
+Download `ModelViewer-{{version}}-win64.exe` and run it. Follow the installer prompts.
+
+##### MacOS
+
+Download `ModelViewer-{{version}}-Darwin.dmg` and double-click to mount it. Drag **ModelViewer.app** into your **Applications** folder, then eject the mounted volume.
+
+#### Verifying your download (optional)
+
+Each package has a matching `.sha256` file. To verify:
+```bash
+# Linux/macOS
+sha256sum -c ModelViewer-{{version}}-.sha256
+
+# Windows (PowerShell)
+Get-FileHash ModelViewer-{{version}}-win64.exe -Algorithm SHA256
+```
+
+#### Manual Installation
+
+##### Before you begin
 
 Ensure you have Qt6 installed on your system. You can download it from the official Qt website: [https://www.qt.io/download](https://www.qt.io/download).
 
@@ -146,14 +199,14 @@ git clone https://github.com/NicolasReboule/ModelViewer
 cd ModelViewer
 ```
 
-#### Create a build directory and navigate into it:
+##### Create a build directory and navigate into it:
 
 ```sh
 mkdir build
 cd build
 ```
 
-#### Run CMake to configure the project:
+##### Run CMake to configure the project:
 
 ```sh
 cmake ..
@@ -173,7 +226,7 @@ set(CMAKE_PREFIX_PATH "PATH_TO_QT")
 
 Or set the `QT6_ROOT` environment variable to point to your Qt installation
 
-#### Build the project using CMake:
+##### Build the project using CMake:
 
 ```sh
 cmake --build .
