@@ -143,6 +143,8 @@ jobs:
     name: Create Release
     needs: [ linux-installer, windows-installer, macos-installer ]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Download Linux artifact
         uses: actions/download-artifact@v4
