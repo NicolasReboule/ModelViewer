@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.29)
 project(
         ModelViewer
-        VERSION 0.0.1
+        VERSION 0.1.0
         DESCRIPTION "ModelViewer is application to visualize 3D models, developed with Qt"
         HOMEPAGE_URL "https://github.com/NicolasReboule/ModelViewer"
         LANGUAGES CXX
